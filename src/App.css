@@ -39,14 +39,17 @@
 .title{
   font-family: "Karla";
   font-weight: bold;
-  font-size: 4em;
+  font-size: calc(24px + 40 * (100vw - 320px) / 1120);
+  line-height: calc(45px + 33 * (100vw - 320px) / 1120);
+  letter-spacing: .05em;
+  white-space: nowrap;
 }
 .subtitle{
   display:inline-block;
   justify-content: center; 
   width: 100%;
   font-family: "Jost";
-  font-size: 3em;
+  font-size: calc(20px + 16 * (100vw - 320px) / 1120);
 }
 
 .content{
@@ -67,6 +70,19 @@
   position: absolute;
   text-align:center;
 }
+/* @media only screen and (max-width: 990px) {
+  .content-body-text{
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    width: auto;
+    height: auto;
+    display:block;
+    position: absolute;
+    text-align:center;
+  }
+} */
 .center-container{
   position: absolute;
   top: 50%;
