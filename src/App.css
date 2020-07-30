@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.title{
+  font-family: "Karla";
+  font-weight: bold;
+  font-size: 4em;
+}
+.subtitle{
+  display:inline-block;
+  justify-content: center; 
+  width: 100%;
+  font-family: "Jost";
+  font-size: 3em;
+}
+
+.content{
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.content-body-text{
+  top: 90px;
+  right: 90px;
+  bottom: 90px;
+  left: 90px;
+  width: auto;
+  height: auto;
+  display:block;
+  position: absolute;
+  text-align:center;
+}
+.center-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
