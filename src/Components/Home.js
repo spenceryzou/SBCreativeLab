@@ -1,14 +1,31 @@
 import React, { Component } from 'react'
 import Typewriter from 'typewriter-effect';
+const hexRgb = require('hex-rgb');
+let backgroundColor="#F7FDF4"
+let primaryColor="#1BB994"
+let darkColor="#356A69"
  
 export default class Home extends Component {
+
+
+    handleScroll(){
+        var rgbArray = hexRgb(backgroundColor,{format: 'array'});
+        var targetArray = hexRgb("#E5F8FF",{format: 'array'});
+        const section1 = document.querySelector('.content')
+        var scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        console.log(scrollPercent)
+        var r = rgbArray[0] + (targetArray[0]-rgbArray[0])*(scrollPercent);
+        var g = rgbArray[1] + (targetArray[1]-rgbArray[1])*(scrollPercent);
+        var b = rgbArray[2] + (targetArray[2]-rgbArray[2])*(scrollPercent);
+        section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', this.handleScroll);
+    }
     render() {
-        let backgroundColor="#F7FDF4"
-        let primaryColor="#1BB994"
-        let darkColor="#356A69"
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
-                <div className="content-body">         
+                <div style={{height: "100vh"}} className="content-body">         
                     <div className="content-body-text">
                         <div className="center-container">            
                             <div style={{color: darkColor}} className="title">
@@ -42,6 +59,9 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>        
+                </div>
+                <div style={{height: "100vh"}} className="content-body">
+                    hi
                 </div>
             </div>
         )

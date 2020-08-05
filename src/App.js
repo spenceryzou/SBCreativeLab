@@ -12,11 +12,6 @@ export class App extends Component {
           <title>SB Creative Lab</title>
           <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet"/>
         </head>
-        <div className="body">
-          <div class="header">     
-            <h1 class="site-title left-nav">
-            SB Creative Lab</h1>
-          </div>
           <div className="main-body">
               <Route exact path="/" render={(props) => <Home />}/>
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
@@ -27,7 +22,6 @@ export class App extends Component {
               <Route path="/contact" render={(props) => <Contact {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Body activeTab={this.state.activeTab} functions={functions}/> */}
           </div>
-        </div>
       </div>
     )
   }
