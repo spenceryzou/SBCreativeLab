@@ -61,7 +61,9 @@ export default class Home extends Component {
                     </div>        
                 </div>
                 <div style={{height: "100vh"}} className="content-body">
-                    hi
+                    <object>
+                        <embed src="penucsb.svg"></embed>
+                    </object>
                 </div>
             </div>
         )
