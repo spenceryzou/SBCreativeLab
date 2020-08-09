@@ -4,8 +4,19 @@ const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
 let darkColor="#356A69"
+const menu = './images/Hamburger Menu.svg'
  
 export default class Home extends Component {
+
+    constructor(props){
+      super(props);
+
+      this.state = {
+        openMenu: this.props.openMenu,
+      }
+
+      console.log(this.props);
+    }
 
 
     handleScroll(){
@@ -23,11 +34,15 @@ export default class Home extends Component {
         window.addEventListener('scroll', this.handleScroll);
     }
     render() {
+        let openMenu = this.props.openMenu;
+        console.log(openMenu);
+
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
-                <div style={{height: "100vh"}} className="content-body">         
+                <div style={{height: "100vh"}} className="content-body">  
+                    <img src={menu} alt={'hamburger menu'} className="hamburger-icon" id="hamburger-icon" onClick={() => openMenu()} />     
                     <div className="content-body-text">
-                        <div className="center-container">            
+                        <div className="center-container" id="home">            
                             <div style={{color: darkColor}} className="title">
                             SB Creative Lab 
                             </div>

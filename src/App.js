@@ -2,10 +2,75 @@ import React, { Component } from 'react'
 import { Link, Route, Switch } from "react-router-dom";
 import './App.css'
 import Home from './Components/Home'
+import Menu from './Components/Menu'
 
 export class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+    display: [<Route exact path="/" render={(props) => <Home {...props} openMenu={this.openMenu} />}/>],
+    }
+
+    this.openMenu = this.openMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  openMenu() {
+    console.log('open menu');
+
+    document.getElementsByClassName("content-body")[0].style.overflow = "hidden";
+
+    let menu = document.getElementById("menu");
+    menu.classList.add("drop");
+    menu.classList.remove("hidden");
+    menu.classList.remove("rise");
+
+    // let home = document.getElementById("home");
+    // home.style.animation = "rise";
+    // // home.style.marginTop = "100vh";
+    // let hamIcon = document.getElementById("hamburger-icon");
+    // hamIcon.style.marginTop = "100vh";
+  }
+
+  closeMenu() {
+    let menu = document.getElementById("menu");
+
+    menu.classList.remove("drop");
+    menu.classList.add("rise");
+    menu.classList.add("hidden");
+  }
+
+  // async closeMenu() {
+  //   console.log('close menu');
+
+  //   await this.hideMenu();
+
+  //   // this.hideMenu().then(() => {
+  //   //   let home = document.getElementById("home");
+  //   //   home.style.marginTop = "unset";
+  //   //   let hamIcon = document.getElementById("hamburger-icon");
+  //   //   hamIcon.style.marginTop = "unset";
+  //   // })
+  // }
+
+  // closeMenu() {
+  //   // let promise = new Promise((resolve, reject) => {
+  //     let menu = document.getElementById("menu");
+
+  //     menu.classList.remove("drop");
+  //     menu.classList.add("rise");
+  //     menu.classList.add("hidden");
+
+  //     // resolve("menu hidden");
+  //   // })
+
+  //   // return promise;
+  // }
+
   
   render() {
+
     return (
       <div>
         <head>
@@ -13,7 +78,10 @@ export class App extends Component {
           <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet"/>
         </head>
           <div className="main-body">
-              <Route exact path="/" render={(props) => <Home />}/>
+              {/* {this.state.display} */}
+              <Route exact path="/" render={(props) => <Menu {...props} closeMenu={this.closeMenu} />}/>
+              <Route exact path="/" render={(props) => <Home {...props} openMenu={this.openMenu} />}/>
+
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
