@@ -9,22 +9,29 @@ export class App extends Component {
     super(props);
 
     this.state = {
-    display: [<Route exact path="/" render={(props) => <Home {...props} openMenu={this.openMenu} />}/>],
+    display: [<Route exact path="/" render={(props) => <Home {...props} handleMenu={this.handleMenu} />}/>],
     }
 
-    this.openMenu = this.openMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
+    this.handleMenu = this.handleMenu.bind(this);
+    // this.closeMenu = this.closeMenu.bind(this);
   }
 
-  openMenu() {
+  handleMenu() {
     console.log('open menu');
-
-    document.getElementsByClassName("content-body")[0].style.overflow = "hidden";
-
     let menu = document.getElementById("menu");
-    menu.classList.add("drop");
-    menu.classList.remove("hidden");
-    menu.classList.remove("rise");
+    if(menu.classList.contains("drop")){
+      menu.classList.remove("drop");
+      console.log(menu.classList);
+      // document.documentElement.style.overflow = 'scroll';
+      // document.body.scroll = "yes";
+    }
+    else{
+      menu.classList.add("drop");
+      console.log(menu.classList);
+      // document.documentElement.style.overflow = 'hidden';
+      // document.body.scroll = "no";
+    }
+    //menu.classList.remove("rise");
 
     // let home = document.getElementById("home");
     // home.style.animation = "rise";
@@ -33,13 +40,13 @@ export class App extends Component {
     // hamIcon.style.marginTop = "100vh";
   }
 
-  closeMenu() {
-    let menu = document.getElementById("menu");
+  // closeMenu() {
+  //   let menu = document.getElementById("menu");
 
-    menu.classList.remove("drop");
-    menu.classList.add("rise");
-    menu.classList.add("hidden");
-  }
+  //   menu.classList.remove("drop");
+  //   menu.classList.add("rise");
+  //   menu.classList.add("hidden");
+  // }
 
   // async closeMenu() {
   //   console.log('close menu');
@@ -79,8 +86,8 @@ export class App extends Component {
         </head>
           <div className="main-body">
               {/* {this.state.display} */}
-              <Route exact path="/" render={(props) => <Menu {...props} closeMenu={this.closeMenu} />}/>
-              <Route exact path="/" render={(props) => <Home {...props} openMenu={this.openMenu} />}/>
+              <Route exact path="/" render={(props) => <Menu {...props} handleMenu={this.handleMenu} />}/>
+              <Route exact path="/" render={(props) => <Home {...props} handleMenu={this.handleMenu} />}/>
 
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
