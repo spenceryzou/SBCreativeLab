@@ -1,17 +1,20 @@
+@import url("https://use.typekit.net/gyk8zus.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .title{
-  font-family: "Jost";
-  font-weight: bold;
-  font-size: calc(24px + 40 * (100vw - 320px) / 1120);
-  line-height: calc(45px + 33 * (100vw - 320px) / 1120);
-  letter-spacing: .05em;
+  font-family: "cooper-black-std";
+  font-weight: normal;
+  font-size: calc(24px + 32 * (100vw - 320px) / 1120);
+  line-height: calc(52px + 32 * (100vw - 320px) / 1120);
   white-space: nowrap;
+  letter-spacing: .03em;
 }
 .subtitle{
   display:inline-block;
   justify-content: center; 
   width: 100%;
-  font-family: "Jost";
-  font-size: calc(20px + 16 * (100vw - 320px) / 1120);
+  font-family: "Poppins";
+  font-size: calc(16px + 16 * (100vw - 320px) / 1120);
 }
 
 .content {
@@ -49,10 +52,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-}
-
-.hamburger-icon {
-
 }
 
 .hamburger-icon:hover {
@@ -298,3 +297,17 @@ label {
       --offset: -50;
       --color: #FED269;
     }
+
+#wave{
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+.waveContainer{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

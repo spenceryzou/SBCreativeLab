@@ -82,7 +82,6 @@ export class App extends Component {
       <div>
         <head>
           <title>SB Creative Lab</title>
-          <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet"/>
         </head>
           <div className="main-body">
               {/* {this.state.display} */}
