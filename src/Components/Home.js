@@ -48,15 +48,22 @@ export default class Home extends Component {
         const tl = gsap.timeline();
         if(origin.index===0){
             // const wave = document.getElementById('.wave');
-            tl.fromTo("#wave", .7, {y: '0%'}, {y:'-110%', ease:"power1.out"})
+            tl.fromTo("#wave", 1.24, {y: '0%'}, {y:'-130%'})
         }
         if(destination.index===0){
             // const wave = document.getElementById('.wave');
-            tl.fromTo("#wave", 1, {y: '-110%'}, {y:'0%', ease: "power1.inOut"})
+            tl.fromTo("#wave", 1.1, {y: '-130%'}, {y:'0%'})
+        }
+        if(destination.index===1){
+            tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: -.4})
         }
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
+        // const tl = gsap.timeline();
+        // if(destination.index===1){
+        //     tl.fromTo('.textContainer', .5, {y: '50', opacity: 0}, {y:0, opacity: 1})
+        // }
     }
 
     render() {
@@ -138,9 +145,34 @@ export default class Home extends Component {
                                 </div>    
                             </div>
                             <div style={{backgroundColor: "#356a69"}} className="section">
-                                <div style={{color: "white"}} className="title">
-                                    Mission
+                                <div className="textContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        Mission
+                                    </div>
+                                    <div className="longCaption" style={{color: "white"}}>
+                                        SB Creative Lab strives to empower and
+                                        build an inclusive design community at UC
+                                        Santa Barbara by providing opportunities
+                                        and resources for student designers.
+                                    </div>
                                 </div>
+                                <div className="imageContainer">
+                                    <img id="leftCloud" src="/leftCloud.png"/>
+                                    <img id="rightCloud" src="/rightCloud.png"/>
+                                    <img id="mainAirplane" src="/mainAirplane.png"/>
+                                </div>
+                            </div>
+                            <div className="section">
+                                <div className="content-body-text">
+                                    <div className="center-container" id="home">            
+                                        <div style={{color: darkColor}} className="title">
+                                            let's keep in touch!
+                                        </div>
+                                        <div className="subtitle2">
+                                            join our slack channel for updates.
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
                         </ReactFullpage.Wrapper>
                     );

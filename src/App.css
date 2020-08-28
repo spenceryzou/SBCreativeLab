@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .title{
-  font-family: "cooper-black-std";
-  font-weight: normal;
+  font-family: "bookmania";
+  font-weight: 900;
   font-size: calc(24px + 32 * (100vw - 320px) / 1120);
-  line-height: calc(52px + 32 * (100vw - 320px) / 1120);
+  line-height: calc(32px + 32 * (100vw - 320px) / 1120);
   white-space: nowrap;
-  letter-spacing: .03em;
+  letter-spacing: .035em;
 }
 .subtitle{
   display:inline-block;
@@ -167,8 +167,8 @@
 
 .menu-link{
   opacity: 0;
-  font-family: "Jost";
-  font-weight: bold;
+  font-family: "bookmania";
+  font-weight: 900;
   font-size: calc(24px + 40 * (100vw - 320px) / 1120);
   line-height: calc(45px + 33 * (100vw - 320px) / 1120);
   letter-spacing: .05em;
@@ -178,8 +178,8 @@
 }
 
 .menu-link:hover{
-  font-family: "Jost";
-  font-weight: bold;
+  font-family: "bookmania";
+  font-weight: 900;
   font-size: calc(24px + 40 * (100vw - 320px) / 1120);
   line-height: calc(45px + 33 * (100vw - 320px) / 1120);
   letter-spacing: .05em;
@@ -310,4 +310,62 @@ label {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 2;
+}
+
+.textContainer{
+  position: absolute;
+  width: 460px;
+  left: 48%;
+  top:50%;
+  z-index: 3;
+}
+
+.longCaption{
+  font-family: "Poppins";
+  font-size: 20px;
+  letter-spacing: .035em;
+}
+.imageContainer{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+#leftCloud{
+  position: absolute;
+  width: 50%;
+  top: 100%;
+  transform: translate(0,-100%);
+  z-index: 3;
+}
+#rightCloud{
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 25%;
+  transform: translate(-100%,-100%);
+  z-index: 3;
+}
+#mainAirplane{
+  position: absolute;
+  width: 42.5%;
+  top: 120%;
+  transform: translate(0,-120%);
+  z-index: 3;
+}
+
+.fp-tableCell{
+  vertical-align: initial;
+}
+
+.subtitle2{
+  display:inline-block;
+  justify-content: center; 
+  width: 100%;
+  font-family: "Poppins";
+  font-size: calc(16px + 8 * (100vw - 320px) / 1120);
 }
