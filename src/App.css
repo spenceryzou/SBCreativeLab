@@ -402,7 +402,7 @@ label {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 800px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   #topAirplane{
     display: none;
   }
@@ -416,7 +416,7 @@ label {
   }
 
   #mainAirplane{
-    height: 30%;
+    height: 38%;
     width: auto;
     top: 100%;
     transform: translate(0, -100%);
@@ -470,17 +470,17 @@ label {
     z-index: -1;
   }
 
-  #leftCloud{
+  /* #leftCloud{
     width: 52%;
     height: auto;
-    /* right: 50%;
-    transform: translateX(-50%); */
-  }
+    right: 50%;
+    transform: translateX(-50%);
+  } */
 
-  #rightCloud{
+  /* #rightCloud{
     height: 30%;
     width: auto;
-  }
+  } */
 
   .textContainer{
     /* display: none;
