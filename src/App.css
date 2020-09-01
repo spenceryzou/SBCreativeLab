@@ -558,6 +558,111 @@ label {
   font-size: calc(10px + 10 * (100vw - 320px) / 1120);
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  #topAirplane{
+    display: none;
+  }
+
+  #leftAirplane{
+    display: none;
+  }
+
+  #rightAirplane{
+    display: none;
+  }
+
+  #mainAirplane{
+    height: 38%;
+    width: auto;
+    top: 100%;
+    transform: translate(0, -100%);
+    /* z-index: -1; */
+  }
+
+  #leftCloud{
+    height: 20%;
+    width: auto;
+  }
+
+  #rightCloud{
+    height: 30%;
+    width: auto;
+  }
+
+  .textContainer{
+    /* display: none; */
+    /* top: 20%; */
+    /* bottom: 30%; */
+    transform: translate(0, -100%) !important;
+    left: 12%;
+    max-width: 80%;
+  }
+
+  .title{
+    /* font-size: calc(10px + 9 * (100vw - 320px) / 1120); */
+  }
+
+  .longCaption{
+    font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
+}
+
+/* landscape phones */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .textContainer{
+    top:42%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) and (min-height: 500px) and (orientation: landscape) {
+  #mainAirplane{
+    /* height: 55%;
+    width: auto; */
+    height: auto;
+    width: 55%;
+    top: 100%;
+    transform: translate(0, -100%);
+    z-index: -1;
+  }
+
+  /* #leftCloud{
+    width: 52%;
+    height: auto;
+    right: 50%;
+    transform: translateX(-50%);
+  } */
+
+  /* #rightCloud{
+    height: 30%;
+    width: auto;
+  } */
+
+  .textContainer{
+    /* display: none;
+    top: 20%;
+    bottom: 30%;
+    transform: translate(0, -100%) !important;
+    max-width: 80%; */
+    left: 55%;
+    top: 60%;
+  }
+
+  .title{
+    /* font-size: calc(10px + 9 * (100vw - 320px) / 1120); */
+  }
+
+  .longCaption{
+    font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+} 
+
 .links{
   list-style: none;
   padding: 0;
@@ -591,3 +696,4 @@ label {
 .link:last-child:after{
   content: '';
 }
+
