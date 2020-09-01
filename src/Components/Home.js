@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { ReactComponent as Logo } from "./logo.svg";
 const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -73,7 +74,13 @@ export default class Home extends Component {
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
                 <div className="header">
-                    <div className="header-left"></div>
+                    <div className="header-left">
+                        <div className="logo-wrapper">
+                            <a href="/">
+                                <Logo width="100%" display="block" height="auto"/>
+                            </a>
+                        </div>
+                    </div>    
                     <div className="header-right">
                         {/* <div class="menu1 cross menu--1">
                             <input type="checkbox"></input>
@@ -160,6 +167,9 @@ export default class Home extends Component {
                                     <img id="leftCloud" src="/leftCloud.png"/>
                                     <img id="rightCloud" src="/rightCloud.png"/>
                                     <img id="mainAirplane" src="/mainAirplane.png"/>
+                                    <img id="topAirplane" src="/topAirplane.png"/>
+                                    <img id="rightAirplane" src="/rightAirplane.png"/>
+                                    <img id="leftAirplane" src="/leftAirplane.png"/>
                                 </div>
                             </div>
                             <div className="section">

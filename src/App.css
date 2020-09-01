@@ -162,7 +162,7 @@
 }
 
 .menu-text{
-  padding-top: 20vh;
+  padding-top: 24vh;
 }
 
 .menu-link{
@@ -200,18 +200,23 @@
   margin-right:5%;
   padding-top: 36px;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header-left{
+/* .header-left{
   justify-content: flex-start;
   display: inline-flex;
-  align-items: center;
   width: 50%;
-}
+} */
 .header-right{
-  justify-content: flex-end;
-  display: inline-flex;
-  align-items: center;
-  width: 50%;
+  display: inline-block;
+}
+
+.logo-wrapper{
+  width: 64px;
+  height: 64px;
+  margin-top: 16px;
 }
 
 .hamburger-circle{
@@ -315,15 +320,15 @@ label {
 
 .textContainer{
   position: absolute;
-  width: 460px;
-  left: 48%;
-  top:50%;
+  max-width: 30%;
+  left: 49%;
+  top:52%;
   z-index: 3;
 }
 
 .longCaption{
   font-family: "Poppins";
-  font-size: 20px;
+  font-size: calc(10px + 9 * (100vw - 320px) / 1120);
   letter-spacing: .035em;
 }
 .imageContainer{
@@ -352,9 +357,35 @@ label {
 }
 #mainAirplane{
   position: absolute;
-  width: 42.5%;
-  top: 120%;
-  transform: translate(0,-120%);
+  width: 40%;
+  top: 125%;
+  transform: translate(0,-125%);
+  z-index: 3;
+}
+#topAirplane{
+  position: absolute;
+  width: 13%;
+  top: 5%;
+  left: 30%;
+  transform: translate(-30%,-5%);
+  z-index: 3;
+}
+
+#rightAirplane{
+  position: absolute;
+  width: 25%;
+  top: 30%;
+  left: 80%;
+  transform: translate(-80%,-30%);
+  z-index: 3;
+}
+
+#leftAirplane{
+  position: absolute;
+  width: 13%;
+  top: 23%;
+  left: 1%;
+  transform: translate(-1%,-23%);
   z-index: 3;
 }
 
