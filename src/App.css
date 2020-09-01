@@ -364,7 +364,7 @@ a:hover .social-background-inner{
 .logo-wrapper{
   width: 64px;
   height: 64px;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .hamburger-circle{
@@ -624,7 +624,6 @@ label {
     width: 55%;
     top: 100%;
     transform: translate(0, -100%);
-    z-index: -1;
   }
 
   /* #leftCloud{

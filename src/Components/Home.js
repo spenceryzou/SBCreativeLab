@@ -36,6 +36,7 @@ export default class Home extends Component {
           console.log(menu.classList);
           window.fullpage_api.setAutoScrolling(false);
           document.documentElement.style.overflow = 'hidden';
+          document.documentElement.style.height = '100%';
         }
     }
     // handleScroll(){
