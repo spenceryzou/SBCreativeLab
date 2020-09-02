@@ -558,6 +558,21 @@ label {
   font-size: calc(10px + 10 * (100vw - 320px) / 1120);
 }
 
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .wave{
+    width: 230%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .wave{
+    /* right: 20%; */
+    /* top: 100%;
+    transform: translate(-20%, -65%); */
+    width: 180%;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   #topAirplane{
@@ -606,12 +621,19 @@ label {
   .longCaption{
     font-size: calc(10px + 9 * (100vh - 320px) / 600);
   }
+
+  .subtitle2{
+    width: 80%;
+    /* transform: translate(-16%, 0); */
+    font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
 }
 
 /* landscape phones */
 @media only screen and (max-height: 500px) and (orientation: landscape) {
   .textContainer{
     top:42%;
+    left: 130%;
   }
 }
 
@@ -646,10 +668,6 @@ label {
     max-width: 80%; */
     left: 55%;
     top: 60%;
-  }
-
-  .title{
-    /* font-size: calc(10px + 9 * (100vw - 320px) / 1120); */
   }
 
   .longCaption{
