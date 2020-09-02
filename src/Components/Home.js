@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
-import { ReactComponent as Wave } from "./flats2.svg";
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -18,25 +17,29 @@ export default class Home extends Component {
       this.state = {
         // handleMenu: this.props.handleMenu,
         wave: "",
-        delay: true,
+        menuOpen: false
       }
 
       console.log(this.props);
     }
     handleMenu() {
-        console.log('open menu');
+        this.setState(prevState => ({
+            menuOpen: !prevState.menuOpen
+        }))
+    }
+    componentDidUpdate(){
         let menu = document.getElementById("menu");
-        if(menu.classList.contains("drop")){
-          menu.classList.remove("drop");
-          console.log(menu.classList);
-          window.fullpage_api.setAutoScrolling(true);
-        }
-        else{
-          menu.classList.add("drop");
-          console.log(menu.classList);
-          window.fullpage_api.setAutoScrolling(false);
-          document.documentElement.style.overflow = 'hidden';
-          document.documentElement.style.height = '100%';
+        if(this.state.menuOpen == true){
+            console.log('open menu')
+            menu.classList.add("drop");
+            console.log(menu.classList);
+            // window.fullpage_api.setAutoScrolling(false);
+            // document.documentElement.style.overflow = 'hidden';
+            // document.documentElement.style.height = '100%';
+        }else if(this.state.menuOpen == false){
+            menu.classList.remove("drop");
+            console.log(menu.classList);
+            // window.fullpage_api.setAutoScrolling(true);
         }
     }
     // handleScroll(){
@@ -53,7 +56,7 @@ export default class Home extends Component {
     componentDidMount(){
         //window.addEventListener('scroll', this.handleScroll);
         var checkbox = document.querySelector("input[name=checkbox]");
-        checkbox.addEventListener( 'change',this.handleMenu);
+        checkbox.addEventListener( 'change',this.handleMenu.bind(this));
     }
     onLeave(origin, destination, direction) {
         console.log("Leaving section " + origin.index);
@@ -81,9 +84,6 @@ export default class Home extends Component {
     }
 
     render() {
-        let handleMenu = this.props.handleMenu;
-        console.log(handleMenu);
-
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
                 <div className="header">
@@ -118,13 +118,14 @@ export default class Home extends Component {
                     scrollingSpeed = {1000}
                     // easingcss3 = {"cubic-bezier(0.71,-0.05, 0.47, 1)"}    
                     // scrollBar = {true} 
+                    normalScrollElements = '.menu'
                     onLeave={this.onLeave.bind(this)}
                     afterLoad={this.afterLoad.bind(this)}
                     render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                            <div className="waveContainer"><Wave className={`wave ${this.state.wave}`} /></div>   
+                            <div className="waveContainer"><img src="/LongerWave.png" className={`wave ${this.state.wave}`} /></div>   
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
                                         <div style={{color: darkColor}} className="title">

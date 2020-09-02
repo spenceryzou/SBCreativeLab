@@ -454,7 +454,8 @@ label {
 .wave{
   position: absolute;
   top: 100%;
-  transform: translate(0,-65%);
+  transform: translate(0,-54%);
+  width: 100%;
 }
 .waveContainer{
   position: relative;
@@ -468,7 +469,7 @@ label {
   transition: transform 1s cubic-bezier(0.14, 0, 0.07, 1.01);
 }
 .wave-move-down{
-  transform: translate(0, -65%);
+  transform: translate(0, -54%);
   transition: transform 1s;
 }
 .ease{
@@ -643,7 +644,7 @@ label {
     /* height: 55%;
     width: auto; */
     height: auto;
-    width: 55%;
+    width: 45%;
     top: 100%;
     transform: translate(0, -100%);
   }
@@ -666,12 +667,22 @@ label {
     bottom: 30%;
     transform: translate(0, -100%) !important;
     max-width: 80%; */
-    left: 55%;
+    left: 50%;
     top: 60%;
   }
 
   .longCaption{
     font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
+  @media only screen and (min-width: 768px) and (max-width: 850px) and (min-height: 500px) and (orientation: landscape) {
+    #mainAirplane{
+      /* height: 55%;
+      width: auto; */
+      height: auto;
+      width: 55%;
+      top: 100%;
+      transform: translate(0, -100%);
+    }
   }
 }
 
