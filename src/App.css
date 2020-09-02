@@ -454,7 +454,8 @@ label {
 .wave{
   position: absolute;
   top: 100%;
-  transform: translate(0,-65%);
+  transform: translate(0,-54%);
+  width: 100%;
 }
 .waveContainer{
   position: relative;
@@ -468,7 +469,7 @@ label {
   transition: transform 1s cubic-bezier(0.14, 0, 0.07, 1.01);
 }
 .wave-move-down{
-  transform: translate(0, -65%);
+  transform: translate(0, -54%);
   transition: transform 1s;
 }
 .ease{
@@ -558,6 +559,21 @@ label {
   font-size: calc(10px + 10 * (100vw - 320px) / 1120);
 }
 
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .wave{
+    width: 230%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .wave{
+    /* right: 20%; */
+    /* top: 100%;
+    transform: translate(-20%, -65%); */
+    width: 180%;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   #topAirplane{
@@ -606,12 +622,19 @@ label {
   .longCaption{
     font-size: calc(10px + 9 * (100vh - 320px) / 600);
   }
+
+  .subtitle2{
+    width: 80%;
+    /* transform: translate(-16%, 0); */
+    font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
 }
 
 /* landscape phones */
 @media only screen and (max-height: 500px) and (orientation: landscape) {
   .textContainer{
     top:42%;
+    /* left: 130%; */
   }
 }
 
@@ -621,7 +644,7 @@ label {
     /* height: 55%;
     width: auto; */
     height: auto;
-    width: 55%;
+    width: 45%;
     top: 100%;
     transform: translate(0, -100%);
   }
@@ -644,16 +667,22 @@ label {
     bottom: 30%;
     transform: translate(0, -100%) !important;
     max-width: 80%; */
-    left: 55%;
+    left: 50%;
     top: 60%;
-  }
-
-  .title{
-    /* font-size: calc(10px + 9 * (100vw - 320px) / 1120); */
   }
 
   .longCaption{
     font-size: calc(10px + 9 * (100vh - 320px) / 600);
+  }
+  @media only screen and (min-width: 768px) and (max-width: 850px) and (min-height: 500px) and (orientation: landscape) {
+    #mainAirplane{
+      /* height: 55%;
+      width: auto; */
+      height: auto;
+      width: 55%;
+      top: 100%;
+      transform: translate(0, -100%);
+    }
   }
 }
 
