@@ -3,6 +3,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import './App.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
+import Oops from './Components/Oops'
 
 export class App extends Component {
   constructor(props){
@@ -88,6 +89,7 @@ export class App extends Component {
               {/* {this.state.display} */}
               <Route exact path="/" render={(props) => <Menu {...props} handleMenu={this.handleMenu} />}/>
               <Route exact path="/" render={(props) => <Home {...props} handleMenu={this.handleMenu} />}/>
+                <Route exact path="/oops" component={Oops} />
 
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
