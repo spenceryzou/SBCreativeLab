@@ -633,7 +633,7 @@ label {
 @media only screen and (max-height: 500px) and (orientation: landscape) {
   .textContainer{
     top:42%;
-    left: 130%;
+    /* left: 130%; */
   }
 }
 
