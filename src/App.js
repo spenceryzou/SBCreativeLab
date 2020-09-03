@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route, Switch } from "react-router-dom";
+import {Route} from "react-router-dom";
 import './App.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'

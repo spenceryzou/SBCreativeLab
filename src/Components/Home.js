@@ -15,7 +15,6 @@ export default class Home extends Component {
       super(props);
 
       this.state = {
-        // handleMenu: this.props.handleMenu,
         wave: "",
         menuOpen: false
       }
@@ -29,17 +28,13 @@ export default class Home extends Component {
     }
     componentDidUpdate(){
         let menu = document.getElementById("menu");
-        if(this.state.menuOpen == true){
+        if(this.state.menuOpen === true){
             console.log('open menu')
             menu.classList.add("drop");
             console.log(menu.classList);
-            // window.fullpage_api.setAutoScrolling(false);
-            // document.documentElement.style.overflow = 'hidden';
-            // document.documentElement.style.height = '100%';
-        }else if(this.state.menuOpen == false){
+        }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
-            // window.fullpage_api.setAutoScrolling(true);
         }
     }
     // handleScroll(){
@@ -54,7 +49,6 @@ export default class Home extends Component {
     //     section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     // }
     componentDidMount(){
-        //window.addEventListener('scroll', this.handleScroll);
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
     }
@@ -70,7 +64,7 @@ export default class Home extends Component {
         }
         if(destination.index===1){
             if(origin.index===0){
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: 1.4})
+                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: 1.2})
             }else{
                 tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .8})
             }
@@ -78,8 +72,15 @@ export default class Home extends Component {
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
+        const tl = gsap.timeline();
         if(destination.index===1){
             document.getElementById("fullpage").classList.remove("ease");
+            if(origin.index===2){
+                tl.fromTo('#scroll-cue', .4, { y: '-10', opacity: 0}, { y:'0', opacity: 1, delay: .1})
+            }
+        }
+        if(destination.index===2){
+            tl.fromTo('#scroll-cue', .4, {y: '0', opacity: 1}, { y:'-20', opacity: 0})
         }
     }
 
@@ -96,28 +97,27 @@ export default class Home extends Component {
                     </div>    
                     <div className="header-right">
                         <div className="hamburger-circle">
-                            <div class="menu1 cross menu--1">
+                            <div className="menu1 cross menu--1">
                                 <label>
                                 <input name="checkbox" type="checkbox"/>
-                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                <svg className="menuSVG" xmlns="http://www.w3.org/2000/svg" 
                                     viewBox="0 0 80 80">
-                                <circle cx="40" cy="40" r="30"/>
-                                <path class="line--1" d="M-10,30h62c13,0,6,28-4,18L25,25"/>
-                                <path class="line--1" d="M-10,30h62c13,0,6,28-4,18L25,25"/>
-                                <path class="line--2" d="M-10,40h70"/>
-                                <path class="line--2" d="M-10,40h70"/>
-                                <path class="line--3" d="M-10,50h62c13,0,6-28-4-18L25,55"/>
-                                <path class="line--3" d="M-10,50h62c13,0,6-28-4-18L25,55"/>
+                                    <circle cx="40" cy="40" r="30"/>
+                                    <path className="line--1" d="M-10,30h62c13,0,6,28-4,18L25,25"/>
+                                    <path className="line--1" d="M-10,30h62c13,0,6,28-4,18L25,25"/>
+                                    <path className="line--2" d="M-10,40h70"/>
+                                    <path className="line--2" d="M-10,40h70"/>
+                                    <path className="line--3" d="M-10,50h62c13,0,6-28-4-18L25,55"/>
+                                    <path className="line--3" d="M-10,50h62c13,0,6-28-4-18L25,55"/>
                                 </svg>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a className="scroll-cue"><span id="scroll-cue"></span></a>
                 <ReactFullpage
                     scrollingSpeed = {1000}
-                    // easingcss3 = {"cubic-bezier(0.71,-0.05, 0.47, 1)"}    
-                    // scrollBar = {true} 
                     normalScrollElements = '.menu'
                     onLeave={this.onLeave.bind(this)}
                     afterLoad={this.afterLoad.bind(this)}
@@ -125,7 +125,12 @@ export default class Home extends Component {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                            <div className="waveContainer"><img src="/LongerWave.png" className={`wave ${this.state.wave}`} /></div>   
+                                <div className="waveContainer">
+                                    <picture>
+                                        <source srcSet="/images/ucsb-creative-lab-wave.avif" type="image/avif"/>
+                                        <img alt="wave" src="/images/ucsb-creative-lab-wave.png" className={`wave ${this.state.wave}`} />
+                                    </picture>
+                                </div>   
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
                                         <div style={{color: darkColor}} className="title">
@@ -163,12 +168,12 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="imageContainer">
-                                    <img id="leftCloud" src="/leftCloud.png"/>
-                                    <img id="rightCloud" src="/rightCloud.png"/>
-                                    <img id="mainAirplane" src="/mainAirplane.png"/>
-                                    <img id="topAirplane" src="/topAirplane.png"/>
-                                    <img id="rightAirplane" src="/rightAirplane.png"/>
-                                    <img id="leftAirplane" src="/leftAirplane.png"/>
+                                    <img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/>
+                                    <img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/>
+                                    <img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/>
+                                    <img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/>
+                                    <img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/>
+                                    <img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/>
                                 </div>
                             </div>
                             <div className="section">

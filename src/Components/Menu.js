@@ -1,15 +1,8 @@
 import React, { Component } from 'react'
-const facebook = "./images/facebook.svg"
-const instagram = "./images/instagram.svg"
-const linkedin = "./images/linkedin.svg"
-const youtube = "./images/youtube.svg"
-const close = "./images/Hamburger Menu Close.svg"
  
 export default class Home extends Component {
 
     render() {
-        let closeMenu = this.props.closeMenu;
-
         return (
               <div className="menu" id="menu">
                 <div className="menu-container">
