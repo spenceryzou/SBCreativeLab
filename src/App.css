@@ -177,6 +177,7 @@ a:active, a:hover{
   margin-left:auto;
   margin-right: auto;
   height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .menu-text{
@@ -503,6 +504,7 @@ label {
   width: 131.125vw;
   left: -15.625vw;
   height: 100vh;
+  height: -webkit-fill-available;
   z-index: 4;
 }
 .wave-move-up{
@@ -534,6 +536,7 @@ label {
   position: relative;
   width: 100vw;
   height: 100vh;
+  height: -webkit-fill-available;
   overflow: hidden;
   top:0;
   left:0;
