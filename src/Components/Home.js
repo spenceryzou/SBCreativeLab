@@ -7,6 +7,7 @@ let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
 let darkColor="#356A69"
 const gsap = window.gsap;
+// var innerHeight = require('ios-inner-height');
 
  
 export default class Home extends Component {
@@ -19,17 +20,17 @@ export default class Home extends Component {
         menuOpen: false
         }
 
-        this.resetScroll = () =>{
-            document.documentElement.scrollTop = -1;
-            this.resize();
-        }
-        this.resize = () => {
-            var height = window.innerHeight;
-            if(window.innerHeight !== height) {
-                height = window.innerHeight;
-                document.getElementsByClassName('.section').css('height', height + 'px');
-            }
-        }
+        // this.resetScroll = () =>{
+        //     document.documentElement.scrollTop = -1;
+        //     this.resize();
+        // }
+        // this.resize = () => {
+        //     var height = window.innerHeight;
+        //     if(window.innerHeight !== height) {
+        //         height = window.innerHeight;
+        //         document.getElementsByClassName('.section').css('height', height + 'px');
+        //     }
+        // }
     }
     handleMenu() {
         this.setState(prevState => ({
@@ -63,9 +64,9 @@ export default class Home extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        this.resetScroll();
-        this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
-        window.addEventListener('resize', this.resize());
+        // window.addEventListener('resize', this.resize());
+        // this.resetScroll();
+        // this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
     }
     onLeave(origin, destination, direction) {
         console.log("Leaving section " + origin.index);
