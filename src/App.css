@@ -764,7 +764,7 @@ label {
   content: '';
 }
 
-@supports (-webkit-touch-callout: none){
+/* @supports (-webkit-touch-callout: none){
   @media only screen and (orientation: portrait){
     .menu-container {
       height: -webkit-fill-available;
@@ -776,4 +776,4 @@ label {
       height: -webkit-fill-available;
     }
   }
-}
+} */

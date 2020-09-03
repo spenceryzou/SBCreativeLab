@@ -7,7 +7,7 @@ let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
 let darkColor="#356A69"
 const gsap = window.gsap;
-// var innerHeight = require('ios-inner-height');
+var iosInnerHeight = require('ios-inner-height');
 
  
 export default class Home extends Component {
@@ -17,7 +17,8 @@ export default class Home extends Component {
 
         this.state = {
         wave: "",
-        menuOpen: false
+        menuOpen: false,
+        innerHeight: "100vh"
         }
 
         // this.resetScroll = () =>{
@@ -64,9 +65,15 @@ export default class Home extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
+        this.interval = setInterval(function () {
+            this.setState({innerHeight: iosInnerHeight() + 'px'}) 
+          }, 500);
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
         // this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
+    }
+    componentWillUnmount() {
+        clearInterval(this.interval);
     }
     onLeave(origin, destination, direction) {
         console.log("Leaving section " + origin.index);
@@ -141,7 +148,7 @@ export default class Home extends Component {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                                <div className="waveContainer">
+                                <div style={{height: this.state.innerHeight}} className="waveContainer">
                                     <picture>
                                         <source srcSet="/images/ucsb-creative-lab-wave.avif" type="image/avif"/>
                                         <img alt="wave" src="/images/ucsb-creative-lab-wave.png" className={`wave ${this.state.wave}`} />
@@ -183,7 +190,7 @@ export default class Home extends Component {
                                         and resources for student designers.
                                     </div>
                                 </div>
-                                <div className="imageContainer">
+                                <div style={{height: this.state.innerHeight}} className="imageContainer">
                                     <img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/>
                                     <img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/>
                                     <img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/>

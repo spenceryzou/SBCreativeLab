@@ -1,7 +1,22 @@
 import React, { Component } from 'react'
+var iosInnerHeight = require('ios-inner-height');
  
 export default class Home extends Component {
+    constructor(props){
+      super(props);
 
+      this.state = {
+         innerHeight: "100vh"
+      }
+    }
+    componentDidMount(){
+      this.interval = setInterval(function () {
+          this.setState({innerHeight: iosInnerHeight() + 'px'}) 
+        }, 500);
+    }
+    componentWillUnmount() {
+      clearInterval(this.interval);
+    }
     render() {
         return (
               <div className="menu" id="menu">
