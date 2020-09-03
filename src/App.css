@@ -617,6 +617,17 @@ label {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
+  .header{
+    position: fixed;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top: 24px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   #topAirplane{
     display: none;
   }
