@@ -10,8 +10,9 @@ export default class Home extends Component {
       }
     }
     componentDidMount(){
+      var self = this;
       this.interval = setInterval(function () {
-          this.setState({innerHeight: iosInnerHeight() + 'px'}) 
+          self.setState({innerHeight: iosInnerHeight() + 'px'}) 
         }, 500);
     }
     componentWillUnmount() {
