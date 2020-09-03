@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import Typewriter from 'typewriter-effect';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
+import Div100vh from 'react-div-100vh';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
 let darkColor="#356A69"
 const gsap = window.gsap;
-var iosInnerHeight = require('ios-inner-height');
-
  
 export default class Home extends Component {
     
@@ -18,7 +17,6 @@ export default class Home extends Component {
         this.state = {
         wave: "",
         menuOpen: false,
-        innerHeight: "100vh"
         }
 
         // this.resetScroll = () =>{
@@ -63,19 +61,13 @@ export default class Home extends Component {
     // }
 
     componentDidMount(){
-        var self = this;
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        this.interval = setInterval(function () {
-            self.setState({innerHeight: iosInnerHeight() + 'px'}) 
-          }, 500);
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
         // this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
     }
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
+
     onLeave(origin, destination, direction) {
         console.log("Leaving section " + origin.index);
         const tl = gsap.timeline();
@@ -149,12 +141,12 @@ export default class Home extends Component {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                                <div style={{height: this.state.innerHeight}} className="waveContainer">
+                                <Div100vh className="waveContainer">
                                     <picture>
                                         <source srcSet="/images/ucsb-creative-lab-wave.avif" type="image/avif"/>
                                         <img alt="wave" src="/images/ucsb-creative-lab-wave.png" className={`wave ${this.state.wave}`} />
                                     </picture>
-                                </div>   
+                                </Div100vh> 
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
                                         <div style={{color: darkColor}} className="title">
@@ -191,14 +183,14 @@ export default class Home extends Component {
                                         and resources for student designers.
                                     </div>
                                 </div>
-                                <div style={{height: this.state.innerHeight}} className="imageContainer">
+                                <Div100vh className="imageContainer">
                                     <img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/>
                                     <img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/>
                                     <img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/>
                                     <img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/>
                                     <img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/>
                                     <img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/>
-                                </div>
+                                </Div100vh>
                             </div>
                             <div className="section">
                                 <div className="content-body-text">

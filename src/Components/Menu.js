@@ -1,27 +1,11 @@
-import React, { Component } from 'react'
-var iosInnerHeight = require('ios-inner-height');
+import React, { Component } from 'react';
+import Div100vh from 'react-div-100vh';
  
 export default class Home extends Component {
-    constructor(props){
-      super(props);
-
-      this.state = {
-         innerHeight: "100vh"
-      }
-    }
-    componentDidMount(){
-      var self = this;
-      this.interval = setInterval(function () {
-          self.setState({innerHeight: iosInnerHeight() + 'px'}) 
-        }, 500);
-    }
-    componentWillUnmount() {
-      clearInterval(this.interval);
-    }
     render() {
         return (
               <div className="menu" id="menu">
-                <div className="menu-container">
+                <Div100vh className="menu-container">
                   <div className="bars">
                     <div className="column"></div>
                     <div className="column"></div>
@@ -84,7 +68,7 @@ export default class Home extends Component {
                         </div>
                       </a>
                   </div>
-                </div>
+                </Div100vh>
               </div>
         )
     }
