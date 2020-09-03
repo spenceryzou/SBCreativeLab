@@ -12,20 +12,31 @@ const gsap = window.gsap;
 export default class Home extends Component {
     
     constructor(props){
-      super(props);
+        super(props);
 
-      this.state = {
+        this.state = {
         wave: "",
         menuOpen: false
-      }
+        }
 
-      console.log(this.props);
+        this.resetScroll = () =>{
+            document.documentElement.scrollTop = -1;
+            this.resize();
+        }
+        this.resize = () => {
+            var height = window.innerHeight;
+            if(window.innerHeight !== height) {
+                height = window.innerHeight;
+                document.getElementsByClassName('.section').css('height', height + 'px');
+            }
+        }
     }
     handleMenu() {
         this.setState(prevState => ({
             menuOpen: !prevState.menuOpen
         }))
     }
+    
     componentDidUpdate(){
         let menu = document.getElementById("menu");
         if(this.state.menuOpen === true){
@@ -48,9 +59,13 @@ export default class Home extends Component {
     //     var b = rgbArray[2] + (targetArray[2]-rgbArray[2])*(scrollPercent);
     //     section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     // }
+
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
+        this.resetScroll();
+        this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
+        window.addEventListener('resize', this.resize());
     }
     onLeave(origin, destination, direction) {
         console.log("Leaving section " + origin.index);
