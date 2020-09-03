@@ -294,7 +294,6 @@ i.fa{
   overflow: hidden;
   top: 0;
   left: 0;
-  border-radius: 0;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -618,15 +617,7 @@ label {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .header{
-    position: fixed;
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
     padding-top: 24px;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   #topAirplane{
     display: none;
@@ -773,27 +764,16 @@ label {
   content: '';
 }
 
-@supports (-webkit-touch-callout: none) and (orientation: portrait){
-  .menu-container {
-    width: 90%;
-    margin-left:auto;
-    margin-right: auto;
-    height: -webkit-fill-available;
-  }
-  .imageContainer{
-    position: relative;
-    width: 100vw;
-    height: -webkit-fill-available;
-    overflow: hidden;
-    top:0;
-    left:0;
-    z-index: 3;
-  }
-  .waveContainer{
-    position: relative;
-    width: 131.125vw;
-    left: -15.625vw;
-    height: -webkit-fill-available;
-    z-index: 4;
+@supports (-webkit-touch-callout: none){
+  @media only screen and (orientation: portrait){
+    .menu-container {
+      height: -webkit-fill-available;
+    }
+    .imageContainer{
+      height: -webkit-fill-available;
+    }
+    .waveContainer{
+      height: -webkit-fill-available;
+    }
   }
 }
