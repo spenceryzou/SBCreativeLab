@@ -17,9 +17,9 @@ export default class Oops extends Component {
                             oops!
                         </div>
                         <div className="subtitle2">
-                            we're still working on this page...
+                            sorry about that, this page is coming soon.
                             <br />
-                            <Link to="/">(back to home)</Link>
+                            <Link to="/">(take me home pls)</Link>
                         </div>
                     </div>
                 </div>    
