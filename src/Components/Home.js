@@ -66,7 +66,7 @@ export default class Home extends Component {
         var self = this;
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        this.interval = setInterval(function (this) {
+        this.interval = setInterval(function () {
             self.setState({innerHeight: iosInnerHeight() + 'px'}) 
           }, 500);
         // window.addEventListener('resize', this.resize());
