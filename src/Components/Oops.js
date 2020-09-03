@@ -11,7 +11,7 @@ export default class Oops extends Component {
 
         return (
             <div className="section">
-                <div className="content-body-text">
+                <div style={{left: '0px', top: '0px', backgroundColor: backgroundColor, width: '100%', height: '100%'}} className="content-body-text">
                     <div className="center-container" id="home">            
                         <div style={{color: darkColor}} className="title">
                             oops!
