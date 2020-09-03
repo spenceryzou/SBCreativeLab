@@ -10,7 +10,6 @@ export class App extends Component {
     super(props);
 
     this.state = {
-    display: [<Route exact path="/" render={(props) => <Home {...props} handleMenu={this.handleMenu} />}/>],
     }
 
     // this.handleMenu = this.handleMenu.bind(this);
@@ -87,10 +86,9 @@ export class App extends Component {
         </head>
           <div className="main-body">
               {/* {this.state.display} */}
-              <Route exact path="/" render={(props) => <Menu {...props} handleMenu={this.handleMenu} />}/>
-              <Route exact path="/" render={(props) => <Home {...props} handleMenu={this.handleMenu} />}/>
-                <Route exact path="/oops" component={Oops} />
-
+              <Route exact path="/" render={(props) => <Menu {...props}/>}/>
+              <Route exact path="/" render={(props) => <Home {...props}/>}/>
+              <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
