@@ -531,7 +531,7 @@ label {
   letter-spacing: .035em;
 }
 .imageContainer{
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
