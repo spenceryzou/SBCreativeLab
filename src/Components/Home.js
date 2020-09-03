@@ -115,7 +115,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <a className="scroll-cue"><span id="scroll-cue"></span></a>
+                <span className="scroll-cue"><span id="scroll-cue"></span></span>
                 <ReactFullpage
                     scrollingSpeed = {1000}
                     normalScrollElements = '.menu'

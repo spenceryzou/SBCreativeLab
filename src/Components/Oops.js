@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 let backgroundColor="#F7FDF4";
-let primaryColor="#1BB994";
 let darkColor="#356A69";
 
 export default class Oops extends Component {

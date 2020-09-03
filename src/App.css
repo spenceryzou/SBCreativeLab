@@ -147,7 +147,7 @@ a:hover{
 }
 .menu.drop .menu-link {
   opacity: 1;
-  transition: opacity 500ms cubic-bezier(0.8, 0, 0.55, 0.94) 500ms, text-shadow 150ms ease;
+  transition: opacity 500ms cubic-bezier(0.8, 0, 0.55, 0.94) 500ms;
 }
 .bars{
   /* width: 100%;
@@ -222,6 +222,7 @@ a:hover{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   background-position: 0% 200%;
   animation-name: exitText;
   animation-duration: 300ms;
@@ -250,43 +251,6 @@ a:hover{
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.5,0,.5,1);
 }
-
-/* .menu-link span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  transform: translateY(-100%);
-  transition: transform 275ms ease;
-  transform-origin: center top;
-}
-.menu-link span::before {
-  display: inline-block;
-  content: attr(data-content);
-  color: #364262;
-  transform: translateY(100%);
-  transition: transform 275ms ease;
-  transform-origin: center top;
-  
-}
-.menu-link:hover span {
-  transform: translateY(0);
-  transform-origin: center bottom;
-}
-.menu-link:hover span::before {
-  transform: translateY(0);
-  transform-origin: center bottom;
-} */
-
-/* .menu-link:hover{
-  font-family: "bookmania";
-  font-weight: 900;
-  font-size: calc(24px + 40 * (100vw - 320px) / 1120);
-  line-height: calc(45px + 33 * (100vw - 320px) / 1120);
-  letter-spacing: .05em;
-  cursor: pointer;
-  text-shadow: -1px -1px 0 #364262, 1px -1px 0 #364262, -1px 1px 0 #364262, 1px 1px 0 #364262;
-} */
 
 .fa {
   font-size: 32px;
@@ -373,10 +337,10 @@ a:hover .social-background-inner{
   height: 64px;
   margin-top: 10px;
 }
-a.scroll-cue {
+span.scroll-cue {
   padding-top: 60px;
 }
-a.scroll-cue span:after {
+span.scroll-cue span:after {
   content: "";
   position: fixed;
   top: 0%;
@@ -389,7 +353,7 @@ a.scroll-cue span:after {
   box-sizing: border-box;
   z-index: 2;
 }
-a.scroll-cue span {
+span.scroll-cue span {
   position: fixed;
   top: 95%;
   left: 50%;
@@ -559,7 +523,7 @@ label {
   max-width: 30%;
   left: 49%;
   top:52%;
-  z-index: 3;
+  z-index: 5;
 }
 
 .longCaption{
