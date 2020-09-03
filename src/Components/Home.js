@@ -63,10 +63,11 @@ export default class Home extends Component {
     // }
 
     componentDidMount(){
+        var self = this;
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        this.interval = setInterval(function () {
-            this.setState({innerHeight: iosInnerHeight() + 'px'}) 
+        this.interval = setInterval(function (this) {
+            self.setState({innerHeight: iosInnerHeight() + 'px'}) 
           }, 500);
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
