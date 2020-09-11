@@ -6,12 +6,12 @@ export default class Home extends Component {
         return (
               <div className="menu" id="menu">
                 <Div100vh className="menu-container">
-                  <div className="bars">
+                  {/* <div className="bars">
                     <div className="column"></div>
                     <div className="column"></div>
                     <div className="column"></div>
                     <div className="column"></div>
-                  </div>
+                  </div> */}
                   <div className="menu-text">
                       <div>
                         <a href="/oops" data-content="about" className="menu-link">
