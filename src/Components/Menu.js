@@ -5,7 +5,7 @@ export default class Home extends Component {
     render() {
         return (
               <div className="menu" id="menu">
-                <Div100vh className="menu-container">
+                <div className="menu-container">
                   {/* <div className="bars">
                     <div className="column"></div>
                     <div className="column"></div>
@@ -68,7 +68,7 @@ export default class Home extends Component {
                         </div>
                       </a>
                   </div>
-                </Div100vh>
+                </div>
               </div>
         )
     }

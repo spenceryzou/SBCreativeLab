@@ -1,6 +1,8 @@
 @import url("https://use.typekit.net/gyk8zus.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+.content{
+  height: auto;
+}
 .title{
   font-family: "bookmania", sans-serif;
   font-weight: 900;
@@ -176,7 +178,7 @@ a:active, a:hover{
   width: 90%;
   margin-left:auto;
   margin-right: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu-text{
@@ -510,7 +512,7 @@ label {
   position: relative;
   width: 131.125vw;
   left: -15.625vw;
-  height: 100vh;
+  height: 100%;
   z-index: 4;
 }
 .wave-move-up{
@@ -540,8 +542,8 @@ label {
 }
 .imageContainer{
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   top:0;
   left:0;
@@ -789,5 +791,5 @@ label {
 } */
 #absolute{
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }

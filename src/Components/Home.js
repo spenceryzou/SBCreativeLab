@@ -67,20 +67,20 @@ export default class Home extends Component {
         var waveParallax = document.getElementById('waveParallax');
         var parallaxInstance = new Parallax(waveParallax, {
         relativeInput: true,
-        frictionX: .05,
-        frictionY: .05
+        frictionX: .075,
+        frictionY: .075
         });
         var scene = document.getElementById('scene');
         var parallaxInstance1 = new Parallax(scene, {
         relativeInput: true,
-        frictionX: .05,
-        frictionY: .05
+        frictionX: .075,
+        frictionY: .075
         });
         var mainPlane = document.getElementById('mainPlane');
         var parallaxInstance2 = new Parallax(mainPlane, {
             relativeInput: true,
-            frictionX: .05,
-            frictionY: .05
+            frictionX: .075,
+            frictionY: .075
             });
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
@@ -160,14 +160,14 @@ export default class Home extends Component {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                                <Div100vh id="waveParallax" className="waveContainer">
+                                <div id="waveParallax" className="waveContainer">
                                     <div id="absolute">
                                     <picture>
-                                        <source srcSet="/images/WaveShorterResize.avif" type="image/avif"/>
-                                        <img alt="wave" src="/images/WaveShorterResize.png" className={`wave ${this.state.wave}`} />
+                                        <source srcSet="/images/ucsb-creative-lab-wave.avif" type="image/avif"/>
+                                        <img alt="wave" src="/images/ucsb-creative-lab-wave.png" className={`wave ${this.state.wave}`} />
                                     </picture>
                                     </div>
-                                </Div100vh> 
+                                </div> 
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
                                         <div style={{color: darkColor}} className="title">
@@ -204,7 +204,7 @@ export default class Home extends Component {
                                         and resources for student designers.
                                     </div>
                                 </div>
-                                <Div100vh id="scene" className="imageContainer">
+                                <div id="scene" className="imageContainer">
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/></div>
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/></div>
                                     <div data-invert-x="false" data-invert-y="false" id="mainPlane" className="imageContainer">
@@ -212,7 +212,7 @@ export default class Home extends Component {
                                     <div data-depth=".16" id="absolute"><img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/></div>
                                     <div data-depth=".1"id="absolute"><img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/></div>
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
-                                </Div100vh>
+                                </div>
                             </div>
                             <div className="section">
                                 <div className="content-body-text">
