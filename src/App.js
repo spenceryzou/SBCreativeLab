@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Oops from './Components/Oops'
+import About from './Components/About'
 
 export class App extends Component {
   constructor(props){
@@ -89,6 +90,7 @@ export class App extends Component {
               <Route exact path="/" render={(props) => <Menu {...props}/>}/>
               <Route exact path="/" render={(props) => <Home {...props}/>}/>
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
+              <Route exact path="/about" render={(props) => <About {...props}/>}/>
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>

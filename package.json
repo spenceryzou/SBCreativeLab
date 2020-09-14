@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "hex-rgb": "^4.1.0",
     "ios-inner-height": "^1.1.1",
+    "parallax-js": "^3.1.0",
     "react": "^16.13.1",
     "react-div-100vh": "^0.5.0",
     "react-dom": "^16.13.1",

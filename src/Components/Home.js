@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
+import Parallax from 'parallax-js';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -63,6 +64,24 @@ export default class Home extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
+        var waveParallax = document.getElementById('waveParallax');
+        var parallaxInstance = new Parallax(waveParallax, {
+        relativeInput: true,
+        frictionX: .075,
+        frictionY: .075
+        });
+        var scene = document.getElementById('scene');
+        var parallaxInstance1 = new Parallax(scene, {
+        relativeInput: true,
+        frictionX: .075,
+        frictionY: .075
+        });
+        var mainPlane = document.getElementById('mainPlane');
+        var parallaxInstance2 = new Parallax(mainPlane, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .075
+            });
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
         // this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar
@@ -80,9 +99,9 @@ export default class Home extends Component {
         }
         if(destination.index===1){
             if(origin.index===0){
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: 1.2})
+                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
             }else{
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .8})
+                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
             }
         }
     }
@@ -141,12 +160,14 @@ export default class Home extends Component {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                                <Div100vh className="waveContainer">
+                                <div id="waveParallax" className="waveContainer">
+                                    <div id="absolute">
                                     <picture>
                                         <source srcSet="/images/ucsb-creative-lab-wave.avif" type="image/avif"/>
                                         <img alt="wave" src="/images/ucsb-creative-lab-wave.png" className={`wave ${this.state.wave}`} />
                                     </picture>
-                                </Div100vh> 
+                                    </div>
+                                </div> 
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
                                         <div style={{color: darkColor}} className="title">
@@ -183,14 +204,15 @@ export default class Home extends Component {
                                         and resources for student designers.
                                     </div>
                                 </div>
-                                <Div100vh className="imageContainer">
-                                    <img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/>
-                                    <img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/>
-                                    <img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/>
-                                    <img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/>
-                                    <img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/>
-                                    <img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/>
-                                </Div100vh>
+                                <div id="scene" className="imageContainer">
+                                    <div data-depth=".02" id="absolute"><img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/></div>
+                                    <div data-depth=".02" id="absolute"><img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/></div>
+                                    <div data-invert-x="false" data-invert-y="false" id="mainPlane" className="imageContainer">
+                                    <div data-depth=".04" id="absolute"><img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/></div></div>
+                                    <div data-depth=".16" id="absolute"><img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/></div>
+                                    <div data-depth=".1"id="absolute"><img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/></div>
+                                    <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
+                                </div>
                             </div>
                             <div className="section">
                                 <div className="content-body-text">
