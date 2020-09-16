@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import PictureHover from './PictureHover';
 import { map, lerp, clamp, getMousePos } from './utils';
+import ReactGA from 'react-ga'
 
 const gsap = window.gsap;
 let backgroundColor="#F7FDF4";
@@ -11,6 +12,10 @@ export default class Oops extends Component {
     constructor(props){
         super(props);
 
+    }
+    initializeReactGA() {
+        ReactGA.initialize('UA-178117149-1');
+        ReactGA.pageview('/oops');
     }
     componentDidMount(){
         this.DOM = document.body;
@@ -29,6 +34,7 @@ export default class Oops extends Component {
         // initialize the MenuItems
         [...this.DOM.menuItems].forEach((item, pos) => this.menuItems.push(new PictureHover(item, pos, this.animatableProperties)));
         this.showMenuItems();
+        this.initializeReactGA();
     }
     showMenuItems() {
         gsap.to(this.menuItems.map(item => item.DOM.textInner), {

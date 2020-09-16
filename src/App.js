@@ -5,6 +5,7 @@ import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Oops from './Components/Oops'
 import About from './Components/About'
+import ReactGA from 'react-ga'
 
 export class App extends Component {
   constructor(props){

@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
+import ReactGA from 'react-ga';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -37,7 +38,10 @@ export default class Home extends Component {
             menuOpen: !prevState.menuOpen
         }))
     }
-    
+    initializeReactGA() {
+        ReactGA.initialize('UA-178117149-1');
+        ReactGA.pageview('/');
+    }
     componentDidUpdate(){
         let menu = document.getElementById("menu");
         if(this.state.menuOpen === true){
@@ -82,6 +86,7 @@ export default class Home extends Component {
             frictionX: .075,
             frictionY: .075
             });
+        this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
         // this.interval = setInterval(this.resetScroll(), 500); // Don't lower more than 500ms, otherwise there will be animation-problems with the  Safari toolbar

@@ -819,3 +819,9 @@ label {
   background-size: cover;
   background-position: 50% 50%;
 }
+
+@supports (-webkit-touch-callout: none) {
+  .hover-reveal {
+    display: none;
+  }
+}
