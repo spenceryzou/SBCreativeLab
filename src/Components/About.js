@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
+import Menu from './Menu';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -57,6 +58,7 @@ export default class Home extends Component {
     render() {
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
+                <Menu/>
                 <div className="header">
                     <div className="header-left">
                         <div className="logo-wrapper">
@@ -85,8 +87,20 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="section-1">
-
+                <div className="about-section-1">
+                    <div className="center-image">
+                        <img alt="paper plane" src="/images/left-airplane.png"/>
+                    </div>          
+                    <div style={{color: darkColor}} className="title">
+                        Who We Are 
+                    </div>
+                    <div className="subtitle">
+                        We’re a group of students dedicated to cultivating a creative space that fosters 
+                        opportunity and growth across various design disciplines within UCSB. Through hosting 
+                        workshops, curating resources, and promoting design challenges, we hope to provide 
+                        accessible opportunities for budding designers to learn and develop their skills in their 
+                        creative journeys!
+                    </div>
                 </div>
             </div>
         )

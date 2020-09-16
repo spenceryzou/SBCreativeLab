@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
+import Menu from './Menu';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -122,6 +123,7 @@ export default class Home extends Component {
     render() {
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
+                <Menu/>
                 <div className="header">
                     <div className="header-left">
                         <div className="logo-wrapper">

@@ -14,7 +14,7 @@ export default class Home extends Component {
                   </div> */}
                   <div className="menu-text">
                       <div>
-                        <a href="/oops" data-content="about" className="menu-link">
+                        <a href="/about" data-content="about" className="menu-link">
                         about
                         </a>
                       </div>
