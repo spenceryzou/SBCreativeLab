@@ -17,6 +17,10 @@ export class App extends Component {
     // this.handleMenu = this.handleMenu.bind(this);
     // this.closeMenu = this.closeMenu.bind(this);
   }
+  initializeReactGA() {
+    ReactGA.initialize('UA-178117149-1');
+    ReactGA.pageview('/oops');
+  }
 
   // handleMenu() {
   //   console.log('open menu');
@@ -76,7 +80,9 @@ export class App extends Component {
 
   //   // return promise;
   // }
-
+  componentDidMount(){
+    this.initializeReactGA();
+  }
   
   render() {
 
