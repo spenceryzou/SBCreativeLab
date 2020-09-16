@@ -19,7 +19,7 @@ export class App extends Component {
   }
   initializeReactGA() {
     ReactGA.initialize('UA-178117149-1');
-    ReactGA.pageview('/oops');
+    ReactGA.pageview('/app');
   }
 
   // handleMenu() {
