@@ -86,6 +86,21 @@ export default class Home extends Component {
             frictionX: .075,
             frictionY: .075
             });
+
+        var uiuxScene = document.getElementById('uiuxScene');
+        var parallaxInstance3 = new Parallax(uiuxScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+
+        var illusScene = document.getElementById('illusScene');
+        var parallaxInstance4 = new Parallax(illusScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+
         this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
@@ -217,6 +232,51 @@ export default class Home extends Component {
                                     <div data-depth=".16" id="absolute"><img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/></div>
                                     <div data-depth=".1"id="absolute"><img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/></div>
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="leftTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        Graphic Design
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Communicate your visual identity.
+                                    </div>
+                                </div>
+                                <div id="graphScene" className="imageContainer">
+                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                    <div data-depth=".0.8" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="rightTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        UI/UX
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Build exciting user experiences.
+                                    </div>
+                                </div>
+                                <div id="uiuxScene" className="imageContainer">
+                                    <div id="absolute"><img alt="phone" id="phone" src="/images/phone.png"/></div>
+                                    <div data-depth=".02" id="absolute"><img alt="pop up windows" id="phonePopups" src="/images/popup.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="plane" id="phonePlane" src="/images/phone-plane.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="leftTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        Illustration
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Bring concepts and stories to life.
+                                    </div>
+                                </div>
+                                <div id="illusScene" className="imageContainer">
+                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
                                 </div>
                             </div>
                             <div className="section">

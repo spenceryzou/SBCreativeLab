@@ -14,72 +14,11 @@ export class App extends Component {
     this.state = {
     }
 
-    // this.handleMenu = this.handleMenu.bind(this);
-    // this.closeMenu = this.closeMenu.bind(this);
   }
   initializeReactGA() {
     ReactGA.initialize('UA-178117149-1');
     ReactGA.pageview('/app');
   }
-
-  // handleMenu() {
-  //   console.log('open menu');
-  //   let menu = document.getElementById("menu");
-  //   if(menu.classList.contains("drop")){
-  //     menu.classList.remove("drop");
-  //     console.log(menu.classList);
-  //     // document.documentElement.style.overflow = 'scroll';
-  //     document.body.scroll = "yes";
-  //   }
-  //   else{
-  //     menu.classList.add("drop");
-  //     console.log(menu.classList);
-  //     // document.documentElement.style.overflow = 'hidden';
-  //     document.body.scroll = "no";
-  //   }
-  //   //menu.classList.remove("rise");
-
-  //   // let home = document.getElementById("home");
-  //   // home.style.animation = "rise";
-  //   // // home.style.marginTop = "100vh";
-  //   // let hamIcon = document.getElementById("hamburger-icon");
-  //   // hamIcon.style.marginTop = "100vh";
-  // }
-
-  // closeMenu() {
-  //   let menu = document.getElementById("menu");
-
-  //   menu.classList.remove("drop");
-  //   menu.classList.add("rise");
-  //   menu.classList.add("hidden");
-  // }
-
-  // async closeMenu() {
-  //   console.log('close menu');
-
-  //   await this.hideMenu();
-
-  //   // this.hideMenu().then(() => {
-  //   //   let home = document.getElementById("home");
-  //   //   home.style.marginTop = "unset";
-  //   //   let hamIcon = document.getElementById("hamburger-icon");
-  //   //   hamIcon.style.marginTop = "unset";
-  //   // })
-  // }
-
-  // closeMenu() {
-  //   // let promise = new Promise((resolve, reject) => {
-  //     let menu = document.getElementById("menu");
-
-  //     menu.classList.remove("drop");
-  //     menu.classList.add("rise");
-  //     menu.classList.add("hidden");
-
-  //     // resolve("menu hidden");
-  //   // })
-
-  //   // return promise;
-  // }
   componentDidMount(){
     this.initializeReactGA();
   }

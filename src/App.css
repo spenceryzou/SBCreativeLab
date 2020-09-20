@@ -535,6 +535,28 @@ label {
   z-index: 5;
 }
 
+.leftTextContainer{
+    position: absolute;
+    max-width: 25%;
+    left: 15%;
+    top:50%;
+    z-index: 5;
+}
+
+.rightTextContainer{
+    position: absolute;
+    max-width: 25%;
+    left: 60%;
+    top:50%;
+    z-index: 5;
+}
+
+.shortCaption{
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 9 * (100vw - 320px) / 600);
+    letter-spacing: .035em;
+}
+
 .longCaption{
   font-family: "Poppins", sans-serif;
   font-size: calc(10px + 9 * (100vw - 320px) / 1120);
@@ -599,6 +621,60 @@ label {
   z-index: 3;
 }
 
+#book{
+    position: absolute;
+    width: 55%;
+    top: 33%;
+    left: 100%;
+    transform: translate(-100%,-33%);
+    z-index: 1;
+}
+
+#bookCloud{
+    position: absolute;
+    width: 20%;
+    top: 35%;
+    left: 93%;
+    transform: translate(-93%,-35%);
+    z-index: 2;
+}
+
+#bookPlanes{
+    position: absolute;
+    width: 20%;
+    top: 33%;
+    left: 65%;
+    transform: translate(-65%,-33%);
+    z-index: 3;
+}
+
+#phone{
+    position: absolute;
+    width: 55%;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-100%);
+    z-index: -1;
+}
+
+#phonePopups{
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%,-50%);
+    z-index: 2;
+}
+
+#phonePlane{
+    position: absolute;
+    width: 25%;
+    top: 25%;
+    left: 0%;
+    transform: translate(-0%,-25%);
+    z-index: 3;
+}
+
 .fp-tableCell{
   vertical-align: initial;
 }
@@ -661,6 +737,68 @@ label {
     width: auto;
   }
 
+
+#book{
+    position: absolute;
+    width: unset;
+    height: 60%;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    z-index: -1;
+}
+
+#bookCloud{
+    position: absolute;
+    width: unset;
+    height: 10%;
+    top: 60%;
+    left: 93%;
+    transform: translate(-93%,-60%);
+    z-index: 2;
+}
+
+#bookPlanes{
+    position: absolute;
+    width: unset;
+    height: 15%;
+    top: 63%;
+    left: 33%;
+    transform: translate(-33%,-63%);
+    z-index: 3;
+}
+
+#phone{
+    position: absolute;
+    width: unset;
+    height: 45%;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-100%);
+    z-index: -1;
+}
+
+#phonePopups{
+    display: none;
+    position: absolute;
+    width: unset;
+    height: 20%;
+    top: 75%;
+    /* left: 70%; */
+    transform: translate(-70%,-75%);
+    z-index: 3;
+}
+
+#phonePlane{
+    position: absolute;
+    width: unset;
+    height: 20%;
+    top: 70%;
+    left: 0%;
+    transform: translate(-0%,-70%);
+    z-index: 2;
+}
+
   .textContainer{
     /* display: none; */
     /* top: 20%; */
@@ -668,6 +806,22 @@ label {
     transform: translate(0, -100%) !important;
     left: 12%;
     max-width: 80%;
+  }
+
+  .leftTextContainer{
+    transform: translate(0, -200%) !important;
+    left: 12%;
+    max-width: 80%;
+  }
+
+  .rightTextContainer{
+    transform: translate(0, -250%) !important;
+    left: 8%;
+    max-width: 90%;
+  }
+
+  .shortCaption{
+    font-size: calc(10px + 9 * (100vh - 320px) / 300);
   }
 
   .longCaption{
