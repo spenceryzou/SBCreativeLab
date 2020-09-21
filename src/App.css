@@ -651,9 +651,9 @@ label {
 #phone{
     position: absolute;
     width: 55%;
-    top: 13%;
+    top: 100%;
     left: 0%;
-    /* transform: translate(0%,0%); */
+    transform: translate(0%,-100%);
     z-index: -1;
 }
 
