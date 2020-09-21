@@ -53,6 +53,32 @@ export default class Home extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
+        // the animation to use
+//         const tl = gsap.timeline({paused: true});
+//         tl.from("h1", {scale: 0.7, autoAlpha: 0});
+
+//         // The start and end positions in terms of the page scroll
+//         const startY = innerHeight / 10;
+//         const finishDistance = innerHeight / 5;
+
+// // Listen to the scroll event
+// document.addEventListener("scroll", function() {
+//   // Prevent the update from happening too often (throttle the scroll event)
+//   if (!requestId) {
+//     requestId = requestAnimationFrame(update);
+//   }
+// });
+
+// update();
+
+// function update() {
+//   // Update our animation
+//   tl.progress((scrollY - startY) / finishDistance);
+  
+//   // Let the scroll event fire again
+//   requestId = null;
+// }
+
     }
 
     render() {
@@ -87,19 +113,61 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="about-section-1">
-                    <div className="center-image">
-                        <img alt="paper plane" src="/images/left-airplane.png"/>
-                    </div>          
-                    <div style={{color: darkColor}} className="title">
+                <div className="about-section-1">    
+                    <div style={{color: darkColor}} className="title about-title">
                         Who We Are 
                     </div>
-                    <div className="subtitle">
+                    <div style={{paddingTop: "10px"}} className="about-subtitle subtitle-med color-black">
                         We’re a group of students dedicated to cultivating a creative space that fosters 
                         opportunity and growth across various design disciplines within UCSB. Through hosting 
                         workshops, curating resources, and promoting design challenges, we hope to provide 
                         accessible opportunities for budding designers to learn and develop their skills in their 
                         creative journeys!
+                    </div>
+                    <img id="skytram" alt="skytram" src="/images/about-page-top.png"/>
+                </div>
+                <div className="about-section-2">
+                    <div style={{color: darkColor}} className="title about-title-2">
+                        Create With Us
+                    </div>
+                    <div className="icon-container">
+                        <div className="icon">
+                            <div className="icon-image">
+                                <img id="resources" alt="resources lightbulb,pen,gear" src="/images/about-page-resources.png"/>
+                            </div>
+                            <div className="icon-text">
+                                <div className="icon-title title-small color-black">Resources</div>
+                                <div className="icon-subtitle longCaption color-black">Curated guides
+                                                            and tools for designers to
+                                                            hone their skills</div>
+                            </div>
+                        </div>
+                        <div className="icon">
+                            <div className="icon-image">
+                                <img id="workshops" alt="workshops book" src="/images/about-page-workshops.png"/>
+                            </div>
+                            <div className="icon-text">
+                                <div className="icon-title title-small color-black">Workshops</div>
+                                <div className="icon-subtitle longCaption color-black">Design workshops, led by 
+                                                                students and industry
+                                                                professionals.</div>
+                            </div>
+                        </div>
+                        <div className="icon">
+                            <div className="icon-image">
+                                <img id="community" alt="community triangle" src="/images/about-page-community.png"/>
+                            </div>
+                            <div className="icon-text">
+                                <div className="icon-title title-small color-black">Community</div>
+                                <div className="icon-subtitle longCaption color-black">Participate and collaborate
+                                                                in design challenges.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-section-3">
+                    <div style={{color: darkColor}} className="title about-title-3">
+                        Meet the Team
                     </div>
                 </div>
             </div>

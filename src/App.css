@@ -603,12 +603,15 @@ label {
   vertical-align: initial;
 }
 
-.subtitle2{
+.subtitle-med{
+  font-family: "Poppins";
+  font-size: calc(10px + 10 * (100vw - 320px) / 1120);
+}
+
+.inline-block-center{
   display:inline-block;
   justify-content: center; 
   width: 100%;
-  font-family: "Poppins";
-  font-size: calc(10px + 10 * (100vw - 320px) / 1120);
 }
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
@@ -795,10 +798,86 @@ label {
 }
 
 .about-section-1{
-  position: relative;
-  width: auto;
-  height: auto;
+  width: 100%;
   display:block;
-  text-align:center;
-  padding-top: 110px;
+  padding-top: 180px;
+}
+
+.about-title{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-subtitle{
+  width: 59%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: .035em;
+}
+
+#skytram{
+  width: 100%;
+  position: absolute;
+  top: 252px;
+  left: 0;
+}
+
+.color-black{
+  color: black;
+  opacity: 95%;
+}
+
+.about-section-2{
+  width: 100%;
+  display: block;
+  padding-top: 45%;
+}
+
+.about-title-2{
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.icon-container{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.title-small{
+  font-family: "bookmania", sans-serif;
+  font-weight: 900;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1120);
+  letter-spacing: .035em;
+}
+
+.icon-text{
+  text-align: center;
+  /* max-width: 275px; */
+}
+
+#resources{
+  width: 100%;
+}
+
+#workshops{
+  width: 100%;
+}
+
+#community{
+  width: 100%;
+}
+
+.about-section-3{
+  padding-top: 7%;
+}
+
+.about-title-3{
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }

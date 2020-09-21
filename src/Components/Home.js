@@ -222,7 +222,7 @@ export default class Home extends Component {
                                         <div style={{color: darkColor}} className="title">
                                             let's keep in touch!
                                         </div>
-                                        <div className="subtitle2">
+                                        <div className="subtitle-med inline-block-center">
                                             <ul class="links">
                                                 <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
                                                 <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
