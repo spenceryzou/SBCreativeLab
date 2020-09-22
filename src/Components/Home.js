@@ -93,9 +93,21 @@ export default class Home extends Component {
             frictionX: .075,
             frictionY: .15
         });
+        var phoneScene = document.getElementById('phoneScene');
+        var parallaxInstance4 = new Parallax(phoneScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
 
         var illusScene = document.getElementById('illusScene');
-        var parallaxInstance4 = new Parallax(illusScene, {
+        var parallaxInstance5 = new Parallax(illusScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });       
+        var bookScene = document.getElementById('bookScene');
+        var parallaxInstance6 = new Parallax(bookScene, {
             relativeInput: true,
             frictionX: .075,
             frictionY: .15
@@ -124,6 +136,19 @@ export default class Home extends Component {
                 tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
             }
         }
+        if(destination.index===2){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            var altLogo = document.getElementsByClassName("altLogo");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].classList.add('logo-color-alt');
+            }
+        }
+        if(destination.index===3){
+            tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        }
+        if(destination.index===4){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        }
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
@@ -146,7 +171,7 @@ export default class Home extends Component {
                     <div className="header-left">
                         <div className="logo-wrapper">
                             <a href="/">
-                                <Logo width="100%" display="block" height="auto"/>
+                                <Logo className="logo" width="100%" display="block" height="auto"/>
                             </a>
                         </div>
                     </div>    
@@ -228,7 +253,8 @@ export default class Home extends Component {
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/></div>
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/></div>
                                     <div data-invert-x="false" data-invert-y="false" id="mainPlane" className="imageContainer">
-                                    <div data-depth=".04" id="absolute"><img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/></div></div>
+                                        <div data-depth=".04" id="absolute"><img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/></div>
+                                    </div>
                                     <div data-depth=".16" id="absolute"><img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/></div>
                                     <div data-depth=".1"id="absolute"><img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/></div>
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
@@ -258,10 +284,13 @@ export default class Home extends Component {
                                         Build exciting user experiences.
                                     </div>
                                 </div>
-                                <div id="uiuxScene" className="imageContainer">
-                                    <div id="absolute"><img alt="phone" id="phone" src="/images/phone.png"/></div>
-                                    <div data-depth=".02" id="absolute"><img alt="pop up windows" id="phonePopups" src="/images/popup.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="plane" id="phonePlane" src="/images/phone-plane.png"/></div>
+                                <div data-invert-x="false" data-invert-y="false" id="uiuxScene" className="imageContainer">
+                                    <div id="phoneScene" className="imageContainer">
+                                        <div data-depth=".04" id="absolute"><img alt="phone" id="phone" src="/images/phone.png"/></div>
+                                        <div data-depth=".17" id="absolute"><img alt="pop up window" id="popupTop" src="/images/popup-top.png"/></div>
+                                        <div data-depth=".19" id="absolute"><img alt="plane" id="phonePlane" src="/images/phone-plane.png"/></div>
+                                    </div>
+                                    <div data-depth=".04" id="absolute"><img alt="pop up window" id="popupBottom" src="/images/popup-bottom.png"/></div>
                                 </div>
                             </div>
                             <div style={{backgroundColor: "#354563"}} className="section">
@@ -274,9 +303,11 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div id="illusScene" className="imageContainer">
-                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                    <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">
+                                        <div data-depth=".01" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                        <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                    </div>
                                     <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
                                 </div>
                             </div>
                             <div className="section">

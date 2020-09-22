@@ -422,6 +422,14 @@ span.scroll-cue span {
   transform: scale(1.12,1.12)
 }
 
+.logo{
+  transition: all .8s cubic-bezier(0.63, 0.34, 0.1, 0.98)
+}
+
+.logo-color-alt{
+  fill: white !important;
+}
+
 .menuSVG path {
   fill: none;
   stroke: var(--color);
@@ -656,14 +664,34 @@ label {
     /* transform: translate(0%,0%); */
     z-index: -1;
 }
+#phoneScene{
+  z-index: -1;
+}
 
-#phonePopups{
+/* #phonePopups{
     position: absolute;
     width: 25%;
     top: 50%;
     left: 35%;
     transform: translate(-35%,-50%);
     z-index: 2;
+} */
+#popupTop{
+  position: absolute;
+  width: 11%;
+  top: 37%;
+  left: 28%;
+  transform: translate(-28%,-37%);
+  z-index: 2;
+}
+
+#popupBottom{
+  position: absolute;
+  width: 15%;
+  top: 67%;
+  left: 45%;
+  transform: translate(-45%,-67%);
+  z-index: 2;
 }
 
 #phonePlane{
