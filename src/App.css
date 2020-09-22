@@ -422,14 +422,17 @@ span.scroll-cue span {
   transform: scale(1.12,1.12)
 }
 
-.logo{
-  transition: all .8s cubic-bezier(0.63, 0.34, 0.1, 0.98)
+.logo path, .logo rect, .logo polygon, .logo g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .5s;
 }
 
-.logo-color-alt{
-  fill: white !important;
+.from-bottom path, .from-bottom rect, .from-bottom polygon, .from-bottom g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .05s !important;
 }
 
+.from-menu path, .from-menu rect, .from-menu polygon, .from-menu g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .17s !important;
+}
 .menuSVG path {
   fill: none;
   stroke: var(--color);

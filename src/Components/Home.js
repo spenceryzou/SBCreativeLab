@@ -19,6 +19,10 @@ export default class Home extends Component {
         this.state = {
         wave: "",
         menuOpen: false,
+        prevAltLogo: [],
+        prevDefaultPlane: 1,
+        prevDefaultSwoosh: 1,
+        prevDefaultBase: 1
         }
 
         // this.resetScroll = () =>{
@@ -42,15 +46,65 @@ export default class Home extends Component {
         ReactGA.initialize('UA-178117149-1');
         ReactGA.pageview('/');
     }
-    componentDidUpdate(){
-        let menu = document.getElementById("menu");
-        if(this.state.menuOpen === true){
-            console.log('open menu')
-            menu.classList.add("drop");
-            console.log(menu.classList);
-        }else if(this.state.menuOpen === false){
-            menu.classList.remove("drop");
-            console.log(menu.classList);
+    // getSnapshotBeforeUpdate(){
+    //     var prevAltLogo;
+    //     var prevDefaultPlane;
+    //     var prevDefaultSwoosh;
+    //     var prevDefaultBase;
+    //     var altLogo = document.getElementsByClassName("st4");
+    //     for (var i = 0; i < altLogo.length; i++) {
+    //         prevAltLogo = [...altLogo[i].style.opacity]
+    //     }
+    //     var defaultPlane = document.getElementById("plane");
+    //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
+    //     var defaultBase = document.getElementById("base_blue");
+    //     prevDefaultPlane = defaultPlane.style.opacity;
+    //     prevDefaultSwoosh = defaultSwoosh.style.opacity;
+    //     prevDefaultBase = defaultBase.style.opacity;
+    //     return{
+    //         prevAltLogo: prevAltLogo,
+    //         prevDefaultPlane: prevDefaultPlane,
+    //         prevDefaultSwoosh: prevDefaultSwoosh,
+    //         prevDefaultBase: prevDefaultBase
+    //     }
+    // }
+    componentDidUpdate(prevState){
+        if(prevState.menuOpen !== this.state.menuOpen){
+            let menu = document.getElementById("menu");
+            if(this.state.menuOpen === true){
+                console.log('open menu');
+                menu.classList.add("drop");
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-menu");
+                console.log(menu.classList);
+                var altLogo = document.getElementsByClassName("st4");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
+            }else if(this.state.menuOpen === false){
+                menu.classList.remove("drop");
+                var logo = document.getElementById("logo");
+                logo.classList.remove("from-menu");
+                console.log(menu.classList);
+                if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
+                    var defaultPlane = document.getElementById("plane");
+                    var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                    var defaultBase = document.getElementById("base_blue");
+                    defaultPlane.style.opacity = 0;
+                    defaultSwoosh.style.opacity = 0;
+                    defaultBase.style.opacity = 0;
+                    var altLogo = document.getElementsByClassName("st4");
+                    for (var i = 0; i < altLogo.length; i++) {
+                        altLogo[i].style.opacity = 1;
+                    }
+                }
+            }
         }
     }
     // handleScroll(){
@@ -130,17 +184,34 @@ export default class Home extends Component {
             this.setState({wave: "wave-move-down"});
         }
         if(destination.index===1){
-            if(origin.index===0){
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-            }else{
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===2){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
             }
         }
         if(destination.index===2){
             tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-            var altLogo = document.getElementsByClassName("altLogo");
+            // var defaultLogo = document.getElementsByClassName("st5");
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 0;
+            defaultSwoosh.style.opacity = 0;
+            defaultBase.style.opacity = 0;
+            var altLogo = document.getElementsByClassName("st4");
             for (var i = 0; i < altLogo.length; i++) {
-                altLogo[i].classList.add('logo-color-alt');
+                altLogo[i].style.opacity = 1;
             }
         }
         if(destination.index===3){
@@ -148,18 +219,46 @@ export default class Home extends Component {
         }
         if(destination.index===4){
             tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===5){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 0;
+                defaultSwoosh.style.opacity = 0;
+                defaultBase.style.opacity = 0;
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 1;
+                }
+            }
+        }
+        if(destination.index===5){
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 0;
+            }
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 1;
+            defaultSwoosh.style.opacity = 1;
+            defaultBase.style.opacity = 1;
         }
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
+        var logo = document.getElementById("logo");
+        logo.classList.remove("from-bottom");
         const tl = gsap.timeline();
-        if(destination.index===1){
+        if(destination.index===4){
             document.getElementById("fullpage").classList.remove("ease");
-            if(origin.index===2){
+            if(origin.index===5){
                 tl.fromTo('#scroll-cue', .4, { y: '-10', opacity: 0}, { y:'0', opacity: 1, delay: .1})
             }
         }
-        if(destination.index===2){
+        if(destination.index===5){
             tl.fromTo('#scroll-cue', .4, {y: '0', opacity: 1}, { y:'-20', opacity: 0})
         }
     }
@@ -171,7 +270,7 @@ export default class Home extends Component {
                     <div className="header-left">
                         <div className="logo-wrapper">
                             <a href="/">
-                                <Logo className="logo" width="100%" display="block" height="auto"/>
+                                <Logo id="logo" className="logo" width="100%" display="block" height="auto"/>
                             </a>
                         </div>
                     </div>    
