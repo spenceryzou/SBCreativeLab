@@ -141,6 +141,12 @@ export default class Home extends Component {
             frictionY: .075
             });
 
+        var graphScene = document.getElementById('graphScene');
+        var parallaxInstance7 = new Parallax(graphScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
         var uiuxScene = document.getElementById('uiuxScene');
         var parallaxInstance3 = new Parallax(uiuxScene, {
             relativeInput: true,
@@ -360,7 +366,7 @@ export default class Home extends Component {
                                 </div>
                             </div>
                             <div style={{backgroundColor: "#354563"}} className="section">
-                                <div className="leftTextContainer">
+                                <div className="graphTextContainer">
                                     <div style={{color: "white"}} className="title">
                                         Graphic Design
                                     </div>
@@ -369,9 +375,19 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div id="graphScene" className="imageContainer">
-                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
-                                    <div data-depth=".0.8" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphPink" src="/images/graphic/pink.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopPink" src="/images/graphic/top-pink.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphBotPink" src="/images/graphic/bot-pink.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphGreen" src="/images/graphic/green.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphTopGreen" src="/images/graphic/top-green.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphYellow" src="/images/graphic/yellow.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphOrange" src="/images/graphic/orange.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphCorner" src="/images/graphic/corner.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphShapes" src="/images/graphic/shapes.png"/></div>
                                 </div>
                             </div>
                             <div style={{backgroundColor: "#354563"}} className="section">
