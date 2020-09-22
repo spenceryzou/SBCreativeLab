@@ -846,6 +846,14 @@ label {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.icon{
+  max-width: 320px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title-small{
@@ -857,8 +865,21 @@ label {
 
 .icon-text{
   text-align: center;
-  /* max-width: 275px; */
+  width: 275px;
+  align-self: center;
 }
+
+a .icon-title{
+  color: black;
+  opacity: .95;
+  transition: color 150ms ease;
+}
+
+a .icon-title:hover{
+  color: #1BB994;
+  opacity: .95;
+}
+
 
 #resources{
   width: 100%;
@@ -881,3 +902,4 @@ label {
   margin-right: 10%;
   margin-bottom: 5%;
 }
+

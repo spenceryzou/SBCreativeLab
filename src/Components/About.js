@@ -133,10 +133,10 @@ export default class Home extends Component {
                     <div className="icon-container">
                         <div className="icon">
                             <div className="icon-image">
-                                <img id="resources" alt="resources lightbulb,pen,gear" src="/images/about-page-resources.png"/>
+                                <img id="resources" alt="resources lightbulb,pen,gear" src="/images/about-page-resources-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <div className="icon-title title-small color-black">Resources</div>
+                                <a href="/oops"><div className="icon-title title-small color-black">Resources</div></a>
                                 <div className="icon-subtitle longCaption color-black">Curated guides
                                                             and tools for designers to
                                                             hone their skills</div>
@@ -144,10 +144,10 @@ export default class Home extends Component {
                         </div>
                         <div className="icon">
                             <div className="icon-image">
-                                <img id="workshops" alt="workshops book" src="/images/about-page-workshops.png"/>
+                                <img id="workshops" alt="workshops book" src="/images/about-page-workshops-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <div className="icon-title title-small color-black">Workshops</div>
+                                <a href="/oops"><div className="icon-title title-small color-black">Workshops</div></a>
                                 <div className="icon-subtitle longCaption color-black">Design workshops, led by 
                                                                 students and industry
                                                                 professionals.</div>
@@ -155,10 +155,10 @@ export default class Home extends Component {
                         </div>
                         <div className="icon">
                             <div className="icon-image">
-                                <img id="community" alt="community triangle" src="/images/about-page-community.png"/>
+                                <img id="community" alt="community triangle" src="/images/about-page-community-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <div className="icon-title title-small color-black">Community</div>
+                                <a href="https://sbcreativelab.slack.com/"><div className="icon-title title-small color-black">Community</div></a>
                                 <div className="icon-subtitle longCaption color-black">Participate and collaborate
                                                                 in design challenges.</div>
                             </div>

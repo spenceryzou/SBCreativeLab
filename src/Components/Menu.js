@@ -59,7 +59,7 @@ export default class Home extends Component {
                             </span>
                         </div>
                       </a>
-                      <a href="/oops">
+                      <a href="https://sbcreativelab.slack.com/">
                         <div className="social-container">
                           <i class="fa fa-lg fa-slack"></i>
                             <span class="social-background">
