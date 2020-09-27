@@ -1004,6 +1004,74 @@ a .icon-title:hover{
   transition: all 1.5s ease;
   filter: url(#turbulence);
 }
+.cool-shape{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: -6%;
+  left: -9%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.cool-shape-2{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  left: -100%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(-40deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.rose{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: -6%;
+  left: -12%;
+  opacity: 1;
+  /* transform-origin: bottom right; */
+  transform: scale(0) skew(0deg) rotate(0deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.team-member-container:hover .rose{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.rose2{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 20%;
+  opacity: 1;
+  /* transform-origin: bottom right; */
+  transform: scale(0) skew(0deg) rotate(0deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.team-member-container:hover .rose2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .cool-shape-2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(-1) skew(0deg) rotate(-10deg) translateZ(3px);
+}
+.team-member-container:hover .cool-shape{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
 .color-smoke-2{
   z-index: 2;
   position: absolute;

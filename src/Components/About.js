@@ -56,7 +56,8 @@ export default class Home extends Component {
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
         const tilt = $('.team-member-container').tilt({
-            maxTilt: 5
+            maxTilt: 5,
+            scale: 1.05,
         });
         // the animation to use
 //         const tl = gsap.timeline({paused: true});
@@ -251,13 +252,14 @@ export default class Home extends Component {
                         </div>
                         <div className="spencer team-member">
                             <div className="team-member-container">
-                                <img id="box" src="/images/light-green-square.jpg"></img>
-                                <img className="team-member-image" src=""></img>
+                                <img id="box" src="/images/lightest-blue-square.jpg"></img>
+                                <img className="team-member-image" src="/images/spencer.png"></img>
                                 <div className="team-member-hover">
                                     <div className="blue-circle"></div>
                                     <div className="dark-blue-circle"></div>
-                                    {/* <img className="color-smoke" src="/images/colorsmoke.png" x="0" y="0" style={{filter: "url(#noise)"}}/> */}
-                                    <svg className="color-smoke" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 100 123">
+                                    <img className="rose" src="/images/rose_1_WP2.png" x="0" y="0"/>
+                                    <img className="rose2" src="/images/rose-2-WP-saturated.png"></img>
+                                    {/* <svg className="color-smoke" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 100 123">
                                         <filter width="100%" height="100%" x="0%" y="0%" id="noise">
                                         <feTurbulence type="turbulence" baseFrequency="0.0547184" id="turbulence" numOctaves="1" result="turbulence" seed="5">
                                             <animate id="noiseAnimate" attributeName="baseFrequency" values="0;.1;0,0" from="0" to="100" dur="10s" repeatCount="indefinite"></animate>
@@ -280,7 +282,7 @@ export default class Home extends Component {
                                         <foreignObject width="100%" height="100%">
                                         <img src="/images/cloud7.png" width="100%" height="auto" x="0" y="0" style={{filter: "url(#noise)"}}/>
                                         </foreignObject>
-                                    </svg>
+                                    </svg> */}
                                 </div>
                             </div>                                
                             <div style={{marginTop: "24px"}} className="team-member-name title-small">Name</div>
@@ -326,12 +328,13 @@ export default class Home extends Component {
                         <div className="spencer team-member">
                             <div className="team-member-container">
                                 <img id="box" src="/images/light-green-square.jpg"></img>
-                                <img className="team-member-image" src=""></img>
+                                <img className="team-member-image" src="/images/spencer.png"></img>
                                 <div className="team-member-hover">
                                     <div className="blue-circle"></div>
                                     <div className="dark-blue-circle"></div>
-                                    {/* <img className="color-smoke" src="/images/colorsmoke.png" x="0" y="0" style={{filter: "url(#noise)"}}/> */}
-                                    <svg className="color-smoke" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 100 123">
+                                    <img className="cool-shape" src="/images/coolshape1.png"/>
+                                    <img className="cool-shape-2" src="/images/coolshape1.png"/>
+                                    {/* <svg className="color-smoke" preserveAspectRatio="xMidYMid slice"  viewBox="0 0 100 123">
                                         <filter width="100%" height="100%" x="0%" y="0%" id="noise">
                                         <feTurbulence type="turbulence" baseFrequency="0.0547184" id="turbulence" numOctaves="1" result="turbulence" seed="5">
                                             <animate id="noiseAnimate" attributeName="baseFrequency" values="0;.1;0,0" from="0" to="100" dur="10s" repeatCount="indefinite"></animate>
@@ -354,7 +357,7 @@ export default class Home extends Component {
                                         <foreignObject width="100%" height="100%">
                                         <img src="/images/cloud7.png" width="100%" height="auto" x="0" y="0" style={{filter: "url(#noise)"}}/>
                                         </foreignObject>
-                                    </svg>
+                                    </svg> */}
                                 </div>
                             </div>                                
                             <div style={{marginTop: "24px"}} className="team-member-name title-small">Name</div>
@@ -399,22 +402,20 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                {/* <svg>
-                    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
-                        <feTurbulence type="fractalNoise" id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+                <svg>
+                    <filter id="filter" x="0" y="0" width="100%" height="100%">
+                        <feTurbulence id="sea-filter" numOctaves="3" seed="5" baseFrequency="0.02 0.05"></feTurbulence>
                         <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
-                        <feGaussianBlur id="cloud" in="SourceGraphic" stdDeviation="1"></feGaussianBlur>
-                        <animate href="#cloud" attributeName="stdDeviation" values="0;1;2;1;0;" dur="3s" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite"/>
                         <animate href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
                     </filter>
-                    <filter width="100%" height="100%" x="0%" y="0%" id="noise"><feTurbulence type="turbulence" baseFrequency="0.0547184" id="turbulence" numOctaves="1" result="turbulence" seed="5">
-                    <animate id="noiseAnimate" attributeName="baseFrequency" values="0;.1;0,0" from="0" to="100" dur="10s" repeatCount="indefinite"></animate>
-                    </feTurbulence>
-                    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="1"
-                                                        xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>
+                    
+                </svg>
+                <svg class="filter" xlmns="http://www.w3.org/2000/svg" version="1.1">
+                    <filter id="filter2" filterUnits="objectBoundingBox" x="0" y="0" width="100%" height="100%">
+                        <feTurbulence id="feturbulence" type="turbulence" numOctaves="3" seed="5"></feTurbulence>
+                        <feDisplacementMap xChannelSelector="G" yChannelSelector="B" scale="6" in="SourceGraphic"></feDisplacementMap>
                     </filter>
-                </svg> */}
-
+                </svg>
             </div>
         )
     }
