@@ -689,8 +689,8 @@ label {
   position: absolute;
   width: 18%;
   top: 77%;
-  left: 85%;
-  transform: translate(-85%,-77%);
+  left: 87%;
+  transform: translate(-87%,-77%);
   z-index: 2;
 }
 
@@ -707,8 +707,8 @@ label {
   position: absolute;
   width: 18%;
   top: 93%;
-  left: 25%;
-  transform: translate(-25%,-93%);
+  left: 22%;
+  transform: translate(-22%,-93%);
   z-index: 2;
 }
 

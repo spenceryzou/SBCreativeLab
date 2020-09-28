@@ -377,16 +377,16 @@ export default class Home extends Component {
                                 <div id="graphScene" className="imageContainer">
                                     <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
                                     <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue.png"/></div>
-                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphPink" src="/images/graphic/pink.png"/></div>
-                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopPink" src="/images/graphic/top-pink.png"/></div>
-                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphBotPink" src="/images/graphic/bot-pink.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphGreen" src="/images/graphic/green.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphTopGreen" src="/images/graphic/top-green.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphYellow" src="/images/graphic/yellow.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphOrange" src="/images/graphic/orange.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphCorner" src="/images/graphic/corner.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphPink" src="/images/graphic/pink1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopPink" src="/images/graphic/top-pink1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphBotPink" src="/images/graphic/bot-pink1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphGreen" src="/images/graphic/green1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphTopGreen" src="/images/graphic/top-green1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphYellow" src="/images/graphic/yellow1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphOrange" src="/images/graphic/orange1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphCorner" src="/images/graphic/corner1.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphShapes" src="/images/graphic/shapes.png"/></div>
                                 </div>
                             </div>
