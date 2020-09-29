@@ -98,7 +98,7 @@ export default class Home extends Component {
                         <div className="masonry-grid">
                             <div class="grid-item">
                                 <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}href="https://www.instagram.com/sbcreativelab/channel">
-                                    <img style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
+                                    <img style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
                                     <div class="grid-caption">Design Tip #1: What are Layers?</div>
                                 </a>
                             </div>
