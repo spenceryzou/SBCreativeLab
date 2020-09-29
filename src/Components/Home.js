@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
 import ReactGA from 'react-ga';
+import Menu from './Menu';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -272,6 +273,7 @@ export default class Home extends Component {
     render() {
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
+                <Menu/>
                 <div className="header">
                     <div className="header-left">
                         <div className="logo-wrapper">
@@ -431,12 +433,12 @@ export default class Home extends Component {
                                         <div style={{color: darkColor}} className="title">
                                             let's keep in touch!
                                         </div>
-                                        <div className="subtitle2">
+                                        <div className="subtitle-med inline-block-center">
                                             <ul class="links">
                                                 <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
                                                 <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
                                                 <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
-                                                <li class="link"><a href="/oops">slack</a></li>
+                                                <li class="link"><a href="https://sbcreativelab.slack.com/">slack</a></li>
                                             </ul>
                                         </div>
                                     </div>
