@@ -143,7 +143,7 @@ export default class Home extends Component {
                                 <img id="resources" alt="resources lightbulb,pen,gear" src="/images/about-page-resources-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <a href="/oops"><div className="icon-title title-small color-black">Resources</div></a>
+                                <a href="/resources"><div className="icon-title title-small color-black">Resources</div></a>
                                 <div className="icon-subtitle subtitle-med color-black">Curated guides
                                                             and tools for designers to
                                                             hone their skills</div>
@@ -154,7 +154,7 @@ export default class Home extends Component {
                                 <img id="workshops" alt="workshops book" src="/images/about-page-workshops-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <a href="/oops"><div className="icon-title title-small color-black">Workshops</div></a>
+                                <a href="/events"><div className="icon-title title-small color-black">Workshops</div></a>
                                 <div className="icon-subtitle subtitle-med color-black">Design workshops, led by 
                                                                 students and industry
                                                                 professionals.</div>
