@@ -144,7 +144,7 @@ export default class Home extends Component {
                             </div>
                             <div className="icon-text">
                                 <a href="/oops"><div className="icon-title title-small color-black">Resources</div></a>
-                                <div className="icon-subtitle longCaption color-black">Curated guides
+                                <div className="icon-subtitle subtitle-med color-black">Curated guides
                                                             and tools for designers to
                                                             hone their skills</div>
                             </div>
@@ -155,7 +155,7 @@ export default class Home extends Component {
                             </div>
                             <div className="icon-text">
                                 <a href="/oops"><div className="icon-title title-small color-black">Workshops</div></a>
-                                <div className="icon-subtitle longCaption color-black">Design workshops, led by 
+                                <div className="icon-subtitle subtitle-med color-black">Design workshops, led by 
                                                                 students and industry
                                                                 professionals.</div>
                             </div>
@@ -166,7 +166,7 @@ export default class Home extends Component {
                             </div>
                             <div className="icon-text">
                                 <a href="https://sbcreativelab.slack.com/"><div className="icon-title title-small color-black">Community</div></a>
-                                <div className="icon-subtitle longCaption color-black">Participate and collaborate
+                                <div className="icon-subtitle subtitle-med color-black">Participate and collaborate
                                                                 in design challenges.</div>
                             </div>
                         </div>
