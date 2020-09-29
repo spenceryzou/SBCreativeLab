@@ -932,9 +932,7 @@ a .icon-title:hover{
   transform-style: preserve-3d;
   transform: perspective(300px);
 }
-.spencer .team-member-image{
-  bottom: 4.5%;
-}
+
 .team-member-image{
   width: 100%;
   display: block;
@@ -960,7 +958,39 @@ a .icon-title:hover{
   opacity: 1;
   transition: all .5s ease;
 }
-
+/* circles */
+.lg-orange-circle{
+  background-color: #fca71f;
+  width: 306px;
+  height: 306px;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) translateZ(0px);
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sm-orange-circle{
+  background-color: #fca71f;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(0) skew(30deg);
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.27);
+}
+.md-orange-circle{
+  background-color: #984822;
+  width: 157px;
+  height: 157px;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(0) translateZ(0px);
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 .blue-circle{
   width: 270px;
   height: 270px;
@@ -972,12 +1002,6 @@ a .icon-title:hover{
   opacity: 0;
   transform: scale(0) translateZ(0px);
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.team-member-container:hover .blue-circle{
-  opacity: 1;
-  transform: scale(1) translateZ(0px);
-  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dark-blue-circle{
@@ -992,18 +1016,7 @@ a .icon-title:hover{
   transform: scale(0) translateZ(1px);
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.color-smoke{
-  z-index: 2;
-  position: absolute;
-  width: 70%;
-  top: -6%;
-  left: -9%;
-  opacity: 1;
-  transform-origin: bottom right;
-  transform: scale(0) skew(30deg) rotate(30deg) translateZ(3px);
-  transition: all 1.5s ease;
-  filter: url(#turbulence);
-}
+
 .cool-shape{
   z-index: 2;
   position: absolute;
@@ -1040,11 +1053,7 @@ a .icon-title:hover{
   transition: all 1.5s ease;
   filter: url(#filter);
 }
-.team-member-container:hover .rose{
-  transition: all 1.5s ease;
-  opacity: 1;
-  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
-}
+
 .rose2{
   z-index: 2;
   position: absolute;
@@ -1056,6 +1065,77 @@ a .icon-title:hover{
   transform: scale(0) skew(0deg) rotate(0deg) translateZ(3px);
   transition: all 1.5s ease;
   filter: url(#filter);
+}
+
+.color-smoke{
+  z-index: 2;
+  position: absolute;
+  width: 70%;
+  top: -6%;
+  left: -9%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#turbulence);
+}
+
+.color-smoke-2{
+  z-index: 2;
+  position: absolute;
+  width: 75%;
+  top: 3%;
+  left: 34%;
+  opacity: 1;
+  transform-origin: bottom left;
+  transform: scale(0) skew(-30deg) rotate(-30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#turbulence);
+}
+/* alex */
+.alex .lg-orange-circle{
+  top: -6%;
+  left: -5%;
+}
+.alex .sm-orange-circle{
+  top: -6%;
+  left: 85%;
+}
+.alex .md-orange-circle{
+  top: 30%;
+  left: 50%;
+}
+/* team hovers */
+.team-member-container:hover .color-smoke-2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .color-smoke{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .circle-scale{
+  opacity: 1;
+  transform: scale(1) translateZ(0px);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.team-member-container:hover .circle-skew{
+  transform: translate3d(32px, 0 , 24px) skew(0deg);
+  opacity: 1;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-member-container:hover .circle-scale-delay{
+  opacity: 1;
+  transform: scale(1) translateZ(1px);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+.team-member-container:hover .rose{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
 }
 .team-member-container:hover .rose2{
   transition: all 1.5s ease;
@@ -1071,31 +1151,4 @@ a .icon-title:hover{
   transition: all 1.5s ease;
   opacity: 1;
   transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
-}
-.color-smoke-2{
-  z-index: 2;
-  position: absolute;
-  width: 75%;
-  top: 3%;
-  left: 34%;
-  opacity: 1;
-  transform-origin: bottom left;
-  transform: scale(0) skew(-30deg) rotate(-30deg) translateZ(3px);
-  transition: all 1.5s ease;
-  filter: url(#turbulence);
-}
-.team-member-container:hover .color-smoke-2{
-  transition: all 1.5s ease;
-  opacity: 1;
-  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
-}
-.team-member-container:hover .color-smoke{
-  transition: all 1.5s ease;
-  opacity: 1;
-  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
-}
-.team-member-container:hover .dark-blue-circle{
-  opacity: 1;
-  transform: scale(1) translateZ(1px);
-  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
 }
