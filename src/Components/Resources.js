@@ -6,7 +6,8 @@ import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
 import Menu from './Menu';
 import Tilt from 'tilt.js';
-import $ from 'jquery'
+import imagesLoaded from 'imagesloaded';
+import Masonry from 'masonry-layout';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -45,9 +46,13 @@ export default class Home extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        const tilt = $('.team-member-container').tilt({
-            maxTilt: 5,
-            scale: 1.05,
+        imagesLoaded( document.querySelector('.resources'), function( instance ) {
+            // images have loaded        
+            var container = document.querySelector('.masonry-grid');
+            var msnry = new Masonry( container, {
+            columnWidth: 100,
+            itemSelector: '.grid-item'
+            });    
         });
 
     }
@@ -90,7 +95,7 @@ export default class Home extends Component {
                     </div>
                     <div className="resources-section">
                         <div className="icon-title title-small color-black">Tutorials</div>
-                        <div className="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
+                        <div className="masonry-grid">
                             <div class="grid-item">
                                 <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}href="https://www.instagram.com/sbcreativelab/channel">
                                     <img style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
@@ -99,9 +104,9 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{marginTop: '12%'}} className="resources-section">
+                    <div className="resources-section">
                         <div className="icon-title title-small color-black">Workshops</div>
-                        <div className="masonry-grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
+                        <div className="masonry-grid">
                             {/* <div class="grid-item">
                                 <img alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
                                 <div class="grid-caption">Design Tip #1: What are Layers?</div>

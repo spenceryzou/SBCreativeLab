@@ -1453,17 +1453,12 @@ a .icon-title:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     padding-top: 180px;
-    padding-bottom: 30%;
 }
 
 .resources-section{
     width: auto;
-    height: 100%;
     margin-left: 10%;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
 }
 
 .masonry-grid{
