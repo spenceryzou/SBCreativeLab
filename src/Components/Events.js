@@ -35,12 +35,12 @@ export default class Home extends Component {
         if(this.state.menuOpen === true){
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
-            document.body.bind('touchmove', function(e){e.preventDefault()});
+            document.body.addEventListener('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
             document.body.classList.remove("no-scroll");
-            document.body.unbind('touchmove');
+            document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
         }
     }
 
@@ -92,7 +92,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="events">
-                    <div style={{color: darkColor}} className="title about-title-2">
+                    <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
                         Events
                     </div>
                     <div className="event-row">

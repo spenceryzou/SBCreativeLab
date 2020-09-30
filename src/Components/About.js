@@ -40,12 +40,12 @@ export default class Home extends Component {
         if(this.state.menuOpen === true){
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
-            document.body.bind('touchmove', function(e){e.preventDefault()});
+            document.body.addEventListener('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
             document.body.classList.remove("no-scroll");
-            document.body.unbind('touchmove');
+            document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
         }
     }
     // handleScroll(){

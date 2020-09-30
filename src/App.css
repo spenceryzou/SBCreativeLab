@@ -1941,25 +1941,51 @@ a .icon-title:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 180px;
+    padding-top: 150px;
 }
 
 .resources-section{
     width: auto;
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .masonry-grid{
-    margin: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.masonry-grid2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .grid-item{
     display: flex;
     flex-direction: column;
+    width: 25%
 }
-
+.grid-item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .grid-caption{
     padding-top: 10px;
+}
+a.grid-caption{
+  color: black;
+  opacity: .95;
+  transition: color 150ms ease;
+}
+a.grid-caption:hover{
+  color: #1BB994;
+  opacity: .95;
 }
 
 .event-card{

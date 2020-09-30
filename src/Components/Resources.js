@@ -40,12 +40,12 @@ export default class Home extends Component {
         if(this.state.menuOpen === true){
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
-            document.body.bind('touchmove', function(e){e.preventDefault()});
+            document.body.addEventListener('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
             document.body.classList.remove("no-scroll");
-            document.body.unbind('touchmove');
+            document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
         }
     }
 
@@ -57,6 +57,11 @@ export default class Home extends Component {
             // images have loaded        
             var container = document.querySelector('.masonry-grid');
             var msnry = new Masonry( container, {
+            columnWidth: 100,
+            itemSelector: '.grid-item'
+            });    
+            var container2 = document.querySelector('.masonry-grid2');
+            var msnry2 = new Masonry( container2, {
             columnWidth: 100,
             itemSelector: '.grid-item'
             });    
@@ -97,27 +102,40 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="resources">
-                    <div style={{color: darkColor}} className="title about-title-2">
+                    <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
                         Resources
                     </div>
                     <div className="resources-section">
                         <div className="icon-title title-small color-black">Tutorials</div>
                         <div className="masonry-grid">
                             <div class="grid-item">
-                                <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} href="https://www.instagram.com/sbcreativelab/channel">
-                                    <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
-                                    <div class="grid-caption">Design Tip #1: What are Layers?</div>
-                                </a>
+                                <div class="grid-item-container">
+                                    <a href="https://www.instagram.com/sbcreativelab/channel">
+                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
+                                    </a>
+                                    <a class="grid-caption" href="https://www.instagram.com/sbcreativelab/channel">
+                                        Design Tip #1: What are Layers?
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="resources-section">
                         <div className="icon-title title-small color-black">Workshops</div>
-                        <div className="masonry-grid">
+                        <div className="masonry-grid2">
                             {/* <div class="grid-item">
                                 <img alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
                                 <div class="grid-caption">Design Tip #1: What are Layers?</div>
                             </div> */}
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <a href="https://youtu.be/L-qy5yiLTak">
+                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="kickoff event" src="/images/meet-sbcreativelab-IG.jpg"/>
+                                    </a>
+                                    <a href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Kick Off Event Recording</a>
+                                    <a href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
