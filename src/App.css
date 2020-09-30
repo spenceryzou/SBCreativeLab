@@ -1292,7 +1292,7 @@ a .icon-title:hover{
   margin-right: auto;
   transform: translateZ(20px);
   bottom: 4.5%;
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 .team-member-hover{
@@ -1935,7 +1935,7 @@ a .icon-title:hover{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 150px;
 }
 
 .resources{
