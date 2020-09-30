@@ -55,11 +55,11 @@ export default class Home extends Component {
             document.body.classList.remove("no-scroll");
             document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
             for (var i = 0; i < hideImg.length; i++) {
+                hideImg[i].classList.remove('opacity-transition');
+            }
+            for (var i = 0; i < hideImg.length; i++) {
                 hideImg[i].style.opacity = 1;
             }
-        }
-        for (var i = 0; i < hideImg.length; i++) {
-            hideImg[i].classList.remove('opacity-transition');
         }
     }
     // handleScroll(){
