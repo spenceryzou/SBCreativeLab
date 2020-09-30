@@ -89,28 +89,51 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="resources">
+                <div className="events">
                     <div style={{color: darkColor}} className="title about-title-2">
-                        Resources
+                        Events
                     </div>
-                    <div className="resources-section">
-                        <div className="icon-title title-small color-black">Tutorials</div>
-                        <div className="masonry-grid">
-                            <div class="grid-item">
-                                <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}href="https://www.instagram.com/sbcreativelab/channel">
-                                    <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
-                                    <div class="grid-caption">Design Tip #1: What are Layers?</div>
-                                </a>
+                    <div className="event-row">
+                        <div className="event-card">
+                            <a target="_blank" href="https://www.facebook.com/events/730522954163235/">
+                                <img className="event-card-img" src="/images/meet-sbcreativelab.jpg"></img>
+                            </a>
+                            <div className="event-text">
+                                <div className="event-title-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/730522954163235/" className="event-title icon-title title-small color-black">
+                                        Kick Off!
+                                    </a>
+                                    <div className="subtitle-med color-black event-date">
+                                        09 - 29 - 2020
+                                    </div>
+                                </div>
+                                <div className="event-subtitle-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/730522954163235/" className="event-subtitle subtitle-med color-black">
+                                        LEARN MORE
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="resources-section">
-                        <div className="icon-title title-small color-black">Workshops</div>
-                        <div className="masonry-grid">
-                            {/* <div class="grid-item">
-                                <img alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
-                                <div class="grid-caption">Design Tip #1: What are Layers?</div>
-                            </div> */}
+                    <div className="event-row">
+                        <div className="event-card-right">
+                            <a target="_blank" href="https://www.facebook.com/events/1486106804909928/">
+                            <img className="event-card-img" src="/images/photoshop-workshop.jpg"></img></a>
+                            <div className="event-text">
+                                <div className="event-title-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/1486106804909928/" className="event-title icon-title title-small color-black">
+                                        Adobe Photoshop Basics
+                                    </a>
+                                    <div className="subtitle-med color-black event-date">
+                                        10 - 08 - 2020
+                                    </div>
+                                </div>
+                                <div className="event-subtitle-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/1486106804909928/" className="event-subtitle subtitle-med color-black">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
