@@ -1292,11 +1292,8 @@ a .icon-title:hover{
   margin-right: auto;
   transform: translateZ(20px);
   bottom: 4.5%;
-<<<<<<< HEAD
 }
 .opacity-transition{
-=======
->>>>>>> 72fa65c241df0295b578f365f80c48c5c5776ac9
   transition: opacity .5s ease;
 }
 
