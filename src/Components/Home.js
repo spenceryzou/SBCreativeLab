@@ -142,37 +142,37 @@ export default class Home extends Component {
             frictionY: .075
             });
 
-        var graphScene = document.getElementById('graphScene');
-        var parallaxInstance7 = new Parallax(graphScene, {
-            relativeInput: true,
-            frictionX: .075,
-            frictionY: .15
-        });
-        var uiuxScene = document.getElementById('uiuxScene');
-        var parallaxInstance3 = new Parallax(uiuxScene, {
-            relativeInput: true,
-            frictionX: .075,
-            frictionY: .15
-        });
-        var phoneScene = document.getElementById('phoneScene');
-        var parallaxInstance4 = new Parallax(phoneScene, {
-            relativeInput: true,
-            frictionX: .075,
-            frictionY: .15
-        });
+        // var graphScene = document.getElementById('graphScene');
+        // var parallaxInstance7 = new Parallax(graphScene, {
+        //     relativeInput: true,
+        //     frictionX: .075,
+        //     frictionY: .15
+        // });
+        // var uiuxScene = document.getElementById('uiuxScene');
+        // var parallaxInstance3 = new Parallax(uiuxScene, {
+        //     relativeInput: true,
+        //     frictionX: .075,
+        //     frictionY: .15
+        // });
+        // var phoneScene = document.getElementById('phoneScene');
+        // var parallaxInstance4 = new Parallax(phoneScene, {
+        //     relativeInput: true,
+        //     frictionX: .075,
+        //     frictionY: .15
+        // });
 
-        var illusScene = document.getElementById('illusScene');
-        var parallaxInstance5 = new Parallax(illusScene, {
-            relativeInput: true,
-            frictionX: .075,
-            frictionY: .15
-        });       
-        var bookScene = document.getElementById('bookScene');
-        var parallaxInstance6 = new Parallax(bookScene, {
-            relativeInput: true,
-            frictionX: .075,
-            frictionY: .15
-        });
+        // var illusScene = document.getElementById('illusScene');
+        // var parallaxInstance5 = new Parallax(illusScene, {
+        //     relativeInput: true,
+        //     frictionX: .075,
+        //     frictionY: .15
+        // });       
+        // var bookScene = document.getElementById('bookScene');
+        // var parallaxInstance6 = new Parallax(bookScene, {
+        //     relativeInput: true,
+        //     frictionX: .075,
+        //     frictionY: .15
+        // });
 
         this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
@@ -207,52 +207,52 @@ export default class Home extends Component {
                 defaultBase.style.opacity = 1;
             }
         }
-        if(destination.index===2){
-            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-            // var defaultLogo = document.getElementsByClassName("st5");
-            var defaultPlane = document.getElementById("plane");
-            var defaultSwoosh = document.getElementById("swoosh_desaturated");
-            var defaultBase = document.getElementById("base_blue");
-            defaultPlane.style.opacity = 0;
-            defaultSwoosh.style.opacity = 0;
-            defaultBase.style.opacity = 0;
-            var altLogo = document.getElementsByClassName("st4");
-            for (var i = 0; i < altLogo.length; i++) {
-                altLogo[i].style.opacity = 1;
-            }
-        }
-        if(destination.index===3){
-            tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        }
-        if(destination.index===4){
-            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-            if(origin.index===5){
-                var logo = document.getElementById("logo");
-                logo.classList.add("from-bottom");
-                var defaultPlane = document.getElementById("plane");
-                var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                var defaultBase = document.getElementById("base_blue");
-                defaultPlane.style.opacity = 0;
-                defaultSwoosh.style.opacity = 0;
-                defaultBase.style.opacity = 0;
-                var altLogo = document.getElementsByClassName("st4");
-                for (var i = 0; i < altLogo.length; i++) {
-                    altLogo[i].style.opacity = 1;
-                }
-            }
-        }
-        if(destination.index===5){
-            var altLogo = document.getElementsByClassName("st4");
-            for (var i = 0; i < altLogo.length; i++) {
-                altLogo[i].style.opacity = 0;
-            }
-            var defaultPlane = document.getElementById("plane");
-            var defaultSwoosh = document.getElementById("swoosh_desaturated");
-            var defaultBase = document.getElementById("base_blue");
-            defaultPlane.style.opacity = 1;
-            defaultSwoosh.style.opacity = 1;
-            defaultBase.style.opacity = 1;
-        }
+        // if(destination.index===2){
+        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        //     // var defaultLogo = document.getElementsByClassName("st5");
+        //     var defaultPlane = document.getElementById("plane");
+        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
+        //     var defaultBase = document.getElementById("base_blue");
+        //     defaultPlane.style.opacity = 0;
+        //     defaultSwoosh.style.opacity = 0;
+        //     defaultBase.style.opacity = 0;
+        //     var altLogo = document.getElementsByClassName("st4");
+        //     for (var i = 0; i < altLogo.length; i++) {
+        //         altLogo[i].style.opacity = 1;
+        //     }
+        // }
+        // if(destination.index===3){
+        //     tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        // }
+        // if(destination.index===4){
+        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        //     if(origin.index===5){
+        //         var logo = document.getElementById("logo");
+        //         logo.classList.add("from-bottom");
+        //         var defaultPlane = document.getElementById("plane");
+        //         var defaultSwoosh = document.getElementById("swoosh_desaturated");
+        //         var defaultBase = document.getElementById("base_blue");
+        //         defaultPlane.style.opacity = 0;
+        //         defaultSwoosh.style.opacity = 0;
+        //         defaultBase.style.opacity = 0;
+        //         var altLogo = document.getElementsByClassName("st4");
+        //         for (var i = 0; i < altLogo.length; i++) {
+        //             altLogo[i].style.opacity = 1;
+        //         }
+        //     }
+        // }
+        // if(destination.index===5){
+        //     var altLogo = document.getElementsByClassName("st4");
+        //     for (var i = 0; i < altLogo.length; i++) {
+        //         altLogo[i].style.opacity = 0;
+        //     }
+        //     var defaultPlane = document.getElementById("plane");
+        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
+        //     var defaultBase = document.getElementById("base_blue");
+        //     defaultPlane.style.opacity = 1;
+        //     defaultSwoosh.style.opacity = 1;
+        //     defaultBase.style.opacity = 1;
+        // }
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
@@ -367,7 +367,7 @@ export default class Home extends Component {
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
                                 </div>
                             </div>
-                            <div style={{backgroundColor: "#354563"}} className="section">
+                            {/* <div style={{backgroundColor: "#354563"}} className="section">
                                 <div className="graphTextContainer">
                                     <div style={{color: "white"}} className="title">
                                         Graphic Design
@@ -426,7 +426,7 @@ export default class Home extends Component {
                                     </div>
                                     <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="section">
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            

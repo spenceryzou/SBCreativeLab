@@ -29,7 +29,7 @@ export default class Home extends Component {
                         </a>
                       </div>
                       <div>
-                        <a href="/oops" data-content="suggestions" className="menu-link">
+                        <a href="https://forms.gle/xzJVHuGn9akQWw4x6" target="_blank" data-content="suggestions" className="menu-link">
                         suggestions
                         </a>
                       </div>
