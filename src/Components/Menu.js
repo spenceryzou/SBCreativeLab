@@ -19,7 +19,7 @@ export default class Home extends Component {
                         </a>
                       </div>
                       <div>
-                        <a href="/oops" data-content="resources" className="menu-link">
+                        <a href="/resources" data-content="resources" className="menu-link">
                         resources
                         </a>
                       </div>

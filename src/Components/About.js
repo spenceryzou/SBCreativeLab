@@ -53,6 +53,7 @@ export default class Home extends Component {
     //     section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     // }
 
+
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
