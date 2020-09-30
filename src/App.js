@@ -6,6 +6,7 @@ import Menu from './Components/Menu'
 import Oops from './Components/Oops'
 import About from './Components/About'
 import Resources from './Components/Resources'
+import Events from './Components/Events'
 import ReactGA from 'react-ga'
 
 export class App extends Component {
@@ -37,6 +38,7 @@ export class App extends Component {
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               <Route exact path="/about" render={(props) => <About {...props}/>}/>
               <Route exact path="/resources" render={(props) => <Resources {...props}/>}/>
+              <Route exact path="/events" render={(props) => <Events {...props}/>}/>
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
