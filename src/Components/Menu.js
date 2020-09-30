@@ -14,12 +14,12 @@ export default class Home extends Component {
                   </div> */}
                   <div className="menu-text">
                       <div>
-                        <a href="/oops" data-content="about" className="menu-link">
+                        <a href="/about" data-content="about" className="menu-link">
                         about
                         </a>
                       </div>
                       <div>
-                        <a href="/oops" data-content="resources" className="menu-link">
+                        <a href="/resources" data-content="resources" className="menu-link">
                         resources
                         </a>
                       </div>
@@ -59,7 +59,7 @@ export default class Home extends Component {
                             </span>
                         </div>
                       </a>
-                      <a href="/oops">
+                      <a href="https://sbcreativelab.slack.com/">
                         <div className="social-container">
                           <i class="fa fa-lg fa-slack"></i>
                             <span class="social-background">

@@ -422,6 +422,17 @@ span.scroll-cue span {
   transform: scale(1.12,1.12)
 }
 
+.logo path, .logo rect, .logo polygon, .logo g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .5s;
+}
+
+.from-bottom path, .from-bottom rect, .from-bottom polygon, .from-bottom g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .05s !important;
+}
+
+.from-menu path, .from-menu rect, .from-menu polygon, .from-menu g{
+  transition: all .2s cubic-bezier(0.63, 0.34, 0.1, 0.98) .17s !important;
+}
 .menuSVG path {
   fill: none;
   stroke: var(--color);
@@ -535,6 +546,36 @@ label {
   z-index: 5;
 }
 
+.leftTextContainer{
+    position: absolute;
+    max-width: 25%;
+    left: 15%;
+    top:50%;
+    z-index: 5;
+}
+
+.rightTextContainer{
+    position: absolute;
+    max-width: 25%;
+    left: 60%;
+    top:50%;
+    z-index: 5;
+}
+
+.graphTextContainer{
+    position: absolute;
+    max-width: 25%;
+    left: 15%;
+    top:40%;
+    z-index: 5;
+}
+
+.shortCaption{
+    font-family: "Poppins", sans-serif;
+    font-size: calc(10px + 9 * (100vw - 320px) / 600);
+    letter-spacing: .035em;
+}
+
 .longCaption{
   font-family: "Poppins", sans-serif;
   font-size: calc(10px + 9 * (100vw - 320px) / 1120);
@@ -599,16 +640,211 @@ label {
   z-index: 3;
 }
 
+#book{
+    position: absolute;
+    width: 55%;
+    top: 33%;
+    left: 100%;
+    transform: translate(-100%,-33%);
+    z-index: 1;
+}
+
+#bookCloud{
+    position: absolute;
+    width: 20%;
+    top: 35%;
+    left: 93%;
+    transform: translate(-93%,-35%);
+    z-index: 2;
+}
+
+#bookPlanes{
+    position: absolute;
+    width: 20%;
+    top: 33%;
+    left: 65%;
+    transform: translate(-65%,-33%);
+    z-index: 3;
+}
+
+#graphPlane{
+    position: absolute;
+    width: 23%;
+    top: 50%;
+    left: 85%;
+    transform: translate(-85%,-50%);
+    z-index: -1;
+}
+
+#graphCircle{
+  position: absolute;
+  width: 5%;
+  top: 25%;
+  left: 62%;
+  transform: translate(-62%,-25%);
+  z-index: 2;
+}
+
+#graphBlue{
+  position: absolute;
+  width: 18%;
+  top: 77%;
+  left: 87%;
+  transform: translate(-87%,-77%);
+  z-index: 2;
+}
+
+#graphTopBlue{
+    position: absolute;
+    width: 18%;
+    top: 0%;
+    left: 90%;
+    transform: translate(-90%,0%);
+    z-index: 3;
+}
+
+#graphPink{
+  position: absolute;
+  width: 18%;
+  top: 93%;
+  left: 22%;
+  transform: translate(-22%,-93%);
+  z-index: 2;
+}
+
+#graphTopPink{
+    position: absolute;
+    width: 18%;
+    top: 18%;
+    left: 85%;
+    transform: translate(-85%,-18%);
+    z-index: 3;
+}
+
+#graphBotPink{
+    position: absolute;
+    width: 20%;
+    top: 100%;
+    left: 75%;
+    transform: translate(-75%,-100%);
+    z-index: 3;
+}
+
+#graphGreen{
+  position: absolute;
+  width: 13%;
+  top: 90%;
+  left: 60%;
+  transform: translate(-60%,-90%);
+  z-index: 2;
+}
+
+#graphTopGreen{
+    position: absolute;
+    width: 18%;
+    top: 2%;
+    left: 69%;
+    transform: translate(-69%,-2%);
+    z-index: 3;
+}
+
+#graphYellow{
+  position: absolute;
+  width: 11%;
+  top: 37%;
+  left: 97%;
+  transform: translate(-97%,-37%);
+  z-index: 2;
+}
+
+#graphOrange{
+    position: absolute;
+    width: 8%;
+    top: 85%;
+    left: 0%;
+    transform: translate(-0%,-85%);
+    z-index: 3;
+}
+
+#graphCorner{
+  position: absolute;
+  width: 11%;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%,-100%);
+  z-index: 2;
+}
+
+#graphShapes{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    z-index: 3;
+}
+
+
+#phone{
+    position: absolute;
+    width: 55%;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-100%);
+    z-index: -1;
+}
+#phoneScene{
+  z-index: -1;
+}
+
+/* #phonePopups{
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%,-50%);
+    z-index: 2;
+} */
+#popupTop{
+  position: absolute;
+  width: 11%;
+  top: 37%;
+  left: 28%;
+  transform: translate(-28%,-37%);
+  z-index: 2;
+}
+
+#popupBottom{
+  position: absolute;
+  width: 15%;
+  top: 67%;
+  left: 45%;
+  transform: translate(-45%,-67%);
+  z-index: 2;
+}
+
+#phonePlane{
+    position: absolute;
+    width: 25%;
+    top: 25%;
+    left: 0%;
+    transform: translate(-0%,-25%);
+    z-index: 3;
+}
+
 .fp-tableCell{
   vertical-align: initial;
 }
 
-.subtitle2{
+.subtitle-med{
+  font-family: "Poppins";
+  font-size: calc(10px + 10 * (100vw - 320px) / 1120);
+}
+
+.inline-block-center{
   display:inline-block;
   justify-content: center; 
   width: 100%;
-  font-family: "Poppins";
-  font-size: calc(10px + 10 * (100vw - 320px) / 1120);
 }
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
@@ -661,6 +897,68 @@ label {
     width: auto;
   }
 
+
+#book{
+    position: absolute;
+    width: unset;
+    height: 60%;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%,-100%);
+    z-index: -1;
+}
+
+#bookCloud{
+    position: absolute;
+    width: unset;
+    height: 10%;
+    top: 60%;
+    left: 93%;
+    transform: translate(-93%,-60%);
+    z-index: 2;
+}
+
+#bookPlanes{
+    position: absolute;
+    width: unset;
+    height: 15%;
+    top: 63%;
+    left: 33%;
+    transform: translate(-33%,-63%);
+    z-index: 3;
+}
+
+#phone{
+    position: absolute;
+    width: unset;
+    height: 45%;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-100%);
+    z-index: -1;
+}
+
+#phonePopups{
+    display: none;
+    position: absolute;
+    width: unset;
+    height: 20%;
+    top: 75%;
+    /* left: 70%; */
+    transform: translate(-70%,-75%);
+    z-index: 3;
+}
+
+#phonePlane{
+    position: absolute;
+    width: unset;
+    height: 20%;
+    top: 70%;
+    left: 0%;
+    transform: translate(-0%,-70%);
+    z-index: 2;
+}
+
   .textContainer{
     /* display: none; */
     /* top: 20%; */
@@ -668,6 +966,28 @@ label {
     transform: translate(0, -100%) !important;
     left: 12%;
     max-width: 80%;
+  }
+
+  .leftTextContainer{
+    transform: translate(0, -200%) !important;
+    left: 12%;
+    max-width: 80%;
+  }
+
+  .rightTextContainer{
+    transform: translate(0, -250%) !important;
+    left: 8%;
+    max-width: 90%;
+  }
+
+  /* .graphTextContainer{
+    transform: translate(0, -170%) !important;
+    left: 12%;
+    max-width: 90%;
+  } */
+
+  .shortCaption{
+    font-size: calc(10px + 9 * (100vh - 320px) / 300);
   }
 
   .longCaption{
@@ -824,4 +1144,332 @@ label {
   .hover-reveal {
     display: none;
   }
+}
+
+.about-section-1{
+  width: 100%;
+  display:block;
+  padding-top: 180px;
+}
+
+.about-title{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-subtitle{
+  width: 59%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: .035em;
+}
+
+#skytram{
+  width: 100%;
+  position: absolute;
+  top: 252px;
+  left: 0;
+}
+
+.color-black{
+  color: black;
+  opacity: 95%;
+}
+
+.about-section-2{
+  width: 100%;
+  display: block;
+  padding-top: 45%;
+}
+
+.about-title-2{
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.icon-container{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.icon{
+  max-width: 320px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-small{
+  font-family: "bookmania", sans-serif;
+  font-weight: 900;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1120);
+  letter-spacing: .035em;
+}
+
+.icon-text{
+  text-align: center;
+  width: 275px;
+  align-self: center;
+}
+
+a .icon-title{
+  color: black;
+  opacity: .95;
+  transition: color 150ms ease;
+}
+
+a .icon-title:hover{
+  color: #1BB994;
+  opacity: .95;
+}
+
+
+#resources{
+  width: 100%;
+}
+
+#workshops{
+  width: 100%;
+}
+
+#community{
+  width: 100%;
+}
+
+.about-section-3{
+  padding-top: 7%;
+}
+
+.about-title-3{
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.gallery-container{
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  column-gap: 2vw;
+  row-gap: 2vw;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-items: center;
+}
+#green{
+  max-width:100%;
+  object-fit: none;
+  height:333px;
+  border-radius: 4px;  
+}
+#box{
+  max-width:100%;
+  object-fit: contain;
+  height:333px;
+  border-radius: 4px;  
+}
+
+.team-member-container{
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(300px);
+}
+.spencer .team-member-image{
+  bottom: 4.5%;
+}
+.team-member-image{
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateZ(20px);
+  bottom: 4.5%;
+}
+
+.team-member-hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0;
+  transition: all .5s ease;
+}
+.team-member-container:hover .team-member-hover{
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.blue-circle{
+  width: 270px;
+  height: 270px;
+  background-color: #BDE7EEff;
+  position: absolute;
+  left: 16%;
+  top: -6%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) translateZ(0px);
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.team-member-container:hover .blue-circle{
+  opacity: 1;
+  transform: scale(1) translateZ(0px);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dark-blue-circle{
+  width: 180px;
+  height: 180px;
+  background-color: #5F9DC2;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) translateZ(1px);
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.color-smoke{
+  z-index: 2;
+  position: absolute;
+  width: 70%;
+  top: -6%;
+  left: -9%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#turbulence);
+}
+.cool-shape{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: -6%;
+  left: -9%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.cool-shape-2{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  left: -100%;
+  opacity: 1;
+  transform-origin: bottom right;
+  transform: scale(0) skew(30deg) rotate(-40deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.rose{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: -6%;
+  left: -12%;
+  opacity: 1;
+  /* transform-origin: bottom right; */
+  transform: scale(0) skew(0deg) rotate(0deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.team-member-container:hover .rose{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.rose2{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 20%;
+  opacity: 1;
+  /* transform-origin: bottom right; */
+  transform: scale(0) skew(0deg) rotate(0deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#filter);
+}
+.team-member-container:hover .rose2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .cool-shape-2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(-1) skew(0deg) rotate(-10deg) translateZ(3px);
+}
+.team-member-container:hover .cool-shape{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.color-smoke-2{
+  z-index: 2;
+  position: absolute;
+  width: 75%;
+  top: 3%;
+  left: 34%;
+  opacity: 1;
+  transform-origin: bottom left;
+  transform: scale(0) skew(-30deg) rotate(-30deg) translateZ(3px);
+  transition: all 1.5s ease;
+  filter: url(#turbulence);
+}
+.team-member-container:hover .color-smoke-2{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .color-smoke{
+  transition: all 1.5s ease;
+  opacity: 1;
+  transform: scale(1) skew(0deg) rotate(0deg) translateZ(3px);
+}
+.team-member-container:hover .dark-blue-circle{
+  opacity: 1;
+  transform: scale(1) translateZ(1px);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 180px;
+}
+
+.resources-section{
+    width: auto;
+    margin-left: 10%;
+}
+
+.masonry-grid{
+    margin: 3%;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-caption{
+    padding-top: 10px;
 }

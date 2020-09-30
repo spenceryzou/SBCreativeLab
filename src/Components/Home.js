@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from "./logo.svg";
 import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
 import ReactGA from 'react-ga';
+import Menu from './Menu';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -19,6 +20,10 @@ export default class Home extends Component {
         this.state = {
         wave: "",
         menuOpen: false,
+        prevAltLogo: [],
+        prevDefaultPlane: 1,
+        prevDefaultSwoosh: 1,
+        prevDefaultBase: 1
         }
 
         // this.resetScroll = () =>{
@@ -42,15 +47,65 @@ export default class Home extends Component {
         ReactGA.initialize('UA-178117149-1');
         ReactGA.pageview('/');
     }
-    componentDidUpdate(){
-        let menu = document.getElementById("menu");
-        if(this.state.menuOpen === true){
-            console.log('open menu')
-            menu.classList.add("drop");
-            console.log(menu.classList);
-        }else if(this.state.menuOpen === false){
-            menu.classList.remove("drop");
-            console.log(menu.classList);
+    // getSnapshotBeforeUpdate(){
+    //     var prevAltLogo;
+    //     var prevDefaultPlane;
+    //     var prevDefaultSwoosh;
+    //     var prevDefaultBase;
+    //     var altLogo = document.getElementsByClassName("st4");
+    //     for (var i = 0; i < altLogo.length; i++) {
+    //         prevAltLogo = [...altLogo[i].style.opacity]
+    //     }
+    //     var defaultPlane = document.getElementById("plane");
+    //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
+    //     var defaultBase = document.getElementById("base_blue");
+    //     prevDefaultPlane = defaultPlane.style.opacity;
+    //     prevDefaultSwoosh = defaultSwoosh.style.opacity;
+    //     prevDefaultBase = defaultBase.style.opacity;
+    //     return{
+    //         prevAltLogo: prevAltLogo,
+    //         prevDefaultPlane: prevDefaultPlane,
+    //         prevDefaultSwoosh: prevDefaultSwoosh,
+    //         prevDefaultBase: prevDefaultBase
+    //     }
+    // }
+    componentDidUpdate(prevState){
+        if(prevState.menuOpen !== this.state.menuOpen){
+            let menu = document.getElementById("menu");
+            if(this.state.menuOpen === true){
+                console.log('open menu');
+                menu.classList.add("drop");
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-menu");
+                console.log(menu.classList);
+                var altLogo = document.getElementsByClassName("st4");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
+            }else if(this.state.menuOpen === false){
+                menu.classList.remove("drop");
+                var logo = document.getElementById("logo");
+                logo.classList.remove("from-menu");
+                console.log(menu.classList);
+                if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
+                    var defaultPlane = document.getElementById("plane");
+                    var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                    var defaultBase = document.getElementById("base_blue");
+                    defaultPlane.style.opacity = 0;
+                    defaultSwoosh.style.opacity = 0;
+                    defaultBase.style.opacity = 0;
+                    var altLogo = document.getElementsByClassName("st4");
+                    for (var i = 0; i < altLogo.length; i++) {
+                        altLogo[i].style.opacity = 1;
+                    }
+                }
+            }
         }
     }
     // handleScroll(){
@@ -86,6 +141,39 @@ export default class Home extends Component {
             frictionX: .075,
             frictionY: .075
             });
+
+        var graphScene = document.getElementById('graphScene');
+        var parallaxInstance7 = new Parallax(graphScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var uiuxScene = document.getElementById('uiuxScene');
+        var parallaxInstance3 = new Parallax(uiuxScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var phoneScene = document.getElementById('phoneScene');
+        var parallaxInstance4 = new Parallax(phoneScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+
+        var illusScene = document.getElementById('illusScene');
+        var parallaxInstance5 = new Parallax(illusScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });       
+        var bookScene = document.getElementById('bookScene');
+        var parallaxInstance6 = new Parallax(bookScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+
         this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
         // this.resetScroll();
@@ -103,23 +191,81 @@ export default class Home extends Component {
             this.setState({wave: "wave-move-down"});
         }
         if(destination.index===1){
-            if(origin.index===0){
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-            }else{
-                tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            tl.fromTo('.textContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===2){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
             }
+        }
+        if(destination.index===2){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            // var defaultLogo = document.getElementsByClassName("st5");
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 0;
+            defaultSwoosh.style.opacity = 0;
+            defaultBase.style.opacity = 0;
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 1;
+            }
+        }
+        if(destination.index===3){
+            tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        }
+        if(destination.index===4){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===5){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 0;
+                defaultSwoosh.style.opacity = 0;
+                defaultBase.style.opacity = 0;
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 1;
+                }
+            }
+        }
+        if(destination.index===5){
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 0;
+            }
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 1;
+            defaultSwoosh.style.opacity = 1;
+            defaultBase.style.opacity = 1;
         }
     }
     afterLoad(origin, destination, direction) {
         console.log("After load: " + destination.index);
+        var logo = document.getElementById("logo");
+        logo.classList.remove("from-bottom");
         const tl = gsap.timeline();
-        if(destination.index===1){
+        if(destination.index===4){
             document.getElementById("fullpage").classList.remove("ease");
-            if(origin.index===2){
+            if(origin.index===5){
                 tl.fromTo('#scroll-cue', .4, { y: '-10', opacity: 0}, { y:'0', opacity: 1, delay: .1})
             }
         }
-        if(destination.index===2){
+        if(destination.index===5){
             tl.fromTo('#scroll-cue', .4, {y: '0', opacity: 1}, { y:'-20', opacity: 0})
         }
     }
@@ -127,11 +273,12 @@ export default class Home extends Component {
     render() {
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
+                <Menu/>
                 <div className="header">
                     <div className="header-left">
                         <div className="logo-wrapper">
                             <a href="/">
-                                <Logo width="100%" display="block" height="auto"/>
+                                <Logo id="logo" className="logo" width="100%" display="block" height="auto"/>
                             </a>
                         </div>
                     </div>    
@@ -213,10 +360,71 @@ export default class Home extends Component {
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="leftCloud" src="/images/left-cloud.png"/></div>
                                     <div data-depth=".02" id="absolute"><img alt="cloud" id="rightCloud" src="/images/right-cloud.png"/></div>
                                     <div data-invert-x="false" data-invert-y="false" id="mainPlane" className="imageContainer">
-                                    <div data-depth=".04" id="absolute"><img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/></div></div>
+                                        <div data-depth=".04" id="absolute"><img alt="paper plane" id="mainAirplane" src="/images/main-airplane.png"/></div>
+                                    </div>
                                     <div data-depth=".16" id="absolute"><img alt="paper plane" id="topAirplane" src="/images/top-airplane.png"/></div>
                                     <div data-depth=".1"id="absolute"><img alt="paper plane" id="rightAirplane" src="/images/right-airplane.png"/></div>
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="graphTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        Graphic Design
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Communicate your visual identity.
+                                    </div>
+                                </div>
+                                <div id="graphScene" className="imageContainer">
+                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphPink" src="/images/graphic/pink1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopPink" src="/images/graphic/top-pink1.png"/></div>
+                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphBotPink" src="/images/graphic/bot-pink1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphGreen" src="/images/graphic/green1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphTopGreen" src="/images/graphic/top-green1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphYellow" src="/images/graphic/yellow1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphOrange" src="/images/graphic/orange1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphCorner" src="/images/graphic/corner1.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphShapes" src="/images/graphic/shapes.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="rightTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        UI/UX
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Build exciting user experiences.
+                                    </div>
+                                </div>
+                                <div data-invert-x="false" data-invert-y="false" id="uiuxScene" className="imageContainer">
+                                    <div id="phoneScene" className="imageContainer">
+                                        <div data-depth=".04" id="absolute"><img alt="phone" id="phone" src="/images/phone.png"/></div>
+                                        <div data-depth=".17" id="absolute"><img alt="pop up window" id="popupTop" src="/images/popup-top.png"/></div>
+                                        <div data-depth=".19" id="absolute"><img alt="plane" id="phonePlane" src="/images/phone-plane.png"/></div>
+                                    </div>
+                                    <div data-depth=".04" id="absolute"><img alt="pop up window" id="popupBottom" src="/images/popup-bottom.png"/></div>
+                                </div>
+                            </div>
+                            <div style={{backgroundColor: "#354563"}} className="section">
+                                <div className="leftTextContainer">
+                                    <div style={{color: "white"}} className="title">
+                                        Illustration
+                                    </div>
+                                    <div className="shortCaption" style={{color: "white"}}>
+                                        Bring concepts and stories to life.
+                                    </div>
+                                </div>
+                                <div id="illusScene" className="imageContainer">
+                                    <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">
+                                        <div data-depth=".01" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                        <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                    </div>
+                                    <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
                                 </div>
                             </div>
                             <div className="section">
@@ -225,12 +433,12 @@ export default class Home extends Component {
                                         <div style={{color: darkColor}} className="title">
                                             let's keep in touch!
                                         </div>
-                                        <div className="subtitle2">
+                                        <div className="subtitle-med inline-block-center">
                                             <ul class="links">
                                                 <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
                                                 <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
                                                 <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
-                                                <li class="link"><a href="/oops">slack</a></li>
+                                                <li class="link"><a href="https://sbcreativelab.slack.com/">slack</a></li>
                                             </ul>
                                         </div>
                                     </div>
