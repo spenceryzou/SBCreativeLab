@@ -45,6 +45,7 @@ export default class Home extends Component {
             document.body.addEventListener('touchmove', function(e){e.preventDefault()});
             if(isMobile){
                 for (var i = 0; i < hideImg.length; i++) {
+                    hideImg[i].classList.remove('opacity-transition-delay');
                     hideImg[i].classList.add('opacity-transition');
                     hideImg[i].style.opacity = 0;
                 }
@@ -56,8 +57,7 @@ export default class Home extends Component {
             document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
             for (var i = 0; i < hideImg.length; i++) {
                 hideImg[i].classList.remove('opacity-transition');
-            }
-            for (var i = 0; i < hideImg.length; i++) {
+                hideImg[i].classList.add('opacity-transition-delay');
                 hideImg[i].style.opacity = 1;
             }
         }

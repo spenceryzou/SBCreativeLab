@@ -1296,6 +1296,9 @@ a .icon-title:hover{
 .opacity-transition{
   transition: opacity .5s ease;
 }
+.opacity-transition-delay{
+  transition: opacity .5s ease .5s;
+}
 
 .team-member-hover{
   position: absolute;
