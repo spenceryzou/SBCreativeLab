@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import Typewriter from 'typewriter-effect';
-import ReactFullpage from '@fullpage/react-fullpage';
 import { ReactComponent as Logo } from "./logo.svg";
-import Div100vh from 'react-div-100vh';
-import Parallax from 'parallax-js';
 import Menu from './Menu';
-import Tilt from 'tilt.js';
 import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
+import ReactGA from 'react-ga';
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -29,16 +25,22 @@ export default class Home extends Component {
             menuOpen: !prevState.menuOpen
         }))
     }
+    initializeReactGA() {
+        ReactGA.initialize('UA-178117149-1');
+        ReactGA.pageview('/events');
+    }
     
     componentDidUpdate(){
         let menu = document.getElementById("menu");
         if(this.state.menuOpen === true){
-            console.log('open menu')
             menu.classList.add("drop");
-            console.log(menu.classList);
+            document.body.classList.add("no-scroll");
+            document.body.bind('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
+            document.body.classList.remove("no-scroll");
+            document.body.unbind('touchmove');
         }
     }
 
@@ -54,7 +56,7 @@ export default class Home extends Component {
             itemSelector: '.grid-item'
             });    
         });
-
+        this.initializeReactGA();
     }
 
     render() {

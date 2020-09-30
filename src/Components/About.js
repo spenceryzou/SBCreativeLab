@@ -7,6 +7,7 @@ import Parallax from 'parallax-js';
 import Menu from './Menu';
 import Team from './Team';
 import Tilt from 'tilt.js';
+import ReactGA from 'react-ga'
 import $ from 'jquery'
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
@@ -29,16 +30,22 @@ export default class Home extends Component {
             menuOpen: !prevState.menuOpen
         }))
     }
+    initializeReactGA() {
+        ReactGA.initialize('UA-178117149-1');
+        ReactGA.pageview('/about');
+    }
     
     componentDidUpdate(){
         let menu = document.getElementById("menu");
         if(this.state.menuOpen === true){
-            console.log('open menu')
             menu.classList.add("drop");
-            console.log(menu.classList);
+            document.body.classList.add("no-scroll");
+            document.body.bind('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
+            document.body.classList.remove("no-scroll");
+            document.body.unbind('touchmove');
         }
     }
     // handleScroll(){
@@ -61,6 +68,7 @@ export default class Home extends Component {
             maxTilt: 5,
             scale: 1.05,
         });
+        this.initializeReactGA();
         // the animation to use
 //         const tl = gsap.timeline({paused: true});
 //         tl.from("h1", {scale: 0.7, autoAlpha: 0});

@@ -69,42 +69,43 @@ export default class Home extends Component {
     //         prevDefaultBase: prevDefaultBase
     //     }
     // }
+
     componentDidUpdate(prevState){
         if(prevState.menuOpen !== this.state.menuOpen){
             let menu = document.getElementById("menu");
             if(this.state.menuOpen === true){
-                console.log('open menu');
+                // console.log('open menu');
                 menu.classList.add("drop");
-                var logo = document.getElementById("logo");
-                logo.classList.add("from-menu");
-                console.log(menu.classList);
-                var altLogo = document.getElementsByClassName("st4");
-                var defaultPlane = document.getElementById("plane");
-                var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                var defaultBase = document.getElementById("base_blue");
-                for (var i = 0; i < altLogo.length; i++) {
-                    altLogo[i].style.opacity = 0;
-                }
-                defaultPlane.style.opacity = 1;
-                defaultSwoosh.style.opacity = 1;
-                defaultBase.style.opacity = 1;
+                // var logo = document.getElementById("logo");
+                // logo.classList.add("from-menu");
+                // console.log(menu.classList);
+                // var altLogo = document.getElementsByClassName("st4");
+                // var defaultPlane = document.getElementById("plane");
+                // var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                // var defaultBase = document.getElementById("base_blue");
+                // for (var i = 0; i < altLogo.length; i++) {
+                //     altLogo[i].style.opacity = 0;
+                // }
+                // defaultPlane.style.opacity = 1;
+                // defaultSwoosh.style.opacity = 1;
+                // defaultBase.style.opacity = 1;
             }else if(this.state.menuOpen === false){
                 menu.classList.remove("drop");
-                var logo = document.getElementById("logo");
-                logo.classList.remove("from-menu");
-                console.log(menu.classList);
-                if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
-                    var defaultPlane = document.getElementById("plane");
-                    var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                    var defaultBase = document.getElementById("base_blue");
-                    defaultPlane.style.opacity = 0;
-                    defaultSwoosh.style.opacity = 0;
-                    defaultBase.style.opacity = 0;
-                    var altLogo = document.getElementsByClassName("st4");
-                    for (var i = 0; i < altLogo.length; i++) {
-                        altLogo[i].style.opacity = 1;
-                    }
-                }
+                // var logo = document.getElementById("logo");
+                // logo.classList.remove("from-menu");
+                // console.log(menu.classList);
+                // if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
+                //     var defaultPlane = document.getElementById("plane");
+                //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                //     var defaultBase = document.getElementById("base_blue");
+                //     defaultPlane.style.opacity = 0;
+                //     defaultSwoosh.style.opacity = 0;
+                //     defaultBase.style.opacity = 0;
+                //     var altLogo = document.getElementsByClassName("st4");
+                //     for (var i = 0; i < altLogo.length; i++) {
+                //         altLogo[i].style.opacity = 1;
+                //     }
+                // }
             }
         }
     }
@@ -181,7 +182,6 @@ export default class Home extends Component {
     }
 
     onLeave(origin, destination, direction) {
-        console.log("Leaving section " + origin.index);
         const tl = gsap.timeline();
         if(origin.index===0){
             document.getElementById("fullpage").classList.add("ease");
@@ -255,7 +255,6 @@ export default class Home extends Component {
         // }
     }
     afterLoad(origin, destination, direction) {
-        console.log("After load: " + destination.index);
         var logo = document.getElementById("logo");
         logo.classList.remove("from-bottom");
         const tl = gsap.timeline();

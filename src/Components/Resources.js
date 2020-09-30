@@ -6,6 +6,7 @@ import Div100vh from 'react-div-100vh';
 import Parallax from 'parallax-js';
 import Menu from './Menu';
 import Tilt from 'tilt.js';
+import ReactGA from 'react-ga';
 import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
 // const hexRgb = require('hex-rgb');
@@ -29,16 +30,22 @@ export default class Home extends Component {
             menuOpen: !prevState.menuOpen
         }))
     }
+    initializeReactGA() {
+        ReactGA.initialize('UA-178117149-1');
+        ReactGA.pageview('/resources');
+    }
     
     componentDidUpdate(){
         let menu = document.getElementById("menu");
         if(this.state.menuOpen === true){
-            console.log('open menu')
             menu.classList.add("drop");
-            console.log(menu.classList);
+            document.body.classList.add("no-scroll");
+            document.body.bind('touchmove', function(e){e.preventDefault()});
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
+            document.body.classList.remove("no-scroll");
+            document.body.unbind('touchmove');
         }
     }
 
@@ -54,7 +61,7 @@ export default class Home extends Component {
             itemSelector: '.grid-item'
             });    
         });
-
+        this.initializeReactGA();
     }
 
     render() {
@@ -97,7 +104,7 @@ export default class Home extends Component {
                         <div className="icon-title title-small color-black">Tutorials</div>
                         <div className="masonry-grid">
                             <div class="grid-item">
-                                <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}href="https://www.instagram.com/sbcreativelab/channel">
+                                <a style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} href="https://www.instagram.com/sbcreativelab/channel">
                                     <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
                                     <div class="grid-caption">Design Tip #1: What are Layers?</div>
                                 </a>
