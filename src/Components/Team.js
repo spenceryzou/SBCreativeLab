@@ -12,7 +12,7 @@ export default class Home extends Component {
                 <div style={{color: darkColor}} className="title about-title-3">
                     Meet the Team
                 </div>
-                <div className="gallery-container">
+                <div id="gallery-container" className="gallery-container">
                     <div className="alex team-member">
                         <div className="team-member-container">
                             <img id="box" src="/images/lightest-yellow-square.jpg"></img>

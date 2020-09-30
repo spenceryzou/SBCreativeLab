@@ -41,11 +41,14 @@ export default class Home extends Component {
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
             document.body.addEventListener('touchmove', function(e){e.preventDefault()});
+            var hideImg = document.getElementById('gallery-container');
+            hideImg.style.visibility = "hidden";
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
             document.body.classList.remove("no-scroll");
             document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
+            hideImg.style.visibility = "visibile";
         }
     }
     // handleScroll(){
