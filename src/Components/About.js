@@ -37,18 +37,25 @@ export default class Home extends Component {
     
     componentDidUpdate(){
         let menu = document.getElementById("menu");
+        var hideImg = document.getElementsByClassName('team-member-image');
+        var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
         if(this.state.menuOpen === true){
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
             document.body.addEventListener('touchmove', function(e){e.preventDefault()});
-            var hideImg = document.getElementById('gallery-container');
-            hideImg.style.visibility = "hidden";
+            if(isMobile){
+                for (var i = 0; i < hideImg.length; i++) {
+                    hideImg[i].style.opacity = 0;
+                }
+            }
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
             console.log(menu.classList);
             document.body.classList.remove("no-scroll");
             document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
-            hideImg.style.visibility = "visibile";
+            for (var i = 0; i < hideImg.length; i++) {
+                hideImg[i].style.opacity = 1;
+            }
         }
     }
     // handleScroll(){

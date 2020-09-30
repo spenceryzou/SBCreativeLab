@@ -1292,6 +1292,7 @@ a .icon-title:hover{
   margin-right: auto;
   transform: translateZ(20px);
   bottom: 4.5%;
+  transition: opacity 1s ease;
 }
 
 .team-member-hover{
@@ -1968,7 +1969,7 @@ a .icon-title:hover{
 .grid-item{
     display: flex;
     flex-direction: column;
-    width: 25%
+    width: 25%;
 }
 .grid-item-container{
   display: flex;
@@ -2082,4 +2083,15 @@ a.event-subtitle{
     justify-content: center;
     margin-bottom: 1rem;
   }
+  .masonry-grid{
+    width: 100%;
+  }
+  .masonry-grid2{
+    width: 100%;
+  }
+  .grid-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 }
