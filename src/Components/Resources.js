@@ -110,10 +110,10 @@ export default class Home extends Component {
                         <div className="masonry-grid">
                             <div class="grid-item">
                                 <div class="grid-item-container">
-                                    <a href="https://www.instagram.com/sbcreativelab/channel">
+                                    <a target="_blank" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
                                         <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
                                     </a>
-                                    <a class="grid-caption" href="https://www.instagram.com/sbcreativelab/channel">
+                                    <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
                                         Design Tip #1: What are Layers?
                                     </a>
                                 </div>
@@ -129,11 +129,11 @@ export default class Home extends Component {
                             </div> */}
                             <div class="grid-item">
                                 <div class="grid-item-container">
-                                    <a href="https://youtu.be/L-qy5yiLTak">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view">
                                         <img class="grid-item-img" style={{maxWidth: "175px"}}alt="kickoff event" src="/images/meet-sbcreativelab-IG.jpg"/>
                                     </a>
-                                    <a href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Kick Off Event Recording</a>
-                                    <a href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                    <a target="_blank" href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Event Recording</a>
                                 </div>
                             </div>
                         </div>
