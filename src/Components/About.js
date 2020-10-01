@@ -143,7 +143,8 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="about-section-1">    
+                <div className="about-section-1">
+                    <img id="skytram" alt="skytram" src="/images/about-page-top.png"/>    
                     <div style={{color: darkColor}} className="title about-title">
                         Who We Are 
                     </div>
@@ -154,7 +155,6 @@ export default class Home extends Component {
                         accessible opportunities for budding designers to learn and develop their skills in their 
                         creative journeys!
                     </div>
-                    <img id="skytram" alt="skytram" src="/images/about-page-top.png"/>
                 </div>
                 <div className="about-section-2">
                     <div style={{color: darkColor}} className="title about-title-2">

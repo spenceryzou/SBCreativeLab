@@ -90,7 +90,7 @@ export default class Home extends Component {
                             </div>
                         </div>                                
                         <div style={{marginTop: "24px"}} className="team-member-name title-small">Esther Liu</div>
-                        <div className="team-member-team longCaption">Design {'\u2022'} Logistics</div>
+                        <div className="team-member-team longCaption">Logistics {'\u2022'} Design</div>
                     </div>
                     <div className="evelyn team-member">
                         <div className="team-member-container">
