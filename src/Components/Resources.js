@@ -101,7 +101,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="resources">
+                <div style={{paddingBottom: "3%"}} className="resources">
                     <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
                         Resources
                     </div>
@@ -115,6 +115,16 @@ export default class Home extends Component {
                                     </a>
                                     <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
                                         Design Tip #1: What are Layers?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <a target="_blank" href="https://www.instagram.com/tv/CF2onhaFE3L/">
+                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 2: navigating the properties panel" src="/images/properties.jpg"/>
+                                    </a>
+                                    <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CF2onhaFE3L/">
+                                        Design Tip #2: Navigating the Properties Panel
                                     </a>
                                 </div>
                             </div>
@@ -134,6 +144,15 @@ export default class Home extends Component {
                                     </a>
                                     <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
                                     <a target="_blank" href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Event Recording</a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view">
+                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="photoshop basics event" src="/images/photoshop-basics-IG.jpg"/>
+                                    </a>
+                                    <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                    <a target="_blank" href="/oops" class="grid-caption">Event Recording</a>
                                 </div>
                             </div>
                         </div>

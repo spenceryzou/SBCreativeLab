@@ -1983,6 +1983,7 @@ a .icon-title:hover{
 }
 .grid-caption{
     padding-top: 10px;
+    text-align: center;
 }
 a.grid-caption{
   color: black;
