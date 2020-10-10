@@ -152,7 +152,7 @@ export default class Home extends Component {
                                         <img class="grid-item-img" style={{maxWidth: "175px"}}alt="photoshop basics event" src="/images/photoshop-basics-IG.jpg"/>
                                     </a>
                                     <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view" target="_blank" class="grid-caption">Slide Deck</a>
-                                    <a target="_blank" href="/oops" class="grid-caption">Event Recording</a>
+                                    <a target="_blank" href="https://youtu.be/NH1mqB0TuPw" class="grid-caption">Event Recording</a>
                                 </div>
                             </div>
                         </div>
