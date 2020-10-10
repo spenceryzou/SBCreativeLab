@@ -97,6 +97,28 @@ export default class Home extends Component {
                     </div>
                     <div className="event-row">
                         <div className="event-card">
+                            <a target="_blank" href="https://www.facebook.com/events/2796961817287634">
+                                <img className="event-card-img" src="/images/figma-workshop.png"></img>
+                            </a>
+                            <div className="event-text">
+                                <div className="event-title-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/2796961817287634" className="event-title icon-title title-small color-black">
+                                        How to Use Figma
+                                    </a>
+                                    <div className="subtitle-med color-black event-date">
+                                        10 - 22 - 2020
+                                    </div>
+                                </div>
+                                <div className="event-subtitle-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/2796961817287634" className="event-subtitle subtitle-med color-black">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{paddingTop: "2rem"}} className="event-row">
+                        <div className="event-card-right">
                             <a target="_blank" href="https://www.facebook.com/events/776111302960667">
                                 <img className="event-card-img" src="/images/animation-design.jpg"></img>
                             </a>
@@ -117,8 +139,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card-right">
+                    <div style={{paddingTop: "3rem"}} className="event-row">
+                        <div className="event-card">
                             <a target="_blank" href="https://www.facebook.com/events/1486106804909928/">
                             <img className="event-card-img" src="/images/photoshop-workshop.jpg"></img></a>
                             <div className="event-text">
@@ -138,8 +160,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{paddingTop: "3rem"}} className="event-row">
-                        <div className="event-card">
+                    <div style={{paddingTop: "2rem"}} className="event-row">
+                        <div className="event-card-right">
                             <a target="_blank" href="https://www.facebook.com/events/730522954163235/">
                                 <img className="event-card-img" src="/images/meet-sbcreativelab.jpg"></img>
                             </a>
