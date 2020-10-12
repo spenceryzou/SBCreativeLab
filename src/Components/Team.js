@@ -151,7 +151,7 @@ export default class Home extends Component {
                                 <img className="sm-golgi" src="images/golgi-apparatus.png"></img>
                             </div>
                         </div>                                
-                        <div style={{marginTop: "24px"}} className="team-member-name title-small">Fox</div>
+                        <div style={{marginTop: "24px"}} className="team-member-name title-small">Finn the Fox</div>
                         <div className="team-member-team longCaption">Team Captain</div>
                     </div>
                 </div>
