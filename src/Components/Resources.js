@@ -57,13 +57,13 @@ export default class Home extends Component {
             // images have loaded        
             var container = document.querySelector('.masonry-grid');
             var msnry = new Masonry( container, {
-            columnWidth: 100,
-            itemSelector: '.grid-item'
+                columnWidth: 300,
+                gutter: 20
             });    
             var container2 = document.querySelector('.masonry-grid2');
             var msnry2 = new Masonry( container2, {
-            columnWidth: 100,
-            itemSelector: '.grid-item'
+                columnWidth: 300,
+                gutter: 20
             });    
         });
         this.initializeReactGA();
@@ -111,7 +111,7 @@ export default class Home extends Component {
                             <div class="grid-item">
                                 <div class="grid-item-container">
                                     <a target="_blank" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
-                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
+                                        <img class="grid-item-img" alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
                                     </a>
                                     <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
                                         Design Tip #1: What are Layers?
@@ -121,7 +121,7 @@ export default class Home extends Component {
                             <div class="grid-item">
                                 <div class="grid-item-container">
                                     <a target="_blank" href="https://www.instagram.com/tv/CF2onhaFE3L/">
-                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="design tip 2: navigating the properties panel" src="/images/properties.jpg"/>
+                                        <img class="grid-item-img" alt="design tip 2: navigating the properties panel" src="/images/properties.jpg"/>
                                     </a>
                                     <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CF2onhaFE3L/">
                                         Design Tip #2: Navigating the Properties Panel
@@ -139,20 +139,29 @@ export default class Home extends Component {
                             </div> */}
                             <div class="grid-item">
                                 <div class="grid-item-container">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view">
-                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="kickoff event" src="/images/meet-sbcreativelab-IG.jpg"/>
+                                    <a target="_blank" href="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing">
+                                        <img class="grid-item-img" alt="animation event" src="/images/animation-ig.jpg"/>
                                     </a>
-                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
-                                    <a target="_blank" href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Event Recording</a>
+                                    <a target="_blank" href="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing" target="_blank" class="grid-caption">Slide Deck</a>
+                                    <a target="_blank" href="https://youtu.be/lUZQRBh4PM8" class="grid-caption">Event Recording</a>
                                 </div>
                             </div>
                             <div class="grid-item">
                                 <div class="grid-item-container">
                                     <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view">
-                                        <img class="grid-item-img" style={{maxWidth: "175px"}}alt="photoshop basics event" src="/images/photoshop-basics-IG.jpg"/>
+                                        <img class="grid-item-img" alt="photoshop basics event" src="/images/photoshop-basics-IG.jpg"/>
                                     </a>
                                     <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view" target="_blank" class="grid-caption">Slide Deck</a>
                                     <a target="_blank" href="https://youtu.be/NH1mqB0TuPw" class="grid-caption">Event Recording</a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view">
+                                        <img class="grid-item-img" alt="kickoff event" src="/images/meet-sbcreativelab-IG.jpg"/>
+                                    </a>
+                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                    <a target="_blank" href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Event Recording</a>
                                 </div>
                             </div>
                         </div>

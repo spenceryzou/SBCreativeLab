@@ -1970,11 +1970,14 @@ a .icon-title:hover{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+.grid-item-img{
+  max-width: 300px;
+}
 .grid-item{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 33%;
+    padding-bottom: 1rem;
 }
 .grid-item-container{
   display: flex;
