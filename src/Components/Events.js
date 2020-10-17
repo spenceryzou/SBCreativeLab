@@ -97,6 +97,50 @@ export default class Home extends Component {
                     </div>
                     <div className="event-row">
                         <div className="event-card">
+                            <a target="_blank" href="/oops">
+                                <img className="event-card-img" src="/images/intro-to-illustrator-LI.jpg"></img>
+                            </a>
+                            <div className="event-text">
+                                <div className="event-title-container">
+                                    <a target="_blank" href="/oops" className="event-title icon-title title-small color-black">
+                                        Intro to Illustrator
+                                    </a>
+                                    <div className="subtitle-med color-black event-date">
+                                        11 - 5 - 2020
+                                    </div>
+                                </div>
+                                <div className="event-subtitle-container">
+                                    <a target="_blank" href="/oops" className="event-subtitle subtitle-med color-black">
+                                        COMING SOON
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{paddingTop: "2rem"}} className="event-row">
+                        <div className="event-card-right">
+                            <a target="_blank" href="https://www.facebook.com/events/653269168665320">
+                                <img className="event-card-img" src="/images/UIUX-Workshop-FB.jpg"></img>
+                            </a>
+                            <div className="event-text">
+                                <div className="event-title-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/653269168665320" className="event-title icon-title title-small color-black">
+                                        What is UI/UX?
+                                    </a>
+                                    <div className="subtitle-med color-black event-date">
+                                        10 - 27 - 2020
+                                    </div>
+                                </div>
+                                <div className="event-subtitle-container">
+                                    <a target="_blank" href="https://www.facebook.com/events/653269168665320" className="event-subtitle subtitle-med color-black">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{paddingTop: "2rem"}} className="event-row">
+                        <div className="event-card">
                             <a target="_blank" href="https://www.facebook.com/events/2796961817287634">
                                 <img className="event-card-img" src="/images/figma-workshop.png"></img>
                             </a>
@@ -139,7 +183,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <div style={{paddingTop: "3rem"}} className="event-row">
+                    <div style={{paddingTop: "2rem"}} className="event-row">
                         <div className="event-card">
                             <a target="_blank" href="https://www.facebook.com/events/1486106804909928/">
                             <img className="event-card-img" src="/images/photoshop-workshop.jpg"></img></a>
