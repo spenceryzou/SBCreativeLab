@@ -1988,6 +1988,9 @@ a .icon-title:hover{
     padding-top: 10px;
     text-align: center;
 }
+.grid-caption-inline{
+  display: flex;
+}
 a.grid-caption{
   color: black;
   opacity: .95;

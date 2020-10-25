@@ -139,6 +139,17 @@ export default class Home extends Component {
                             </div> */}
                             <div class="grid-item">
                                 <div class="grid-item-container">
+                                    <a target="_blank" href="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing">
+                                        <img class="grid-item-img" alt="figma event" src="/images/figma_square.jpg"/>
+                                    </a>
+                                    <div className="grid-caption-inline">
+                                        <a target="_blank" href="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing" target="_blank" class="grid-caption">Slide Deck</a><span className="grid-caption">&nbsp;+&nbsp;</span><a target="_blank" href="https://www.figma.com/file/ILlSr2H18RIAsAckDy2ltW/Figma-WS-Demo?node-id=0%3A1" target="_blank" class="grid-caption">Figma</a>
+                                    </div>
+                                    <a target="_blank" href="https://youtu.be/hzwHKe6pxW4" class="grid-caption">Event Recording</a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
                                     <a target="_blank" href="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing">
                                         <img class="grid-item-img" alt="animation event" src="/images/animation-ig.jpg"/>
                                     </a>
