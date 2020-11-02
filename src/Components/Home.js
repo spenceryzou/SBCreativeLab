@@ -437,7 +437,7 @@ export default class Home extends Component {
                                                 <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
                                                 <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
                                                 <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
-                                                <li class="link"><a href="https://join.slack.com/t/sbcreativelab/shared_invite/zt-hwacwddw-jjs0cGvB1LKGkyd0BJZH6A">slack</a></li>
+                                                <li class="link"><a href="https://rebrand.ly/r7vam">slack</a></li>
                                             </ul>
                                         </div>
                                     </div>

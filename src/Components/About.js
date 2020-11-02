@@ -188,7 +188,7 @@ export default class Home extends Component {
                                 <img id="community" alt="community triangle" src="/images/about-page-community-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <a href="https://join.slack.com/t/sbcreativelab/shared_invite/zt-hwacwddw-jjs0cGvB1LKGkyd0BJZH6A"><div className="icon-title title-small color-black">Community</div></a>
+                                <a href="https://rebrand.ly/r7vam"><div className="icon-title title-small color-black">Community</div></a>
                                 <div className="icon-subtitle subtitle-med color-black">Participate and collaborate
                                                                 in design challenges.</div>
                             </div>
