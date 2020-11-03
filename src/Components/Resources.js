@@ -57,13 +57,15 @@ export default class Home extends Component {
             // images have loaded        
             var container = document.querySelector('.masonry-grid');
             var msnry = new Masonry( container, {
-                columnWidth: 300,
-                gutter: 20
+                columnWidth: '.grid-item',
+                itemSelector: '.grid-item',
+                percentPosition: true
             });    
             var container2 = document.querySelector('.masonry-grid2');
             var msnry2 = new Masonry( container2, {
-                columnWidth: 300,
-                gutter: 20
+                columnWidth: '.grid-item',
+                itemSelector: '.grid-item',
+                percentPosition: true
             });    
         });
         this.initializeReactGA();
@@ -105,8 +107,8 @@ export default class Home extends Component {
                     <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
                         Resources
                     </div>
+                    <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Tutorials</div>
                     <div className="resources-section">
-                        <div className="icon-title title-small color-black">Tutorials</div>
                         <div className="masonry-grid">
                             <div class="grid-item">
                                 <div class="grid-item-container">
@@ -130,13 +132,22 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Workshops</div>
                     <div className="resources-section">
-                        <div className="icon-title title-small color-black">Workshops</div>
                         <div className="masonry-grid2">
                             {/* <div class="grid-item">
                                 <img alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
                                 <div class="grid-caption">Design Tip #1: What are Layers?</div>
                             </div> */}
+                            <div class="grid-item">
+                                <div class="grid-item-container">
+                                    <a target="_blank" href="https://youtu.be/-flhoIeVNWM">
+                                        <img class="grid-item-img" alt="uiux event" src="/images/uiux-workshop-IG.jpg"/>
+                                    </a>
+                                    <a target="_blank" href="https://youtu.be/-flhoIeVNWM" class="grid-caption">Event Recording</a>
+                                    <div class="grid-caption">-</div>
+                                </div>
+                            </div>
                             <div class="grid-item">
                                 <div class="grid-item-container">
                                     <a target="_blank" href="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing">

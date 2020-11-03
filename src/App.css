@@ -337,10 +337,16 @@ a:hover .social-background-inner{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  pointer-events: none;
+}
+
+.header-left{
+  pointer-events: auto;
 }
 
 .header-right{
   display: inline-block;
+  pointer-events: auto;
 }
 
 .logo-wrapper{
@@ -1175,6 +1181,7 @@ label {
   position: absolute;
   top: 252px;
   left: 0;
+  pointer-events: none;
 }
 
 .color-black{
@@ -1940,44 +1947,54 @@ a .icon-title:hover{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 140px;
 }
 
 .resources{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 150px;
+    padding-top: 140px;
 }
 
 .resources-section{
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    font-family: "Poppins";
 }
 
 .masonry-grid{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .masonry-grid2{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .grid-item-img{
-  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .grid-item{
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 33.33333%;
+  max-width: 33.33333%;
+  flex: 0 0 auto;
+  flex-basis: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
 }
 .grid-item-container{
   display: flex;
@@ -1985,8 +2002,8 @@ a .icon-title:hover{
   align-items: center;
 }
 .grid-caption{
-    padding-top: 10px;
-    text-align: center;
+  padding-top: 10px;
+  text-align: center;
 }
 .grid-caption-inline{
   display: flex;
@@ -2095,15 +2112,15 @@ a.event-subtitle{
     justify-content: center;
     margin-bottom: 1rem;
   }
-  .masonry-grid{
-    width: 100%;
-  }
-  .masonry-grid2{
-    width: 100%;
-  }
   .grid-item{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
+    max-width: 100%;
+    flex: 0 0 auto;
+    flex-basis: 100%;
+  }
+  .resources-section{
+    width: 75%;
+  }
 }
