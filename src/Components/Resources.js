@@ -141,6 +141,17 @@ export default class Home extends Component {
                             </div> */}
                             <div class="grid-item">
                                 <div class="grid-item-container">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view">
+                                        <img class="grid-item-img" alt="andria event" src="/images/andria-square.jpg"/>
+                                    </a>
+                                    <div className="grid-caption-inline">
+                                        <a target="_blank" href="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view" target="_blank" class="grid-caption">Slide Deck</a>
+                                    </div>
+                                    <a target="_blank" href="https://youtu.be/s0G4R6RM3j0" class="grid-caption">Event Recording</a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item-container">
                                     <a target="_blank" href="https://drive.google.com/file/d/16E0SgtKLG015Kn6SA5pR_9-ZwmPiGdWY/view?usp=sharing">
                                         <img class="grid-item-img" alt="illustrator event" src="/images/intro-to-illustrator-IG.jpg"/>
                                     </a>
