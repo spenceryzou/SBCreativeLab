@@ -9,6 +9,10 @@ import Tilt from 'tilt.js';
 import ReactGA from 'react-ga';
 import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
+
+import WorkshopItem from './WorkshopItem';
+import TutorialItem from './TutorialItem';
+
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -110,104 +114,72 @@ export default class Home extends Component {
                     <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Tutorials</div>
                     <div className="resources-section">
                         <div className="masonry-grid">
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
-                                        <img class="grid-item-img" alt="design tip 1: what are layers" src="/images/design-tip-1.jpg"/>
-                                    </a>
-                                    <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CFfZ5ebjt5L/">
-                                        Design Tip #1: What are Layers?
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://www.instagram.com/tv/CF2onhaFE3L/">
-                                        <img class="grid-item-img" alt="design tip 2: navigating the properties panel" src="/images/properties.jpg"/>
-                                    </a>
-                                    <a target="_blank" class="grid-caption" href="https://www.instagram.com/tv/CF2onhaFE3L/">
-                                        Design Tip #2: Navigating the Properties Panel
-                                    </a>
-                                </div>
-                            </div>
+                            <TutorialItem 
+                                link="https://www.instagram.com/tv/CFfZ5ebjt5L/"
+                                caption="Design Tip #1: What are Layers?"
+                                imgURL="/images/design-tip-1.jpg"
+                                alt="design tip 1: what are layers"
+                            />
+                            <TutorialItem 
+                                link="https://www.instagram.com/tv/CF2onhaFE3L/"
+                                caption="Design Tip #2: Navigating the Properties Panel"
+                                imgURL="/images/properties.jpg"
+                                alt="design tip 2: navigating the properties panel"
+                            />
                         </div>
                     </div>
                     <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Workshops</div>
+                    {/* 
+                        * Use noSlides={true} when no slide deck available
+                        * Use extra={true} to include extra link, provide extra link and caption with extraLink and extraCaption
+                    */}
                     <div className="resources-section">
                         <div className="masonry-grid2">
-                            {/* <div class="grid-item">
-                                <img alt="design tip 1: what are layers" src="/images/design-tip-1.png"/>
-                                <div class="grid-caption">Design Tip #1: What are Layers?</div>
-                            </div> */}
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view">
-                                        <img class="grid-item-img" alt="andria event" src="/images/andria-square.jpg"/>
-                                    </a>
-                                    <div className="grid-caption-inline">
-                                        <a target="_blank" href="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view" target="_blank" class="grid-caption">Slide Deck</a>
-                                    </div>
-                                    <a target="_blank" href="https://youtu.be/s0G4R6RM3j0" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://drive.google.com/file/d/16E0SgtKLG015Kn6SA5pR_9-ZwmPiGdWY/view?usp=sharing">
-                                        <img class="grid-item-img" alt="illustrator event" src="/images/intro-to-illustrator-IG.jpg"/>
-                                    </a>
-                                    <div className="grid-caption-inline">
-                                        <a target="_blank" href="https://drive.google.com/file/d/16E0SgtKLG015Kn6SA5pR_9-ZwmPiGdWY/view?usp=sharing" target="_blank" class="grid-caption">Slide Deck</a>
-                                    </div>
-                                    <a target="_blank" href="https://youtu.be/RjgPLg076HY" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://youtu.be/-flhoIeVNWM">
-                                        <img class="grid-item-img" alt="uiux event" src="/images/uiux-workshop-IG.jpg"/>
-                                    </a>
-                                    <a target="_blank" href="https://youtu.be/-flhoIeVNWM" class="grid-caption">Event Recording</a>
-                                    <div class="grid-caption">-</div>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing">
-                                        <img class="grid-item-img" alt="figma event" src="/images/figma_square.jpg"/>
-                                    </a>
-                                    <div className="grid-caption-inline">
-                                        <a target="_blank" href="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing" target="_blank" class="grid-caption">Slide Deck</a><span className="grid-caption">&nbsp;+&nbsp;</span><a target="_blank" href="https://www.figma.com/file/ILlSr2H18RIAsAckDy2ltW/Figma-WS-Demo?node-id=0%3A1" target="_blank" class="grid-caption">Figma</a>
-                                    </div>
-                                    <a target="_blank" href="https://youtu.be/hzwHKe6pxW4" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing">
-                                        <img class="grid-item-img" alt="animation event" src="/images/animation-ig.jpg"/>
-                                    </a>
-                                    <a target="_blank" href="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing" target="_blank" class="grid-caption">Slide Deck</a>
-                                    <a target="_blank" href="https://youtu.be/lUZQRBh4PM8" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view">
-                                        <img class="grid-item-img" alt="photoshop basics event" src="/images/photoshop-basics-IG.jpg"/>
-                                    </a>
-                                    <a target="_blank" href="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view" target="_blank" class="grid-caption">Slide Deck</a>
-                                    <a target="_blank" href="https://youtu.be/NH1mqB0TuPw" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div class="grid-item-container">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view">
-                                        <img class="grid-item-img" alt="kickoff event" src="/images/meet-sbcreativelab-IG.jpg"/>
-                                    </a>
-                                    <a target="_blank" href="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view" target="_blank" class="grid-caption">Slide Deck</a>
-                                    <a target="_blank" href="https://youtu.be/L-qy5yiLTak" class="grid-caption">Event Recording</a>
-                                </div>
-                            </div>
+                            <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view"
+                                vidLink="https://youtu.be/s0G4R6RM3j0"
+                                imgURL="/images/andria-square.jpg"
+                                alt="discovering design event"
+                            />
+                            <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/16E0SgtKLG015Kn6SA5pR_9-ZwmPiGdWY/view?usp=sharing"
+                                vidLink="https://youtu.be/RjgPLg076HY"
+                                imgURL="/images/intro-to-illustrator-IG.jpg"
+                                alt="illustrator event"
+                            />
+                            <WorkshopItem 
+                                vidLink="https://youtu.be/-flhoIeVNWM"
+                                imgURL="/images/uiux-workshop-IG.jpg"
+                                noSlides={true}
+                                alt="uiux event"
+                            />
+                            <WorkshopItem 
+                                slidesLink="https://docs.google.com/presentation/d/1BacatYMijBKEqA2_N8hCMHmiHghnAUYxuoG9ZUVItJw/edit?usp=sharing"
+                                vidLink="https://youtu.be/hzwHKe6pxW4"
+                                imgURL="/images/figma_square.jpg"
+                                extra={true}
+                                extraCaption="Figma"
+                                extraLink="https://www.figma.com/file/ILlSr2H18RIAsAckDy2ltW/Figma-WS-Demo?node-id=0%3A1"
+                                alt="figma event"
+                            />
+                            <WorkshopItem 
+                                slidesLink="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing"
+                                vidLink="https://youtu.be/lUZQRBh4PM8"
+                                imgURL="/images/animation-ig.jpg"
+                                alt="animation event"
+                            />
+                            <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view"
+                                vidLink="https://youtu.be/NH1mqB0TuPw"
+                                imgURL="/images/photoshop-basics-IG.jpg"
+                                alt="photoshop basics event"
+                            />
+                            <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1UDHpdICCH8nibzdz1QTqMf--AvWNJTkm/view"
+                                vidLink="https://youtu.be/L-qy5yiLTak"
+                                imgURL="/images/meet-sbcreativelab-IG.jpg"
+                                alt="kickoff event"
+                            />
                         </div>
                     </div>
                 </div>
