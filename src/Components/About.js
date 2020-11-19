@@ -174,7 +174,7 @@ export default class Home extends Component {
                         </div>
                         <div className="icon">
                             <div className="icon-image">
-                                <img id="workshops" alt="workshops book" src="/images/about-page-workshops-scale2x-wide.png"/>
+                                <img id="workshopBook" alt="workshops book" src="/images/about-page-workshops-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
                                 <a href="/events"><div className="icon-title title-small color-black">Workshops</div></a>

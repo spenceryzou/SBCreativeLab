@@ -73,6 +73,15 @@ export default class Home extends Component {
             });    
         });
         this.initializeReactGA();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     }
 
     render() {
@@ -108,27 +117,41 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div style={{paddingBottom: "3%"}} className="resources">
-                    <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
-                        Resources
+                    <div className="flex">
+                        <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
+                            Resources
+                        </div>
+                        <div className="flexend subtitle-med">
+                            <ul class="links">
+                                <li class="link"><a href="#tutorials">tutorials</a></li>
+                                <li class="link"><a href="#workshops">workshops</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Tutorials</div>
+                    <a id="tutorials" style={{marginLeft: "10%"}} className="icon-title title-small color-black">Tutorials</a>
                     <div className="resources-section">
                         <div className="masonry-grid">
-                            <TutorialItem 
-                                link="https://www.instagram.com/tv/CFfZ5ebjt5L/"
-                                caption="Design Tip #1: What are Layers?"
-                                imgURL="/images/design-tip-1.jpg"
-                                alt="design tip 1: what are layers"
-                            />
                             <TutorialItem 
                                 link="https://www.instagram.com/tv/CF2onhaFE3L/"
                                 caption="Design Tip #2: Navigating the Properties Panel"
                                 imgURL="/images/properties.jpg"
                                 alt="design tip 2: navigating the properties panel"
                             />
+                            <TutorialItem 
+                                link="https://docs.google.com/spreadsheets/d/1hbuUwmo8xVdYd2Xw5828HnEx5h9wcrXIdI8Pb6HWy_4/edit?usp=sharing"
+                                caption="Equipment and Software Resources"
+                                imgURL="/images/equipment-software.png"
+                                alt="Equipment and Software Resources"
+                            />
+                            <TutorialItem 
+                                link="https://www.instagram.com/tv/CFfZ5ebjt5L/"
+                                caption="Design Tip #1: What are Layers?"
+                                imgURL="/images/design-tip-1.jpg"
+                                alt="design tip 1: what are layers"
+                            />
                         </div>
                     </div>
-                    <div style={{marginLeft: "10%"}} className="icon-title title-small color-black">Workshops</div>
+                    <a id="workshops" style={{marginLeft: "10%"}} className="icon-title title-small color-black">Workshops</a>
                     {/* 
                         * Use noSlides={true} when no slide deck available
                         * Use extra={true} to include extra link, provide extra link and caption with extraLink and extraCaption
