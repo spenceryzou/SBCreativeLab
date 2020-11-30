@@ -158,6 +158,12 @@ export default class Home extends Component {
                     */}
                     <div className="resources-section">
                         <div className="masonry-grid2">
+                            {/* <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view"
+                                vidLink="https://youtu.be/s0G4R6RM3j0"
+                                imgURL="/images/typo-square.jpg"
+                                alt="typography event"
+                            /> */}
                             <WorkshopItem 
                                 slidesLink="https://drive.google.com/file/d/1_bv2BOxudBo2w20UNf6zVTLXBw9G4suL/view"
                                 vidLink="https://youtu.be/s0G4R6RM3j0"
