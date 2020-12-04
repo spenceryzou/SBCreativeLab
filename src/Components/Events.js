@@ -4,6 +4,9 @@ import Menu from './Menu';
 import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
 import ReactGA from 'react-ga';
+
+import EventItem from './EventItem';
+
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#F7FDF4"
 let primaryColor="#1BB994"
@@ -99,160 +102,74 @@ export default class Home extends Component {
                         <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
                             See our Fall quarter calendar here!
                         </a><span> 📅</span>
-                    </div>                   
-                    <div className="event-row">
-                        <div className="event-card">
-                            <a target="_blank" href="https://www.facebook.com/events/351765925899185/">
-                                <img className="event-card-img" src="/images/andria-ip.jpg"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/351765925899185/" className="event-title icon-title title-small color-black">
-                                        Discovering Design
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        11 - 12 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/351765925899185/" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card-right">
-                            <a target="_blank" href="https://www.facebook.com/events/363042741482791/">
-                                <img className="event-card-img" src="/images/intro-to-illustrator-LI.jpg"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/363042741482791/" className="event-title icon-title title-small color-black">
-                                        Intro to Illustrator
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        11 - 5 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/363042741482791/" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card">
-                            <a target="_blank" href="https://www.facebook.com/events/653269168665320">
-                                <img className="event-card-img" src="/images/UIUX-Workshop-FB.jpg"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/653269168665320" className="event-title icon-title title-small color-black">
-                                        What is UI/UX?
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        10 - 27 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/653269168665320" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card-right">
-                            <a target="_blank" href="https://www.facebook.com/events/2796961817287634">
-                                <img className="event-card-img" src="/images/figma-workshop.png"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/2796961817287634" className="event-title icon-title title-small color-black">
-                                        How to Use Figma
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        10 - 22 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/2796961817287634" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card">
-                            <a target="_blank" href="https://www.facebook.com/events/776111302960667">
-                                <img className="event-card-img" src="/images/animation-design.jpg"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/776111302960667" className="event-title icon-title title-small color-black">
-                                        Design for Animation
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        10 - 13 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/776111302960667" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card-right">
-                            <a target="_blank" href="https://www.facebook.com/events/1486106804909928/">
-                            <img className="event-card-img" src="/images/photoshop-workshop.jpg"></img></a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/1486106804909928/" className="event-title icon-title title-small color-black">
-                                        Adobe Photoshop Basics
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        10 - 08 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/1486106804909928/" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{paddingTop: "2rem"}} className="event-row">
-                        <div className="event-card">
-                            <a target="_blank" href="https://www.facebook.com/events/730522954163235/">
-                                <img className="event-card-img" src="/images/meet-sbcreativelab.jpg"></img>
-                            </a>
-                            <div className="event-text">
-                                <div className="event-title-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/730522954163235/" className="event-title icon-title title-small color-black">
-                                        Kick Off!
-                                    </a>
-                                    <div className="subtitle-med color-black event-date">
-                                        09 - 29 - 2020
-                                    </div>
-                                </div>
-                                <div className="event-subtitle-container">
-                                    <a target="_blank" href="https://www.facebook.com/events/730522954163235/" className="event-subtitle subtitle-med color-black">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
+                    <EventItem 
+                        link="https://www.facebook.com/events/158098106007652/"
+                        imgURL="/images/uiux-grace.jpg"
+                        title="UI/UX: Your First Project"
+                        date="12 - 3 - 2020"
+                        alt="grace ling uiux event"
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/652255985463088/"
+                        imgURL="/images/typography.jpg"
+                        title="Intro to Typography"
+                        date="11 - 19 - 2020"
+                        alt="typography event"
+                        alignRight={true}
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/351765925899185/"
+                        imgURL="/images/andria-ip.jpg"
+                        title="Discovering Design"
+                        date="11 - 12 - 2020"
+                        alt="discovering design event"
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/363042741482791/"
+                        imgURL="/images/intro-to-illustrator-LI.jpg"
+                        title="Intro to Illustrator"
+                        date="11 - 5 - 2020"
+                        alt="illustrator event"
+                        alignRight={true}
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/653269168665320/"
+                        imgURL="/images/UIUX-Workshop-FB.jpg"
+                        title="What is UI/UX?"
+                        date="10 - 27 - 2020"
+                        alt="uiux event"
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/2796961817287634/"
+                        imgURL="/images/figma-workshop.png"
+                        title="How to Use Figma"
+                        date="10 - 22 - 2020"
+                        alt="figma event"
+                        alignRight={true}
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/776111302960667/"
+                        imgURL="/images/animation-design.jpg"
+                        title="Design for Animation"
+                        date="10 - 13 - 2020"
+                        alt="animation event"
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/1486106804909928/"
+                        imgURL="/images/photoshop-workshop.jpg"
+                        title="Adobe Photoshop Basics"
+                        date="10 - 08 - 2020"
+                        alt="photoshop event"
+                        alignRight={true}
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/730522954163235/"
+                        imgURL="/images/meet-sbcreativelab.jpg"
+                        title="Kick Off!"
+                        date="09 - 29 - 2020"
+                        alt="kickoff event"
+                    />
                 </div>
             </div>
         )
