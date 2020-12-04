@@ -112,7 +112,7 @@ export default class Home extends Component {
                     />
                     <EventItem 
                         link="https://www.facebook.com/events/652255985463088/"
-                        imgURL="/images/typography.png"
+                        imgURL="/images/typography.jpg"
                         title="Intro to Typography"
                         date="11 - 19 - 2020"
                         alt="typography event"
