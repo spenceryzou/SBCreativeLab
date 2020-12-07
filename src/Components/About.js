@@ -43,12 +43,10 @@ export default class Home extends Component {
             menu.classList.add("drop");
             document.body.classList.add("no-scroll");
             document.body.addEventListener('touchmove', function(e){e.preventDefault()});
-            if(isMobile){
-                for (var i = 0; i < hideImg.length; i++) {
-                    hideImg[i].classList.remove('opacity-transition-delay');
-                    hideImg[i].classList.add('opacity-transition');
-                    hideImg[i].style.opacity = 0;
-                }
+            for (var i = 0; i < hideImg.length; i++) {
+                hideImg[i].classList.remove('opacity-transition-delay');
+                hideImg[i].classList.add('opacity-transition');
+                hideImg[i].style.opacity = 0;
             }
         }else if(this.state.menuOpen === false){
             menu.classList.remove("drop");
