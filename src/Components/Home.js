@@ -143,37 +143,37 @@ export default class Home extends Component {
             frictionY: .075
             });
 
-        // var graphScene = document.getElementById('graphScene');
-        // var parallaxInstance7 = new Parallax(graphScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
-        // var uiuxScene = document.getElementById('uiuxScene');
-        // var parallaxInstance3 = new Parallax(uiuxScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
-        // var phoneScene = document.getElementById('phoneScene');
-        // var parallaxInstance4 = new Parallax(phoneScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
+        var graphScene = document.getElementById('graphScene');
+        var parallaxInstance7 = new Parallax(graphScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var uiuxScene = document.getElementById('uiuxScene');
+        var parallaxInstance3 = new Parallax(uiuxScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var phoneScene = document.getElementById('phoneScene');
+        var parallaxInstance4 = new Parallax(phoneScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
 
-        // var illusScene = document.getElementById('illusScene');
-        // var parallaxInstance5 = new Parallax(illusScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });       
-        // var bookScene = document.getElementById('bookScene');
-        // var parallaxInstance6 = new Parallax(bookScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
+        var illusScene = document.getElementById('illusScene');
+        var parallaxInstance5 = new Parallax(illusScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });       
+        var bookScene = document.getElementById('bookScene');
+        var parallaxInstance6 = new Parallax(bookScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
 
         this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
@@ -207,52 +207,52 @@ export default class Home extends Component {
                 defaultBase.style.opacity = 1;
             }
         }
-        // if(destination.index===2){
-        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        //     // var defaultLogo = document.getElementsByClassName("st5");
-        //     var defaultPlane = document.getElementById("plane");
-        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //     var defaultBase = document.getElementById("base_blue");
-        //     defaultPlane.style.opacity = 0;
-        //     defaultSwoosh.style.opacity = 0;
-        //     defaultBase.style.opacity = 0;
-        //     var altLogo = document.getElementsByClassName("st4");
-        //     for (var i = 0; i < altLogo.length; i++) {
-        //         altLogo[i].style.opacity = 1;
-        //     }
-        // }
-        // if(destination.index===3){
-        //     tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        // }
-        // if(destination.index===4){
-        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        //     if(origin.index===5){
-        //         var logo = document.getElementById("logo");
-        //         logo.classList.add("from-bottom");
-        //         var defaultPlane = document.getElementById("plane");
-        //         var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //         var defaultBase = document.getElementById("base_blue");
-        //         defaultPlane.style.opacity = 0;
-        //         defaultSwoosh.style.opacity = 0;
-        //         defaultBase.style.opacity = 0;
-        //         var altLogo = document.getElementsByClassName("st4");
-        //         for (var i = 0; i < altLogo.length; i++) {
-        //             altLogo[i].style.opacity = 1;
-        //         }
-        //     }
-        // }
-        // if(destination.index===5){
-        //     var altLogo = document.getElementsByClassName("st4");
-        //     for (var i = 0; i < altLogo.length; i++) {
-        //         altLogo[i].style.opacity = 0;
-        //     }
-        //     var defaultPlane = document.getElementById("plane");
-        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //     var defaultBase = document.getElementById("base_blue");
-        //     defaultPlane.style.opacity = 1;
-        //     defaultSwoosh.style.opacity = 1;
-        //     defaultBase.style.opacity = 1;
-        // }
+        if(destination.index===2){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            // var defaultLogo = document.getElementsByClassName("st5");
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 0;
+            defaultSwoosh.style.opacity = 0;
+            defaultBase.style.opacity = 0;
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 1;
+            }
+        }
+        if(destination.index===3){
+            tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        }
+        if(destination.index===4){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===5){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 0;
+                defaultSwoosh.style.opacity = 0;
+                defaultBase.style.opacity = 0;
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 1;
+                }
+            }
+        }
+        if(destination.index===5){
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 0;
+            }
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 1;
+            defaultSwoosh.style.opacity = 1;
+            defaultBase.style.opacity = 1;
+        }
     }
     afterLoad(origin, destination, direction) {
         var logo = document.getElementById("logo");
@@ -434,11 +434,11 @@ export default class Home extends Component {
                                         </div>
                                         <div className="subtitle-med inline-block-center">
                                             <ul class="links">
-                                                <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
-                                                <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
-                                                <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
-                                                <li class="link"><a href="https://rebrand.ly/r7vam">slack</a></li>
-                                                <li class="link"><a href="https://discord.gg/fc8Rrn7VdV">discord</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
+                                                <li class="link"><a target="_blank" href="https://rebrand.ly/r7vam">slack</a></li>
+                                                <li class="link"><a target="_blank" href="https://discord.gg/fc8Rrn7VdV">discord</a></li>
                                             </ul>
                                         </div>
                                     </div>
