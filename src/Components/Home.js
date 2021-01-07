@@ -366,7 +366,7 @@ export default class Home extends Component {
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
                                 </div>
                             </div>
-                            {/* <div style={{backgroundColor: "#354563"}} className="section">
+                            <div style={{backgroundColor: "#354563"}} className="section">
                                 <div className="graphTextContainer">
                                     <div style={{color: "white"}} className="title">
                                         Graphic Design
@@ -425,7 +425,7 @@ export default class Home extends Component {
                                     </div>
                                     <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
                                 </div>
-                            </div> */}
+                            </div>
                             <div className="section">
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
@@ -438,6 +438,7 @@ export default class Home extends Component {
                                                 <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
                                                 <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
                                                 <li class="link"><a href="https://rebrand.ly/r7vam">slack</a></li>
+                                                <li class="link"><a href="https://discord.gg/fc8Rrn7VdV">discord</a></li>
                                             </ul>
                                         </div>
                                     </div>

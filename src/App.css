@@ -284,6 +284,13 @@ i.fa{
   transition: color 100ms ease 100ms;
 }
 
+i.fab{
+    color: white;
+    opacity: .9;
+    z-index: 2;
+    transition: color 100ms ease 100ms;
+}
+
 .social-background{
   display: block;
   overflow: hidden;

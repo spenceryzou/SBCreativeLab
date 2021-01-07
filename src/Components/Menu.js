@@ -37,7 +37,7 @@ export default class Home extends Component {
                   <div className="menu-socials">
                       <a href="https://www.facebook.com/sbcreativelab/">
                         <div className="social-container">
-                          <i class="fa fa-lg fa-facebook"></i>
+                          <i class="fab fa-lg fa-facebook"></i>
                             <span class="social-background">
                               <span class="social-background-inner"></span>
                             </span>
@@ -45,7 +45,7 @@ export default class Home extends Component {
                       </a>
                       <a href="https://www.instagram.com/sbcreativelab/">
                         <div className="social-container">
-                          <i class="fa fa-lg fa-instagram"></i>
+                          <i class="fab fa-lg fa-instagram"></i>
                             <span class="social-background">
                               <span class="social-background-inner"></span>
                             </span>
@@ -53,7 +53,7 @@ export default class Home extends Component {
                       </a>
                       <a href="https://www.linkedin.com/company/sbcreativelab/">
                         <div className="social-container">
-                          <i class="fa fa-lg fa-linkedin"></i>
+                          <i class="fab fa-lg fa-linkedin"></i>
                             <span class="social-background">
                               <span class="social-background-inner"></span>
                             </span>
@@ -61,7 +61,15 @@ export default class Home extends Component {
                       </a>
                       <a href="https://rebrand.ly/r7vam">
                         <div className="social-container">
-                          <i class="fa fa-lg fa-slack"></i>
+                          <i class="fab fa-lg fa-slack"></i>
+                            <span class="social-background">
+                              <span class="social-background-inner"></span>
+                            </span>
+                        </div>
+                      </a>
+                      <a href="https://discord.gg/fc8Rrn7VdV">
+                        <div className="social-container">
+                          <i class="fab fa-lg fa-discord"></i>
                             <span class="social-background">
                               <span class="social-background-inner"></span>
                             </span>

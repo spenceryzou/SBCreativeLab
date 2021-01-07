@@ -31,7 +31,8 @@ export class App extends Component {
       <div>
         <head>
           <title>SB Creative Lab</title>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></link>
+          {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/v4-shims.min.css"></link> */}
         </head>
           <div className="main-body">
               <Route exact path="/" render={(props) => <Home {...props}/>}/>
