@@ -373,7 +373,7 @@ export default class Home extends Component {
                                         Communicate your visual identity.
                                     </div>
                                     <div>
-                                        <a class="btn btn-danger" href="#">
+                                        <a class="btn btn-danger" href="/challenge">
                                         <i class="fas fa-palette fa-lg"></i> Go to Design Challenge</a>
                                     </div>
                                 </div>
@@ -424,7 +424,7 @@ export default class Home extends Component {
                                         Bring concepts and stories to life.
                                     </div>
                                     <div>
-                                        <a class="btn btn-danger" href="#">
+                                        <a class="btn btn-danger" href="/challenge">
                                         <i class="fas fa-palette fa-lg"></i> Go to Design Challenge</a>
                                     </div>
                                 </div>
