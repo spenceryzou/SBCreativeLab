@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Route} from "react-router-dom";
-import './App.css'
+import './main.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Oops from './Components/Oops'
@@ -8,6 +8,7 @@ import About from './Components/About'
 import Resources from './Components/Resources'
 import Events from './Components/Events'
 import ReactGA from 'react-ga'
+import Challenge from './Components/Challenge';
 
 export class App extends Component {
   constructor(props){
@@ -35,6 +36,7 @@ export class App extends Component {
         </head>
           <div className="main-body">
               <Route exact path="/" render={(props) => <Home {...props}/>}/>
+              <Route exact path="/challenge" render={(props) => <Challenge {...props}/>}/>
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               <Route exact path="/about" render={(props) => <About {...props}/>}/>
               <Route exact path="/resources" render={(props) => <Resources {...props}/>}/>
