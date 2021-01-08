@@ -75,7 +75,7 @@ export default class Challenge extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{marginTop: "132px", paddingBottom: "96px"}} className="row d-flex justify-content-center">
+                <div style={{marginTop: "132px", marginBottom: "96px"}} className="row d-flex justify-content-center">
                     <div className="col-10 col-sm-8 d-flex flex-column align-items-center">
                         <div className="b1 col-12 col-sm-6 text-center">Submissions are due before or by Sunday, February 7 @ 11:59 pm PT. </div>
                         <div className="row mt-5 justify-space-between">
