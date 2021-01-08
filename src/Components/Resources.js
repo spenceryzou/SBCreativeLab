@@ -158,6 +158,18 @@ export default class Home extends Component {
                     */}
                     <div className="resources-section">
                         <div className="masonry-grid2">
+                            {/* <WorkshopItem 
+                                slidesLink=""
+                                vidLink=""
+                                imgURL="/images/mable-square.jpg"
+                                alt="mable truong event"
+                            /> */}
+                            <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1OK3XjdVq9gHqQrpiwHtbPiCB7DjdUgVI/view?usp=sharing"
+                                vidLink="https://youtu.be/ANNhY8aPXYQ"
+                                imgURL="/images/kickoff-square.jpg"
+                                alt="winter kickoff event"
+                            />
                             <WorkshopItem 
                                 slidesLink="https://www.figma.com/file/oTxUQaxX93RzZQWIN79ejH/Your-First-Project-%26-Case-Study---Grace-Ling?node-id=0%3A1"
                                 vidLink="https://youtu.be/IcZBn_HQG1o"

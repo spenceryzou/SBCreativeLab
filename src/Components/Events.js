@@ -100,9 +100,30 @@ export default class Home extends Component {
                     </div>
                         <div className="about-title-2" style={{marginBottom: "2rem"}}>
                         <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
-                            See our Fall quarter calendar here!
+                            Check out our Winter Design Challenge
+                        </a><span> <i class="fas fa-palette fa-lg"></i></span>
+                        &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;
+                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
+                            See our Winter quarter calendar here!
                         </a><span> 📅</span>
-                    </div> 
+                        {/* <a target="blank" href="/challenge" className="button-small button-dark">
+                                        Check out our Winter Design Challenge!&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a> */}
+                    </div>
+                    <EventItem 
+                        link="http://bit.ly/mabletruong"
+                        imgURL="/images/mable.png"
+                        title="Starting a Creative Career"
+                        date="1 - 14 - 2021"
+                        alt="mable truong kickoff event"
+                    />
+                    <EventItem 
+                        link="https://www.facebook.com/events/909628116449567/"
+                        imgURL="/images/win-kickoff.png"
+                        title="Winter 2021 Kickoff"
+                        date="1 - 7 - 2021"
+                        alt="winter 2021 kickoff event"
+                        alignRight={true}
+                    />
                     <EventItem 
                         link="https://www.facebook.com/events/158098106007652/"
                         imgURL="/images/uiux-grace.jpg"

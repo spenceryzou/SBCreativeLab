@@ -2251,3 +2251,12 @@ a.event-subtitle{
   padding: 8px 24px 8px;
   border-radius: 45px;
 }
+
+.button-dark{
+    border: 3px solid black;
+    color: black;
+}
+
+.button-dark:hover{
+    border: 3px solid #356A69;
+}
