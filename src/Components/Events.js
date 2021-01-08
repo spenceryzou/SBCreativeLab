@@ -111,14 +111,14 @@ export default class Home extends Component {
                     </div>
                     <EventItem 
                         link="http://bit.ly/mabletruong"
-                        imgURL="/images/mable.png"
+                        imgURL="/images/mable.jpg"
                         title="Starting a Creative Career"
                         date="1 - 14 - 2021"
                         alt="mable truong kickoff event"
                     />
                     <EventItem 
                         link="https://www.facebook.com/events/909628116449567/"
-                        imgURL="/images/win-kickoff.png"
+                        imgURL="/images/win-kickoff.jpg"
                         title="Winter 2021 Kickoff"
                         date="1 - 7 - 2021"
                         alt="winter 2021 kickoff event"
