@@ -76,36 +76,34 @@ export default class Home extends Component {
             if(this.state.menuOpen === true){
                 // console.log('open menu');
                 menu.classList.add("drop");
-                // var logo = document.getElementById("logo");
-                // logo.classList.add("from-menu");
-                // console.log(menu.classList);
-                // var altLogo = document.getElementsByClassName("st4");
-                // var defaultPlane = document.getElementById("plane");
-                // var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                // var defaultBase = document.getElementById("base_blue");
-                // for (var i = 0; i < altLogo.length; i++) {
-                //     altLogo[i].style.opacity = 0;
-                // }
-                // defaultPlane.style.opacity = 1;
-                // defaultSwoosh.style.opacity = 1;
-                // defaultBase.style.opacity = 1;
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-menu");
+                var altLogo = document.getElementsByClassName("st4");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
             }else if(this.state.menuOpen === false){
                 menu.classList.remove("drop");
-                // var logo = document.getElementById("logo");
-                // logo.classList.remove("from-menu");
-                // console.log(menu.classList);
-                // if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
-                //     var defaultPlane = document.getElementById("plane");
-                //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                //     var defaultBase = document.getElementById("base_blue");
-                //     defaultPlane.style.opacity = 0;
-                //     defaultSwoosh.style.opacity = 0;
-                //     defaultBase.style.opacity = 0;
-                //     var altLogo = document.getElementsByClassName("st4");
-                //     for (var i = 0; i < altLogo.length; i++) {
-                //         altLogo[i].style.opacity = 1;
-                //     }
-                // }
+                var logo = document.getElementById("logo");
+                logo.classList.remove("from-menu");
+                if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
+                    var defaultPlane = document.getElementById("plane");
+                    var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                    var defaultBase = document.getElementById("base_blue");
+                    defaultPlane.style.opacity = 0;
+                    defaultSwoosh.style.opacity = 0;
+                    defaultBase.style.opacity = 0;
+                    var altLogo = document.getElementsByClassName("st4");
+                    for (var i = 0; i < altLogo.length; i++) {
+                        altLogo[i].style.opacity = 1;
+                    }
+                }
             }
         }
     }
@@ -376,11 +374,11 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div id="graphScene" className="imageContainer">
-                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
+                                    <div data-invert-x="true" data-depth=".03" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="bottom left shapes" id="graphBotLeft" src="/images/graphic/bottom-left.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="bottom right shapes" id="graphBotRight" src="/images/graphic/bottom-right.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="top right shapes" id="graphTopRight" src="/images/graphic/top-right.png"/></div>
-                                    <div data-depth=".08" id="absolute"><img alt="small shapes" id="graphShapes" src="/images/graphic/shapes.png"/></div>
+                                    <div data-depth=".1" id="absolute"><img alt="small shapes" id="graphShapes" src="/images/graphic/shapes.png"/></div>
                                     {/* <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue1.png"/></div>
                                     <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue1.png"/></div>
@@ -424,8 +422,8 @@ export default class Home extends Component {
                                 </div>
                                 <div id="illusScene" className="imageContainer">
                                     <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">
-                                        <div data-depth=".01" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
-                                        <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                        <div data-depth=".03" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                        <div data-depth=".07" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
                                     </div>
                                     <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
                                 </div>
