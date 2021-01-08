@@ -42,6 +42,7 @@ export default class MenuItem {
         // adding an extra wrapper (revealInner) around the image element with overflow hidden, gives us the possibility to scale the image inside
         this.DOM.revealInner = document.createElement('div');
         this.DOM.revealInner.className = 'hover-reveal__inner';
+        this.DOM.revealInner.style.overflow ='hidden';
         this.DOM.revealImage = document.createElement('div');
         this.DOM.revealImage.className = 'hover-reveal__img';
         this.DOM.revealImage.style.backgroundImage = `url(/images/cat.jpg)`;

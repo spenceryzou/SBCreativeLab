@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/gyk8zus.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face{
+  font-family: "iAWriterMono";
+  src: url("./fonts/iAWriterMonoS-Regular.woff2") format('woff2');
+  font-weight: normal;
+}
 .content{
   height: auto;
 }
