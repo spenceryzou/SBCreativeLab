@@ -277,6 +277,10 @@ a:hover i{
   color: #EFB764;
   transition: color 100ms ease 100ms;
 }
+a:hover i.fa-palette{
+  color: black;
+  transition: all .3s ease;
+}
 i.fa{
   color: white;
   opacity: .9;
@@ -1068,7 +1072,7 @@ label {
   }
 
   .leftTextContainer{
-    transform: translate(0, -200%) !important;
+    transform: translate(0, -150%) !important;
     left: 12%;
     max-width: 80%;
   }
@@ -1079,11 +1083,9 @@ label {
     max-width: 90%;
   }
 
-  /* .graphTextContainer{
-    transform: translate(0, -170%) !important;
-    left: 12%;
-    max-width: 90%;
-  } */
+  .graphTextContainer{
+    max-width: 70%;
+  }
 
   .shortCaption{
     font-size: calc(10px + 9 * (100vh - 320px) / 300);
@@ -2223,4 +2225,24 @@ a.event-subtitle{
 .flexend{
   margin-left: auto;
   margin-right: 10%;
+}
+.button-small{
+  background-color: transparent;
+  font-family: "Poppins";
+  border: 3px solid white;
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 24px 8px;
+  border-radius: 45px;
+  transition: all .3s ease;
+}
+.button-small:hover{
+  background-color: white;
+  border: 3px solid white;
+  color: black;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 24px 8px;
+  border-radius: 45px;
 }
