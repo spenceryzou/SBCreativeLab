@@ -659,10 +659,10 @@ label {
 
 #book{
     position: absolute;
-    width: 55%;
+    width: 65%;
     top: 33%;
-    left: 100%;
-    transform: translate(-100%,-33%);
+    left: 110%;
+    transform: translate(-110%,-33%);
     z-index: 1;
 }
 
@@ -691,6 +691,33 @@ label {
     left: 85%;
     transform: translate(-85%,-50%);
     z-index: -1;
+}
+
+#graphBotLeft{
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    left: -20%;
+    transform: translate(20%,-100%);
+    z-index: 2;
+}
+
+#graphBotRight{
+    position: absolute;
+    width: 55%;
+    top: 95%;
+    left: 115%;
+    transform: translate(-115%,-90%);
+    z-index: 2;
+}
+
+#graphTopRight{
+    position: absolute;
+    height: 45%;
+    top: 0%;
+    left: 90%;
+    transform: translate(-90%,-0%);
+    z-index: 2;
 }
 
 #graphCircle{
@@ -914,6 +941,33 @@ label {
     width: auto;
   }
 
+#graphBotLeft{
+    position: absolute;
+    height: 30%;
+    top: 100%;
+    left: -20%;
+    transform: translate(20%,-100%);
+    z-index: 2;
+}
+
+#graphBotRight{
+    position: absolute;
+    height: 35%;
+    top: 95%;
+    left: 115%;
+    transform: translate(-115%,-90%);
+    z-index: 2;
+}
+
+#graphTopRight{
+    position: absolute;
+    height: 40%;
+    top: 0%;
+    left: 90%;
+    transform: translate(-90%,-0%);
+    z-index: 2;
+}
+
 
 #book{
     position: absolute;
@@ -964,6 +1018,25 @@ label {
     /* left: 70%; */
     transform: translate(-70%,-75%);
     z-index: 3;
+}
+
+#popupTop{
+    position: absolute;
+    width: 21%;
+    top: 57%;
+    left: 28%;
+    transform: translate(-28%,-57%);
+    z-index: 2;
+}
+
+
+#popupBottom{
+    position: absolute;
+    width: 25%;
+    top: 77%;
+    left: 45%;
+    transform: translate(-45%,-77%);
+    z-index: 2;
 }
 
 #phonePlane{
