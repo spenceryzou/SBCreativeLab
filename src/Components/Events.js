@@ -99,7 +99,7 @@ export default class Home extends Component {
                         Events
                     </div>
                         <div className="about-title-2" style={{marginBottom: "2rem"}}>
-                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
+                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="/challenge">
                             Check out our Winter Design Challenge
                         </a><span> <i class="fas fa-palette fa-lg"></i></span>
                         &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;
