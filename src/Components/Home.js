@@ -372,7 +372,7 @@ export default class Home extends Component {
                                     <div className="shortCaption mb-4" style={{color: "white"}}>
                                         Communicate your visual identity.
                                     </div>
-                                        <a className="button-small">
+                                        <a href="/challenge" className="button-small">
                                              Go to Design Challenge&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a>
                                 </div>
                                 <div id="graphScene" className="imageContainer">
@@ -421,7 +421,7 @@ export default class Home extends Component {
                                     <div className="shortCaption mb-4" style={{color: "white"}}>
                                         Bring concepts and stories to life.
                                     </div>
-                                    <a className="button-small">
+                                    <a href="/challenge" className="button-small">
                                              Go to Design Challenge&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a>
                                 </div>
                                 <div id="illusScene" className="imageContainer">

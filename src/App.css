@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/gyk8zus.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face{
+  font-family: "iAWriterMono";
+  src: url("./fonts/iAWriterMonoS-Regular.woff2") format('woff2');
+  font-weight: normal;
+}
 .content{
   height: auto;
 }
@@ -2226,6 +2231,7 @@ a.event-subtitle{
   margin-left: auto;
   margin-right: 10%;
 }
+<<<<<<< HEAD
 .button-small{
   background-color: transparent;
   font-family: "Poppins";
@@ -2246,3 +2252,6 @@ a.event-subtitle{
   padding: 8px 24px 8px;
   border-radius: 45px;
 }
+=======
+
+>>>>>>> 921effddf1d36e4e3b8e0f69e914e837959d65c3
