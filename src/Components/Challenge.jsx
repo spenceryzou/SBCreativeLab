@@ -62,7 +62,7 @@ export default class Challenge extends Component {
                 <div style={{marginTop: "156px"}} className="row d-flex justify-content-center challengeDetails">
                     <div className="col-10 col-sm-7">
                         <ChallengeItem type="Graphic Design" title="Playlist Cover" imgURL="/images/saxophone.svg" caption="Your challenge is to design an album and tracklist cover that embodies the essence of the curated jazz playlist." />
-                        <ChallengeItem type="Illustration" title="Editorial" imgURL="/images/newspaper.svg" caption="Your challenge is to design an illustration for one of three Santa Barbara Independent article that will visually exemplify the article." />
+                        <ChallengeItem type="Illustration" title="Editorial" imgURL="/images/newspaper.svg" caption="Your challenge is to design an illustration for one of three Santa Barbara Independent articles that will visually exemplify the article." />
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center mt-5">
