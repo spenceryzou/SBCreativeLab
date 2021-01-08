@@ -30,7 +30,11 @@ export default class ChallengeItem extends Component {
                 <a target="_blank" href={ this.props.type === "Illustration" ? "https://www.notion.so/Editorial-Illustration-Challenge-204f2e627b7c4178a3ea0d75cddb83ee" : "https://www.notion.so/Playlist-Cover-Design-Challenge-e7504148e300435684e1c1dfc3fa264d"} className={`circle-container ${this.props.type}`}>
                     <div className="reverse-rotate">
                         <div className="rotate">
+<<<<<<< HEAD
                             <div className="mono" id={this.props.type}>&nbsp;{this.props.type} · {this.props.type} · {this.props.type} · {this.props.type} ·</div>
+=======
+                            <div className="mono" id={this.props.type}>{' '}{this.props.type} · {this.props.type} · {this.props.type} · {this.props.type} · </div>
+>>>>>>> 921effddf1d36e4e3b8e0f69e914e837959d65c3
                         </div>
                     </div>
                     {image}
