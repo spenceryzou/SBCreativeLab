@@ -284,6 +284,13 @@ i.fa{
   transition: color 100ms ease 100ms;
 }
 
+i.fab{
+    color: white;
+    opacity: .9;
+    z-index: 2;
+    transition: color 100ms ease 100ms;
+}
+
 .social-background{
   display: block;
   overflow: hidden;
@@ -652,10 +659,10 @@ label {
 
 #book{
     position: absolute;
-    width: 55%;
+    width: 65%;
     top: 33%;
-    left: 100%;
-    transform: translate(-100%,-33%);
+    left: 110%;
+    transform: translate(-110%,-33%);
     z-index: 1;
 }
 
@@ -684,6 +691,33 @@ label {
     left: 85%;
     transform: translate(-85%,-50%);
     z-index: -1;
+}
+
+#graphBotLeft{
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    left: -20%;
+    transform: translate(20%,-100%);
+    z-index: 2;
+}
+
+#graphBotRight{
+    position: absolute;
+    width: 55%;
+    top: 95%;
+    left: 115%;
+    transform: translate(-115%,-90%);
+    z-index: 2;
+}
+
+#graphTopRight{
+    position: absolute;
+    height: 45%;
+    top: 0%;
+    left: 90%;
+    transform: translate(-90%,-0%);
+    z-index: 2;
 }
 
 #graphCircle{
@@ -907,14 +941,48 @@ label {
     width: auto;
   }
 
+#graphBotLeft{
+  position: absolute;
+  height: 40%;
+  width: auto;
+  top: 90%;
+  left: 20%;
+  transform: translate(-90%,-100%);
+  z-index: 0;
+}
+
+#graphBotRight{
+  display: none;
+}
+
+#graphTopRight{
+    position: absolute;
+    height: 40%;
+    top: 0%;
+    left: 90%;
+    transform: translate(-90%,-0%);
+    z-index: 2;
+}
+
+#graphPlane{
+  height: 26%;
+  top: 80%;
+  width: auto;
+}
+
+#graphShapes{
+  height: auto;
+  width: 100%;
+}
+
 
 #book{
     position: absolute;
     width: unset;
-    height: 60%;
+    height: 55%;
     top: 100%;
-    left: 100%;
-    transform: translate(-100%,-100%);
+    left: -20%;
+    transform: translate(0%,-100%);
     z-index: -1;
 }
 
@@ -942,7 +1010,7 @@ label {
     position: absolute;
     width: unset;
     height: 45%;
-    top: 100%;
+    top: 90%;
     left: 0%;
     transform: translate(0%,-100%);
     z-index: -1;
@@ -959,13 +1027,34 @@ label {
     z-index: 3;
 }
 
+#popupTop{
+    position: absolute;
+    height: 8%;
+    width: auto;
+    top: 50%;
+    left: 54%;
+    transform: translate(-54%,-50%);
+    z-index: 2;
+}
+
+
+#popupBottom{
+    position: absolute;
+    height: 10%;
+    width: auto;
+    top: 77%;
+    left: 77%;
+    transform: translate(-77%,-77%);
+    z-index: 2;
+}
+
 #phonePlane{
     position: absolute;
     width: unset;
-    height: 20%;
-    top: 70%;
-    left: 0%;
-    transform: translate(-0%,-70%);
+    height: 26%;
+    top: 44%;
+    left: -11%;
+    transform: translate(11%,-44%);
     z-index: 2;
 }
 
@@ -985,8 +1074,8 @@ label {
   }
 
   .rightTextContainer{
-    transform: translate(0, -250%) !important;
-    left: 8%;
+    transform: translate(0, -175%) !important;
+    left: 12%;
     max-width: 90%;
   }
 

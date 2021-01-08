@@ -76,36 +76,34 @@ export default class Home extends Component {
             if(this.state.menuOpen === true){
                 // console.log('open menu');
                 menu.classList.add("drop");
-                // var logo = document.getElementById("logo");
-                // logo.classList.add("from-menu");
-                // console.log(menu.classList);
-                // var altLogo = document.getElementsByClassName("st4");
-                // var defaultPlane = document.getElementById("plane");
-                // var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                // var defaultBase = document.getElementById("base_blue");
-                // for (var i = 0; i < altLogo.length; i++) {
-                //     altLogo[i].style.opacity = 0;
-                // }
-                // defaultPlane.style.opacity = 1;
-                // defaultSwoosh.style.opacity = 1;
-                // defaultBase.style.opacity = 1;
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-menu");
+                var altLogo = document.getElementsByClassName("st4");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 0;
+                }
+                defaultPlane.style.opacity = 1;
+                defaultSwoosh.style.opacity = 1;
+                defaultBase.style.opacity = 1;
             }else if(this.state.menuOpen === false){
                 menu.classList.remove("drop");
-                // var logo = document.getElementById("logo");
-                // logo.classList.remove("from-menu");
-                // console.log(menu.classList);
-                // if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
-                //     var defaultPlane = document.getElementById("plane");
-                //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-                //     var defaultBase = document.getElementById("base_blue");
-                //     defaultPlane.style.opacity = 0;
-                //     defaultSwoosh.style.opacity = 0;
-                //     defaultBase.style.opacity = 0;
-                //     var altLogo = document.getElementsByClassName("st4");
-                //     for (var i = 0; i < altLogo.length; i++) {
-                //         altLogo[i].style.opacity = 1;
-                //     }
-                // }
+                var logo = document.getElementById("logo");
+                logo.classList.remove("from-menu");
+                if(window.fullpage_api.getActiveSection().index === 2 || window.fullpage_api.getActiveSection().index === 3 || window.fullpage_api.getActiveSection().index === 4){
+                    var defaultPlane = document.getElementById("plane");
+                    var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                    var defaultBase = document.getElementById("base_blue");
+                    defaultPlane.style.opacity = 0;
+                    defaultSwoosh.style.opacity = 0;
+                    defaultBase.style.opacity = 0;
+                    var altLogo = document.getElementsByClassName("st4");
+                    for (var i = 0; i < altLogo.length; i++) {
+                        altLogo[i].style.opacity = 1;
+                    }
+                }
             }
         }
     }
@@ -143,37 +141,37 @@ export default class Home extends Component {
             frictionY: .075
             });
 
-        // var graphScene = document.getElementById('graphScene');
-        // var parallaxInstance7 = new Parallax(graphScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
-        // var uiuxScene = document.getElementById('uiuxScene');
-        // var parallaxInstance3 = new Parallax(uiuxScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
-        // var phoneScene = document.getElementById('phoneScene');
-        // var parallaxInstance4 = new Parallax(phoneScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
+        var graphScene = document.getElementById('graphScene');
+        var parallaxInstance7 = new Parallax(graphScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var uiuxScene = document.getElementById('uiuxScene');
+        var parallaxInstance3 = new Parallax(uiuxScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
+        var phoneScene = document.getElementById('phoneScene');
+        var parallaxInstance4 = new Parallax(phoneScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
 
-        // var illusScene = document.getElementById('illusScene');
-        // var parallaxInstance5 = new Parallax(illusScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });       
-        // var bookScene = document.getElementById('bookScene');
-        // var parallaxInstance6 = new Parallax(bookScene, {
-        //     relativeInput: true,
-        //     frictionX: .075,
-        //     frictionY: .15
-        // });
+        var illusScene = document.getElementById('illusScene');
+        var parallaxInstance5 = new Parallax(illusScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });       
+        var bookScene = document.getElementById('bookScene');
+        var parallaxInstance6 = new Parallax(bookScene, {
+            relativeInput: true,
+            frictionX: .075,
+            frictionY: .15
+        });
 
         this.initializeReactGA();
         // window.addEventListener('resize', this.resize());
@@ -207,52 +205,52 @@ export default class Home extends Component {
                 defaultBase.style.opacity = 1;
             }
         }
-        // if(destination.index===2){
-        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        //     // var defaultLogo = document.getElementsByClassName("st5");
-        //     var defaultPlane = document.getElementById("plane");
-        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //     var defaultBase = document.getElementById("base_blue");
-        //     defaultPlane.style.opacity = 0;
-        //     defaultSwoosh.style.opacity = 0;
-        //     defaultBase.style.opacity = 0;
-        //     var altLogo = document.getElementsByClassName("st4");
-        //     for (var i = 0; i < altLogo.length; i++) {
-        //         altLogo[i].style.opacity = 1;
-        //     }
-        // }
-        // if(destination.index===3){
-        //     tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        // }
-        // if(destination.index===4){
-        //     tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
-        //     if(origin.index===5){
-        //         var logo = document.getElementById("logo");
-        //         logo.classList.add("from-bottom");
-        //         var defaultPlane = document.getElementById("plane");
-        //         var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //         var defaultBase = document.getElementById("base_blue");
-        //         defaultPlane.style.opacity = 0;
-        //         defaultSwoosh.style.opacity = 0;
-        //         defaultBase.style.opacity = 0;
-        //         var altLogo = document.getElementsByClassName("st4");
-        //         for (var i = 0; i < altLogo.length; i++) {
-        //             altLogo[i].style.opacity = 1;
-        //         }
-        //     }
-        // }
-        // if(destination.index===5){
-        //     var altLogo = document.getElementsByClassName("st4");
-        //     for (var i = 0; i < altLogo.length; i++) {
-        //         altLogo[i].style.opacity = 0;
-        //     }
-        //     var defaultPlane = document.getElementById("plane");
-        //     var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        //     var defaultBase = document.getElementById("base_blue");
-        //     defaultPlane.style.opacity = 1;
-        //     defaultSwoosh.style.opacity = 1;
-        //     defaultBase.style.opacity = 1;
-        // }
+        if(destination.index===2){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            // var defaultLogo = document.getElementsByClassName("st5");
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 0;
+            defaultSwoosh.style.opacity = 0;
+            defaultBase.style.opacity = 0;
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 1;
+            }
+        }
+        if(destination.index===3){
+            tl.fromTo('.rightTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+        }
+        if(destination.index===4){
+            tl.fromTo('.leftTextContainer', .5, {y: '40', opacity: 0}, {y:0, opacity: 1, delay: .6})
+            if(origin.index===5){
+                var logo = document.getElementById("logo");
+                logo.classList.add("from-bottom");
+                var defaultPlane = document.getElementById("plane");
+                var defaultSwoosh = document.getElementById("swoosh_desaturated");
+                var defaultBase = document.getElementById("base_blue");
+                defaultPlane.style.opacity = 0;
+                defaultSwoosh.style.opacity = 0;
+                defaultBase.style.opacity = 0;
+                var altLogo = document.getElementsByClassName("st4");
+                for (var i = 0; i < altLogo.length; i++) {
+                    altLogo[i].style.opacity = 1;
+                }
+            }
+        }
+        if(destination.index===5){
+            var altLogo = document.getElementsByClassName("st4");
+            for (var i = 0; i < altLogo.length; i++) {
+                altLogo[i].style.opacity = 0;
+            }
+            var defaultPlane = document.getElementById("plane");
+            var defaultSwoosh = document.getElementById("swoosh_desaturated");
+            var defaultBase = document.getElementById("base_blue");
+            defaultPlane.style.opacity = 1;
+            defaultSwoosh.style.opacity = 1;
+            defaultBase.style.opacity = 1;
+        }
     }
     afterLoad(origin, destination, direction) {
         var logo = document.getElementById("logo");
@@ -366,7 +364,7 @@ export default class Home extends Component {
                                     <div data-depth=".12"id="absolute"><img alt="paper plane" id="leftAirplane" src="/images/left-airplane.png"/></div>
                                 </div>
                             </div>
-                            {/* <div style={{backgroundColor: "#354563"}} className="section">
+                            <div style={{backgroundColor: "#354563"}} className="section">
                                 <div className="graphTextContainer">
                                     <div style={{color: "white"}} className="title">
                                         Graphic Design
@@ -376,8 +374,12 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                                 <div id="graphScene" className="imageContainer">
-                                    <div data-invert-x="true" data-depth=".02" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
-                                    <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
+                                    <div data-invert-x="true" data-depth=".03" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="bottom left shapes" id="graphBotLeft" src="/images/graphic/bottom-left.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="bottom right shapes" id="graphBotRight" src="/images/graphic/bottom-right.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="top right shapes" id="graphTopRight" src="/images/graphic/top-right.png"/></div>
+                                    <div data-depth=".1" id="absolute"><img alt="small shapes" id="graphShapes" src="/images/graphic/shapes.png"/></div>
+                                    {/* <div data-depth=".08" id="absolute"><img alt="circle" id="graphCircle" src="/images/graphic/circle.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphBlue" src="/images/graphic/blue1.png"/></div>
                                     <div data-depth=".08" id="absolute"><img alt="circle" id="graphTopBlue" src="/images/graphic/top-blue1.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphPink" src="/images/graphic/pink1.png"/></div>
@@ -388,7 +390,7 @@ export default class Home extends Component {
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphYellow" src="/images/graphic/yellow1.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphOrange" src="/images/graphic/orange1.png"/></div>
                                     <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphCorner" src="/images/graphic/corner1.png"/></div>
-                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphShapes" src="/images/graphic/shapes.png"/></div>
+                                    <div data-depth=".05" id="absolute"><img alt="blue shape" id="graphShapes" src="/images/graphic/shapes.png"/></div> */}
                                 </div>
                             </div>
                             <div style={{backgroundColor: "#354563"}} className="section">
@@ -420,12 +422,12 @@ export default class Home extends Component {
                                 </div>
                                 <div id="illusScene" className="imageContainer">
                                     <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">
-                                        <div data-depth=".01" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
-                                        <div data-depth=".05" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
+                                        <div data-depth=".03" id="absolute"><img alt="book" id="book" src="/images/book.png"/></div>
+                                        <div data-depth=".07" id="absolute"><img alt="cloud" id="bookCloud" src="/images/middle-cloud.png"/></div>
                                     </div>
                                     <div data-depth=".08" id="absolute"><img alt="planes" id="bookPlanes" src="/images/book-planes.png"/></div>
                                 </div>
-                            </div> */}
+                            </div>
                             <div className="section">
                                 <div className="content-body-text">
                                     <div className="center-container" id="home">            
@@ -434,10 +436,11 @@ export default class Home extends Component {
                                         </div>
                                         <div className="subtitle-med inline-block-center">
                                             <ul class="links">
-                                                <li class="link"><a href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
-                                                <li class="link"><a href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
-                                                <li class="link"><a href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
-                                                <li class="link"><a href="https://rebrand.ly/r7vam">slack</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.facebook.com/sbcreativelab/">facebook</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.instagram.com/sbcreativelab/">instagram</a></li>
+                                                <li class="link"><a target="_blank" href="https://www.linkedin.com/company/sbcreativelab/">linkedin</a></li>
+                                                <li class="link"><a target="_blank" href="https://rebrand.ly/r7vam">slack</a></li>
+                                                <li class="link"><a target="_blank" href="https://discord.gg/fc8Rrn7VdV">discord</a></li>
                                             </ul>
                                         </div>
                                     </div>
