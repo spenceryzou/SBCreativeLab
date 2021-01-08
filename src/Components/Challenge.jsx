@@ -37,6 +37,7 @@ export default class Challenge extends Component {
         tl.fromTo('.challengeSubtitle', .6, { opacity: 0}, {y:0, opacity: 1, delay: 0});
         tl.fromTo('.challengeDetails', .6, {opacity: 0}, {opacity: 1, delay: 0}, '-=.6');
         this.initializeReactGA();
+        console.log("saxophone.svg and newspaper.svg by Twitter, Inc and other contributors is licensed under CC BY 4.0")
     }
     // showMenuItems() {
     //     gsap.to(this.menuItems.map(item => item.DOM.textInner), {
