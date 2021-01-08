@@ -372,6 +372,10 @@ export default class Home extends Component {
                                     <div className="shortCaption" style={{color: "white"}}>
                                         Communicate your visual identity.
                                     </div>
+                                    <div>
+                                        <a class="btn btn-danger" href="#">
+                                        <i class="fas fa-palette fa-lg"></i> Go to Design Challenge</a>
+                                    </div>
                                 </div>
                                 <div id="graphScene" className="imageContainer">
                                     <div data-invert-x="true" data-depth=".03" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png"/></div>
@@ -418,6 +422,10 @@ export default class Home extends Component {
                                     </div>
                                     <div className="shortCaption" style={{color: "white"}}>
                                         Bring concepts and stories to life.
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-danger" href="#">
+                                        <i class="fas fa-palette fa-lg"></i> Go to Design Challenge</a>
                                     </div>
                                 </div>
                                 <div id="illusScene" className="imageContainer">
