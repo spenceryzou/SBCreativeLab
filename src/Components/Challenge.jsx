@@ -78,7 +78,7 @@ export default class Challenge extends Component {
                 <div style={{marginTop: "132px", marginBottom: "96px"}} className="row d-flex justify-content-center">
                     <div className="col-10 col-sm-8 d-flex flex-column align-items-center">
                         <div className="b1 col-12 col-sm-6 text-center">Submissions are due before or by Sunday, February 7 @ 11:59 pm PT. </div>
-                        <div className="row mt-2 mt-sm-5 justify-space-between">
+                        <div className="row mt-0 mt-sm-5 justify-space-between">
                             <a href="https://forms.gle/ABJpGNTXsCvkiMxG9" className="button col-12 col-sm text-center">
                                 Submit Graphic Design
                             </a>
