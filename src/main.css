@@ -123,6 +123,12 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
+  .design-challenge .header {
+    top: 36px;
+    padding: 0; }
+  .design-challenge .pointer {
+    pointer-events: none;
+    display: block; }
 @keyframes rotate-360 {
   0% {
     transform: rotate(0); }
@@ -130,7 +136,7 @@
     transform: rotate(360deg); } }
   @media only screen and (max-width: 768px) and (orientation: portrait) {
     .design-challenge {
-      padding-top: 64px; }
+      padding-top: 0px; }
       .design-challenge .h1 {
         font-family: "new-spirit-condensed", serif;
         font-weight: 700;
@@ -149,6 +155,14 @@
         font-weight: 400;
         letter-spacing: 0.01em; }
       .design-challenge .button {
-        width: 256px; } }
+        width: 256px; }
+      .design-challenge .header {
+        position: initial;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        width: 100%;
+        margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */

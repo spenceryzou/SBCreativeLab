@@ -144,6 +144,14 @@
         background-clip: text;
         color: transparent;
       }
+    .header {
+        top: 36px;
+        padding: 0;
+    }
+    .pointer {
+        pointer-events: none;
+        display: block;
+    }
     @keyframes rotate-360{
         0% {
           transform: rotate(0);
@@ -153,7 +161,7 @@
         }
     }
     @media only screen and (max-width: 768px) and (orientation: portrait) {
-        padding-top: 64px;
+        padding-top: 0px;
         
         .h1{
             font-family: "new-spirit-condensed", serif;
@@ -177,6 +185,15 @@
         }
         .button{
             width: 256px;
+        }
+        .header{
+            position: initial;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            width: 100%;
+            margin: 0;
         }
     }
 }
