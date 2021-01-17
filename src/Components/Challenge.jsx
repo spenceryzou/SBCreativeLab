@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ChallengeItem from './ChallengeItem';
-import MentorItem from './MentorItem';
 import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 // import PictureHover from './PictureHover';
@@ -93,14 +92,11 @@ export default class Challenge extends Component {
                     <div className="row d-flex justify-content-center mt-5 mb-0 mb-lg-5">
                         <div className="col-11 col-sm-8 d-flex flex-column align-items-center">
                             <div className="h2 text-center">Mentors</div>
-                            <div className="b1 col-12 col-sm-6 text-center">Get 1:1 sessions with industry mentors before you submit your work. </div>
-                            <div className="b1 col-12 col-sm-6 text-center">Learn more about our mentors: </div>
-
+                            <div className="b1 col-12 col-sm-6 text-center">Get 1:1 sessions with industry mentors before you submit your work.<br></br>Learn more about our mentors: </div>
                         </div>
                     </div>
-                    <div className="row pt-3">
+                    <div className="row pt-0 pt-sm-3">
                         <div className="col-12 mt-3 d-flex justify-content-center">
-                            {/* <MentorItem /> */}
                             <div className="mentor-category-container d-flex flex-column flex-lg-row">
                                 <div className="mentor-container">
                                     <a target="_blank" href="https://www.notion.so/Playlist-Cover-Design-Challenge-e7504148e300435684e1c1dfc3fa264d#2661444bc4bf44848ba6a2e0856f3082">

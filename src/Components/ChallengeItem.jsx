@@ -25,7 +25,7 @@ export default class ChallengeItem extends Component {
         )
 
         return (
-            <div className="row d-flex align-items-center mb-5 pb-4">
+            <div className="row d-flex align-items-center mb-3 mb-sm-5 pb-0 pb-sm-4">
                 <div className="d-flex col-md-3 offset-md-1 justify-content-center align-items-center">
                     <a target="_blank" href={this.props.type === "Illustration" ? "https://www.notion.so/Editorial-Illustration-Challenge-204f2e627b7c4178a3ea0d75cddb83ee" : "https://www.notion.so/Playlist-Cover-Design-Challenge-e7504148e300435684e1c1dfc3fa264d"} className={`circle-container ${this.props.type}`}>
                         <div className="reverse-rotate">
