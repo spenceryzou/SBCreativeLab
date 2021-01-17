@@ -69,9 +69,9 @@ export default class Challenge extends Component {
                     <div className="col-11 col-sm-8 d-flex flex-column align-items-center">
                         <div className="h2 text-center">Mentors</div>
                         <div className="b1 col-12 col-sm-6 text-center">Get 1:1 sessions with industry mentors before you submit your work.</div>
-                        <div class="menu__item b1 text-center">
+                        <div class="menu__item b1 text-center mt-3">
                             {/* <span class="menu__item-text"><span class="menu__item-textinner rainbow-text">coming soon!</span></span> */}
-                            Details coming soon!
+                            <a target="_blank" href="https://bit.ly/mentor-signups" className="button-small">Sign up for a slot here!</a>
                         </div>
                     </div>
                 </div>
