@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ChallengeItem from './ChallengeItem';
+import MentorItem from './MentorItem';
 import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 // import PictureHover from './PictureHover';
@@ -83,39 +84,87 @@ export default class Challenge extends Component {
                             <div className="b1 col-12 p-0 mt-2 challengeSubtitle">Choose from a playlist cover Graphic Design Challenge or an editorial Illustration Challenge. Or take on both!</div>
                         </div>
                     </div>
-                    <div style={{ marginTop: "156px" }} className="row d-flex justify-content-center challengeDetails section-2">
+                    <div className="row d-flex justify-content-center challengeDetails section-2">
                         <div className="col-10 col-sm-7">
                             <ChallengeItem type="Graphic Design" title="Playlist Cover" imgURL="/images/saxophone.svg" caption="Your challenge is to design an album and tracklist cover that embodies the essence of the curated jazz playlist." />
                             <ChallengeItem type="Illustration" title="Editorial" imgURL="/images/newspaper.svg" caption="Your challenge is to design an illustration for one of three Santa Barbara Independent articles that will visually exemplify the article." />
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center mt-5">
+                    <div className="row d-flex justify-content-center mt-5 mb-0 mb-lg-5">
                         <div className="col-11 col-sm-8 d-flex flex-column align-items-center">
                             <div className="h2 text-center">Mentors</div>
-                            <div className="b1 col-12 col-sm-6 text-center">Get 1:1 sessions with industry mentors before you submit your work.</div>
-                            <div class="menu__item b1 text-center mt-3">
-                                {/* <span class="menu__item-text"><span class="menu__item-textinner rainbow-text">coming soon!</span></span> */}
-                                <a target="_blank" href="https://bit.ly/mentor-signups" className="button-small">Sign up for a slot here!</a>
-                            </div>
+                            <div className="b1 col-12 col-sm-6 text-center">Get 1:1 sessions with industry mentors before you submit your work. </div>
+                            <div className="b1 col-12 col-sm-6 text-center">Learn more about our mentors: </div>
+
                         </div>
                     </div>
-                    <div style={{ marginTop: "132px", marginBottom: "96px" }} className="row d-flex justify-content-center">
+                    <div className="row pt-3">
+                        <div className="col-12 mt-3 d-flex justify-content-center">
+                            {/* <MentorItem /> */}
+                            <div className="mentor-category-container d-flex flex-column flex-lg-row">
+                                <div className="mentor-container">
+                                    <a target="_blank" href="https://www.notion.so/Playlist-Cover-Design-Challenge-e7504148e300435684e1c1dfc3fa264d#2661444bc4bf44848ba6a2e0856f3082">
+                                        <img className="mentor" src="./images/alli-chang-crop.png"></img>
+                                    </a>
+                                    <div className="mentor-text">
+                                        <div className="b1 poppins text-center mt-2">Alli Chang</div>
+                                        <div className="b2 poppins text-center mt-2">Graphic Design Intern at Webtoon and Freelancer at Huda Beauty</div>
+                                    </div>
+                                </div>
+                                <div className="mentor-container">
+                                    <a target="_blank" href="https://www.notion.so/Playlist-Cover-Design-Challenge-e7504148e300435684e1c1dfc3fa264d#4adaa1f7214c4f41bfa26636e4072b43">
+                                        <img className="mentor" src="./images/phoebe-jin-crop.png"></img>
+                                    </a>
+                                    <div className="mentor-text">
+                                        <div className="b1 poppins text-center mt-2">Phoebe Jin</div>
+                                        <div className="b2 poppins text-center mt-2">Presentation Design Intern at Karl Storz</div>
+                                    </div>
+                                </div>
+                                <div className="mentor-container">
+                                    <a target="_blank" href="https://www.notion.so/Editorial-Illustration-Challenge-204f2e627b7c4178a3ea0d75cddb83ee#8912ffe521c0448db5e0ccaea15936cd">
+                                        <img className="mentor" src="./images/sarah-ransohoff.png"></img>
+                                    </a>
+                                    <div className="mentor-text">
+                                        <div className="b1 poppins text-center mt-2">Sarah Ransohoff</div>
+                                        <div className="b2 poppins text-center mt-2">Engineering Manager at Grailed and Artist</div>
+                                    </div>
+                                </div>
+                                <div className="mentor-container">
+                                    <a target="_blank" href="https://www.notion.so/Editorial-Illustration-Challenge-204f2e627b7c4178a3ea0d75cddb83ee#2ed883c12aa24ea48ea30612ed0a24d2">
+                                        <img className="mentor" src="./images/chelsea-chung-crop.png"></img>
+                                    </a>
+                                    <div className="mentor-text">
+                                        <div className="b1 poppins text-center mt-2">Chelsea Chung</div>
+                                        <div className="b2 poppins text-center mt-2">Freelance Game Artist and Illustrator</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="b1 col-12 text-center mt-4 mt-lg-3">
+                            <a target="_blank" href="https://bit.ly/mentor-signups" className="button-small">Sign up for a slot here!</a>
+                        </div>
+                    </div>
+                    <div style={{ marginTop: "64px" }} className="row d-flex justify-content-center">
                         <div className="col-10 col-sm-8 d-flex flex-column align-items-center">
                             <div className="b1 col-12 col-sm-6 text-center">Submissions are due before or by Sunday, February 7 @ 11:59 pm PT. </div>
-                            <div className="row mt-0 mt-sm-5 justify-space-between">
+                        </div>
+                    </div>
+                    <div className="row d-flex justify-content-center mt-4 mb-5">
+                        <div className="col-10 col-md-7">
+                            <div className="row">
                                 <a href="https://forms.gle/ABJpGNTXsCvkiMxG9" className="button col-12 col-sm text-center">
                                     Submit Graphic Design
-                            </a>
-                                <div className="col-1 d-none d-sm-block"></div>
+                                </a>
+                                <div className="col-1 p-0 d-none d-sm-block"></div>
                                 <a href="https://forms.gle/LGHSRocpxJmmb44R7" className="button col-12 col-sm text-center mt-3 mt-sm-0">
                                     Submit Illustration
-                            </a>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="d-flex justify-content-center pb-5">
-                    <a href="/"><Logo height="80px"></Logo></a>
+                    <div className="row d-flex justify-content-center pb-5">
+                        <a href="/"><Logo height="80px"></Logo></a>
+                    </div>
                 </div>
             </div >
         )
