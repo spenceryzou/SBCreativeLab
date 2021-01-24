@@ -110,6 +110,14 @@ export default class Home extends Component {
                                         Check out our Winter Design Challenge!&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a> */}
                     </div>
                     <EventItem 
+                        link="https://www.facebook.com/events/4204454456249924"
+                        imgURL="/images/matt-event.jpg"
+                        title="UCSB Visual Identity System"
+                        date="1 - 28 - 2021"
+                        alt="matt perko event"
+                        alignRight={true}
+                    />
+                    <EventItem 
                         link="http://bit.ly/mabletruong"
                         imgURL="/images/mable.jpg"
                         title="Starting a Creative Career"

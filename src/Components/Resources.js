@@ -158,6 +158,12 @@ export default class Home extends Component {
                     */}
                     <div className="resources-section">
                         <div className="masonry-grid2">
+                            {/* <WorkshopItem 
+                                slidesLink="https://drive.google.com/file/d/1MVgRnm670Re_YDDYTeQ98_e2TBgfASwq/view"
+                                vidLink="https://youtu.be/7kuJaUN9bm0"
+                                imgURL="/images/matt-square.jpg"
+                                alt="matt perko event"
+                            /> */}
                             <WorkshopItem 
                                 slidesLink="https://drive.google.com/file/d/1MVgRnm670Re_YDDYTeQ98_e2TBgfASwq/view"
                                 vidLink="https://youtu.be/7kuJaUN9bm0"
