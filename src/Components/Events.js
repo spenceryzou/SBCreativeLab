@@ -110,6 +110,13 @@ export default class Home extends Component {
                                         Check out our Winter Design Challenge!&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a> */}
                     </div>
                     <EventItem 
+                        link="https://bit.ly/sbcl-graph-bad"
+                        imgURL="/images/gdgb-squished.jpg"
+                        title="Graphic Design Gone Bad"
+                        date="2 - 19 - 2021"
+                        alt="graphic design gone bad event"
+                    />
+                    <EventItem 
                         link="https://www.facebook.com/events/4204454456249924"
                         imgURL="/images/matt-event.jpg"
                         title="UCSB Visual Identity System"
