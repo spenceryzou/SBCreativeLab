@@ -1,38 +1,37 @@
 @import url(App.css);
-@import url(designathon.css);
-.design-challenge {
+.designathon {
   padding-top: 132px;
-  background-color: #3A86C8;
-  color: white; }
-  .design-challenge .h1 {
-    font-family: "new-spirit-condensed", serif;
+  background-color: #C1F0E5;
+  color: #426968; }
+  .designathon .h1 {
+    font-family: "Mechanical", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 96px;
+    font-size: 68px;
     letter-spacing: 0.05em; }
-  .design-challenge .h2 {
-    font-family: "new-spirit-condensed", serif;
+  .designathon .h2 {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 72px;
+    font-size: 36px;
     letter-spacing: 0.05em; }
-  .design-challenge .b1 {
-    font-family: "bookmania", serif;
+  .designathon .b1 {
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.01em; }
-  .design-challenge .b2 {
-    font-family: "bookmania", serif;
-    font-size: 16px;
+  .designathon .b2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.01em; }
-  .design-challenge .poppins {
+  .designathon .poppins {
     font-family: "Poppins" !important; }
-  .design-challenge .date {
-    font-family: "Poppins";
+  .designathon .date {
+    font-family: "Mechanical", serif;
     font-size: 36px;
     letter-spacing: 0.055em; }
-  .design-challenge .button {
+  .designathon .button {
     background-color: black;
     font-family: "Poppins";
     color: white;
@@ -52,7 +51,7 @@
     text-transform: uppercase;
     white-space: normal;
     cursor: pointer; }
-  .design-challenge .button-small {
+  .designathon .button-small {
     background-color: transparent;
     font-family: "Poppins";
     border: 3px solid white;
@@ -62,7 +61,7 @@
     padding: 8px 24px 8px;
     border-radius: 45px;
     transition: all .3s ease; }
-  .design-challenge .button-small:hover {
+  .designathon .button-small:hover {
     background-color: white;
     border: 3px solid white;
     color: black;
@@ -70,14 +69,14 @@
     line-height: 1;
     padding: 8px 24px 8px;
     border-radius: 45px; }
-  .design-challenge .button:hover {
+  .designathon .button:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
     color: #000;
     transform: translateY(-3px); }
-  .design-challenge .rotate {
+  .designathon .rotate {
     animation: rotate-360 6s linear 0s infinite normal; }
-  .design-challenge .reverse-rotate {
+  .designathon .reverse-rotate {
     -webkit-animation: rotate-360 3s linear 0s infinite reverse;
     -moz-animation: rotate-360 3s linear 0s infinite reverse;
     -ms-animation: rotate-360 3s linear 0s infinite reverse;
@@ -88,21 +87,21 @@
     -ms-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused; }
-  .design-challenge a.circle-container {
+  .designathon a.circle-container {
     color: white; }
-  .design-challenge .circle-container:hover {
+  .designathon .circle-container:hover {
     transform: scale(1.25); }
-    .design-challenge .circle-container:hover .reverse-rotate {
+    .designathon .circle-container:hover .reverse-rotate {
       -webkit-animation-play-state: running;
       -moz-animation-play-state: running;
       -ms-animation-play-state: running;
       -o-animation-play-state: running;
       animation-play-state: running; }
-  .design-challenge .circle-container.Illustration {
+  .designathon .circle-container.Illustration {
     transform: scale(1.15); }
-  .design-challenge .circle-container.Illustration:hover {
+  .designathon .circle-container.Illustration:hover {
     transform: scale(1.4375); }
-  .design-challenge .circle-container {
+  .designathon .circle-container {
     width: 250px;
     height: 250px;
     display: flex;
@@ -111,13 +110,13 @@
     align-items: center;
     transition: all .5s ease;
     transform-origin: center; }
-  .design-challenge .emoji {
+  .designathon .emoji {
     position: relative;
     transform: translate(-50%, 0);
     height: 90px; }
-  .design-challenge .circle-container.Illustration .emoji {
+  .designathon .circle-container.Illustration .emoji {
     height: 72px; }
-  .design-challenge .hover-reveal {
+  .designathon .hover-reveal {
     position: fixed;
     z-index: -2;
     width: 228px;
@@ -126,25 +125,25 @@
     left: 20%;
     /* pointer-events: none; */
     opacity: 0; }
-  .design-challenge .rainbow-text {
+  .designathon .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
-  .design-challenge .header {
+  .designathon .header {
     top: 36px;
     padding: 0; }
-  .design-challenge .pointer {
+  .designathon .pointer {
     pointer-events: none;
     display: block; }
-  .design-challenge .grid {
+  .designathon .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, auto));
     column-gap: 2vw;
     row-gap: 2vw;
     align-items: center;
     justify-items: center; }
-  .design-challenge .mentor {
+  .designathon .mentor {
     max-width: 100%;
     object-fit: cover;
     height: 250px;
@@ -153,24 +152,24 @@
     transition: all .275s ease;
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
     transform: translateY(-10px); }
-  .design-challenge .mentor:hover {
+  .designathon .mentor:hover {
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
     transform: translateY(-2px); }
-  .design-challenge .mentor-text {
+  .designathon .mentor-text {
     width: 210px; }
-  .design-challenge .mentor-container {
+  .designathon .mentor-container {
     height: auto;
     width: 250px;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: -56px; }
-  .design-challenge .mentor-container > a:hover {
+  .designathon .mentor-container > a:hover {
     color: initial;
     background-color: initial;
     opacity: initial;
     transition: initial; }
-  .design-challenge .mentor-category-container {
+  .designathon .mentor-category-container {
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
     background-color: #0F4C81;
     border-radius: 40px;
@@ -179,36 +178,62 @@
     padding-left: 12px;
     padding-right: 12px;
     margin: 12px; }
-  .design-challenge .section-2 {
-    margin-top: 156px; }
+  .designathon .section-1 {
+    padding-top: 128px;
+    height: 100vh;
+  }
+  .designathon .section-2 {
+    background-color: #325C5C;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+  .designathon .section-3 {
+    padding-top: 96px;
+    height: 100vh;
+  }
+  .designathon .section-3-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .designathon .section-4 {
+    background-color: white;
+    padding-top: 56px;
+    padding-bottom: 72px;
+    height: 100vh;
+  }
+  .designathon .section-5 {
+    padding-top: 56px;
+    padding-bottom: 72px;
+    height: 100vh;
+  }
 @keyframes rotate-360 {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
   @media only screen and (max-width: 768px) and (orientation: portrait) {
-    .design-challenge {
+    .designathon {
       padding-top: 0px; }
-      .design-challenge .h1 {
+      .designathon .h1 {
         font-family: "new-spirit-condensed", serif;
         font-weight: 700;
         font-style: normal;
         font-size: 56px;
         letter-spacing: 0.05em; }
-      .design-challenge .h2 {
+      .designathon .h2 {
         font-family: "new-spirit-condensed", serif;
         font-weight: 700;
         font-style: normal;
         font-size: 72px;
         letter-spacing: 0.05em; }
-      .design-challenge .b1 {
+      .designathon .b1 {
         font-family: "bookmania", serif;
         font-size: 24px;
         font-weight: 400;
         letter-spacing: 0.01em; }
-      .design-challenge .button {
+      .designathon .button {
         width: 256px; }
-      .design-challenge .header {
+      .designathon .header {
         position: initial;
         padding-left: 32px;
         padding-right: 32px;
@@ -216,10 +241,10 @@
         padding-top: 16px;
         width: 100%;
         margin: 0; }
-      .design-challenge .section-2 {
+      .designathon .section-2 {
         margin-top: 64px; } }
   @media only screen and (max-width: 992px) {
-    .design-challenge .mentor-container {
+    .designathon .mentor-container {
       height: auto;
       width: 250px;
       align-items: center;
@@ -227,7 +252,7 @@
       flex-direction: column;
       margin-top: 0px;
       padding-top: 24px; }
-    .design-challenge .mentor {
+    .designathon .mentor {
       max-width: 100%;
       object-fit: cover;
       height: 300px;
@@ -236,10 +261,10 @@
       transition: all .275s ease;
       box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
       transform: translateY(-4px); }
-    .design-challenge .mentor:hover {
+    .designathon .mentor:hover {
       box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
       transform: translateY(2px); }
-    .design-challenge .mentor-category-container {
+    .designathon .mentor-category-container {
       box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
       background-color: #0F4C81;
       border-radius: 40px;

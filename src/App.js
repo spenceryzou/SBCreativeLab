@@ -9,6 +9,7 @@ import Resources from './Components/Resources'
 import Events from './Components/Events'
 import ReactGA from 'react-ga'
 import Challenge from './Components/Challenge';
+import Designathon from './Components/Designathon';
 
 export class App extends Component {
   constructor(props){
@@ -42,6 +43,7 @@ export class App extends Component {
               <Route exact path="/about" render={(props) => <About {...props}/>}/>
               <Route exact path="/resources" render={(props) => <Resources {...props}/>}/>
               <Route exact path="/events" render={(props) => <Events {...props}/>}/>
+              <Route exact path="/designathon" render={(props) => <Designathon {...props}/>}/>
               {/* <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
