@@ -6,9 +6,9 @@
   color: #426968; }
   .designathon .h1 {
     font-family: "Mechanical", serif;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-style: normal;
-    font-size: 68px;
+    font-size: 56px;
     letter-spacing: 0.05em; }
   .designathon .h2 {
     font-family: "Poppins", sans-serif;
@@ -35,7 +35,7 @@
     font-family: "Poppins" !important; }
   .designathon .date {
     font-family: "Mechanical", serif;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 0.055em; }
   .designathon .button {
     background-color: black;

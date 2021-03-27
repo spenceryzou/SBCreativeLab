@@ -1,0 +1,7 @@
+This font is a derivative of the SIL Open Font Licensed Open Source font, Courier Prime by Quote-Unquote Apps.
+
+Changelog:
+
+Changed designs for the Ampersand, Number 1, Number 4, Number 7, uppercase A, uppercase H, uppercase J, uppercase Q, addition of new characters within the Latin extended set, added Russian Ruble Sign, and designed new weights, widths and styles.
+
+Additions, design modifications and new styles/weights/widths by Cannot Into Space Fonts. 

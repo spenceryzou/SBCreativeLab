@@ -5,6 +5,11 @@
   src: url("./fonts/iAWriterMonoS-Regular.woff2") format('woff2');
   font-weight: normal;
 }
+@font-face{
+  font-family: "Mechanical";
+  src: url("./fonts/mechanical-font/Mechanical-g5Y5.otf") format("opentype");
+  font-weight: normal;
+}
 .content{
   height: auto;
 }
