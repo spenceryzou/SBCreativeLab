@@ -1,5 +1,6 @@
 @import url(App.css);
 .designathon {
+  background-image: url("/images/designathon/grid.png");
   padding-top: 132px;
   background-color: #C1F0E5;
   color: #426968; }
@@ -18,12 +19,17 @@
   .designathon .b1 {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.01em; }
   .designathon .b2 {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    letter-spacing: 0.01em; }
+  .designathon .b3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     letter-spacing: 0.01em; }
   .designathon .poppins {
     font-family: "Poppins" !important; }
@@ -138,10 +144,10 @@
     display: block; }
   .designathon .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 2vw;
     row-gap: 2vw;
-    align-items: center;
+    align-items: start;
     justify-items: center; }
   .designathon .mentor {
     max-width: 100%;
@@ -189,11 +195,13 @@
   }
   .designathon .section-3 {
     padding-top: 96px;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 96px;
   }
   .designathon .section-3-box{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-column-gap: 72px;
   }
   .designathon .section-4 {
     background-color: white;
@@ -205,6 +213,18 @@
     padding-top: 56px;
     padding-bottom: 72px;
     height: 100vh;
+  }
+  .designathon .judge {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .designathon .judgeCaption {
+    margin-top: 12px;
+  }
+  .designathon .qText {
+    color: #616161;
   }
 @keyframes rotate-360 {
   0% {

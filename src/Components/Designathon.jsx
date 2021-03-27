@@ -60,7 +60,7 @@ export default class Challenge extends Component {
                 </div>
                 <div className="container-fluid">
                     <div className="d-flex justify-content-center section-1">
-                        <div className="col-10 col-sm-9">
+                        <div className="col-10 col-sm-10">
                             <div className="b1 dthonHeader" style={{color: "#7D2A00", marginBottom: "12px"}}>SB Creative Lab presents</div>
                             <div className="h1 dthonTitle">2021: Spring into Designathon</div>
                             <div className="date">April 9 - 11</div>
@@ -70,7 +70,7 @@ export default class Challenge extends Component {
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonAbout section-2">
-                        <div className="col-sm-9">
+                        <div className="col-sm-10">
                             <div className="h2" style={{color: '#D0EBC1', marginBottom: '36px'}}>About</div>
                             <div className="dthonAboutText" style={{color: 'white'}}>
                               <div className="b2" style={{marginBottom: '16px'}}>SB Creative Lab presents its 2021 Spring Designathon! Get hands-on design experience, 
@@ -90,19 +90,127 @@ export default class Challenge extends Component {
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-3">
-                        <div className="col-sm-9 section-3-box">
-                            <div className="h2">Judges</div>
-                            <div className="h2">Prizes</div>
+                        <div className="col-sm-10 section-3-box">
+                            <div className="col">
+                                <div className="h2 mb-5">Judges</div>
+                                <div className="grid">
+                                    <div className="judge">
+                                        <img src="./images/designathon/mackenzie.png" alt="judge" className="judgeImg"/>
+                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                            <div className="b3">Mackenzie Derival</div>
+                                            <div>Head of Design at Node, Former Designer at Google Suite</div>
+                                        </div>
+                                    </div>
+                                    <div className="judge">
+                                        <img src="./images/designathon/femke.png" alt="judge" className="judgeImg"/>
+                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                            <div className="b3">Femke van Schoonhoven</div>
+                                            <div>Product Designer at Uber Eats</div>
+                                        </div>
+                                    </div>
+                                    <div className="judge">
+                                        <img src="./images/designathon/matt.png" alt="judge" className="judgeImg"/>
+                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                            <div className="b3">Matthew Lim</div>
+                                            <div>UX Designer at Appfolio</div>
+                                        </div>
+                                    </div>
+                                    <div className="judge">
+                                        <img src="./images/designathon/nathan.png" alt="judge" className="judgeImg"/>
+                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                            <div className="b3">Nathan Bilbao</div>
+                                            <div>Senior User Experience Designer at Oracle</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="row mb-5">
+                                    <div className="h2 mb-3">Prizes</div>
+                                    <div className="b2" style={{marginBottom: '16px', color: 'black'}}> 
+                                      We're kicking off the event with an Opening Ceremony on Friday, April 9 @6:00pm PT. 
+                                      During this time, we'll present the design brief with challenge details and you get 
+                                      to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT. 
+                                      Winners will be announced on Sunday, April 11 @2:30pm PT.
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="h2 mb-3">Partnered with</div>
+                                    <img src="./images/designathon/adobe-xd.png" alt="adobe xd"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-4">
-                        <div className="col-sm-9">
+                        <div className="col-sm-10">
                             <div className="h2">Schedule</div>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-5">
-                        <div className="col-sm-9">
-                            <div className="h2">FAQ</div>
+                        <div className="col-sm-10">
+                            <div className="h2 mb-5">FAQ</div>
+                            <div className="row">
+                                <div className="col">
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 1</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 2</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 3</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 4</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 5</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 6</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 7</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                    <div className="question mb-5">
+                                        <div className="b3">Question 8</div>
+                                        <div className="qText">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center mt-5 mb-0 mb-lg-5">
