@@ -142,8 +142,125 @@ export default class Challenge extends Component {
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-4">
-                        <div className="col-sm-10">
+                        <div className="col-sm-8">
                             <div className="h2">Schedule</div>
+                            <div>
+                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Friday, April 9th</div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      6:00pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Opening Ceremony
+                                  </div>
+                                  <div className="col-2">
+                                      Brief Description
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      6:30pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Workshop: Getting Started with Figma + Workflow Tips 
+                                  </div>
+                                  <div className="col-2">
+                                      Brief Description
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      7:30pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Adobe XD Workshop
+                                  </div>
+                                  <div className="col-2">
+                                      Brief Description
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      9:00pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Video: Tackle Ambiguous Problems and Make Effective Design Decisions
+                                  </div>
+                                  <div className="col-2">
+                                      Workshop Video Replays
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      10:30pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Video: Create Design Systems
+                                  </div>
+                                  <div className="col-2">
+                                      Workshop Video Replays
+                                  </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Saturday, April 10th</div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      12:00am
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Video: Wireframe Effectively 
+                                  </div>
+                                  <div className="col-2">
+                                      Workshop Video Replays
+                                  </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Sunday, April 11th</div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      12:00pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Submissions Due
+                                  </div>
+                                  <div className="col-2">
+                                      Brief Description
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      12:00pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Judging
+                                  </div>
+                                  <div className="col-2">
+                                      Casual Social Hangouts
+                                  </div>
+                              </div>
+                              <hr />
+                              <div className="row">
+                                  <div className="b3 col-2">
+                                      2:30pm
+                                  </div>
+                                  <div className="b3 col-6">
+                                      Closing Ceremony
+                                  </div>
+                                  <div className="col-2">
+                                      Brief Description
+                                  </div>
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-5">
