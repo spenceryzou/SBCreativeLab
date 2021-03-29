@@ -61,7 +61,7 @@ export default class Challenge extends Component {
                 <div className="container-fluid">
                     <div className="d-flex justify-content-center section-1">
                         <div className="col-10 col-sm-10">
-                            <div className="b1 dthonHeader" style={{color: "#7D2A00", marginBottom: "12px"}}>SB Creative Lab presents</div>
+                            <div className="b1 dthonHeader" style={{ color: "#7D2A00", marginBottom: "12px" }}>SB Creative Lab presents</div>
                             <div className="h1 dthonTitle">2021: Spring into Designathon</div>
                             <div className="date">April 9 - 11</div>
                             <a href="https://forms.gle/ABJpGNTXsCvkiMxG9" className="button col-12 col-sm text-center">
@@ -71,20 +71,20 @@ export default class Challenge extends Component {
                     </div>
                     <div className="row d-flex justify-content-center dthonAbout section-2">
                         <div className="col-sm-10">
-                            <div className="h2" style={{color: '#D0EBC1', marginBottom: '36px'}}>About</div>
-                            <div className="dthonAboutText" style={{color: 'white'}}>
-                              <div className="b2" style={{marginBottom: '16px'}}>SB Creative Lab presents its 2021 Spring Designathon! Get hands-on design experience, 
-                                  work with your friends to win cool prizes, and learn from industry professionals.
+                            <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>About</div>
+                            <div className="dthonAboutText" style={{ color: 'white' }}>
+                                <div className="b2" style={{ marginBottom: '16px' }}>SB Creative Lab presents its 2021 Spring Designathon! Get hands-on design experience,
+                                work with your friends to win cool prizes, and learn from industry professionals.
                               </div>
-                              <div className="b2" style={{marginBottom: '16px'}}> 
-                                  We're kicking off the event with an Opening Ceremony on Friday, April 9 @6:00pm PT. 
-                                  During this time, we'll present the design brief with challenge details and you get 
-                                  to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT. 
-                                  Winners will be announced on Sunday, April 11 @2:30pm PT.
+                                <div className="b2" style={{ marginBottom: '16px' }}>
+                                    We're kicking off the event with an Opening Ceremony on Friday, April 9 @6:00pm PT.
+                                    During this time, we'll present the design brief with challenge details and you get
+                                    to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT.
+                                    Winners will be announced on Sunday, April 11 @2:30pm PT.
                               </div>
-                              <div className="b2" style={{marginBottom: '16px'}}>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                  ut labore et dolore magna aliqua....
+                                <div className="b2" style={{ marginBottom: '16px' }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua....
                               </div>
                             </div>
                         </div>
@@ -95,29 +95,29 @@ export default class Challenge extends Component {
                                 <div className="h2 mb-5">Judges</div>
                                 <div className="grid">
                                     <div className="judge">
-                                        <img src="./images/designathon/mackenzie.png" alt="judge" className="judgeImg"/>
-                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                        <img src="./images/designathon/mackenzie.png" alt="judge" className="judgeImg" />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
                                             <div className="b3">Mackenzie Derival</div>
                                             <div>Head of Design at Node, Former Designer at Google Suite</div>
                                         </div>
                                     </div>
                                     <div className="judge">
-                                        <img src="./images/designathon/femke.png" alt="judge" className="judgeImg"/>
-                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                        <img src="./images/designathon/femke.png" alt="judge" className="judgeImg" />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
                                             <div className="b3">Femke van Schoonhoven</div>
                                             <div>Product Designer at Uber Eats</div>
                                         </div>
                                     </div>
                                     <div className="judge">
-                                        <img src="./images/designathon/matt.png" alt="judge" className="judgeImg"/>
-                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                        <img src="./images/designathon/matt.png" alt="judge" className="judgeImg" />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
                                             <div className="b3">Matthew Lim</div>
                                             <div>UX Designer at Appfolio</div>
                                         </div>
                                     </div>
                                     <div className="judge">
-                                        <img src="./images/designathon/nathan.png" alt="judge" className="judgeImg"/>
-                                        <div className="judgeCaption" style={{textAlign: 'center'}}>
+                                        <img src="./images/designathon/nathan.png" alt="judge" className="judgeImg" />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
                                             <div className="b3">Nathan Bilbao</div>
                                             <div>Senior User Experience Designer at Oracle</div>
                                         </div>
@@ -127,139 +127,139 @@ export default class Challenge extends Component {
                             <div className="col">
                                 <div className="row mb-5">
                                     <div className="h2 mb-3">Prizes</div>
-                                    <div className="b2" style={{marginBottom: '16px', color: 'black'}}> 
-                                      We're kicking off the event with an Opening Ceremony on Friday, April 9 @6:00pm PT. 
-                                      During this time, we'll present the design brief with challenge details and you get 
-                                      to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT. 
-                                      Winners will be announced on Sunday, April 11 @2:30pm PT.
+                                    <div className="b2" style={{ marginBottom: '16px', color: 'black' }}>
+                                        We're kicking off the event with an Opening Ceremony on Friday, April 9 @6:00pm PT.
+                                        During this time, we'll present the design brief with challenge details and you get
+                                        to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT.
+                                        Winners will be announced on Sunday, April 11 @2:30pm PT.
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="h2 mb-3">Partnered with</div>
-                                    <img src="./images/designathon/adobe-xd.png" alt="adobe xd"/>
+                                    <img src="./images/designathon/adobe-xd.png" alt="adobe xd" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-4">
-                        <div className="col-sm-8">
+                        <div className="col-sm-10">
                             <div className="h2">Schedule</div>
                             <div>
-                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Friday, April 9th</div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      6:00pm
+                                <div className="b3 mt-5" style={{ color: '#FCA71F' }}>Friday, April 9th</div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        6:00pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Opening Ceremony
+                                    <div className="b3 col-4">
+                                        Opening Ceremony
                                   </div>
-                                  <div className="col-2" style={{color: '#356A69'}}>
-                                      Brief Description
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Brief Description
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      6:30pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        6:30pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Workshop: Getting Started with Figma + Workflow Tips 
+                                    <div className="b3 col-4">
+                                        Workshop: Getting Started with Figma + Workflow Tips
                                   </div>
-                                  <div className="col-2" style={{color: '#356A69'}}>
-                                      Brief Description
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Brief Description
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      7:30pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        7:30pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Adobe XD Workshop
+                                    <div className="b3 col-4">
+                                        Adobe XD Workshop
                                   </div>
-                                  <div className="col-2" style={{color: '#356A69'}}>
-                                      Brief Description
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Brief Description
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      9:00pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        9:00pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Video: Tackle Ambiguous Problems and Make Effective Design Decisions
+                                    <div className="b3 col-4">
+                                        Video: Tackle Ambiguous Problems and Make Effective Design Decisions
                                   </div>
-                                  <div className="col-2" style={{color: '#984822'}}>
-                                      Workshop Video Replays
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Workshop Video Replays
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      10:30pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        10:30pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Video: Create Design Systems
+                                    <div className="b3 col-4">
+                                        Video: Create Design Systems
                                   </div>
-                                  <div className="col-2" style={{color: '#984822'}}>
-                                      Workshop Video Replays
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Workshop Video Replays
                                   </div>
-                              </div>
+                                </div>
                             </div>
                             <div>
-                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Saturday, April 10th</div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      12:00am
+                                <div className="b3 mt-5" style={{ color: '#FCA71F' }}>Saturday, April 10th</div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        12:00am
                                   </div>
-                                  <div className="b3 col-6">
-                                      Video: Wireframe Effectively 
+                                    <div className="b3 col-4">
+                                        Video: Wireframe Effectively
                                   </div>
-                                  <div className="col-2" style={{color: '#984822'}}>
-                                      Workshop Video Replays
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Workshop Video Replays
                                   </div>
-                              </div>
+                                </div>
                             </div>
                             <div>
-                              <div className="b3 mt-5" style={{color: '#FCA71F'}}>Sunday, April 11th</div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      12:00pm
+                                <div className="b3 mt-5" style={{ color: '#FCA71F' }}>Sunday, April 11th</div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        12:00pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Submissions Due
+                                    <div className="b3 col-4">
+                                        Submissions Due
                                   </div>
-                                  <div className="col-2" style={{color: '#356A69'}}>
-                                      Brief Description
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Brief Description
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      12:00pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        12:00pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Judging
+                                    <div className="b3 col-4">
+                                        Judging
                                   </div>
-                                  <div className="col-2" style={{color: '#325C5C'}}>
-                                      Casual Social Hangouts
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Casual Social Hangouts
                                   </div>
-                              </div>
-                              <hr />
-                              <div className="row">
-                                  <div className="b3 col-2">
-                                      2:30pm
+                                </div>
+                                <hr />
+                                <div className="row">
+                                    <div className="b3 col-3">
+                                        2:30pm
                                   </div>
-                                  <div className="b3 col-6">
-                                      Closing Ceremony
+                                    <div className="b3 col-4">
+                                        Closing Ceremony
                                   </div>
-                                  <div className="col-2" style={{color: '#356A69'}}>
-                                      Brief Description
+                                    <div className="offset-1 col-4" style={{ color: '#356A69' }}>
+                                        Brief Description
                                   </div>
-                              </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -271,28 +271,28 @@ export default class Challenge extends Component {
                                     <div className="question mb-5">
                                         <div className="b3">Question 1</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 2</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 3</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 4</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
@@ -301,28 +301,28 @@ export default class Challenge extends Component {
                                     <div className="question mb-5">
                                         <div className="b3">Question 5</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 6</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 7</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
                                     <div className="question mb-5">
                                         <div className="b3">Question 8</div>
                                         <div className="qText">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         </div>
                                     </div>
