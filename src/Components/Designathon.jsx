@@ -154,7 +154,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Opening Ceremony
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#356A69'}}>
                                       Brief Description
                                   </div>
                               </div>
@@ -166,7 +166,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Workshop: Getting Started with Figma + Workflow Tips 
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#356A69'}}>
                                       Brief Description
                                   </div>
                               </div>
@@ -178,7 +178,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Adobe XD Workshop
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#356A69'}}>
                                       Brief Description
                                   </div>
                               </div>
@@ -190,7 +190,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Video: Tackle Ambiguous Problems and Make Effective Design Decisions
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#984822'}}>
                                       Workshop Video Replays
                                   </div>
                               </div>
@@ -202,7 +202,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Video: Create Design Systems
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#984822'}}>
                                       Workshop Video Replays
                                   </div>
                               </div>
@@ -217,7 +217,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Video: Wireframe Effectively 
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#984822'}}>
                                       Workshop Video Replays
                                   </div>
                               </div>
@@ -232,7 +232,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Submissions Due
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#356A69'}}>
                                       Brief Description
                                   </div>
                               </div>
@@ -244,7 +244,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Judging
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#325C5C'}}>
                                       Casual Social Hangouts
                                   </div>
                               </div>
@@ -256,7 +256,7 @@ export default class Challenge extends Component {
                                   <div className="b3 col-6">
                                       Closing Ceremony
                                   </div>
-                                  <div className="col-2">
+                                  <div className="col-2" style={{color: '#356A69'}}>
                                       Brief Description
                                   </div>
                               </div>
