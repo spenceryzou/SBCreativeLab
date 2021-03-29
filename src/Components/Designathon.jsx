@@ -62,8 +62,18 @@ export default class Challenge extends Component {
                     <div className="d-flex justify-content-center section-1">
                         <div className="col-10 col-sm-10">
                             <div className="b1 dthonHeader" style={{ color: "#7D2A00", marginBottom: "12px" }}>SB Creative Lab presents</div>
-                            <div className="h1 dthonTitle">2021: Spring into Designathon</div>
-                            <div className="date">April 9 - 11</div>
+                            {/* <div style={{ transform: "translate(-50%,-50%)" }} className="square"></div>
+                            <div style={{ right: "0", transform: "translate(-25%,-50%)" }} className="square"></div> */}
+                            <div className="textbox-container px-5 py-4 w-100" style={{ position: "relative" }}>
+                                <div style={{ top: "0", left: "0", transform: "translate(-50%,-50%)" }} className="square"></div>
+                                <div style={{ top: "0", right: "0", transform: "translate(50%,-50%)" }} className="square"></div>
+                                <div className="h1 dthonTitle">2021: Spring into Designathon</div>
+                                <div className="date">April 9 - 11</div>
+                                <div style={{ bottom: "0", left: "0", transform: "translate(-50%, 50%)" }} className="square"></div>
+                                <div style={{ bottom: "0", right: "0", transform: "translate(50%, 50%)" }} className="square"></div>
+                            </div>
+                            {/* <div style={{ bottom: "0", transform: "translate(-50%,-50%)" }} className="square"></div>
+                            <div style={{ bottom: "0", transform: "translate(-50%,-50%)" }} className="square"></div> */}
                             <a href="https://forms.gle/ABJpGNTXsCvkiMxG9" className="button col-12 col-sm text-center">
                                 Apply
                             </a>

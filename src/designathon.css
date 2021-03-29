@@ -226,12 +226,25 @@
   .designathon .qText {
     color: #616161;
   }
+  .designathon .textbox-container {
+    /* background-image: url(./textbox.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    border: 2px solid #92D4C5;
+  }
+  .designathon .square {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #FFFFFF;
+    border: 2px solid #92D4C5;
+  }
 @keyframes rotate-360 {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
-  @media only screen and (max-width: 768px) and (orientation: portrait) {
+  /* @media only screen and (max-width: 768px) and (orientation: portrait) {
     .designathon {
       padding-top: 0px; }
       .designathon .h1 {
@@ -293,6 +306,6 @@
       padding-right: 40px;
       padding-bottom: 24px;
       padding-top: 24px;
-      margin: 0px; } }
+      margin: 0px; } } */
 
 /*# sourceMappingURL=main.css.map */
