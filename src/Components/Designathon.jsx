@@ -89,12 +89,14 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bigGear" style={{ position: 'absolute' }}>
-                        <img alt="bigGear" id="bigGear" src="/images/bigGear.png" />
-                    </div>
-                    <div className="smallGear" style={{ position: 'absolute' }}>
-                        <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
-                    </div>
+                    {isExtraSmallScreen ? <div /> : <div>
+                        <div className="bigGear" style={{ position: 'absolute' }}>
+                            <img alt="bigGear" id="bigGear" src="/images/bigGear.png" />
+                        </div>
+                        <div className="smallGear" style={{ position: 'absolute' }}>
+                            <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
+                        </div>
+                    </div>}
                     <div className="row d-flex justify-content-center dthonAbout section-2">
                         <div className="col-10">
                             <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>About</div>
@@ -318,8 +320,18 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
+                    {isExtraSmallScreen ? <div /> :
+                        <div>
+                            <div className="bigGear-2" style={{ position: 'absolute' }}>
+                                <img alt="bigGear2" id="bigGear-2" src="/images/bigGear-2.png" />
+                            </div>
+                            <div className="smallGear-2" style={{ position: 'absolute' }}>
+                                <img alt="smallGear2" id="smallGear-2" src="/images/smallGear-2.png" />
+                            </div>
+                        </div>
+                    }
                     <div className="row d-flex justify-content-center dthonDetails section-5">
-                        <div className="col-sm-10">
+                        <div className="col-10">
                             <div className="h2 mb-5">FAQ</div>
                             <div className="row">
                                 <div className="col-md-6 b1">
