@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ChallengeItem from './ChallengeItem';
 import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 import useWindowDimensions from '../utils/useWindowDimensions';
+import {HashLink} from 'react-router-hash-link';
+
+import TabList from './TabList';
 // import PictureHover from './PictureHover';
 const scrollTrigger = window.ScrollTrigger
 const gsap = window.gsap;
@@ -33,13 +36,40 @@ const Designathon = () => {
             opacity: 0,
             y: -12,
         });
+        gsap.to(".tablist", {
+            scrollTrigger: {
+                trigger: ".section-2",
+                start: "top +275",
+                toggleActions: "play none none reverse",
+                toggleClass: { targets: ".logo-link", className: "pointer" }
+            },
+            ease: "power1.inOut",
+            duration: .4,
+            opacity: 0,
+            y: -12,
+        });
         const tl = gsap.timeline();
         tl.fromTo('.dthonTitle', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: 1 })
         tl.fromTo('.date', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: .1 });
         // this.initializeReactGA();
-        console.log("saxophone.svg and newspaper.svg by Twitter, Inc and other contributors is licensed under CC BY 4.0")
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+    const [activeTab, setActiveTab] = useState(0);
+    const tabs = [
+      {
+        id: 1,
+        title: 'About'
+      },
+      {
+        id: 2,
+        title: 'Schedule'
+      },
+      {
+        id: 3,
+        title: 'FAQ'
+      }
+    ]
 
     return (
         <div>
@@ -51,6 +81,10 @@ const Designathon = () => {
                                 <Logo id="logo" className="logo" width="100%" display="block" height="auto" />
                             </a>
                         </div>
+                    </div>
+                    <div className="header-right tablist">
+                        <a href='https://forms.gle/4MEmZ93JV1qGJHxe8' target="_blank" className ='tab'>Apply</a>
+                        <TabList tabs={tabs} activeTab={activeTab} changeTab={(id) => {setActiveTab(id)}} />
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -97,7 +131,7 @@ const Designathon = () => {
                             <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
                         </div>
                     </div>}
-                    <div className="row d-flex justify-content-center dthonAbout section-2">
+                    <div className="row d-flex justify-content-center dthonAbout section-2" id="About">
                         <div className="col-10">
                             <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>About</div>
                             <div className="dthonAboutText" style={{ color: 'white' }}>
@@ -117,7 +151,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-3">
+                    <div className="row d-flex justify-content-center dthonDetails section-3" id="About">
                         <div className="col-10 col-md-5">
                             <div className="row">
                                 <div className="col">
@@ -186,7 +220,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-4">
+                    <div className="row d-flex justify-content-center dthonDetails section-4" id="Schedule">
                         <div className="col-10">
                             <div className="h2">Schedule</div>
                             <div>
@@ -330,7 +364,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     }
-                    <div className="row d-flex justify-content-center dthonDetails section-5">
+                    <div className="row d-flex justify-content-center dthonDetails section-5" id="FAQ">
                         <div className="col-10">
                             <div className="h2 mb-5">FAQ</div>
                             <div className="row">
@@ -338,7 +372,10 @@ const Designathon = () => {
                                     <div className="question mb-5">
                                         <div className="bold">What is a designathon?</div>
                                         <div className="qText">
-                                            [I don’t want to write this keeeek]
+                                            A designathon is a 24 to 72 hour-long event where teams of designers
+                                             are tasked with designing a solution to a given prompt.
+                                             It's also a fun way to practice your skills, meet new people +
+                                             win awesome prizes!
                                         </div>
                                     </div>
                                 </div>

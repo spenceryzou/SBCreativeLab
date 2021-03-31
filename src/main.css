@@ -513,6 +513,16 @@
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0.57, 0.1, 0.1, 0.9);
     animation-fill-mode: forwards; }
+  .designathon .tablist {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .designathon .tab {
+    font-size: 24px;
+    font-weight: 500;
+    color: #303030;
+  }
 @keyframes textbox {
   from {
     max-height: 0px; }
