@@ -41,7 +41,7 @@ const Designathon = () => {
                 trigger: ".section-2",
                 start: "top +275",
                 toggleActions: "play none none reverse",
-                toggleClass: { targets: ".logo-link", className: "pointer" }
+                toggleClass: { targets: ".tablist", className: "pointer" }
             },
             ease: "power1.inOut",
             duration: .4,
@@ -204,12 +204,12 @@ const Designathon = () => {
                                 <div className="h2 mb-3">Prizes</div>
                                 <div className="b2" style={{ fontWeight: '300', marginBottom: '16px', color: 'black' }}>
                                     Members of the winning team will receive:
-                                <ul style={{ lineHeight: '36px' }} className="mt-2">
+                                    <ul style={{ lineHeight: '36px' }} className="mt-2">
                                         <li>1-year Adobe Creative Cloud License</li>
                                         <li>1:1 meeting with an industry professional for portfolio review, networking, or career advice</li>
                                     </ul>
-                                In addition, we'll be raffling to participants:
-                                <ul className="mt-2">
+                                    In addition, we'll be raffling to participants:
+                                    <ul className="mt-2">
                                         <li>1-year Adobe Creative Cloud License</li>
                                     </ul>
                                 </div>
@@ -234,7 +234,7 @@ const Designathon = () => {
                                         Opening Ceremony
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Prompt announcement + Keynote presentation from Aladrian Goods (UCSB alum!)
                                   </div>
                                 </div>
                                 <hr />
@@ -246,7 +246,7 @@ const Designathon = () => {
                                         Workshop: Getting Started with Figma + Workflow Tips
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Figma tutorial hosted by SBCL's very own design team!
                                   </div>
                                 </div>
                                 <hr />
@@ -258,7 +258,7 @@ const Designathon = () => {
                                         Adobe XD Workshop
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Beginner workshop by an Adobe XD representative
                                   </div>
                                 </div>
                                 <hr />
@@ -324,7 +324,7 @@ const Designathon = () => {
                                         Submissions Due
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Submit your project <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdt2aeUF5QtdRGNGPeSN811-bN7IVKWY44yKgOr5vpa_PZ2aQ/viewform">here</a>
                                   </div>
                                 </div>
                                 <hr />
@@ -348,7 +348,7 @@ const Designathon = () => {
                                         Closing Ceremony
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Event wrap-up + Winners announcement
                                   </div>
                                 </div>
                             </div>
