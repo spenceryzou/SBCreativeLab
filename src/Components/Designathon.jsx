@@ -1,27 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import ChallengeItem from './ChallengeItem';
 import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 import useWindowDimensions from '../utils/useWindowDimensions';
-import {HashLink} from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
-import TabList from './TabList';
-// import PictureHover from './PictureHover';
 const scrollTrigger = window.ScrollTrigger
 const gsap = window.gsap;
 
 gsap.registerPlugin(scrollTrigger)
 
 const Designathon = () => {
-    // initializeReactGA() {
-    //     ReactGA.initialize('UA-178117149-1');
-    //     ReactGA.pageview('/challenge');
-    // }
+    ReactGA.initialize('UA-178117149-1');
+    ReactGA.pageview('/designathon');
+    const [gears, setGears] = useState(false);
     const { width } = useWindowDimensions();
+    const MED_SCREEN_BREAKPOINT = 1200;
     const SMALL_SCREEN_BREAKPOINT = 992;
     const EXTRA_SMALL_SCREEN_BREAKPOINT = 767;
     const isSmallScreen = width <= SMALL_SCREEN_BREAKPOINT;
     const isExtraSmallScreen = width <= EXTRA_SMALL_SCREEN_BREAKPOINT;
+    const isMedScreen = width <= MED_SCREEN_BREAKPOINT;
     useEffect(() => {
         document.body.classList.add("no-xscroll");
         gsap.to(".logo", {
@@ -41,7 +39,7 @@ const Designathon = () => {
                 trigger: ".section-2",
                 start: "top +275",
                 toggleActions: "play none none reverse",
-                toggleClass: { targets: ".logo-link", className: "pointer" }
+                toggleClass: { targets: ".tablist", className: "pointer" }
             },
             ease: "power1.inOut",
             duration: .4,
@@ -55,22 +53,6 @@ const Designathon = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const [activeTab, setActiveTab] = useState(0);
-    const tabs = [
-      {
-        id: 1,
-        title: 'About'
-      },
-      {
-        id: 2,
-        title: 'Schedule'
-      },
-      {
-        id: 3,
-        title: 'FAQ'
-      }
-    ]
-
     return (
         <div>
             <div className="designathon">
@@ -82,9 +64,14 @@ const Designathon = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="header-right tablist">
-                        <a href='https://forms.gle/4MEmZ93JV1qGJHxe8' target="_blank" className ='tab'>Apply</a>
-                        <TabList tabs={tabs} activeTab={activeTab} changeTab={(id) => {setActiveTab(id)}} />
+                    <div className={`${isExtraSmallScreen ? 'tablist-small' : 'tablist'} header-right`}>
+                        <a href='https://forms.gle/4MEmZ93JV1qGJHxe8' target="_blank" className='tab'>Apply</a>
+                        <HashLink smooth to={`#about`} className='tab'>About</HashLink>
+                        <HashLink smooth to={`#schedule`} className='tab'>Schedule</HashLink>
+                        <HashLink smooth to={`#faq`} className='tab'>FAQ</HashLink>
+                        {!isExtraSmallScreen ? <span onClick={() => setGears(!gears)} className={`${gears ? 'active' : ''} toggle-switch`}>
+                            <span class="toggle-knob"></span>
+                        </span> : null}
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -124,14 +111,14 @@ const Designathon = () => {
                         </div>
                     </div>
                     {isExtraSmallScreen ? <div /> : <div>
-                        <div className="bigGear" style={{ position: 'absolute' }}>
+                        <div className={`${gears ? 'rotate' : ''} bigGear`} style={{ position: 'absolute' }}>
                             <img alt="bigGear" id="bigGear" src="/images/bigGear.png" />
                         </div>
-                        <div className="smallGear" style={{ position: 'absolute' }}>
+                        <div className={`${gears ? 'reverse-rotate' : ''} smallGear`} style={{ position: 'absolute' }}>
                             <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
                         </div>
                     </div>}
-                    <div className="row d-flex justify-content-center dthonAbout section-2" id="About">
+                    <div className="row d-flex justify-content-center dthonAbout section-2" id="about">
                         <div className="col-10">
                             <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>About</div>
                             <div className="dthonAboutText" style={{ color: 'white' }}>
@@ -144,14 +131,10 @@ const Designathon = () => {
                                     to hear from a guest speaker! Design submissions will be due on Sunday, April 11 @11:59am PT.
                                     Winners will be announced on Sunday, April 11 @2:30pm PT.
                               </div>
-                                <div className="b2" style={{ marginBottom: '16px' }}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua....
-                              </div>
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-3" id="About">
+                    <div className="row d-flex justify-content-center dthonDetails section-3">
                         <div className="col-10 col-md-5">
                             <div className="row">
                                 <div className="col">
@@ -204,12 +187,12 @@ const Designathon = () => {
                                 <div className="h2 mb-3">Prizes</div>
                                 <div className="b2" style={{ fontWeight: '300', marginBottom: '16px', color: 'black' }}>
                                     Members of the winning team will receive:
-                                <ul style={{ lineHeight: '36px' }} className="mt-2">
+                                    <ul style={{ lineHeight: '36px' }} className="mt-2">
                                         <li>1-year Adobe Creative Cloud License</li>
                                         <li>1:1 meeting with an industry professional for portfolio review, networking, or career advice</li>
                                     </ul>
-                                In addition, we'll be raffling to participants:
-                                <ul className="mt-2">
+                                    In addition, we'll be raffling to participants:
+                                    <ul className="mt-2">
                                         <li>1-year Adobe Creative Cloud License</li>
                                     </ul>
                                 </div>
@@ -220,7 +203,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-4" id="Schedule">
+                    <div className="row d-flex justify-content-center dthonDetails section-4" id="schedule">
                         <div className="col-10">
                             <div className="h2">Schedule</div>
                             <div>
@@ -234,7 +217,7 @@ const Designathon = () => {
                                         Opening Ceremony
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Prompt announcement + Keynote presentation from Aladrian Goods (UCSB alum!)
                                   </div>
                                 </div>
                                 <hr />
@@ -246,7 +229,7 @@ const Designathon = () => {
                                         Workshop: Getting Started with Figma + Workflow Tips
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Figma tutorial hosted by SBCL's very own design team!
                                   </div>
                                 </div>
                                 <hr />
@@ -258,7 +241,7 @@ const Designathon = () => {
                                         Adobe XD Workshop
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Beginner workshop by an Adobe XD representative
                                   </div>
                                 </div>
                                 <hr />
@@ -324,8 +307,16 @@ const Designathon = () => {
                                         Submissions Due
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
-                                  </div>
+                                        Submit your project&nbsp;
+                                        <a
+                                            className="link"
+                                            target="_blank"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSdt2aeUF5QtdRGNGPeSN811-bN7IVKWY44yKgOr5vpa_PZ2aQ/viewform"
+                                            style={{ fontWeight: '500' }}
+                                        >
+                                            here
+                                        </a>
+                                    </div>
                                 </div>
                                 <hr />
                                 <div className="row b2">
@@ -336,7 +327,7 @@ const Designathon = () => {
                                         Judging
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Casual Social Hangouts
+                                        Take a break and meet other designers
                                   </div>
                                 </div>
                                 <hr />
@@ -348,23 +339,23 @@ const Designathon = () => {
                                         Closing Ceremony
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Brief Description
+                                        Event wrap-up + Winners announcement
                                   </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {isExtraSmallScreen ? <div /> :
+                    {isMedScreen ? <div /> :
                         <div>
-                            <div className="bigGear-2" style={{ position: 'absolute' }}>
+                            <div className={`${gears ? 'rotate' : ''} bigGear-2`} style={{ position: 'absolute' }}>
                                 <img alt="bigGear2" id="bigGear-2" src="/images/bigGear-2.png" />
                             </div>
-                            <div className="smallGear-2" style={{ position: 'absolute' }}>
+                            <div className={`${gears ? 'reverse-rotate' : ''} smallGear-2`} style={{ position: 'absolute' }}>
                                 <img alt="smallGear2" id="smallGear-2" src="/images/smallGear-2.png" />
                             </div>
                         </div>
                     }
-                    <div className="row d-flex justify-content-center dthonDetails section-5" id="FAQ">
+                    <div className="row d-flex justify-content-center dthonDetails section-5" id="faq">
                         <div className="col-10">
                             <div className="h2 mb-5">FAQ</div>
                             <div className="row">
@@ -373,9 +364,9 @@ const Designathon = () => {
                                         <div className="bold">What is a designathon?</div>
                                         <div className="qText">
                                             A designathon is a 24 to 72 hour-long event where teams of designers
-                                             are tasked with designing a solution to a given prompt.
-                                             It's also a fun way to practice your skills, meet new people +
-                                             win awesome prizes!
+                                            are tasked with designing a solution to a given prompt.
+                                            It's also a fun way to practice your skills, meet new people +
+                                            win awesome prizes!
                                         </div>
                                     </div>
                                 </div>
