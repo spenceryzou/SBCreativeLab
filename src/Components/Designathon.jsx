@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import ChallengeItem from './ChallengeItem';
+import React, { useEffect} from 'react';
 import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 import useWindowDimensions from '../utils/useWindowDimensions';
 import {HashLink} from 'react-router-hash-link';
 
-import TabList from './TabList';
-// import PictureHover from './PictureHover';
 const scrollTrigger = window.ScrollTrigger
 const gsap = window.gsap;
 
 gsap.registerPlugin(scrollTrigger)
 
 const Designathon = () => {
-    // initializeReactGA() {
-    //     ReactGA.initialize('UA-178117149-1');
-    //     ReactGA.pageview('/challenge');
-    // }
+    ReactGA.initialize('UA-178117149-1');
+    ReactGA.pageview('/designathon');
     const { width } = useWindowDimensions();
     const SMALL_SCREEN_BREAKPOINT = 992;
     const EXTRA_SMALL_SCREEN_BREAKPOINT = 767;
@@ -55,22 +50,6 @@ const Designathon = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const [activeTab, setActiveTab] = useState(0);
-    const tabs = [
-      {
-        id: 1,
-        title: 'About'
-      },
-      {
-        id: 2,
-        title: 'Schedule'
-      },
-      {
-        id: 3,
-        title: 'FAQ'
-      }
-    ]
-
     return (
         <div>
             <div className="designathon">
@@ -84,7 +63,9 @@ const Designathon = () => {
                     </div>
                     <div className="header-right tablist">
                         <a href='https://forms.gle/4MEmZ93JV1qGJHxe8' target="_blank" className ='tab'>Apply</a>
-                        <TabList tabs={tabs} activeTab={activeTab} changeTab={(id) => {setActiveTab(id)}} />
+                        <HashLink smooth to={`#about`} className ='tab'>About</HashLink>
+                        <HashLink smooth to={`#schedule`} className ='tab'>Schedule</HashLink>
+                        <HashLink smooth to={`#faq`} className ='tab'>FAQ</HashLink>
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -131,7 +112,7 @@ const Designathon = () => {
                             <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
                         </div>
                     </div>}
-                    <div className="row d-flex justify-content-center dthonAbout section-2" id="About">
+                    <div className="row d-flex justify-content-center dthonAbout section-2" id="about">
                         <div className="col-10">
                             <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>About</div>
                             <div className="dthonAboutText" style={{ color: 'white' }}>
@@ -151,7 +132,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-3" id="About">
+                    <div className="row d-flex justify-content-center dthonDetails section-3">
                         <div className="col-10 col-md-5">
                             <div className="row">
                                 <div className="col">
@@ -220,7 +201,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-4" id="Schedule">
+                    <div className="row d-flex justify-content-center dthonDetails section-4" id="schedule">
                         <div className="col-10">
                             <div className="h2">Schedule</div>
                             <div>
@@ -372,7 +353,7 @@ const Designathon = () => {
                             </div>
                         </div>
                     }
-                    <div className="row d-flex justify-content-center dthonDetails section-5" id="FAQ">
+                    <div className="row d-flex justify-content-center dthonDetails section-5" id="faq">
                         <div className="col-10">
                             <div className="h2 mb-5">FAQ</div>
                             <div className="row">
