@@ -111,7 +111,7 @@ export default class Home extends Component {
                     </div>
                     <EventItem 
                         link="https://bit.ly/sbcl-graph-bad"
-                        imgURL="/images/gdgb-squished.jpg"
+                        imgURL="/images/gdgb-good.png"
                         title="Graphic Design Gone Bad"
                         date="2 - 19 - 2021"
                         alt="graphic design gone bad event"

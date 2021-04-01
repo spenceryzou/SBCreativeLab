@@ -59,7 +59,7 @@ export default class Home extends Component {
                             </span>
                         </div>
                       </a>
-                      <a target="_blank" href="https://rebrand.ly/r7vam">
+                      <a target="_blank" href="https://rebrand.ly/sbcl-slack">
                         <div className="social-container">
                           <i class="fab fa-lg fa-slack"></i>
                             <span class="social-background">
