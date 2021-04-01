@@ -59,7 +59,7 @@ const Designathon = () => {
                 <div className="header">
                     <div className="header-left">
                         <div className="logo-wrapper">
-                            <a className="logo-link" href="/">
+                            <a className="logo-link" href="https://www.sbcreativelab.com">
                                 <Logo id="logo" className="logo" width="100%" display="block" height="auto" />
                             </a>
                         </div>
@@ -418,7 +418,7 @@ const Designathon = () => {
             </div >
             <div className="container-fluid">
                 <div style={{ backgroundColor: "#C1F0E5" }} className="row d-flex justify-content-center pb-5">
-                    <a href="/"><Logo height="80px"></Logo></a>
+                    <a href="https://www.sbcreativelab.com"><Logo height="80px"></Logo></a>
                 </div>
             </div>
         </div >
