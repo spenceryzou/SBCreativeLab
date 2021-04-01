@@ -587,6 +587,16 @@
         animation-timing-function: cubic-bezier(0.57, 0.1, 0.1, 0.9);
         animation-fill-mode: forwards;
     }
+    .tablist {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+    }
+    .tab {
+      font-size: 24px;
+      font-weight: 500;
+      color: #303030;
+    }
     @keyframes textbox{
         from{
             max-height: 0px;
@@ -634,10 +644,16 @@
     }
     .bigGear-2{
         left: 82.2%;
-        top: 3204.5px;
+        top: 3404.5px;
     }
     .smallGear-2{
         left: 90%;
-        top: 3114.02px;
+        top: 3314.02px;
+    }
+    .dthonTitle{
+      opacity: 0;
+    }
+    .date{
+      opacity: 0;
     }
 }

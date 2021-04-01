@@ -324,12 +324,14 @@ const Designathon = () => {
                                         Submissions Due
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
+                                            Submit your project&nbsp;
                                         <a 
+                                            className="link"
                                             target="_blank" 
                                             href="https://docs.google.com/forms/d/e/1FAIpQLSdt2aeUF5QtdRGNGPeSN811-bN7IVKWY44yKgOr5vpa_PZ2aQ/viewform"
                                             style={{fontWeight: '500'}}
                                         >
-                                            Submit your project here
+                                            here
                                         </a>
                                   </div>
                                 </div>
