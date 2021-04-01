@@ -386,21 +386,23 @@
     .button-small {
         background-color: transparent;
         font-family: "Poppins";
-        border: 3px solid white;
-        color: white;
-        font-size: 14px;
+        border: 3px solid #303030;
+        color: #303030;
+        font-size: 24px;
         line-height: 1;
         padding: 8px 24px 8px;
-        border-radius: 45px;
-        transition: all .3s ease; }
+        border-radius: 13px;
+        transition: all .3s ease; 
+        cursor: pointer;
+    }
     .button-small:hover {
         background-color: white;
         border: 3px solid white;
-        color: black;
-        font-size: 14px;
+        color: #303030;
+        font-size: 24px;
         line-height: 1;
         padding: 8px 24px 8px;
-        border-radius: 45px; }
+        border-radius: 13px; }
     .button:hover {
         background-color: #fff;
         box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
@@ -591,10 +593,24 @@
       display: flex;
       width: 50%;
       justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+    }
+    .tablist-small {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        
     }
     .tab {
-      font-size: 24px;
-      color: #303030;
+        color: #303030;
+        transition: all 200ms ease;
+    }
+    .tab:hover {
+        color: #1BB994;
+        transition: all 200ms ease;
     }
     @keyframes textbox{
         from{
@@ -643,16 +659,56 @@
     }
     .bigGear-2{
         left: 82.2%;
-        top: 3404.5px;
+        top: 3304.5px;
     }
     .smallGear-2{
         left: 90%;
-        top: 3314.02px;
+        top: 3214.02px;
     }
     .dthonTitle{
       opacity: 0;
     }
     .date{
       opacity: 0;
+    }
+    // https://medium.com/@kevinfelisilda/iphone-toggle-element-html5-edaad1ddde26
+    .toggle-switch, .toggle-switch .toggle-knob {
+        -moz-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    
+    .toggle-switch {
+        height: 30px;
+        width: 53px;
+        display: inline-block;
+        background-color: #ffffff;
+        margin: 2px;
+        margin-bottom: 5px;
+        border-radius: 30px;
+        cursor: pointer;
+        border: solid 1px #d2d6de;
+        box-shadow: inset 1px 1px 9px -3px rgba(4, 4, 4, 0.08), 1px 2px 6px -2px rgba(0, 0, 0, 0.01);
+    }
+    
+    .toggle-switch .toggle-knob {
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        background-color: #ffffff;
+        border: solid 1px rgba(126, 126, 126, 0.07);
+        box-shadow: 0 1px 3px rgba(107, 106, 106, 0.26), 0 5px 1px rgba(107, 106, 106, 0.13);
+        border-radius: 26px;
+        margin: 1px 1px;
+    }
+    
+    .toggle-switch.active {
+        background-color: #77e189;
+        border: solid 1px transparent;
+    }
+    
+    .toggle-switch.active .toggle-knob {
+        margin-left: 24px;
     }
 }
