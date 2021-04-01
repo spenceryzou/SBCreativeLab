@@ -519,13 +519,15 @@
     width: 50%;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Poppins"; }
   .designathon .tablist-small {
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: "Poppins"; }
   .designathon .tab {
     color: #303030;
     transition: all 200ms ease; }
