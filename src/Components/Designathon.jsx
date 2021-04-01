@@ -274,7 +274,7 @@ const Designathon = () => {
                                         11:00pm
                                   </div>
                                     <div className="bold col-md-4">
-                                        Video: Wireframe Effectively
+                                        Video: Interaction Design and Behavioral Psychology
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#984822' }}>
                                         Workshop Video Replays
