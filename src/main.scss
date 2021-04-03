@@ -553,7 +553,7 @@
   }
   .dthonWorkshops {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-column-gap: 36px;
     grid-row-gap: 36px;
   }
@@ -566,14 +566,34 @@
       padding: 8px;
       padding-top: 20px;
       padding-bottom: 100px;
-      margin-left: 32px;
-      margin-right: 32px;
-      border: 8px solid #C1F0E5;
+      border: 8px solid #fba721;
       border-radius: 12px;
+  }
+  .mx-32{
+    margin-left: 32px;
+    margin-right: 32px;
   }
   .workshop-button {
     position: absolute;
     bottom: 24px;
+  }
+  .workshop-button:nth-child(2) {
+    position: absolute;
+    bottom: 24px;
+    background-color: #C9EDBD;
+    font-family: "Poppins";
+    border: 2.07877px solid #FFFFFF;
+    border-radius: 13px;
+    transition-property: background-color,border-color,color,box-shadow,filter,transform;
+    transition-duration: .3s;
+    cursor: pointer;
+    padding: 12px 43px 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #426968;
   }
     .judge {
         display: flex;

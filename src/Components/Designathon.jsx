@@ -139,19 +139,19 @@ const Designathon = () => {
                             <div className="h2" style={{ marginBottom: '36px' }}>Pre-Event Workshops</div>
                             <div className="dthonWorkshops">
                                 <div className="col workshop">
-                                    <div className="b2 bold text-center">Tackle Ambiguous Problems and Make Effective Design Decisions</div>
+                                    <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}>Tackle Ambiguous Problems and Make Effective Design Decisions</div>
                                     <div className="b2 text-center mt-2">Mackenzie Derival</div>
                                     <div className="b3 bold text-center">April 6th, 6:30 PM</div>
                                     <a href="https://bit.ly/mackenzie-derival" target="_blank" className="workshop-button button">Sign Up</a>
                                 </div>
                                 <div className="col workshop">
-                                    <div className="b2 bold text-center">Create Design Systems</div>
+                                    <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}>Create Design Systems</div>
                                     <div className="b2 text-center mt-2">Jen Yee</div>
                                     <div className="b3 bold text-center">April 7th, 6:30 PM</div>
-                                    <a className="workshop-button button">Sign Up</a>
+                                    <a href="https://forms.gle/n2Nkkv8uxe9jroBX7" target="_blank" className="workshop-button button">Sign Up</a>
                                 </div>
                                 <div className="col workshop">
-                                    <div className="b2 bold text-center">Interaction Design and Behavioral Psychology</div>
+                                    <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}>Interaction Design and Behavioral Psychology</div>
                                     <div className="b2 text-center mt-2">Richard Yang</div>
                                     <div className="b3 bold text-center">April 8th, 6:30 PM</div>
                                     <a href="https://bit.ly/richardyang" target="_blank" className="workshop-button button">Sign Up</a>
