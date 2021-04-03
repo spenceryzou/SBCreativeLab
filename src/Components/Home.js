@@ -338,7 +338,12 @@ export default class Home extends Component {
                                                 />
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div>
+                                                <a target="_blank" href="https://designathon.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-small button-dark">
+                                                    Go to Spring Designathon&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i>
+                                                </a>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                                 <div style={{ backgroundColor: "#356a69" }} className="section">
@@ -372,9 +377,6 @@ export default class Home extends Component {
                                         <div className="shortCaption mb-4" style={{ color: "white" }}>
                                             Communicate your visual identity.
                                         </div>
-                                        <a href="/challenge" style={{ whiteSpace: "nowrap" }} className="button-small">
-                                            Go to Design Challenge&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i>
-                                        </a>
                                     </div>
                                     <div id="graphScene" className="imageContainer">
                                         <div data-invert-x="true" data-depth=".03" id="absolute"><img alt="plane" id="graphPlane" src="/images/graphic/plane.png" /></div>
@@ -422,8 +424,6 @@ export default class Home extends Component {
                                         <div className="shortCaption mb-4" style={{ color: "white" }}>
                                             Bring concepts and stories to life.
                                     </div>
-                                        <a href="/challenge" style={{ whiteSpace: "nowrap" }} className="button-small">
-                                            Go to Design Challenge&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a>
                                     </div>
                                     <div id="illusScene" className="imageContainer">
                                         <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">

@@ -29,8 +29,8 @@ export default class Home extends Component {
                         </a>
                       </div>
                       <div>
-                        <a href="https://forms.gle/xzJVHuGn9akQWw4x6" target="_blank" data-content="suggestions" className="menu-link">
-                        suggestions
+                        <a href="https://designathon.sbcreativelab.com" target="_blank" data-content="designathon" className="menu-link">
+                        designathon
                         </a>
                       </div>
                   </div>

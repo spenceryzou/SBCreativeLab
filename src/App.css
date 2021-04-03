@@ -2237,7 +2237,7 @@ a.event-subtitle{
   border: 3px solid white;
   color: white;
   font-size: 14px;
-  line-height: 1;
+  line-height: 6;
   padding: 8px 24px 8px;
   border-radius: 45px;
   transition: all .3s ease;
@@ -2247,7 +2247,7 @@ a.event-subtitle{
   border: 3px solid white;
   color: black;
   font-size: 14px;
-  line-height: 1;
+  line-height: 6;
   padding: 8px 24px 8px;
   border-radius: 45px;
 }

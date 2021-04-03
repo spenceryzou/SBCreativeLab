@@ -1,252 +1,304 @@
-@import url(App.css);
+@import "App.css";
 .design-challenge {
   padding-top: 132px;
   background-color: #3A86C8;
-  color: white; }
+  color: white;
+}
+.design-challenge .h1 {
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 96px;
+  letter-spacing: 0.05em;
+}
+.design-challenge .h2 {
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  letter-spacing: 0.05em;
+}
+.design-challenge .b1 {
+  font-family: "bookmania", serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.design-challenge .b2 {
+  font-family: "bookmania", serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.design-challenge .poppins {
+  font-family: "Poppins" !important;
+}
+.design-challenge .date {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 0.055em;
+}
+.design-challenge .button {
+  background-color: black;
+  font-family: "Poppins";
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1;
+  padding: 16px 48px 18px;
+  transition-property: background-color, border-color, color, box-shadow, filter, transform;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  width: 392px;
+  display: block;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  white-space: normal;
+  cursor: pointer;
+}
+.design-challenge .button-small {
+  background-color: transparent;
+  font-family: "Poppins";
+  border: 3px solid white;
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 24px 8px;
+  border-radius: 45px;
+  transition: all 0.3s ease;
+}
+.design-challenge .button-small:hover {
+  background-color: white;
+  border: 3px solid white;
+  color: black;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 24px 8px;
+  border-radius: 45px;
+}
+.design-challenge .dark {
+  color: black !important;
+}
+.design-challenge .button:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
+  color: #000;
+  transform: translateY(-3px);
+}
+.design-challenge .rotate {
+  animation: rotate-360 6s linear 0s infinite normal;
+}
+.design-challenge .reverse-rotate {
+  -webkit-animation: rotate-360 3s linear 0s infinite reverse;
+  -moz-animation: rotate-360 3s linear 0s infinite reverse;
+  -ms-animation: rotate-360 3s linear 0s infinite reverse;
+  -o-animation: rotate-360 3s linear 0s infinite reverse;
+  animation: rotate-360 3s linear 0s infinite reverse;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.design-challenge a.circle-container {
+  color: white;
+}
+.design-challenge .circle-container:hover {
+  transform: scale(1.25);
+}
+.design-challenge .circle-container:hover .reverse-rotate {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+.design-challenge .circle-container.Illustration {
+  transform: scale(1.15);
+}
+.design-challenge .circle-container.Illustration:hover {
+  transform: scale(1.4375);
+}
+.design-challenge .circle-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform-origin: center;
+}
+.design-challenge .emoji {
+  position: relative;
+  transform: translate(-50%, 0);
+  height: 90px;
+}
+.design-challenge .circle-container.Illustration .emoji {
+  height: 72px;
+}
+.design-challenge .hover-reveal {
+  position: fixed;
+  z-index: -2;
+  width: 228px;
+  height: 150px;
+  top: -100%;
+  left: 20%;
+  /* pointer-events: none; */
+  opacity: 0;
+}
+.design-challenge .rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.design-challenge .header {
+  top: 36px;
+  padding: 0;
+}
+.design-challenge .pointer {
+  pointer-events: none;
+  display: block;
+}
+.design-challenge .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  column-gap: 2vw;
+  row-gap: 2vw;
+  align-items: center;
+  justify-items: center;
+}
+.design-challenge .mentor {
+  max-width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 4px;
+  border: 3px solid #fff;
+  transition: all 0.275s ease;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
+  transform: translateY(-10px);
+}
+.design-challenge .mentor:hover {
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
+  transform: translateY(-2px);
+}
+.design-challenge .mentor-text {
+  width: 210px;
+}
+.design-challenge .mentor-container {
+  height: auto;
+  width: 250px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -56px;
+}
+.design-challenge .mentor-container > a:hover {
+  color: initial;
+  background-color: initial;
+  opacity: initial;
+  transition: initial;
+}
+.design-challenge .mentor-category-container {
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
+  background-color: #0F4C81;
+  border-radius: 40px;
+  border: 3px solid #13548d;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 12px;
+}
+.design-challenge .section-2 {
+  margin-top: 156px;
+}
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .design-challenge {
+    padding-top: 0px;
+  }
   .design-challenge .h1 {
     font-family: "new-spirit-condensed", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 96px;
-    letter-spacing: 0.05em; }
+    font-size: 56px;
+    letter-spacing: 0.05em;
+  }
   .design-challenge .h2 {
     font-family: "new-spirit-condensed", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 72px;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.05em;
+  }
   .design-challenge .b1 {
     font-family: "bookmania", serif;
     font-size: 24px;
     font-weight: 400;
-    letter-spacing: 0.01em; }
-  .design-challenge .b2 {
-    font-family: "bookmania", serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.01em; }
-  .design-challenge .poppins {
-    font-family: "Poppins" !important; }
-  .design-challenge .date {
-    font-family: "Poppins";
-    font-size: 36px;
-    letter-spacing: 0.055em; }
+    letter-spacing: 0.01em;
+  }
   .design-challenge .button {
-    background-color: black;
-    font-family: "Poppins";
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1;
-    padding: 16px 48px 18px;
-    transition-property: background-color,border-color,color,box-shadow,filter,transform;
-    transition-duration: .3s;
-    border-width: 0;
-    letter-spacing: 2px;
-    width: 392px;
-    display: block;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    white-space: normal;
-    cursor: pointer; }
-  .design-challenge .button-small {
-    background-color: transparent;
-    font-family: "Poppins";
-    border: 3px solid white;
-    color: white;
-    font-size: 14px;
-    line-height: 1;
-    padding: 8px 24px 8px;
-    border-radius: 45px;
-    transition: all .3s ease; }
-  .design-challenge .button-small:hover {
-    background-color: white;
-    border: 3px solid white;
-    color: black;
-    font-size: 14px;
-    line-height: 1;
-    padding: 8px 24px 8px;
-    border-radius: 45px; }
-  .design-challenge .button:hover {
-    background-color: #fff;
-    box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
-    color: #000;
-    transform: translateY(-3px); }
-  .design-challenge .rotate {
-    animation: rotate-360 6s linear 0s infinite normal; }
-  .design-challenge .reverse-rotate {
-    -webkit-animation: rotate-360 3s linear 0s infinite reverse;
-    -moz-animation: rotate-360 3s linear 0s infinite reverse;
-    -ms-animation: rotate-360 3s linear 0s infinite reverse;
-    -o-animation: rotate-360 3s linear 0s infinite reverse;
-    animation: rotate-360 3s linear 0s infinite reverse;
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -ms-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused; }
-  .design-challenge a.circle-container {
-    color: white; }
-  .design-challenge .circle-container:hover {
-    transform: scale(1.25); }
-    .design-challenge .circle-container:hover .reverse-rotate {
-      -webkit-animation-play-state: running;
-      -moz-animation-play-state: running;
-      -ms-animation-play-state: running;
-      -o-animation-play-state: running;
-      animation-play-state: running; }
-  .design-challenge .circle-container.Illustration {
-    transform: scale(1.15); }
-  .design-challenge .circle-container.Illustration:hover {
-    transform: scale(1.4375); }
-  .design-challenge .circle-container {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s ease;
-    transform-origin: center; }
-  .design-challenge .emoji {
-    position: relative;
-    transform: translate(-50%, 0);
-    height: 90px; }
-  .design-challenge .circle-container.Illustration .emoji {
-    height: 72px; }
-  .design-challenge .hover-reveal {
-    position: fixed;
-    z-index: -2;
-    width: 228px;
-    height: 150px;
-    top: -100%;
-    left: 20%;
-    /* pointer-events: none; */
-    opacity: 0; }
-  .design-challenge .rainbow-text {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+    width: 256px;
+  }
   .design-challenge .header {
-    top: 36px;
-    padding: 0; }
-  .design-challenge .pointer {
-    pointer-events: none;
-    display: block; }
-  .design-challenge .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
-    column-gap: 2vw;
-    row-gap: 2vw;
-    align-items: center;
-    justify-items: center; }
-  .design-challenge .mentor {
-    max-width: 100%;
-    object-fit: cover;
-    height: 250px;
-    border-radius: 4px;
-    border: 3px solid #fff;
-    transition: all .275s ease;
-    box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
-    transform: translateY(-10px); }
-  .design-challenge .mentor:hover {
-    box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
-    transform: translateY(-2px); }
-  .design-challenge .mentor-text {
-    width: 210px; }
+    position: initial;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 100%;
+    margin: 0;
+  }
+  .design-challenge .section-2 {
+    margin-top: 64px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .design-challenge .mentor-container {
     height: auto;
     width: 250px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: -56px; }
-  .design-challenge .mentor-container > a:hover {
-    color: initial;
-    background-color: initial;
-    opacity: initial;
-    transition: initial; }
+    margin-top: 0px;
+    padding-top: 24px;
+  }
+  .design-challenge .mentor {
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    transition: all 0.275s ease;
+    box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
+    transform: translateY(-4px);
+  }
+  .design-challenge .mentor:hover {
+    box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
+    transform: translateY(2px);
+  }
   .design-challenge .mentor-category-container {
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
     background-color: #0F4C81;
     border-radius: 40px;
     border: 3px solid #13548d;
-    padding-bottom: 20px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin: 12px; }
-  .design-challenge .section-2 {
-    margin-top: 156px; }
-@keyframes rotate-360 {
-  0% {
-    transform: rotate(0); }
-  100% {
-    transform: rotate(360deg); } }
-  @media only screen and (max-width: 768px) and (orientation: portrait) {
-    .design-challenge {
-      padding-top: 0px; }
-      .design-challenge .h1 {
-        font-family: "new-spirit-condensed", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 56px;
-        letter-spacing: 0.05em; }
-      .design-challenge .h2 {
-        font-family: "new-spirit-condensed", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 72px;
-        letter-spacing: 0.05em; }
-      .design-challenge .b1 {
-        font-family: "bookmania", serif;
-        font-size: 24px;
-        font-weight: 400;
-        letter-spacing: 0.01em; }
-      .design-challenge .button {
-        width: 256px; }
-      .design-challenge .header {
-        position: initial;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-bottom: 16px;
-        padding-top: 16px;
-        width: 100%;
-        margin: 0; }
-      .design-challenge .section-2 {
-        margin-top: 64px; } }
-  @media only screen and (max-width: 992px) {
-    .design-challenge .mentor-container {
-      height: auto;
-      width: 250px;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin-top: 0px;
-      padding-top: 24px; }
-    .design-challenge .mentor {
-      max-width: 100%;
-      object-fit: cover;
-      height: 300px;
-      border-radius: 4px;
-      border: 3px solid #fff;
-      transition: all .275s ease;
-      box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
-      transform: translateY(-4px); }
-    .design-challenge .mentor:hover {
-      box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
-      transform: translateY(2px); }
-    .design-challenge .mentor-category-container {
-      box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
-      background-color: #0F4C81;
-      border-radius: 40px;
-      border: 3px solid #13548d;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-bottom: 24px;
-      padding-top: 24px;
-      margin: 0px; } }
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin: 0px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

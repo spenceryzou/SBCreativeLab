@@ -99,12 +99,12 @@ export default class Home extends Component {
                         Events
                     </div>
                         <div className="about-title-2" style={{marginBottom: "2rem"}}>
-                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="/challenge">
-                            Check out our Winter Design Challenge
+                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://designathon.sbcreativelab.com">
+                            Check out our Spring Designathon
                         </a><span> <i class="fas fa-palette fa-lg"></i></span>
                         &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;
                         <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
-                            See our Winter quarter calendar here!
+                            See our Spring quarter calendar here!
                         </a><span> 📅</span>
                         {/* <a target="blank" href="/challenge" className="button-small button-dark">
                                         Check out our Winter Design Challenge!&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a> */}
