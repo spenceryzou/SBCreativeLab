@@ -338,12 +338,12 @@ export default class Home extends Component {
                                                 />
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a target="_blank" href="https://designathon.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-small button-dark">
-                                                    Go to Spring Designathon&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i>
+                                            <div className="button-hover">
+                                                <a href="https://designathon.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-dark">
+                                                    Go to Spring Designathon&nbsp;&nbsp;<i class="fas fa-cog fa-lg"></i>
                                                 </a>
                                             </div>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div style={{ backgroundColor: "#356a69" }} className="section">
