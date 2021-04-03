@@ -477,6 +477,49 @@
   .designathon .section-5 {
     padding-top: 56px;
     padding-bottom: 56px; }
+  .designathon .section-6 {
+    background-color: white;
+    color: #426968;
+    padding-top: 56px;
+    padding-bottom: 72px; }
+  .designathon .dthonWorkshops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-column-gap: 36px;
+    grid-row-gap: 36px; }
+  .designathon .workshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border: 8px solid #fba721;
+    border-radius: 12px; }
+  .designathon .mx-32 {
+    margin-left: 32px;
+    margin-right: 32px; }
+  .designathon .workshop-button {
+    position: absolute;
+    bottom: 24px; }
+  .designathon .workshop-button:nth-child(2) {
+    position: absolute;
+    bottom: 24px;
+    background-color: #C9EDBD;
+    font-family: "Poppins";
+    border: 2.07877px solid #FFFFFF;
+    border-radius: 13px;
+    transition-property: background-color,border-color,color,box-shadow,filter,transform;
+    transition-duration: .3s;
+    cursor: pointer;
+    padding: 12px 43px 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #426968; }
   .designathon .judge {
     display: flex;
     flex-direction: column;
