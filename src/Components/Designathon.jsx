@@ -206,6 +206,17 @@ const Designathon = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="row mt-4">
+                                <div className="col-6 mx-auto">
+                                    <div className="judge">
+                                        <img src="./images/designathon/jen.png" alt="judge" className={isSmallScreen ? "judgeImgSmall" : "judgeImg"} />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
+                                            <div className="b3 bold">Jen Yee</div>
+                                            <div>Product Design Lead at Netflix</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-10 offset-md-1 col-md-4">
                             <div className="row mb-5">
