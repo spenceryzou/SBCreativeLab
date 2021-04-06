@@ -144,8 +144,8 @@ const Designathon = () => {
                                     <div className="b3 bold text-center">April 6th, 6:30 PM</div>
                                     <a href="https://bit.ly/mackenzie-derival" target="_blank" className="workshop-button button">Sign Up</a>
                                 </div>
-                                <div className="col workshop">
-                                    <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}>Create Design Systems</div>
+                                <div className="col workshop px-3">
+                                    <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}> Design Systems Crash Course: 1hr Sprint</div>
                                     <div className="b2 text-center mt-2">Jen Yee</div>
                                     <div className="b3 bold text-center">April 7th, 6:30 PM</div>
                                     <a href="https://forms.gle/n2Nkkv8uxe9jroBX7" target="_blank" className="workshop-button button">Sign Up</a>
@@ -198,21 +198,22 @@ const Designathon = () => {
                                 </div>
                                 <div className="col-6">
                                     <div className="judge">
-                                        <img src="./images/designathon/nathan.png" alt="judge" className={isSmallScreen ? "judgeImgSmall" : "judgeImg"} />
-                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
-                                            <div className="b3 bold">Nathan Bilbao</div>
-                                            <div>Senior User Experience Designer at Oracle</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row mt-4">
-                                <div className="col-6 mx-auto">
-                                    <div className="judge">
                                         <img src="./images/designathon/jen.png" alt="judge" className={isSmallScreen ? "judgeImgSmall" : "judgeImg"} />
                                         <div className="judgeCaption" style={{ textAlign: 'center' }}>
                                             <div className="b3 bold">Jen Yee</div>
                                             <div>Product Design Lead at Netflix</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className="row mt-4 mb-4 mb-sm-0">
+                                <div className="col-8 mx-auto">
+                                    <div className="judge">
+                                        <img src="./images/designathon/nathan.png" alt="judge" className={isSmallScreen ? "judgeImgSmall" : "judgeImg"} />
+                                        <div className="judgeCaption" style={{ textAlign: 'center' }}>
+                                            <div className="b3 bold">Nathan Bilbao</div>
+                                            <div>Senior User Experience Designer at Oracle</div>
                                         </div>
                                     </div>
                                 </div>
@@ -298,7 +299,7 @@ const Designathon = () => {
                                         10:00pm
                                   </div>
                                     <div className="bold col-md-4">
-                                        Video: Create Design Systems
+                                        Video: Design Systems Crash Course: 1hr Sprint
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#984822' }}>
                                         Workshop Video Replays
