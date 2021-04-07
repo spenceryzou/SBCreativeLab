@@ -275,10 +275,10 @@ const Designathon = () => {
                                         7:30pm
                                   </div>
                                     <div className="bold col-md-4">
-                                        Adobe XD Workshop
+                                        Build Your First Prototype in Adobe XD
                                   </div>
                                     <div className="offset-md-1 col-md-4" style={{ color: '#356A69' }}>
-                                        Beginner workshop by an Adobe XD representative
+                                        Beginner Adobe XD workshop by Designer and XD Instructor Caleb Kingston
                                   </div>
                                 </div>
                                 <hr />
