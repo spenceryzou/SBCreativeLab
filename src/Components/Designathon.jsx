@@ -229,8 +229,14 @@ const Designathon = () => {
                                         <li>1:1 meeting with an industry professional for portfolio review, networking, or career advice</li>
                                     </ul>
                                     In addition, we'll be raffling to participants:
-                                    <ul className="mt-2">
+                                    <ul style={{ lineHeight: '36px' }} className="mt-2">
                                         <li>1-year Adobe Creative Cloud License</li>
+                                        <li>Exclusive SBCL Designathon sticker packs</li>
+                                    </ul>
+                                    We'll be raffling to Adobe XD workshop attendees:
+                                    <ul style={{ lineHeight: '36px' }} className="mt-2">
+                                        <li>1-year Adobe Creative Cloud License</li>
+                                        <li>3 Adobe T-Shirts</li>
                                     </ul>
                                 </div>
                             </div>
@@ -297,18 +303,6 @@ const Designathon = () => {
                                 <div className="b2 row">
                                     <div className="bold col-md-3">
                                         10:00pm
-                                  </div>
-                                    <div className="bold col-md-4">
-                                        Video: Design Systems Crash Course: 1hr Sprint
-                                  </div>
-                                    <div className="offset-md-1 col-md-4" style={{ color: '#984822' }}>
-                                        Workshop Video Replays
-                                  </div>
-                                </div>
-                                <hr />
-                                <div className="b2 row">
-                                    <div className="bold col-md-3">
-                                        11:00pm
                                   </div>
                                     <div className="bold col-md-4">
                                         Video: Interaction Design and Behavioral Psychology
