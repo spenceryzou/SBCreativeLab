@@ -123,32 +123,9 @@ export default class Home extends Component {
                         </div>
                         <div className="flexend subtitle-med">
                             <ul class="links">
-                                <li class="link"><a href="#tutorials">tutorials</a></li>
                                 <li class="link"><a href="#workshops">workshops</a></li>
+                                <li class="link"><a href="#tutorials">tutorials</a></li>
                             </ul>
-                        </div>
-                    </div>
-                    <a id="tutorials" style={{ marginLeft: "10%" }} className="icon-title title-small color-black">Tutorials</a>
-                    <div className="resources-section">
-                        <div className="masonry-grid">
-                            <TutorialItem
-                                link="https://www.instagram.com/tv/CF2onhaFE3L/"
-                                caption="Design Tip #2: Navigating the Properties Panel"
-                                imgURL="/images/properties.jpg"
-                                alt="design tip 2: navigating the properties panel"
-                            />
-                            <TutorialItem
-                                link="https://docs.google.com/spreadsheets/d/1hbuUwmo8xVdYd2Xw5828HnEx5h9wcrXIdI8Pb6HWy_4/edit?usp=sharing"
-                                caption="Equipment and Software Resources"
-                                imgURL="/images/equipment-software.png"
-                                alt="Equipment and Software Resources"
-                            />
-                            <TutorialItem
-                                link="https://www.instagram.com/tv/CFfZ5ebjt5L/"
-                                caption="Design Tip #1: What are Layers?"
-                                imgURL="/images/design-tip-1.jpg"
-                                alt="design tip 1: what are layers"
-                            />
                         </div>
                     </div>
                     <a id="workshops" style={{ marginLeft: "10%" }} className="icon-title title-small color-black">Workshops</a>
@@ -158,6 +135,28 @@ export default class Home extends Component {
                     */}
                     <div className="resources-section">
                         <div className="masonry-grid2">
+                            {/* <WorkshopItem
+                                slidesLink="https://drive.google.com/file/d/1dg6DmmJ0FwIpiNk9E1mgxq0-mYF6HZON/view?usp=sharing"
+                                vidLink="https://drive.google.com/file/d/1QPqBueVEk4vdDPWzB0LKEfwPLkpQD7Jq/view?usp=sharing"
+                                imgURL="/images/caleb.jpeg"
+                                alt="adobe xd event"
+                            /> */}
+                            <WorkshopItem
+                                slidesLink="https://docs.google.com/presentation/d/1DGlB48mVmLQS1gbA9QxilLvqroQvwYWtzfHtnWyo9I0/edit?usp=sharing"
+                                vidLink="https://drive.google.com/file/d/1Vt_9TXWJkW5V2NdmTGr4i3QZY_Ew0QIc/view?usp=sharing"
+                                imgURL="/images/getting-started-with-figma-IG.png"
+                                alt="getting started with figma event"
+                                extra={true}
+                                extraCaption="Figma"
+                                extraLink="https://www.figma.com/file/fdsa7lZlhC4ICQwgnvyY0z/FINISHED-VERSION-SBCL-Figma-Workshop?node-id=0%3A1"
+                                alt="getting started with figma event"
+                            />
+                            <WorkshopItem
+                                slidesLink="https://drive.google.com/file/d/1dg6DmmJ0FwIpiNk9E1mgxq0-mYF6HZON/view?usp=sharing"
+                                vidLink="https://drive.google.com/file/d/1awb7WF2JrWNdiKVF-lWniGpQJXG1tcBX/view?usp=sharing"
+                                imgURL="/images/opening-ceremony.png"
+                                alt="designathon opening ceremony event"
+                            />
                             <WorkshopItem
                                 slidesLink="https://docs.google.com/presentation/d/1X8l54tDE720YTZU6c9-HivMwftFs1l2jQC_r_qVHokk/edit?usp=sharing"
                                 vidLink="https://drive.google.com/drive/folders/1VA9skLYJzXalM0H23I__xXe2GxX6Of7O?usp=sharing"
@@ -247,6 +246,29 @@ export default class Home extends Component {
                                 vidLink="https://youtu.be/L-qy5yiLTak"
                                 imgURL="/images/meet-sbcreativelab-IG.jpg"
                                 alt="kickoff event"
+                            />
+                        </div>
+                    </div>
+                    <a id="tutorials" style={{ marginLeft: "10%" }} className="icon-title title-small color-black">Tutorials</a>
+                    <div className="resources-section">
+                        <div className="masonry-grid">
+                            <TutorialItem
+                                link="https://www.instagram.com/tv/CF2onhaFE3L/"
+                                caption="Design Tip #2: Navigating the Properties Panel"
+                                imgURL="/images/properties.jpg"
+                                alt="design tip 2: navigating the properties panel"
+                            />
+                            <TutorialItem
+                                link="https://docs.google.com/spreadsheets/d/1hbuUwmo8xVdYd2Xw5828HnEx5h9wcrXIdI8Pb6HWy_4/edit?usp=sharing"
+                                caption="Equipment and Software Resources"
+                                imgURL="/images/equipment-software.png"
+                                alt="Equipment and Software Resources"
+                            />
+                            <TutorialItem
+                                link="https://www.instagram.com/tv/CFfZ5ebjt5L/"
+                                caption="Design Tip #1: What are Layers?"
+                                imgURL="/images/design-tip-1.jpg"
+                                alt="design tip 1: what are layers"
                             />
                         </div>
                     </div>
