@@ -136,8 +136,15 @@ const Designathon = () => {
                     </div>
                     <div className="row d-flex justify-content-center dthonAbout section-6" id="preevents">
                         <div className="col-10">
-                            <div className="h2" style={{ marginBottom: '36px' }}>Pre-Event Workshops</div>
-                            <div className="dthonWorkshops">
+                            <div className="h2" style={{ marginBottom: '36px' }}>Quick Links</div>
+                        </div>
+                        <div className="col-12">
+                            <div className="text-center">
+                                <a href="https://drive.google.com/file/d/1YE-Kqn8IXa3J3Z5y3zoh5_Mqaxgt1ugo/view?usp=sharing" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'} mr-0 mr-sm-3`}>Challenge Brief</a>
+                                <a href="https://docs.google.com/spreadsheets/d/1wuhzfSeREKnxf_CJXAva7LXfcfJsBD0Z3hsu8GHvvfA/edit?usp=sharing" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'} mr-0 mr-sm-3`}>Teams</a>
+                                <a href="https://sbcreativelab.com/resources" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'}`}>Recordings</a>
+                            </div>
+                            {/* <div className="dthonWorkshops">
                                 <div className="col workshop">
                                     <div className={`${isExtraSmallScreen ? 'b3' : 'b2'} bold text-center`}>Tackle Ambiguous Problems and Make Effective Design Decisions</div>
                                     <div className="b2 text-center mt-2">Mackenzie Derival</div>
@@ -156,7 +163,8 @@ const Designathon = () => {
                                     <div className="b3 bold text-center">April 8th, 6:30 PM</div>
                                     <a href="https://bit.ly/richardyang" target="_blank" className="workshop-button button">Sign Up</a>
                                 </div>
-                            </div>
+                            </div> */}
+
                         </div>
                     </div>
                     <div className="row d-flex justify-content-center dthonDetails section-3">
