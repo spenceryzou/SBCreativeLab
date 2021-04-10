@@ -323,9 +323,9 @@
     font-style: normal;
     font-weight: bold;
     font-size: 27px;
-    line-height: 40px;
     text-align: center;
-    color: #426968; }
+    color: #426968;
+    display: inline-block; }
   .designathon .button-small {
     background-color: #C9EDBD;
     font-family: "Poppins";
@@ -338,19 +338,22 @@
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
-    line-height: 40px;
     text-align: center;
-    color: #426968; }
+    color: #426968;
+    display: inline-block; }
   .designathon .button-small:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
+    border: 2.07877px solid #C9EDBD;
     color: #000;
-    transform: translateY(-3px); }
+    transform: translateY(-2px); }
   .designathon .button:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
     color: #000;
-    transform: translateY(-3px); }
+    transform: translateY(-2px); }
+  .designathon .button-bordered:hover {
+    border: 2.07877px solid #C9EDBD; }
 @keyframes rotate-360 {
   0% {
     transform: rotate(0); }
@@ -482,7 +485,7 @@
     background-color: white;
     color: #426968;
     padding-top: 56px;
-    padding-bottom: 72px; }
+    padding-bottom: 56px; }
   .designathon .dthonWorkshops {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -650,7 +653,8 @@
     border: solid 1px transparent; }
   .designathon .toggle-switch.active .toggle-knob {
     margin-left: 24px; }
-  .designathon .quick-link {
-    border-radius: 12px; }
+  .designathon .quick-links {
+    max-width: 1200px;
+    margin: auto; }
 
 /*# sourceMappingURL=main.css.map */
