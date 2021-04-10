@@ -138,7 +138,7 @@ export default class Home extends Component {
                             <WorkshopItem
                                 slidesLink="https://www.dropbox.com/s/0fcdu0xvw3oy744/XD%20101.xd?dl=0"
                                 vidLink="https://drive.google.com/file/d/1QPqBueVEk4vdDPWzB0LKEfwPLkpQD7Jq/view?usp=sharing"
-                                imgURL="/images/caleb.jpeg"
+                                imgURL="/images/caleb.png"
                                 alt="adobe xd event"
                             />
                             <WorkshopItem
