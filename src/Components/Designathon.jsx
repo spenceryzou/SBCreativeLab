@@ -136,13 +136,14 @@ const Designathon = () => {
                     </div>
                     <div className="row d-flex justify-content-center dthonAbout section-6" id="preevents">
                         <div className="col-10">
-                            <div className="h2" style={{ marginBottom: '36px' }}>Quick Links</div>
+                            <div className="h2" style={{ marginBottom: '24px' }}>Quick Links</div>
                         </div>
                         <div className="col-12">
-                            <div className="text-center">
-                                <a href="https://drive.google.com/file/d/1YE-Kqn8IXa3J3Z5y3zoh5_Mqaxgt1ugo/view?usp=sharing" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'} mr-0 mr-sm-3`}>Challenge Brief</a>
-                                <a href="https://docs.google.com/spreadsheets/d/1wuhzfSeREKnxf_CJXAva7LXfcfJsBD0Z3hsu8GHvvfA/edit?usp=sharing" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'} mr-0 mr-sm-3`}>Teams</a>
-                                <a href="https://sbcreativelab.com/resources" target="_blank" className={`${isSmallScreen ? 'button-small' : 'button'}`}>Recordings</a>
+                            <div className="text-center quick-links">
+                                <a href="https://drive.google.com/file/d/1YE-Kqn8IXa3J3Z5y3zoh5_Mqaxgt1ugo/view?usp=sharing" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Challenge Brief</a>
+                                <a href="https://docs.google.com/spreadsheets/d/1wuhzfSeREKnxf_CJXAva7LXfcfJsBD0Z3hsu8GHvvfA/edit?usp=sharing" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Teams</a>
+                                <a href="https://sbcreativelab.com/resources" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Recordings</a>
+                                <a href="https://www.notion.so/2021-Spring-Designathon-9dfd2729bb6644608f43a4d2247a6fe4" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Notion</a>
                             </div>
                             {/* <div className="dthonWorkshops">
                                 <div className="col workshop">

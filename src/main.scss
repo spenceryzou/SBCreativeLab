@@ -379,9 +379,9 @@
         font-style: normal;
         font-weight: bold;
         font-size: 27px;
-        line-height: 40px;
         text-align: center;
         color: #426968;
+        display: inline-block;
     }
     .button-small {
         background-color: #C9EDBD;
@@ -395,20 +395,24 @@
         font-style: normal;
         font-weight: bold;
         font-size: 13px;
-        line-height: 40px;
         text-align: center;
         color: #426968;
+        display: inline-block;
     }
     .button-small:hover {
         background-color: #fff;
         box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
+        border: 2.07877px solid #C9EDBD;
         color: #000;
-        transform: translateY(-3px); }
+        transform: translateY(-2px); }
     .button:hover {
         background-color: #fff;
         box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
         color: #000;
-        transform: translateY(-3px); }
+        transform: translateY(-2px); }
+    .button-bordered:hover {
+        border: 2.07877px solid #C9EDBD;
+    }
     @keyframes rotate-360{
         0% {
             transform: rotate(0);
@@ -550,7 +554,7 @@
       background-color: white;
       color: #426968;
       padding-top: 56px;
-      padding-bottom: 72px;
+      padding-bottom: 56px;
   }
   .dthonWorkshops {
     display: grid;
@@ -764,7 +768,8 @@
         margin-left: 24px;
     }
     
-    .quick-link{
-        border-radius: 12px;
+    .quick-links{
+        max-width: 1200px;
+        margin: auto;
     }
 }
