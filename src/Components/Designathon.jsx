@@ -239,7 +239,6 @@ const Designathon = () => {
                                     </ul>
                                     In addition, we'll be raffling to participants:
                                     <ul style={{ lineHeight: '36px' }} className="mt-2">
-                                        <li>1-year Adobe Creative Cloud License</li>
                                         <li>Exclusive SBCL Designathon sticker packs</li>
                                     </ul>
                                     We'll be raffling to Adobe XD workshop attendees:
