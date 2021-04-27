@@ -140,6 +140,8 @@ const Designathon = () => {
                         </div>
                         <div className="col-12">
                             <div className="text-center quick-links">
+                                <a href="https://www.figma.com/proto/8LAHCBke8GCwIGn03cr9x0/SBCL-Designathon-Final-Submission%3A-Campfire?node-id=1%3A10&scaling=scale-down&page-id=0%3A1" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Winner: Campfire</a>
+                                <a href="https://www.figma.com/proto/4caOfSzJbJXG39n00nIfIy/SBCL-Designathon-2021?node-id=32%3A327&viewport=215%2C-5%2C0.3341781198978424&scaling=scale-down&page-id=32%3A0" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Winner: Foci</a>
                                 <a href="https://drive.google.com/file/d/1YE-Kqn8IXa3J3Z5y3zoh5_Mqaxgt1ugo/view?usp=sharing" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Challenge Brief</a>
                                 <a href="https://docs.google.com/spreadsheets/d/1wuhzfSeREKnxf_CJXAva7LXfcfJsBD0Z3hsu8GHvvfA/edit?usp=sharing" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Teams</a>
                                 <a href="https://sbcreativelab.com/resources" target="_blank" className={`${isExtraSmallScreen ? 'button-small' : 'button button-bordered'} m-0 m-sm-2`}>Recordings</a>
