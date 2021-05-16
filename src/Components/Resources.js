@@ -230,12 +230,6 @@ export default class Home extends Component {
                                 alt="figma event"
                             />
                             <WorkshopItem
-                                slidesLink="https://docs.google.com/presentation/d/1b1XetobS2fSdW2LuFODslL4H43nvBUglor95bnzwn90/edit?usp=sharing"
-                                vidLink="https://youtu.be/lUZQRBh4PM8"
-                                imgURL="/images/animation-ig.jpg"
-                                alt="animation event"
-                            />
-                            <WorkshopItem
                                 slidesLink="https://drive.google.com/file/d/1x1TbUBySFy0DI35dfQtXYuSRVxu5GoOY/view"
                                 vidLink="https://youtu.be/NH1mqB0TuPw"
                                 imgURL="/images/photoshop-basics-IG.jpg"
