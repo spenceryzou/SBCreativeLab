@@ -136,12 +136,6 @@ export default class Home extends Component {
                     <div className="resources-section">
                         <div className="masonry-grid2">
                             <WorkshopItem
-                                slidesLink="https://www.dropbox.com/s/0fcdu0xvw3oy744/XD%20101.xd?dl=0"
-                                vidLink="https://drive.google.com/file/d/1QPqBueVEk4vdDPWzB0LKEfwPLkpQD7Jq/view?usp=sharing"
-                                imgURL="/images/caleb.png"
-                                alt="adobe xd event"
-                            />
-                            <WorkshopItem
                                 slidesLink="https://docs.google.com/presentation/d/1DGlB48mVmLQS1gbA9QxilLvqroQvwYWtzfHtnWyo9I0/edit?usp=sharing"
                                 vidLink="https://drive.google.com/file/d/1Vt_9TXWJkW5V2NdmTGr4i3QZY_Ew0QIc/view?usp=sharing"
                                 imgURL="/images/getting-started-with-figma-IG.png"
