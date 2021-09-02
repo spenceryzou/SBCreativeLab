@@ -10,6 +10,7 @@ import Events from './Components/Events'
 import ReactGA from 'react-ga'
 import Challenge from './Components/Challenge';
 import Designathon from './Components/Designathon';
+import Projects from './Components/Projects';
 
 export class App extends Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export class App extends Component {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></link>
         </head>
         <div className="main-body">
-          <Route exact path="/" render={(props) => <Designathon {...props} />} />
+          <Route exact path="/" render={(props) => <Projects {...props} />} />
           {/* <Route exact path="/challenge" render={(props) => <Challenge {...props}/>}/>
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               <Route exact path="/about" render={(props) => <About {...props}/>}/>

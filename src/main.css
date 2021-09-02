@@ -7,30 +7,25 @@
     font-family: "new-spirit-condensed", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 96px;
-    letter-spacing: 0.05em; }
+    font-size: 96px; }
   .design-challenge .h2 {
     font-family: "new-spirit-condensed", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 72px;
-    letter-spacing: 0.05em; }
+    font-size: 72px; }
   .design-challenge .b1 {
     font-family: "bookmania", serif;
     font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0.01em; }
+    font-weight: 400; }
   .design-challenge .b2 {
     font-family: "bookmania", serif;
     font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.01em; }
+    font-weight: 400; }
   .design-challenge .poppins {
     font-family: "Poppins" !important; }
   .design-challenge .date {
     font-family: "Poppins";
-    font-size: 36px;
-    letter-spacing: 0.055em; }
+    font-size: 36px; }
   .design-challenge .button {
     background-color: black;
     font-family: "Poppins";
@@ -42,7 +37,6 @@
     transition-property: background-color,border-color,color,box-shadow,filter,transform;
     transition-duration: .3s;
     border-width: 0;
-    letter-spacing: 2px;
     width: 392px;
     display: block;
     border: none;
@@ -192,19 +186,16 @@
         font-family: "new-spirit-condensed", serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 56px;
-        letter-spacing: 0.05em; }
+        font-size: 56px; }
       .design-challenge .h2 {
         font-family: "new-spirit-condensed", serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 72px;
-        letter-spacing: 0.05em; }
+        font-size: 72px; }
       .design-challenge .b1 {
         font-family: "bookmania", serif;
         font-size: 24px;
-        font-weight: 400;
-        letter-spacing: 0.01em; }
+        font-weight: 400; }
       .design-challenge .button {
         width: 256px; }
       .design-challenge .header {
@@ -249,69 +240,66 @@
       padding-top: 24px;
       margin: 0px; } }
 
-.designathon {
-  background-image: url("/images/designathon/grid.png");
+.projects {
+  background-image: url("/images/projects/gradient.png");
   padding-top: 132px;
-  background-color: #C1F0E5;
-  color: #426968; }
-  .designathon a.link {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000000; }
+  .projects a.link {
     text-decoration: underline;
     color: #356A69;
     transition: all 200ms ease; }
-  .designathon a.link:hover {
+  .projects a.link:hover {
     color: #1BB994;
     transition: all 200ms ease; }
-  .designathon .h1 {
-    font-family: "Mechanical", serif;
-    /* font-weight: 700; */
+  .projects .h1 {
+    font-family: "DM Sans";
+    font-weight: 700;
     font-style: normal;
-    font-size: 3.6458333333333335vw;
-    letter-spacing: 0.05em; }
-  .designathon .h2 {
+    font-size: 5.55vw; }
+  .projects .h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 36px; }
-  .designathon .h3 {
-    font-family: "Mechanical", serif;
+  .projects .h3 {
+    font-family: "DM Sans", serif;
     /* font-weight: 700; */
     font-style: normal;
-    font-size: 8vw;
-    letter-spacing: 0.05em; }
-  .designathon .h4 {
-    font-family: "Mechanical", serif;
+    font-size: 8vw; }
+  .projects .h4 {
+    font-family: "DM Sans", serif;
     /* font-weight: 700; */
     font-style: normal;
-    font-size: 33px;
-    letter-spacing: 0.05em; }
-  .designathon .h5 {
-    font-family: "Mechanical", serif;
+    font-size: 25px; }
+  .projects .h5 {
+    font-family: "DM Sans", serif;
     /* font-weight: 700; */
     font-style: normal;
-    font-size: 18px;
-    letter-spacing: 0.05em; }
-  .designathon .b1 {
-    font-family: "Poppins", sans-serif;
+    font-size: 18px; }
+  .projects .b1 {
+    font-family: "DM Sans", sans-serif;
     font-size: 24px;
-    font-weight: 300;
-    letter-spacing: 0.01em; }
-  .designathon .b2 {
+    font-weight: 300; }
+  .projects .b2 {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.01em; }
-  .designathon .b3 {
+    font-weight: 300; }
+  .projects .b3 {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.01em; }
-  .designathon .bold {
+    font-weight: 300; }
+  .projects .bold {
     font-weight: 700 !important; }
-  .designathon .semibold {
+  .projects .semibold {
     font-weight: 600 !important; }
-  .designathon .poppins {
+  .projects .italic {
+    font-style: italic !important; }
+  .projects .poppins {
     font-family: "Poppins" !important; }
-  .designathon .button {
+  .projects .button {
     background-color: #C9EDBD;
     font-family: "Poppins";
     border: 2.07877px solid #FFFFFF;
@@ -326,7 +314,7 @@
     text-align: center;
     color: #426968;
     display: inline-block; }
-  .designathon .button-small {
+  .projects .button-small {
     background-color: #C9EDBD;
     font-family: "Poppins";
     border: 2.07877px solid #FFFFFF;
@@ -341,47 +329,47 @@
     text-align: center;
     color: #426968;
     display: inline-block; }
-  .designathon .button-small:hover {
+  .projects .button-small:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
     border: 2.07877px solid #C9EDBD;
     color: #000;
     transform: translateY(-2px); }
-  .designathon .button:hover {
+  .projects .button:hover {
     background-color: #fff;
     box-shadow: 0px 15px 20px rgba(179, 179, 179, 0.4);
     color: #000;
     transform: translateY(-2px); }
-  .designathon .button-bordered:hover {
+  .projects .button-bordered:hover {
     border: 2.07877px solid #C9EDBD; }
 @keyframes rotate-360 {
   0% {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
-  .designathon .rotate {
+  .projects .rotate {
     animation: rotate-360 8s linear 0s infinite normal; }
-  .designathon .reverse-rotate {
+  .projects .reverse-rotate {
     -webkit-animation: rotate-360 4s linear 0s infinite reverse;
     -moz-animation: rotate-360 4s linear 0s infinite reverse;
     -ms-animation: rotate-360 4s linear 0s infinite reverse;
     -o-animation: rotate-360 4s linear 0s infinite reverse;
     animation: rotate-360 4s linear 0s infinite reverse; }
-  .designathon a.circle-container {
+  .projects a.circle-container {
     color: white; }
-  .designathon .circle-container:hover {
+  .projects .circle-container:hover {
     transform: scale(1.25); }
-  .designathon .circle-container:hover .reverse-rotate {
+  .projects .circle-container:hover .reverse-rotate {
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
     -ms-animation-play-state: running;
     -o-animation-play-state: running;
     animation-play-state: running; }
-  .designathon .circle-container.Illustration {
+  .projects .circle-container.Illustration {
     transform: scale(1.15); }
-  .designathon .circle-container.Illustration:hover {
+  .projects .circle-container.Illustration:hover {
     transform: scale(1.4375); }
-  .designathon .circle-container {
+  .projects .circle-container {
     width: 250px;
     height: 250px;
     display: flex;
@@ -390,13 +378,13 @@
     align-items: center;
     transition: all .5s ease;
     transform-origin: center; }
-  .designathon .emoji {
+  .projects .emoji {
     position: relative;
     transform: translate(-50%, 0);
     height: 90px; }
-  .designathon .circle-container.Illustration .emoji {
+  .projects .circle-container.Illustration .emoji {
     height: 72px; }
-  .designathon .hover-reveal {
+  .projects .hover-reveal {
     position: fixed;
     z-index: -2;
     width: 228px;
@@ -405,25 +393,25 @@
     left: 20%;
     /* pointer-events: none; */
     opacity: 0; }
-  .designathon .rainbow-text {
+  .projects .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
-  .designathon .header {
+  .projects .header {
     top: 36px;
     padding: 0; }
-  .designathon .pointer {
+  .projects .pointer {
     pointer-events: none;
     display: block; }
-  .designathon .grid {
+  .projects .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     column-gap: 2vw;
     row-gap: 2vw;
     align-items: start;
     justify-items: center; }
-  .designathon .mentor {
+  .projects .mentor {
     max-width: 100%;
     object-fit: cover;
     height: 250px;
@@ -432,24 +420,24 @@
     transition: all .275s ease;
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.375);
     transform: translateY(-10px); }
-  .designathon .mentor:hover {
+  .projects .mentor:hover {
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
     transform: translateY(-2px); }
-  .designathon .mentor-text {
+  .projects .mentor-text {
     width: 210px; }
-  .designathon .mentor-container {
+  .projects .mentor-container {
     height: auto;
     width: 250px;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-top: -56px; }
-  .designathon .mentor-container > a:hover {
+  .projects .mentor-container > a:hover {
     color: initial;
     background-color: initial;
     opacity: initial;
     transition: initial; }
-  .designathon .mentor-category-container {
+  .projects .mentor-category-container {
     box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.175);
     background-color: #0F4C81;
     border-radius: 40px;
@@ -458,40 +446,40 @@
     padding-left: 12px;
     padding-right: 12px;
     margin: 12px; }
-  .designathon .section-1 {
+  .projects .section-1 {
     padding-top: 96px;
-    height: 100vh; }
-  .designathon .section-2 {
+    height: 80vh; }
+  .projects .section-2 {
     background-color: #325C5C;
     padding-top: 56px;
     padding-bottom: 72px; }
-  .designathon .section-3 {
+  .projects .section-3 {
     padding-top: 96px;
     min-height: 100vh;
     padding-bottom: 96px; }
-  .designathon .section-3-box {
+  .projects .section-3-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-column-gap: 72px; }
-  .designathon .section-4 {
+  .projects .section-4 {
     background-color: white;
     padding-top: 56px;
     padding-bottom: 72px;
     min-height: 100vh; }
-  .designathon .section-5 {
+  .projects .section-5 {
     padding-top: 56px;
     padding-bottom: 56px; }
-  .designathon .section-6 {
+  .projects .section-6 {
     background-color: white;
     color: #426968;
     padding-top: 56px;
     padding-bottom: 56px; }
-  .designathon .dthonWorkshops {
+  .projects .dthonWorkshops {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-column-gap: 36px;
     grid-row-gap: 36px; }
-  .designathon .workshop {
+  .projects .workshop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,13 +489,13 @@
     padding-bottom: 100px;
     border: 8px solid #fba721;
     border-radius: 12px; }
-  .designathon .mx-32 {
+  .projects .mx-32 {
     margin-left: 32px;
     margin-right: 32px; }
-  .designathon .workshop-button {
+  .projects .workshop-button {
     position: absolute;
     bottom: 24px; }
-  .designathon .workshop-button:nth-child(2) {
+  .projects .workshop-button:nth-child(2) {
     position: absolute;
     bottom: 24px;
     background-color: #C9EDBD;
@@ -524,24 +512,24 @@
     line-height: 40px;
     text-align: center;
     color: #426968; }
-  .designathon .judge {
+  .projects .judge {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
-  .designathon .judgeCaption {
+  .projects .judgeCaption {
     margin-top: 12px; }
-  .designathon .judgeImg {
+  .projects .judgeImg {
     width: 180px;
     height: auto; }
-  .designathon .judgeImgSmall {
+  .projects .judgeImgSmall {
     width: 100px;
     height: auto; }
-  .designathon .qText {
+  .projects .qText {
     color: #616161;
     font-weight: 400;
     font-size: 18px; }
-  .designathon .textbox-container {
+  .projects .textbox-container {
     /* background-image: url(./textbox.png);
     background-size: contain;
     background-repeat: no-repeat; */
@@ -551,7 +539,7 @@
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0.57, 0.1, 0.1, 0.9);
     animation-fill-mode: forwards; }
-  .designathon .textbox-small-container {
+  .projects .textbox-small-container {
     /* background-image: url(./textbox.png);
     background-size: contain;
     background-repeat: no-repeat; */
@@ -561,24 +549,24 @@
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0.57, 0.1, 0.1, 0.9);
     animation-fill-mode: forwards; }
-  .designathon .tablist {
+  .projects .tablist {
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
     font-family: "Poppins"; }
-  .designathon .tablist-small {
+  .projects .tablist-small {
     display: flex;
     width: 75%;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
     font-family: "Poppins"; }
-  .designathon .tab {
+  .projects .tab {
     color: #303030;
     transition: all 200ms ease; }
-  .designathon .tab:hover {
+  .projects .tab:hover {
     color: #1BB994;
     transition: all 200ms ease; }
 @keyframes textbox {
@@ -591,7 +579,7 @@
     max-height: 0px; }
   to {
     max-height: 300px; } }
-  .designathon .square {
+  .projects .square {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -602,33 +590,33 @@
     transform: translateY(290px) rotate(20deg); }
   100% {
     transform: translateY(0px) rotate(0deg); } }
-  .designathon .animate-slideup {
+  .projects .animate-slideup {
     transform: translateY(290px) rotate(15deg);
     animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
     animation-delay: 2s;
     transform-origin: top center; }
-  .designathon .bigGear {
+  .projects .bigGear {
     left: 83.8%;
     top: 603.2px; }
-  .designathon .smallGear {
+  .projects .smallGear {
     left: 69%;
     top: 722.332px; }
-  .designathon .bigGear-2 {
+  .projects .bigGear-2 {
     left: 82.2%;
     top: 3304.5px; }
-  .designathon .smallGear-2 {
+  .projects .smallGear-2 {
     left: 90%;
     top: 3214.02px; }
-  .designathon .dthonTitle {
+  .projects .dthonTitle {
     opacity: 0; }
-  .designathon .date {
+  .projects .date {
     opacity: 0; }
-  .designathon .toggle-switch, .designathon .toggle-switch .toggle-knob {
+  .projects .toggle-switch, .projects .toggle-switch .toggle-knob {
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
-  .designathon .toggle-switch {
+  .projects .toggle-switch {
     height: 30px;
     width: 53px;
     display: inline-block;
@@ -639,7 +627,7 @@
     cursor: pointer;
     border: solid 1px #d2d6de;
     box-shadow: inset 1px 1px 9px -3px rgba(4, 4, 4, 0.08), 1px 2px 6px -2px rgba(0, 0, 0, 0.01); }
-  .designathon .toggle-switch .toggle-knob {
+  .projects .toggle-switch .toggle-knob {
     width: 26px;
     height: 26px;
     display: inline-block;
@@ -648,12 +636,12 @@
     box-shadow: 0 1px 3px rgba(107, 106, 106, 0.26), 0 5px 1px rgba(107, 106, 106, 0.13);
     border-radius: 26px;
     margin: 1px 1px; }
-  .designathon .toggle-switch.active {
+  .projects .toggle-switch.active {
     background-color: #77e189;
     border: solid 1px transparent; }
-  .designathon .toggle-switch.active .toggle-knob {
+  .projects .toggle-switch.active .toggle-knob {
     margin-left: 24px; }
-  .designathon .quick-links {
+  .projects .quick-links {
     max-width: 1200px;
     margin: auto; }
 
