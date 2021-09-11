@@ -322,10 +322,10 @@
         // letter-spacing: 0.05em; 
     }
     .h2 {
-        font-family: "Poppins", sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-weight: 700;
         font-style: normal;
-        font-size: 36px; }
+        font-size: 40px; }
     .h3 {
         font-family: "DM Sans", serif;
         /* font-weight: 700; */
@@ -354,9 +354,8 @@
         // letter-spacing: 0.01em; 
     }
     .b2 {
-        font-family: "Poppins", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
+        font-family: "DM Sans", sans-serif;
+        font-size: 24px;
         // letter-spacing: 0.01em; 
     }
     .b3 {
@@ -535,13 +534,16 @@
         height: 80vh;
     }
     .section-2 {
-        background-color: #325C5C;
-        padding-top: 56px;
-        padding-bottom: 72px;
+        // background-color: #325C5C;
+        color: black;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
     .section-3 {
+        background-color: black;
+        color: white;
         padding-top: 96px;
-        min-height: 100vh;
+        // min-height: 100vh;
         padding-bottom: 96px;
     }
     .section-3-box{
@@ -551,9 +553,9 @@
     }
     .section-4 {
         background-color: white;
-        padding-top: 56px;
-        padding-bottom: 72px;
-        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        // min-height: 100vh;
     }
     .section-5 {
         padding-top: 56px;
@@ -627,7 +629,7 @@
         height: auto;
     }
     .qText {
-        color: #616161;
+        color: white;
         font-weight: 400;
         font-size: 18px;
     }

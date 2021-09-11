@@ -122,42 +122,42 @@ const Projects = () => {
                             <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
                         </div>
                     </div>} */}
-                    <div className="row d-flex justify-content-center dthonAbout section-2" id="about">
+                    <div className="row d-flex justify-content-center projectsAbout section-2" id="about">
                         <div className="col-10">
-                            <div className="h2" style={{ color: '#D0EBC1', marginBottom: '36px' }}>What are projects teams?</div>
-                            <div className="dthonAboutText" style={{ color: 'white' }}>
+                            <div className="h2" style={{ marginBottom: '36px' }}>What are projects teams?</div>
+                            <div className="dthonAboutText" style={{ width: '75%' }}>
                                 <div className="b2" style={{ marginBottom: '16px' }}>Interested in UX design, but don’t know where to start?
                                 </div>
                                 <div className="b2" style={{ marginBottom: '16px' }}>
-                                    SB Creative Lab presents our Projects Teams— an 8 week program where you can exercise your UX design skills and put together a case study in a team setting. We want to give beginner UX designers the building blocks to enter the UX space, and come out with tangible oppurtunities for portfolios and interviews.
+                                    SB Creative Lab presents our <b>Projects Teams</b>— an 8 week program where you can exercise your UX design skills and put together a case study in a team setting. We want to give beginner UX designers the building blocks to enter the UX space, and come out with tangible oppurtunities for portfolios and interviews.
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-5" id="faq">
+                    <div className="row d-flex justify-content-center dthonDetails section-3" id="faq">
                         <div className="col-10">
-                            <div className="h2 mb-5">FAQ</div>
+                            {/* <div className="h2 mb-5">FAQ</div> */}
                             <div className="row">
                                 <div className="col-md-6 b1">
                                     <div className="question mb-5">
-                                        <div className="bold">When?</div>
-                                        <div className="qText">
+                                        <div className="h2">When?</div>
+                                        <div className="b2">
                                             We rotate between Fall, Winter, and Summer quarters. Each cycle will last 8 weeks (weeks 2-9).
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 b1">
                                     <div className="question mb-5">
-                                        <div className="bold">Who?</div>
-                                        <div className="qText">
+                                        <div className="h2">Who?</div>
+                                        <div className="b2">
                                             All SBCL members can apply. All experience levels are welcome (individuals with no experience as well)!
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 b1">
-                                    <div className="question mb-5">
-                                        <div className="bold">What can I get out of this?</div>
-                                        <div className="qText">
+                                    <div className="question">
+                                        <div className="h2">What can I get out of this?</div>
+                                        <div className="b2">
                                             At the end of the 8 week program, projects team participants will have developed a tangible case study for portfolios and first-hand UX experience for UX design interviews.
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: "#C1F0E5", paddingTop: "56px" }} className="row d-flex flex-column align-items-center pb-5">
+                <div className="row d-flex flex-column align-items-center section-4">
                     <div className="h2" style={{ marginBottom: '36px' }}>How can I get involved?</div>
                     <div className="b2" >
                         Applications for our Fall 2021 Projects Teams are open now!
