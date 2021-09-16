@@ -303,7 +303,7 @@
     padding-top: 132px;
     background-color: #FFFFFF;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto 105vh;
     color: #000000; 
     a.link{
         text-decoration: underline;
@@ -376,19 +376,19 @@
     .poppins {
         font-family: "Poppins" !important; }
     .button {
-        background-color: #C9EDBD;
+        background-color: black;
         font-family: "Poppins";
         border: 2.07877px solid #FFFFFF;
         border-radius: 13px;
         transition-property: background-color,border-color,color,box-shadow,filter,transform;
         transition-duration: .3s;
         cursor: pointer;
-        padding: 12px 43px 12px;
+        padding: 11px 49px 11px;
         font-style: normal;
         font-weight: bold;
-        font-size: 27px;
+        font-size: 24px;
         text-align: center;
-        color: #426968;
+        color: white;
         display: inline-block;
     }
     .button-small {
@@ -534,7 +534,7 @@
         height: 80vh;
     }
     .section-2 {
-        // background-color: #325C5C;
+        background-color: white;
         color: black;
         padding-top: 96px;
         padding-bottom: 96px;
@@ -716,9 +716,12 @@
         animation-delay: 2s;
         transform-origin: top center;
       }
-    .bigGear{
-        left: 83.8%;
-        top: 603.2px;
+    .prototypeGraphic{
+        left: 60%;
+        top: 0%;
+    }
+    #prototypeGraphic {
+        width: 62.5vw;
     }
     .smallGear{
         left: 69%;
@@ -783,4 +786,15 @@
         max-width: 1200px;
         margin: auto;
     }
+
+    .fadeInOut {
+        transition: visibility 0s linear, opacity 200ms linear;
+    
+        &.hidden {
+            visibility: hidden;
+            opacity : 0;
+            transition: opacity 200ms linear, visibility 0 linear 200ms;
+        }
+    }
+
 }

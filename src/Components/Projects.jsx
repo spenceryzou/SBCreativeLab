@@ -49,6 +49,7 @@ const Projects = () => {
         const tl = gsap.timeline();
         tl.fromTo('.dthonTitle', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: 1 })
         tl.fromTo('.date', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: .1 });
+        tl.fromTo('.arrow', .6, { y: '-40', opacity: 0 }, { y: 0, opacity: 1, delay: .22 });
         // this.initializeReactGA();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -102,7 +103,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row d-flex justify-content-center mt-4 pt-3">
+                        <div className="row d-flex justify-content-center">
                             <div className="col-10 col-sm-10">
                                 <div style={{ overflow: 'hidden' }} >
                                     <div className="animate-slideup py-3">
@@ -111,17 +112,20 @@ const Projects = () => {
                                         </a>
                                     </div>
                                 </div>
+                                <div className={`arrow ${isExtraSmallScreen ? 'hidden' : ''} fadeInOut`} style={{ top: "-8px", left: "250px", position: "absolute" }}>
+                                    <img src="/images/projects/arrow.png" />
+                                </div>
                             </div>
                         </div>
+                        <div className="imageContainer" style={{ position: "absolute" }}>
+                            <img style={{ position: "absolute", bottom: "-5%", left: "50%", transform: "translate(-50%,-50%)" }} src="/images/projects/arrow-down.png"></img>
+                        </div>
                     </div>
-                    {/* {isExtraSmallScreen ? <div /> : <div>
-                        <div className={`${gears ? 'rotate' : ''} bigGear`} style={{ position: 'absolute' }}>
-                            <img alt="bigGear" id="bigGear" src="/images/bigGear.png" />
+                    {isExtraSmallScreen ? <div /> : <div>
+                        <div className='prototypeGraphic' style={{ position: 'absolute' }}>
+                            <img id="prototypeGraphic" src="/images/projects/prototype.png" />
                         </div>
-                        <div className={`${gears ? 'reverse-rotate' : ''} smallGear`} style={{ position: 'absolute' }}>
-                            <img alt="smallGear" id="smallGear" src="/images/smallGear.png" />
-                        </div>
-                    </div>} */}
+                    </div>}
                     <div className="row d-flex justify-content-center projectsAbout section-2" id="about">
                         <div className="col-10">
                             <div className="h2" style={{ marginBottom: '36px' }}>What are projects teams?</div>
