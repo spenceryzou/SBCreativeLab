@@ -321,7 +321,7 @@ export default class Home extends Component {
                                         <div className="center-container" id="home">
                                             <div style={{ color: darkColor }} className="title">
                                                 SB Creative Lab
-                                        </div>
+                                            </div>
                                             <div className="subtitle">
                                                 let's learn&nbsp;<div style={{ display: "inline-block", color: primaryColor }}> <Typewriter options={{ loop: true, delay: 50, deleteSpeed: 50 }}
                                                     onInit={(typewriter) => {
@@ -338,11 +338,11 @@ export default class Home extends Component {
                                                 />
                                                 </div>
                                             </div>
-                                            {/* <div className="button-hover">
-                                                <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/SBCLApplication" style={{ whiteSpace: "nowrap" }} className="button-dark">
-                                                    SBCL Board now Recruiting! 🦊
+                                            <div className="button-hover">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://projects.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-dark">
+                                                    Apply for Projects Teams! 🦊
                                                 </a>
-                                            </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -350,13 +350,13 @@ export default class Home extends Component {
                                     <div className="textContainer">
                                         <div style={{ color: "white" }} className="title">
                                             Mission
-                                    </div>
+                                        </div>
                                         <div className="longCaption" style={{ color: "white" }}>
                                             SB Creative Lab strives to empower and
                                             build an inclusive design community at UC
                                             Santa Barbara by providing opportunities
                                             and resources for student designers.
-                                    </div>
+                                        </div>
                                     </div>
                                     <div id="scene" className="imageContainer">
                                         <div data-depth=".02" id="absolute"><img alt="cloud" id="leftCloud" src="/images/left-cloud.png" /></div>
@@ -402,10 +402,10 @@ export default class Home extends Component {
                                     <div className="rightTextContainer">
                                         <div style={{ color: "white" }} className="title">
                                             UI/UX
-                                    </div>
+                                        </div>
                                         <div className="shortCaption" style={{ color: "white" }}>
                                             Build exciting user experiences.
-                                    </div>
+                                        </div>
                                     </div>
                                     <div data-invert-x="false" data-invert-y="false" id="uiuxScene" className="imageContainer">
                                         <div id="phoneScene" className="imageContainer">
@@ -420,10 +420,10 @@ export default class Home extends Component {
                                     <div className="leftTextContainer">
                                         <div style={{ color: "white" }} className="title">
                                             Illustration
-                                    </div>
+                                        </div>
                                         <div className="shortCaption mb-4" style={{ color: "white" }}>
                                             Bring concepts and stories to life.
-                                    </div>
+                                        </div>
                                     </div>
                                     <div id="illusScene" className="imageContainer">
                                         <div data-invert-x="false" data-invert-y="false" id="bookScene" className="imageContainer">
@@ -438,7 +438,7 @@ export default class Home extends Component {
                                         <div className="center-container" id="home">
                                             <div style={{ color: darkColor }} className="title">
                                                 let's keep in touch!
-                                        </div>
+                                            </div>
                                             <div className="subtitle-med inline-block-center">
                                                 <ul class="links">
                                                     <li class="link"><a target="_blank" href="https://www.facebook.com/sbcreativelab/">facebook</a></li>

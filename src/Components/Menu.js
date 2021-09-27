@@ -16,22 +16,22 @@ export default class Home extends Component {
             <div>
               <a href="/about" data-content="about" className="menu-link">
                 about
-                        </a>
+              </a>
             </div>
             <div>
               <a href="/resources" data-content="resources" className="menu-link">
                 resources
-                        </a>
+              </a>
             </div>
             <div>
               <a href="/events" data-content="events" className="menu-link">
                 events
-                        </a>
+              </a>
             </div>
             <div>
-              <a href="https://designathon.sbcreativelab.com" data-content="designathon" className="menu-link">
-                designathon
-                        </a>
+              <a href="https://projects.sbcreativelab.com" data-content="projects teams" className="menu-link">
+                projects teams
+              </a>
             </div>
           </div>
           <div className="menu-socials">
