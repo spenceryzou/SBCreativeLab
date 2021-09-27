@@ -52,29 +52,38 @@ const Projects = () => {
         tl.fromTo('.arrow', .6, { y: '-40', opacity: 0 }, { y: 0, opacity: 1, delay: .22 });
         // this.initializeReactGA();
         // eslint-disable-next-line react-hooks/exhaustive-deps
+        var defaultPlane = document.getElementById("plane");
+        var defaultSwoosh = document.getElementById("swoosh_desaturated");
+        var defaultBase = document.getElementById("base_blue");
+        defaultPlane.style.opacity = 0;
+        defaultSwoosh.style.opacity = 0;
+        defaultBase.style.opacity = 0;
+        var altLogo = document.getElementsByClassName("st4");
+        for (var i = 0; i < 3; i++) {
+            altLogo[i].style.opacity = 1;
+        }
     }, []);
 
     return (
         <div>
-            <div className="projects">
-                <div className="header">
-                    <div className="header-left">
-                        <div className="logo-wrapper">
-                            <a className="logo-link" href="https://www.sbcreativelab.com">
-                                <Logo id="logo" className="logo" width="100%" display="block" height="auto" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className={`${isExtraSmallScreen ? 'tablist-small' : 'tablist'} header-right`}>
-                        <a href='https://forms.gle/4MEmZ93JV1qGJHxe8' target="_blank" className='tab'>Apply</a>
-                        <HashLink smooth to={`#about`} className='tab'>About</HashLink>
-                        <HashLink smooth to={`#schedule`} className='tab'>Schedule</HashLink>
-                        <HashLink smooth to={`#faq`} className='tab'>FAQ</HashLink>
-                        {!isExtraSmallScreen ? <span onClick={() => setGears(!gears)} className={`${gears ? 'active' : ''} toggle-switch`}>
-                            <span class="toggle-knob"></span>
-                        </span> : null}
+            <div className="projects-header">
+                <div className="header-left">
+                    <div className="logo-wrapper">
+                        <a className="logo-link" href="https://www.sbcreativelab.com">
+                            <Logo id="logo" className="logo" width="100%" display="block" height="auto" />
+                        </a>
                     </div>
                 </div>
+                <div className={`${isExtraSmallScreen ? 'tablist-small' : 'tablist'} header-right`}>
+                    <a href='https://forms.gle/aUWQnUxoabZHwZLz6' target="_blank" className='tab'>Apply</a>
+                    <HashLink smooth to={`#about`} className='tab'>About</HashLink>
+                    <HashLink smooth to={`#faq`} className='tab'>FAQ</HashLink>
+                    {/* {!isExtraSmallScreen ? <span onClick={() => setGears(!gears)} className={`${gears ? 'active' : ''} toggle-switch`}>
+                        <span class="toggle-knob"></span>
+                    </span> : null} */}
+                </div>
+            </div>
+            <div className="projects">
                 <div className="container-fluid">
                     <div className="section-1">
                         <div className="row d-flex justify-content-center">
@@ -107,7 +116,7 @@ const Projects = () => {
                             <div className="col-10 col-sm-10">
                                 <div style={{ overflow: 'hidden' }} >
                                     <div className="animate-slideup py-3">
-                                        <a target="_blank" href="https://forms.gle/4MEmZ93JV1qGJHxe8" className="button text-center">
+                                        <a target="_blank" href="https://forms.gle/aUWQnUxoabZHwZLz6" className="button text-center">
                                             Apply
                                         </a>
                                     </div>
@@ -117,9 +126,12 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="imageContainer" style={{ position: "absolute" }}>
-                            <img style={{ position: "absolute", bottom: "-5%", left: "50%", transform: "translate(-50%,-50%)" }} src="/images/projects/arrow-down.png"></img>
-                        </div>
+                        {isExtraSmallScreen ? <div /> :
+                            <div className="imageContainer" style={{ position: "absolute" }}>
+                                <HashLink smooth to={`#about`} className='arrow-down'>
+                                    <img style={{ position: "absolute", bottom: "-5%", left: "50%", transform: "translate(-50%,-50%)" }} src="/images/projects/arrow-down.png"></img>
+                                </HashLink>
+                            </div>}
                     </div>
                     {isExtraSmallScreen ? <div /> : <div>
                         <div className='prototypeGraphic' style={{ position: 'absolute' }}>
@@ -154,7 +166,7 @@ const Projects = () => {
                                     <div className="question mb-5">
                                         <div className="h2">Who?</div>
                                         <div className="b2">
-                                            All SBCL members can apply. All experience levels are welcome (individuals with no experience as well)!
+                                            All SBCL members can <span><a style={{ textDecoration: 'underline' }} href='https://forms.gle/aUWQnUxoabZHwZLz6' target="_blank">apply.</a></span> All experience levels are welcome (individuals with no experience as well)!
                                         </div>
                                     </div>
                                 </div>
@@ -170,15 +182,17 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row d-flex flex-column align-items-center section-4">
-                    <div className="h2" style={{ marginBottom: '36px' }}>How can I get involved?</div>
-                    <div className="b2" >
-                        Applications for our Fall 2021 Projects Teams are open now!
+                <div className="container-fluid">
+                    <div className="row d-flex flex-column align-items-center section-4 text-center">
+                        <div className="h2" style={{ marginBottom: '36px' }}>How can I get involved?</div>
+                        <div className="b2 pl-4 pr-4" >
+                            Applications for our Fall 2021 Projects Teams are <span><a style={{ textDecoration: 'underline' }} href='https://forms.gle/aUWQnUxoabZHwZLz6' target="_blank">open now!</a></span>
+                        </div>
+                        <div className="b2 pl-4 pr-4" style={{ marginBottom: '36px' }}>
+                            Keep an eye on our Instagram to know when the next cycle starts.
+                        </div>
+                        <a href="https://www.sbcreativelab.com"><Logo height="80px"></Logo></a>
                     </div>
-                    <div className="b2" style={{ marginBottom: '36px' }}>
-                        Keep an eye on our Instagram to know when the next cycle starts.
-                    </div>
-                    <a href="https://www.sbcreativelab.com"><Logo height="80px"></Logo></a>
                 </div>
             </div >
         </div >
