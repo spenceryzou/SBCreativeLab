@@ -103,7 +103,7 @@ export default class Home extends Component {
                             Check out our Spring Designathon
                         </a><span> <i class="fas fa-cog fa-lg"></i></span>
                         &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;
-                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/ac3d2b88433246fbb78cc784d179bfb4?v=ff68387555d54320b13c2efb74fd541c">
+                        <a style={{textDecoration: "underline"}} className="event-subtitle subtitle-med color-black" target="_blank" href="https://www.notion.so/sbcreativelab/c6e99f7316ad4958b65095937bcb8342?v=46b0ff1789654ab096f8bc12b9bd71e5">
                             See our Spring quarter calendar here!
                         </a><span> 📅</span>
                         {/* <a target="blank" href="/challenge" className="button-small button-dark">
