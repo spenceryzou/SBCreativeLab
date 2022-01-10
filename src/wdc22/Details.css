@@ -1,0 +1,156 @@
+.details {
+    position: relative;
+}
+
+.gift-card-container {
+    margin-left: 115px;
+    background: #F8ECE0;
+    border: 4px solid #354563;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    width: fit-content;
+    margin-bottom: 150px;
+}
+
+.gift-card {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.gift-card-bold {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.submission-btn-container {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+.submission-btn {
+    background: #FF7347;
+
+    /* WDC Orange */
+    border: 4px solid #FF7347;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.design-reqs-btn-container {
+    position: absolute;
+    top: 190px;
+    right: 400px;
+}
+
+.design-reqs-btn {
+    background: #354563;
+
+    /* WDC Blue */
+    border: 3px solid #354563;
+    box-sizing: border-box;
+    border-radius: 8.29721px;
+    font-weight: 600;
+    font-size: 29.87px;
+    line-height: 45px;
+    
+    /* identical to box height */
+    text-align: center;
+    
+    /* White */
+    color: #FFFFFF;
+    text-decoration: none;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.btns {
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+    top: 10px;
+    right: 130px;
+}
+
+.deadline {
+    position: absolute;
+    top: -250px;
+    right: 950px;
+}
+
+.deadline-container {
+    position: relative;
+}
+
+.deadline-cloud {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(10%, 230%);
+}
+
+.deadline-title {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    top: 50%;
+    transform: translate(60%, 520%);
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* WDC Blue */
+    color: #354563;    
+}
+
+.deadline-p {
+    line-height: 15px;
+}
+
+.deadline-date {
+    position: absolute;
+    top: -40px;
+    right: 700px;
+
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    background: #B8E1D1;
+
+    /* WDC Blue */
+    border: 4px solid #354563;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 32px;
+    padding-bottom: 20px;  
+    
+    margin: 0;
+}
