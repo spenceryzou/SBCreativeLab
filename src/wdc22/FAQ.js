@@ -2,9 +2,9 @@ import React  from "react"
 import './faq.css'
 import num1 from './imgs/num1.svg'
 import num2 from './imgs/num2.svg'
-import num3 from './imgs/num3.svg'
-import num4 from './imgs/num4.svg'
-import num5 from './imgs/num5.svg'
+import num4 from './imgs/num3.svg'
+import num5 from './imgs/num4.svg'
+import num3 from './imgs/num5.svg'
 import plane from './imgs/faq-plane.svg'
 
 export default function FAQ() {
