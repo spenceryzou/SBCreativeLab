@@ -66,7 +66,7 @@ export default function FAQ() {
                             Will I have the chance to ask for feedback or advice? 
                         </p>
                         <p className="faq-normal">
-                            Yes! Our <a className="faq-semibold-link" href='https://discord.com/invite/fc8Rrn7VdV' target='_blank'>Discord channel</a> will be open for participants to chat with each other and with the SBCL team. We will also be hosting <span className="faq-semibold">Studio Hours</span> every week in the Library to get feedback from the SBCL team in-person!
+                            Yes! Our <a className="faq-semibold-link" href='https://discord.com/invite/fc8Rrn7VdV' target='_blank'>Discord channel</a> will be open for participants to chat with each other and with the SBCL team. We will also be hosting <a className="faq-semibold" href="https://sbcreativelab.notion.site/c6e99f7316ad4958b65095937bcb8342?v=46b0ff1789654ab096f8bc12b9bd71e5" target="_blank">Studio Hours</a> every week in the Library to get feedback from the SBCL team in-person!
                         </p>
                     </div>
                 </div>
