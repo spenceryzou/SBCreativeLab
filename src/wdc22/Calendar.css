@@ -1,0 +1,38 @@
+.calendar {
+    padding: 85px;
+    padding-right: 120px;
+}
+
+.calendar-month-text {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #354563;
+    text-align: center;
+}
+
+.calendar-img {
+    width: 100%;
+    align-self: center;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.calendar-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-rainbow {
+    position: absolute;
+    transform: translate(350%, -150%);
+    z-index: -1;
+}
+
+.calendar-legend {
+    position: absolute;
+    transform: translate(460%, -80%);
+    z-index: 0;
+}
