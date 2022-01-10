@@ -1,0 +1,101 @@
+.judges-page-component {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background: rgba(102, 145, 203, 0.6);
+    position: relative;
+}
+
+.judges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.judges-header {
+    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.judges > div {
+    width: 25%;
+    margin: 30px;
+}
+
+.judge-1 {
+    position: relative;
+}
+
+.judge-1-name {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-20%, -50%);
+}
+
+.judge-1-leaf {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-65%, 130%);
+}
+
+.judge-1-tree {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(300%, 115%);
+}
+
+.judge-img {
+    width: 100%;
+}
+
+.judge-2 {
+    position: relative;
+}
+
+.judge-2-name {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(80%, 230%);
+}
+
+.judge-2-dec {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(0%, -60%);
+}
+
+.judge-3 {
+    position: relative;
+}
+
+.judge-3-name {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(110%, -30%);
+}
+
+.judge-3-dec {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-20%, 470%);
+}
+
+.judges-dec-img {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.sun-large {
+    position: absolute;
+    top: 40%;
+    right: 23%;
+    transform: translate(100%, 145%);
+}
