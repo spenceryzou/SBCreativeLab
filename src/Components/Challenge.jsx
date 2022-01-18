@@ -22,7 +22,7 @@ export default class Challenge extends Component{
     }
     render () {
         return (
-            <div>
+            <div className='app'>
             <div className='section-0'>
               <header className='section-1'>
                 <Navbar />
@@ -46,7 +46,7 @@ export default class Challenge extends Component{
               <FAQ />
             </div>
             <div className='section-6'>
-              <Footer />        
+              <Footer />   
             </div>
           </div>
         )

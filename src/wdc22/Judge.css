@@ -1,62 +1,139 @@
-.judge-component {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1200px) {
+    .judge-component {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judge-card {
+        background: #354563;
+        border: 5px solid #354563;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+    }
+    
+    .judge-headshot {
+        width: 100%;
+        background: #354563;
+        /* WDC Blue */
+        border: 5px solid #354563;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+    
+    .job-desc {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 8.59px;
+        line-height: 10px;
+        margin: 2px;
+        text-align: center;
+        color: #F8ECE0;
+    }
+    
+    .judge-p {
+        font-weight: normal;
+        font-size: 7.58px;
+        line-height: 11px;        
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .judge-p-bold {
+        font-weight: bold;
+        font-size: 7.58px;
+        line-height: 11px;        
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .judge-p-desc {
+        font-weight: normal;
+        font-size: 7.58px;
+        line-height: 11px;
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .water-drop {
+        margin-right: 5px;
+    }
+
+    .water-drop-img {
+        width: 30%;
+    }
+    
+    .judge-bullet-point {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+    }
 }
 
-.judge-card {
-    background: #354563;
-    border: 5px solid #354563;
-    box-sizing: border-box;
-    padding-bottom: 10px;
-}
-
-.judge-headshot {
-    width: 100%;
-    background: #354563;
-    /* WDC Blue */
-    border: 5px solid #354563;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-
-.job-desc {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    color: #F8ECE0;
-}
-
-.judge-p {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    color: #354563;
-}
-
-.judge-p-bold {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    color: #354563;
-}
-
-.judge-p-desc {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 34px;
-    color: #354563;
-    margin-top: 4px;
-}
-
-.water-drop {
-    margin-right: 20px;
-}
-
-.judge-bullet-point {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    align-items: center;
+@media screen and (min-width: 1200px) {
+    .judge-component {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .judge-card {
+        background: #354563;
+        border: 5px solid #354563;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+    }
+    
+    .judge-headshot {
+        width: 100%;
+        background: #354563;
+        /* WDC Blue */
+        border: 5px solid #354563;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+    
+    .job-desc {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #F8ECE0;
+    }
+    
+    .judge-p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #354563;
+    }
+    
+    .judge-p-bold {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #354563;
+    }
+    
+    .judge-p-desc {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 34px;
+        color: #354563;
+        margin-top: 4px;
+    }
+    
+    .water-drop {
+        margin-right: 20px;
+    }
+    
+    .judge-bullet-point {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        align-items: center;
+    }
 }

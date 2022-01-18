@@ -13,12 +13,76 @@ import leafv2 from './imgs/leaf-v2.svg'
 import judge_dec from './imgs/judge-dec.svg'
 import sun from './imgs/sun-big.svg'
 
+import alice_mobile from './imgs/alice-mobile.svg'
+import bianca_mobile from './imgs/bianca-mobile.svg'
+import hannah_mobile from './imgs/hannah-mobile.svg'
+import water_drop from './imgs/water-drop.svg'
+
 
 export default function Judges() {
     return (
         <div className='judges-page-component'>
             <h1 className='judges-header'>Judges</h1>
+            {/* Mobile version */}
+            <div className='judges-mobile'>
+                <div className='judge-card-mobile'>
+                    <img className='judge-mobile' src={alice_mobile}></img>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop'>
+                            <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                        <p className='judge-p'>Based in <span className='judge-p-bold'>Santa Barbara, CA / Maui</span></p>
+                    </div>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop'>
+                                <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                        <div className='ucsb-alum'>
+                            <p className='judge-p-bold'>UCSB Alumni</p>
+                            <p className='judge-p'>BA in Communication at UCSB 2008</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='judge-card-mobile'>
+                <img className='judge-mobile' src={bianca_mobile}></img>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop-judge-2'>
+                            <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                        <p className='judge-p'>Based in <span className='judge-p-bold'>Brooklyn, NY</span></p>
+                    </div>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop-judge-2'>
+                                <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                        <div className='ucsb-alum'>
+                            <p className='judge-p-bold'>UCSB Alumni</p>
+                            <p className='judge-p'>BS in Microbiology at UCSB 2017</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='judge-card-mobile'>
+                    <img className='judge-mobile' src={hannah_mobile}></img>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop'>
+                            <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                        <p className='judge-p'>Based in <span className='judge-p-bold'>Tulsa, Oklahoma</span></p>
+                    </div>
+                    <div className='judge-bullet-point'>
+                        <div className='water-drop'>
+                                <img className='water-drop-img' src={water_drop}></img>
+                        </div>
+                            <p className='judge-p'>Member of the Design Buddies team as an Illustrator/Motion Designer</p>
+                    </div>
+                </div>
+
+            </div>
+
             <div className='judges'>
+                {/* For desktop version */}
                 <div className='judge-1'>
                     <div className='judge-1-name'>
                         <img className='judge-img'src={alice_name} alt='Alice Chein'></img>

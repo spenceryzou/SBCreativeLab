@@ -2,12 +2,13 @@ import React from 'react'
 import './Details.css'
 import sun from './imgs/sun.svg'
 import cloud from './imgs/cloud.svg'
+import deadlineMobile from './imgs/deadline-mobile.svg'
 
 export default function Details(){
     return (
         <div className="details">
             <div className='gift-card-container'>
-                <span className='gift-card'>The winner will recieve a </span>
+                <span className='gift-card'>The winner will receive a </span>
                 <span className='gift-card-bold'>$30 Amazon gift card</span>
                 <span className='gift-card'>!</span>
             </div>
@@ -25,6 +26,7 @@ export default function Details(){
                     <p className='deadline-p'>@ 11:59pm PST</p>
                 </div>
                 <div className='deadline'>
+                    <img className='deadline-mobile' src={deadlineMobile}></img>
                     <div className='deadline-container'>
                         <img className='deadline-cloud' src={cloud}></img>
                         <p className='deadline-title'>Deadline</p>

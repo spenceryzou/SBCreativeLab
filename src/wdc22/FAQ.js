@@ -10,13 +10,13 @@ import plane from './imgs/faq-plane.svg'
 export default function FAQ() {
     return(
         <div className="faq-background">
-            <h1>FAQ</h1>
+            <h1 className="faq-title">FAQ</h1>
             <div className="faqs">
                 {/* <div className="faq-plane"> */}
                     <img className="faq-plane"src={plane}></img>
                 {/* </div>  */}
                 <div className="faq-container">
-                    <img src={num1}></img>
+                    <img className="num" src={num1}></img>
                     <div>
                         <p className="faq-bold">
                             Who can participate?
@@ -27,7 +27,7 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className="faq-container">
-                    <img src={num2}></img>
+                    <img className="num" src={num2}></img>
                     <div>
                         <p className="faq-bold">
                         Do I need to have any graphic design skills?
@@ -38,7 +38,7 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className="faq-container">
-                    <img src={num4}></img>
+                    <img className="num" src={num4}></img>
                     <div>
                         <p className="faq-bold">
                             How many stickers am I allowed to submit?
@@ -49,7 +49,7 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className="faq-container">
-                    <img src={num5}></img>
+                    <img className="num" src={num5}></img>
                     <div>
                         <p className="faq-bold">
                             How will the sticker be judged?
@@ -60,7 +60,7 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className="faq-container">
-                    <img src={num3}></img>
+                    <img className="num"src={num3}></img>
                     <div>
                         <p className="faq-bold">
                             Will I have the chance to ask for feedback or advice? 

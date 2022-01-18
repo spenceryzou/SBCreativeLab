@@ -1,156 +1,285 @@
-.details {
-    position: relative;
-}
+@media screen and (max-width: 1200px) {
+    .details {
+        position: relative;
+        padding: 30px;
+    }
 
-.gift-card-container {
-    margin-left: 115px;
-    background: #F8ECE0;
-    border: 4px solid #354563;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 18px;
-    padding-bottom: 19px;
-    width: fit-content;
-    margin-bottom: 150px;
-}
+    .gift-card-container {
+        background: #F8ECE0;
+        border: 2px solid #354563;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 196px;
+        text-align: center;
+        margin-left: 20%;
+    }
 
-.gift-card {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-}
-
-.gift-card-bold {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-}
-
-.submission-btn-container {
-    position: absolute;
-    top: 100px;
-    right: 200px;
-}
-
-.submission-btn {
-    background: #FF7347;
-
-    /* WDC Orange */
-    border: 4px solid #FF7347;
-    box-sizing: border-box;
-    border-radius: 10px;
-
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    text-decoration: none;
-    color: #FFFFFF;
-
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.design-reqs-btn-container {
-    position: absolute;
-    top: 190px;
-    right: 400px;
-}
-
-.design-reqs-btn {
-    background: #354563;
-
-    /* WDC Blue */
-    border: 3px solid #354563;
-    box-sizing: border-box;
-    border-radius: 8.29721px;
-    font-weight: 600;
-    font-size: 29.87px;
-    line-height: 45px;
+    .gift-card {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
     
-    /* identical to box height */
-    text-align: center;
+    .gift-card-bold {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .btns {
+        display: flex;
+        position: relative;
+    }
     
-    /* White */
-    color: #FFFFFF;
-    text-decoration: none;
+    .submission-btn {
+        position: absolute;
+        top: 100px;
+        left: 18%;
+        background: #FF7347;
+        border: 2px solid #354563;
+        box-sizing: border-box;
+        border-radius: 4.37632px;    
+        font-weight: bold;
+        font-size: 15.7548px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #FFFFFF;    
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
 
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-}
+    .design-reqs-btn {
+        position: absolute;
+        top: 140px;
+        left: 40px;
 
-.btns {
-    position: relative;
-}
+        background: #354563;
+        border: 2px solid #354563;
+        box-sizing: border-box;
+        border-radius: 4.37632px;
+        font-weight: 600;
+        font-size: 10.9226px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;    
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    .sun {
+        position: absolute;
+        width: 70px;
+        top: 65px;
+        right: 33px;
+    }
 
-.sun {
-    position: absolute;
-    top: 10px;
-    right: 130px;
-}
+    .deadline-mobile {
+        visibility: visible;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
 
-.deadline {
-    position: absolute;
-    top: -250px;
-    right: 950px;
-}
-
-.deadline-container {
-    position: relative;
-}
-
-.deadline-cloud {
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    transform: translate(10%, 230%);
-}
-
-.deadline-title {
-    position: absolute;
-    top: 180px;
-    left: 50%;
-    top: 50%;
-    transform: translate(60%, 520%);
-
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    /* WDC Blue */
-    color: #354563;    
-}
-
-.deadline-p {
-    line-height: 15px;
-}
-
-.deadline-date {
-    position: absolute;
-    top: -40px;
-    right: 700px;
-
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    background: #B8E1D1;
-
-    /* WDC Blue */
-    border: 4px solid #354563;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-top: 32px;
-    padding-bottom: 20px;  
+    .deadline {
+        visibility: hidden;
+        width: 0;
+    }
     
-    margin: 0;
+    .deadline-container {
+        position: relative;
+    }
+    
+    .deadline-cloud {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .deadline-title {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .deadline-p {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .deadline-date {
+        visibility: hidden;
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .details {
+        position: relative;
+    }
+    
+    .gift-card-container {
+        margin-left: 115px;
+        background: #F8ECE0;
+        border: 4px solid #354563;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 18px;
+        padding-bottom: 19px;
+        width: fit-content;
+        margin-bottom: 150px;
+    }
+    
+    .gift-card {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+    
+    .gift-card-bold {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+    }
+    
+    .submission-btn-container {
+        position: absolute;
+        top: 100px;
+        right: 200px;
+    }
+    
+    .submission-btn {
+        background: #FF7347;
+    
+        /* WDC Orange */
+        border: 4px solid #FF7347;
+        box-sizing: border-box;
+        border-radius: 10px;
+    
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 54px;
+        text-decoration: none;
+        color: #FFFFFF;
+    
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .design-reqs-btn-container {
+        position: absolute;
+        top: 190px;
+        right: 400px;
+    }
+    
+    .design-reqs-btn {
+        background: #354563;
+    
+        /* WDC Blue */
+        border: 3px solid #354563;
+        box-sizing: border-box;
+        border-radius: 8.29721px;
+        font-weight: 600;
+        font-size: 29.87px;
+        line-height: 45px;
+        
+        /* identical to box height */
+        text-align: center;
+        
+        /* White */
+        color: #FFFFFF;
+        text-decoration: none;
+    
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+    
+    .btns {
+        position: relative;
+    }
+    
+    .sun {
+        position: absolute;
+        top: 10px;
+        right: 130px;
+    }
+    
+    .deadline {
+        position: absolute;
+        top: -250px;
+        right: 950px;
+    }
+    
+    .deadline-container {
+        position: relative;
+    }
+    
+    .deadline-cloud {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(10%, 200%);
+    }
+    
+    .deadline-title {
+        visibility: visible;
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        top: 0%;
+        transform: translate(60%, 500%);    
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        color: #354563;    
+    }
+    
+    .deadline-p {
+        line-height: 15px;
+    }
+    
+    .deadline-date {
+        position: absolute;
+        top: -40px;
+        right: 700px;
+    
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        background: #B8E1D1;
+    
+        /* WDC Blue */
+        border: 4px solid #354563;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-top: 32px;
+        padding-bottom: 20px;  
+        
+        margin: 0;
+    }
+
+    .deadline-mobile {
+        visibility: hidden;
+        width: 0;
+    }
 }

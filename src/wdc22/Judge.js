@@ -14,14 +14,13 @@ export default function Judge(props) {
             <div>
                 <div className='judge-bullet-point'>
                     <div className='water-drop'>
-                        <img src={water_drop}></img>
+                        <img className='water-drop-img' src={water_drop}></img>
                     </div>
-                    
                     <p className='judge-p'>Based in <span className='judge-p-bold'>{props.location}</span></p>
                 </div>
                 <div className='judge-bullet-point'>
                     <div className='water-drop'>
-                            <img src={water_drop}></img>
+                            <img className='water-drop-img' src={water_drop}></img>
                     </div>
                     <div className='ucsb-alum'>
                         {props.major && <p className='judge-p-bold'>UCSB Alumni</p>}

@@ -1,38 +1,96 @@
-.calendar {
-    padding: 85px;
-    padding-right: 120px;
+@media screen and (max-width: 1200px){
+    .mobile-container {
+        position: relative;
+    }
+
+    .calendar {
+        background-color: #5685C3;
+        padding: 15px;
+    }
+
+    .calendar-img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .calendar-mobile {
+        visibility: visible;
+        margin: auto;
+        padding: auto;
+    }
+
+    .calendar-title-mobile {
+        text-align: left;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+
+    .calendar-mobile-container {
+        text-align: center;
+    }
+
+    .calendar-mobile-dec {
+        visibility: visible;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 70%;
+    }
 }
 
-.calendar-month-text {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 45px;
-    color: #354563;
-    text-align: center;
-}
+@media screen and (min-width: 1200px){
 
-.calendar-img {
-    width: 100%;
-    align-self: center;
-    margin-right: 40px;
-    position: relative;
-    z-index: 1;
-}
+    .calendar-mobile {
+        visibility: hidden;
+        width: 0;
+        height: 0;    
+    }
 
-.calendar-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .calendar {
+        padding: 85px;
+        padding-right: 120px;
+    }
 
-.calendar-rainbow {
-    position: absolute;
-    transform: translate(350%, -150%);
-    z-index: -1;
-}
+    .calendar-month-text {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+        color: #354563;
+        text-align: center;
+    }
 
-.calendar-legend {
-    position: absolute;
-    transform: translate(460%, -80%);
-    z-index: 0;
+    .calendar-img {
+        width: 100%;
+        align-self: center;
+        margin-right: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .calendar-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar-rainbow {
+        position: absolute;
+        transform: translate(350%, -150%);
+        z-index: -1;
+    }
+
+    .calendar-legend {
+        position: absolute;
+        transform: translate(460%, -80%);
+        z-index: 0;
+    }
+
+    .calendar-mobile-dec {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 }

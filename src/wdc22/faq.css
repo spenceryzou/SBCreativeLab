@@ -1,66 +1,153 @@
-.faq-background {  
-    background: rgba(91, 173, 154, 0.6);
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    padding: 100px;
-    margin: 0;
-    max-width: 100%;
+@media screen and (max-width: 900px) {
+    .faq-background {  
+        background: rgba(91, 173, 154, 0.6);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .faqs {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+    
+    .faq-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .faq-title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .faq-bold {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 15px;
+        color: #354563;
+        margin: 0;
+    }
+    
+    .faq-normal {
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 15px;
+        color: #354563
+    }
+    
+    .faq-semibold {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        color: #354563;
+    }
+    
+    .faq-semibold-link {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        color: #354563;
+        text-decoration: underline;
+    }
+    
+    .faq-plane {
+        position: absolute;
+        align-self: right;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        transform: translate(200%, 110%);
+    }
+    
+    .img-plane {
+        width: min-content;
+    }  
+
+    .num {
+        width: 30px;
+    }
+
+    .faq-plane {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 }
 
-.faqs {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-}
-
-.faq-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.faq-bold {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #354563;
-    margin: 0;
-}
-
-.faq-normal {
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    color: #354563
-}
-
-.faq-semibold {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #354563;
-}
-
-.faq-semibold-link {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #354563;
-    text-decoration: underline;
-}
-
-.faq-plane {
-    position: absolute;
-    align-self: right;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    transform: translate(200%, 110%);
-}
-
-.img-plane {
-    width: min-content;
+@media screen and (min-width: 900px) {
+    .faq-background {  
+        background: rgba(91, 173, 154, 0.6);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding: 100px;
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .faqs {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+    
+    .faq-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .faq-bold {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #354563;
+        margin: 0;
+    }
+    
+    .faq-normal {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        color: #354563
+    }
+    
+    .faq-semibold {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #354563;
+    }
+    
+    .faq-semibold-link {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #354563;
+        text-decoration: underline;
+    }
+    
+    .faq-plane {
+        position: absolute;
+        align-self: right;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        transform: translate(200%, 110%);
+    }
+    
+    .img-plane {
+        width: min-content;
+    }  
 }

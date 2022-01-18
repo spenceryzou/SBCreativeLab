@@ -14,27 +14,28 @@ export default function About() {
                 <img className='tree' src={tree}></img>
                 <img className='about-cloud' src={cloud}></img>
                 <img className='rainbow' src={rainbow}></img>
+                <img className='rainbow-mobile' src={rainbow}></img>
                 <div className='about-info'>
-                    <h1>About</h1>
-                    <p>Welcome to our annual Winter Design Challenge! We want to provide SB Creative Lab members the chance to exercise their creative side, and explore graphic design!</p>
+                    <h1 className='about-header'>About</h1>
+                    <p className='about-desc'>Welcome to our annual Winter Design Challenge! We want to provide SB Creative Lab members the chance to exercise their creative side, and explore graphic design!</p>
                 </div>
             </div>
             <div className='about-prompt'>
                 <div className='about-prompt-c'>
-                    <div className='prompt-dec'>
-                        <img className='prompt-dec-img' src={leaf}></img>
-                    </div>
                     <div className='prompt-container'>
-                        <div>
                             <span className='prompt-bold'>This year's prompt: </span>
                             <span className='prompt'>designing stickers!</span>
-                        </div>
+                            <div className='prompt-dec'>
+                                <img className='prompt-dec-img' src={leaf}></img>
+                            </div>
                     </div>
                     <div>
                         <p className='prompt-light'>Your challenge is to design a sticker that combines the beauty of graphic design and is a visual representation of UCSB culture.</p>
                     </div>
                 </div>
-                <img className='water-drops' src={waterDroplets}></img>
+                <div className='water-drop-container'>
+                    <img className='water-drops' src={waterDroplets}></img>
+                </div>
             </div>
         </div>
 

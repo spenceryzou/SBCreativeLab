@@ -18,5 +18,14 @@ h1 {
 }
 
 .app {
+  padding: 0;
+}
+
+header {
+  padding: 0;
+}
+
+.section-6 {
+  padding: 0;
   margin: 0;
 }
