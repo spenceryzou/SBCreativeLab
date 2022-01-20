@@ -154,10 +154,4 @@
         width: 0;
         height: 0;
     }
-
-    .header {
-        visibility: visible;
-        width: auto;
-        background-color: aqua;
-    }
 }
