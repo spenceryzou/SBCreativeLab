@@ -1,0 +1,151 @@
+@media screen and (max-width: 880px){
+    .rubric {
+        padding: 0;
+        margin: 0;
+    }
+
+    .rubric-mobile {
+        visibility: visible;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .rubric-title-mobile {
+        visibility: visible;
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rubric-mobile-container {
+        text-align: center;
+        position: relative;
+        padding: zero;
+        margin: zero;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .rubric-cloud {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+    .rubric-title {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .rubric-img-container {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .rubric-img {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .rubric-dec-1 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+    
+    .rubric-dec-2 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    
+    .rubric-dec {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 880px){
+    .rubric {
+        padding-bottom: 140px;
+        margin: 0;
+    }
+    
+    .rubric-container {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .rubric-cloud {
+        position: absolute;
+        left: 1%;
+        top: 0%;
+        transform: translate(0%, -65%);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .rubric-title {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 7%;
+        top: 0%;
+        transform: translate(0%, -65%);
+        font-weight: 600;
+        font-size: 36px;
+        color: #354563;
+    }
+    
+    .rubric-img-container {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .rubric-img {
+        width: 90%;
+    }
+    
+    .rubric-dec-1 {
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        transform: translate(0%, -20%);
+    }
+    
+    .rubric-dec-1-img {
+        width: 100%;
+    }
+    
+    .rubric-dec-2 {
+        position: absolute;
+        left: 2%;
+        bottom: 0%;
+        transform: translate(0%, 50%); /*left, top, right, bottom*/
+    }
+    
+    .rubric-dec-2-img {
+        width: 100%;
+    }
+    
+    .rubric-dec {
+        position: relative;
+    }
+    
+    .rubric-mobile {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .rubric-title-mobile {
+        visibility: hidden;
+        width: 0;
+    }
+}

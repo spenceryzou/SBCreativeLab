@@ -1,0 +1,43 @@
+@media screen and (max-width: 780px) {
+    .navbar {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .logo, .navbar-links {
+        margin: 0;
+    }
+    
+    .logo {
+        margin-right: auto;
+        margin-left: 56px;
+        width: 77px;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        align-items: center;
+    }
+    
+    .navbar-links {
+        margin-right: 59px;
+        align-content: right;
+        margin-top: 0;
+        padding: 0;
+    }
+      
+    .navbar-links > a {
+        font-weight: 600;
+        line-height: 36px;
+        color: #354563;
+        text-decoration: none;
+        margin: 23.5px;
+    }
+}
