@@ -18,8 +18,8 @@ export default function Details(){
                     <a className='design-reqs-btn' href='https://sbcreativelab.notion.site/W22-Winter-Design-Challenge-Guidelines-Requirements-03fd6ed5baa44011940a30f0da73f9e0' target='_blank'>View design requirements here</a>
                 </div>
                 <div className='submission-btn-container'>
-                    {/* <a className='submission-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfLb39CJiVR-cvP2y1IdYYRdv-bbjyZqJd1WTgB5YHGmFohDQ/viewform?usp=sf_link' target='_blank'>Submit your designs here!</a>*/}
-                    <a className='submission-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfIIGElNHRtDjsDVzl3Kes17RFZcno5ad6gHYXA1DBwofFmfg/viewform?usp=sf_link' target='_blank'>Interested? Sign up here!</a> 
+                    <a className='submission-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfLb39CJiVR-cvP2y1IdYYRdv-bbjyZqJd1WTgB5YHGmFohDQ/viewform?usp=sf_link' target='_blank'>Submit your designs here!</a>
+                    {/* <a className='submission-btn' href='https://docs.google.com/forms/d/e/1FAIpQLSfIIGElNHRtDjsDVzl3Kes17RFZcno5ad6gHYXA1DBwofFmfg/viewform?usp=sf_link' target='_blank'>Interested? Sign up here!</a>  */}
                 </div>
                 <div className='deadline-date'>
                     <p className='deadline-p'>January 26th</p>
