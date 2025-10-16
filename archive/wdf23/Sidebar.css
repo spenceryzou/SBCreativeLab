@@ -1,0 +1,48 @@
+.sidebar {
+	position: fixed;
+	width: 83px;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+
+	background: #E8DED1;
+
+	z-index: 10;
+}
+
+.sidebar-text {
+	position: absolute;
+	height: 588px;
+	width: 33px;
+	left: 29px;
+	top: 197px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 33px;
+	text-align: center;
+	letter-spacing: 0.15em;
+
+	color: #000000;
+
+	writing-mode: vertical-lr;
+	transform: rotate(-180deg);
+}
+
+.sidebar-separator {
+	position: absolute;
+	height: 100%;
+	width: 0px;
+	left: 83px;
+	top: 0px;
+
+	border: 0.5px solid #201E29;
+}
+
+@media only screen and (max-width: 1300px) {
+  	.sidebar {
+  		display: none;
+  	}
+}

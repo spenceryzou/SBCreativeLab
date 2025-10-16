@@ -145,7 +145,7 @@ export default class Home extends Component {
                     <div style={{color: darkColor}} className="title about-title">
                         Who We Are 
                     </div>
-                    <div style={{paddingTop: "10px"}} className="about-subtitle subtitle-med color-black">
+                    <div style={{paddingTop: "10px"}} className="about-subtitle about-subtitle-1 color-black">
                         We’re a group of students dedicated to cultivating a creative space that fosters 
                         opportunity and growth across various design disciplines within UCSB. Through hosting 
                         workshops, curating resources, and promoting design challenges, we hope to provide 
@@ -165,7 +165,7 @@ export default class Home extends Component {
                             </div>
                             <div className="icon-text">
                                 <a href="/resources"><div className="icon-title title-small color-black">Resources</div></a>
-                                <div className="icon-subtitle subtitle-med color-black">Curated guides
+                                <div className="about-subtitle color-black">Curated guides
                                                             and tools for designers to
                                                             hone their skills</div>
                             </div>
@@ -176,7 +176,7 @@ export default class Home extends Component {
                             </div>
                             <div className="icon-text">
                                 <a href="/events"><div className="icon-title title-small color-black">Workshops</div></a>
-                                <div className="icon-subtitle subtitle-med color-black">Design workshops, led by 
+                                <div className="about-subtitle color-black">Design workshops, led by 
                                                                 students and industry
                                                                 professionals.</div>
                             </div>
@@ -186,8 +186,8 @@ export default class Home extends Component {
                                 <img id="community" alt="community triangle" src="/images/about-page-community-scale2x-wide.png"/>
                             </div>
                             <div className="icon-text">
-                                <a href="https://rebrand.ly/r7vam"><div className="icon-title title-small color-black">Community</div></a>
-                                <div className="icon-subtitle subtitle-med color-black">Participate and collaborate
+                                <a href="/fest"><div className="icon-title title-small color-black">Community</div></a>
+                                <div className="about-subtitle color-black">Participate and collaborate
                                                                 in design challenges.</div>
                             </div>
                         </div>

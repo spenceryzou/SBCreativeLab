@@ -1,0 +1,292 @@
+.hero {
+	position: relative;
+    height: 100vh;
+    /* width: 100vw; */
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+    
+	/* width: calc(100%); */
+	/* height: 100%; */
+    background-image:url('../wdf24/imgs/curtain-background.svg');
+    background-size:100vw;
+    background-color: #8F2215;
+    
+
+}
+
+.sbclLogo{
+    padding-top: 3vh;
+
+}
+
+
+
+.hero-tagline{
+    padding-top: 20px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-banner{
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    padding:40px;
+    /* justify-content: center; */
+    position: relative;
+    background-image:url('../wdf24/imgs/HeroBannerBg.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:max-content;
+
+    /* height:max-content;
+    width:700px; */
+    align-items: center;
+    background-size: contain;
+
+
+}
+
+.wdf-title{
+    left: 50%;
+    color: #000;
+    text-align: center;
+    
+    font-family: Phudu;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.wdf-date{
+    color: #000;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.button-section{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.button-container {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+.button {
+    display: inline-flex;
+    height: 48px;
+    padding: 14px 30px 14px 29px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    
+    color: #FFFAF0;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 28px */
+    
+    border-radius: 100px;
+    background: #BA2F2C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+.button-des{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.down-button{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+	.hero {
+        position: relative;
+        height: 88vh;
+        /* width: 100vw; */
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        background-repeat: no-repeat;
+    
+    
+        background-image:url('../wdf24/imgs/mobile-curtain-bg.svg');
+        background-size: 138%;
+        background-color: #8F2215;
+        background-position-x: 50%;
+	}
+
+
+    .sbclLogo{
+        padding-top: 20px;
+        width:10%;
+    
+    }
+    
+    
+    
+    .hero-tagline{
+        padding-top: 20px;
+    
+        color: #FFF;
+        text-align: center;
+        font-family: Phudu;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .hero-banner{
+        margin-top: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        padding:20px;
+        /* justify-content: center; */
+        position: relative;
+        background-image:url('../wdf24/imgs/HeroBannerBg.svg');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size:max-content+10%;
+
+        /* /* height:max-content; */
+        width:80%;
+        align-items: center;
+        background-size: contain;
+
+    
+    }
+    
+    .wdf-title{
+        left: 50%;
+        color: #000;
+        text-align: center;
+        
+        font-family: Phudu;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+    }
+    
+    .wdf-date{
+        color: #000;
+        text-align: center;
+        font-family: Phudu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom:8px;
+    }
+    
+    
+    .button-section{
+        padding-top: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .button-container {
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+
+    
+    
+    .button {
+        display: inline-flex;
+        height: 36px;
+        padding: 14px 30px 14px 29px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        align-self: stretch;
+        
+        color: #FFFAF0;
+        text-align: center;
+        font-family: Phudu;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 28px */
+        
+        border-radius: 100px;
+        background: #BA2F2C;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    
+    }
+    
+    .button-des{
+    
+        color: #FFF;
+        text-align: center;
+        font-family: Phudu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .down-button{
+        width: 10%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+
+
+
+}

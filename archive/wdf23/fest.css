@@ -1,0 +1,211 @@
+html {
+  scroll-padding-top: 77px;
+}
+
+.full-page {
+	position: absolute;
+	width: 100%;
+
+	overflow: hidden;
+}
+
+.scroll-view {
+	position: relative;
+	top: 77px;
+	left: 84px;
+
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+
+.section {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: calc(100vw - 77px - 7px);
+
+	border-bottom: 1px solid black;
+}
+
+.section-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	z-index: -1;
+}
+
+.section-0 {
+	height: 901px;
+}
+
+.section-0-background {
+	background: #E8DED1;
+}
+
+.section-1 {
+	height: 901px;
+}
+
+.section-1-background {
+    background: #FBF2E6;
+}
+
+.section-2 {
+	height: 871px;
+}
+
+.section-2-background {
+    background: #E8DED1;
+}
+
+.section-3 {
+	height: 922px;
+}
+
+.section-3-background {
+    background: #FBF2E6;
+}
+
+.section-4 {
+	height: 933px;
+}
+
+.section-4-background {
+    background: #E8DED1;
+}
+
+.section-5 {
+	height: 922px;
+}
+
+.section-5-background {
+    background: #FBF2E6;
+}
+
+.section-6 {
+	height: 935px;
+}
+
+.section-6-background {
+	background: #E8DED1;
+}
+
+.section-7 {
+	height: 1100px;
+	border-bottom: none;
+}
+
+.section-7-background {
+	background: #FBF2E6;
+}
+
+.noise-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	background-image: url("./imgs/noise.png");
+	mix-blend-mode: overlay;
+	pointer-events: none;
+}
+
+@media only screen and (max-width: 1300px) {
+	.scroll-view {
+		left: 0px;
+	}
+
+	.section {
+		width: 100vw;
+	}
+
+	.section-0 {
+		height: 850px;
+	}
+
+	.section-1 {
+		height: 864px;
+	}
+
+	.section-2 {
+		height: 747px;
+	}
+
+	.section-3 {
+		height: 737px;
+	}
+
+	.section-4 {
+		height: 1453px;
+	}
+
+	.section-5 {
+		height: 953px;
+	}
+
+	.section-6 {
+		height: 814px;
+	}
+
+	.section-7 {
+		height: 1364px;
+	}
+}
+
+@font-face {
+	font-family: "Basteleur";
+	src: url("./fonts/Basteleur-Moonlight.otf") format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Pilowlava";
+	src: url("./fonts/Pilowlava-Regular.otf") format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Neutral Face";
+	src: url("./fonts/NeutralFace.otf") format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Neutral Face";
+	src: url("./fonts/NeutralFace-Bold.otf") format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/Migra-Extralight.otf") format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/MigraItalic-ExtralightItalic.otf") format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/Migra-Extrabold.otf") format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/MigraItalic-ExtraboldItalic.otf") format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}

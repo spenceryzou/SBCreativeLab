@@ -1,0 +1,276 @@
+.hero {
+	position: absolute;
+	left: 197px;
+	top: 0px;
+
+	width: calc(100% - 197px);
+	height: 100%;
+}
+
+.hero-tagline {
+	display: none;
+}
+
+.hero-img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+
+.button {
+	transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.button:hover {
+	box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.register-button-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+
+	position: absolute;
+	width: 304px;
+	height: 70px;
+	left: calc((100% - 1245px) / 2 + 130px);
+	bottom: 199px;
+
+	background: #201E29;
+	border-radius: 100px;
+	color: #E8DED1;
+
+	cursor: pointer;
+}
+
+.register-button {
+	width: 220px;
+	height: 24px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+
+	cursor: pointer;
+}
+
+.register-button-container:active {
+	background: #E8DED1;
+	color: #201E29;
+	box-shadow: inset 4px 6px 12px rgba(0, 0, 0, 0.5);
+	border: 1px solid #201E29;
+}
+
+.learn-more-button-container {
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+
+	position: absolute;
+	width: 304px;
+	height: 70px;
+	left: calc((100% - 1245px) / 2 + 468px);
+	bottom: 199px;
+
+	background: #E8DED1;
+	border: 1px solid #201E29;
+	border-radius: 100px;
+
+	cursor: pointer;
+}
+
+.learn-more-button {
+	width: 184px;
+	height: 24px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+
+	color: #201E29;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+
+	cursor: pointer;
+}
+
+.learn-more-button-container:active {
+	box-shadow: inset 4px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-1 {
+	position: absolute;
+	width: 520px;
+	height: 35px;
+	left: 35px;
+	bottom: 43px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 35px;
+
+	color: #FFFFFF;
+}
+
+.hero-text-2 {
+	position: absolute;
+	width: 333px;
+	height: 27px;
+	right: 10%;
+	bottom: 20px;
+
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	text-align: center;
+
+	color: #354563;
+}
+
+.hero-arrow {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 24px;
+	height: 77px;
+	left: calc(50% - 12px);
+	bottom: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.hero {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-tagline {
+		display: block;
+
+		position: absolute;
+		width: 100%;
+		height: 27px;
+		left: 3px;
+		top: 11px;
+
+		font-family: 'Neutral Face';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 27px;
+		text-align: center;
+
+		color: #000000;
+	}
+
+	.hero-img {
+		width: 428px;
+		height: 428px;
+		margin-top: 85px;
+	}
+
+	.button-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin-top: 87px;
+		gap: 20px;
+	}
+
+	.register-button-container {
+		position: unset;
+
+		padding: 5.91503px;
+		gap: 5.92px;
+
+		width: 179.82px;
+		height: 40px;
+		
+		border-radius: 59.1503px;
+	}
+
+	.register-button {
+		width: 132px;
+		height: 14px;
+
+		font-size: 14.7876px;
+		line-height: 14px;
+		letter-spacing: 0.03em;
+	}
+
+	.learn-more-button-container {
+		position: unset;
+
+		padding: 5.91503px;
+		gap: 5.92px;
+
+		width: 179.82px;
+		height: 40px;
+
+		border-radius: 59.1503px;
+	}
+
+	.learn-more-button {
+		width: 110px;
+		height: 14px;
+
+		font-size: 14.7876px;
+		line-height: 15px;
+		letter-spacing: 0.03em;
+	}
+
+	.hero-text-1 {
+		width: 405px;
+		
+		position: unset;
+		margin-top: 40px;
+		margin-bottom: 17px;
+
+		font-size: 25px;
+		line-height: 27px;
+
+		text-align: center;
+	}
+
+	.hero-text-2 {
+		display: none;
+	}
+
+	.hero-arrow {
+		display: none;
+	}
+}

@@ -1,0 +1,319 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Cygnet Regular", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #c7d9e5;
+}
+
+@font-face {
+  font-family: "Cygnet Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cygnet Regular"),
+    url("assets/fonts/Cygnet Regular.woff2") format("woff2");
+}
+
+/* reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* reset lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* hero section styles */
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 8.1vw;
+  left: 11.85vw;
+  width: 1277px;
+}
+
+.billboard {
+  height: 505px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-size: 7.5rem;
+  text-shadow: #00000040 0 4px 4px;
+}
+
+.hero-subtext {
+  margin-right: 5px;
+  margin-left: auto;
+  font-size: 3rem;
+}
+
+.hero-subtext-number {
+  color: #577c8e;
+}
+
+.hero-cta-container {
+  padding-top: 20px;
+  width: 350px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  clip-path: inset(0 -100vw -100vw -100vw);
+}
+
+.hero-cta-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #804438;
+  filter: blur(78.45px);
+  z-index: 1;
+}
+
+.hero-cta {
+  position: relative;
+  z-index: 2;
+  font-family: "Phudu";
+  font-weight: 500;
+  font-size: 1.75rem;
+  display: block;
+  margin: 0 auto 0;
+  width: 200px;
+  height: 50px;
+  background-color: #db0155;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 45px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta-submission-deadline {
+  position: relative;
+  z-index: 2;
+  color: #f5f5f5;
+  font-family: "Phudu", serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prompt {
+  position: absolute;
+  top: 65vw;
+  left: 11vw;
+  width: 900px;
+}
+
+.prompt-title {
+  font-size: 3rem;
+  margin-top: 25px;
+}
+
+.prompt-text {
+  font-size: 1.5rem;
+  font-family: "phudu", serif;
+  margin-top: 10px;
+  width: 800px;
+}
+
+.prompt-note {
+  font-size: 2rem;
+  text-align: right;
+  position: absolute;
+  top: 90vw;
+  right: 3vw;
+  width: 400px;
+  font-family: "Phudu", serif;
+  color: #577c8e;
+}
+.rules {
+  color: #804438;
+}
+.rules:hover {
+  color: red;
+}
+
+.prompt-list {
+  list-style-type: disc;
+  margin-top: 10px;
+  width: 800px;
+  font-family: "Phudu", serif;
+  font-size: 1.5rem;
+}
+
+.FAQ {
+  background-color: #804438;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10vw 10vh 10vw;
+  gap: 20px;
+}
+.faq-title {
+  font-size: 6rem;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  color: white;
+}
+.faq-question {
+  font-size: 3rem;
+  color: #c7d9e5;
+  padding-top: 10px;
+  align-self: flex-start;
+}
+.faq-answer {
+  font-family: "Phudu", serif;
+  padding-top: 10px;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+
+.border-img {
+  width: 100%;
+  background-image: linear-gradient(#658eba, #c7d9e5);
+}
+
+.judges {
+  background-color: #804438;
+  margin: 0 7.475vw;
+  padding-bottom: 980px;
+}
+.judges-img {
+  justify-self: center;
+  padding: 10vh 0 5vh 0;
+  max-width: 50%;
+}
+.judges-cards {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10vh;
+}
+.judges-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  border: #dc3a37 15px solid;
+  box-shadow: 0 0 10px 0 #00000040;
+  justify-content: center;
+}
+.judges-name {
+  font-size: 2rem;
+  color: #dc3a37;
+  padding-top: 10px;
+}
+.judges-bio {
+  font-family: "Phudu", serif;
+}
+
+.timeline-img {
+  position: absolute;
+  top: 650vh;
+}
+/* Mobile responsiveness for screens 480px and below */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-content {
+    width: 100%;
+    top: 10vw;
+    left: 5vw;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.5rem;
+  }
+
+  .prompt {
+    top: 60vw;
+    left: 5vw;
+    width: 90%;
+  }
+
+  .prompt-title {
+    font-size: 2rem;
+  }
+
+  .prompt-text {
+    font-size: 1.2rem;
+  }
+
+  .faq-title {
+    font-size: 4rem;
+  }
+
+  .faq-question {
+    font-size: 2rem;
+  }
+
+  .faq-answer {
+    font-size: 1.5rem;
+  }
+
+  .judges-img {
+    max-width: 90%;
+  }
+
+  .judges-cards {
+    flex-direction: column;
+  }
+
+  .judges-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }

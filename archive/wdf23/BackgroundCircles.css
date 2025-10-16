@@ -1,0 +1,137 @@
+.background-circles-1 {
+	position: absolute;
+	width: 770px;
+	height: 1091px;
+	left: 26px;
+	top: 480px;
+}
+
+.background-circles-2 {
+	position: absolute;
+	width: 392px;
+	height: 531px;
+	right: 0px;
+	top: 0px;
+}
+
+.background-circles-3 {
+	position: absolute;
+	width: 717px;
+	height: 869px;
+	left: -16px;
+	top: 2170px;
+}
+
+.background-circles-4 {
+	position: absolute;
+	width: 568px;
+	height: 762px;
+	right: -62px;
+	top: 1813px;
+}
+
+.background-circles-5 {
+	position: absolute;
+	width: 531px;
+	height: 807px;
+	right: 0px;
+	top: 3222px;
+}
+
+.background-circles-6 {
+	position: absolute;
+	width: 605px;
+	height: 762px;
+	left: 38px;
+	top: 4032px;
+}
+
+.background-circles-7 {
+	position: absolute;
+	width: 758px;
+	height: 807px;
+	right: -33px;
+	top: 4373px;
+}
+
+.background-circles-8 {
+	position: absolute;
+	width: 525px;
+	height: 762px;
+	left: -17px;
+	top: 5131px;
+}
+
+.background-circles-9 {
+	position: absolute;
+	width: 606px;
+	height: 942px;
+	right: -72px;
+	top: 6021px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.background-circles-1 {
+		width: 353px;
+		height: 572px;
+		left: -44px;
+		top: 516px;
+	}
+
+	.background-circles-2 {
+		width: 428px;
+		height: 707px;
+		right: -80px;
+		top: 910px;
+	}
+
+	.background-circles-3 {
+		width: 243px;
+		height: 435px;
+		left: unset;
+		right: -20px;
+		top: 1624px;
+	}
+
+	.background-circles-4 {
+		width: 322px;
+		height: 569px;
+		left: -10px;
+		top: 2006px;
+	}
+
+	.background-circles-5 {
+		width: 290px;
+		height: 494px;
+		right: -10px;
+		top: 2610px;
+	}
+
+	.background-circles-6 {
+		width: 428px;
+		height: 762px;
+		left: -50px;
+		top: 3854px;
+	}
+
+	.background-circles-7 {
+		width: 334px;
+		height: 643px;
+		right: 0px;
+		top: 4493px;
+	}
+
+	.background-circles-8 {
+		width: 428px;
+		height: 762px;
+		left: -50px;
+		top: 5374px;
+	}
+
+	.background-circles-9 {
+		width: 285px;
+		height: 563px;
+		right: 0px;
+		top: 6256px;
+	}
+}

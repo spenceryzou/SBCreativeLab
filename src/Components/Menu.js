@@ -33,6 +33,11 @@ export default class Home extends Component {
                 projects teams
               </a>
             </div>
+            <div>
+              <a href="/merch" data-content="merch" className="menu-link">
+                merch
+              </a>
+            </div>
           </div>
           <div className="menu-socials">
             <a target="_blank" href="https://www.facebook.com/sbcreativelab/">

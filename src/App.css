@@ -1,8 +1,13 @@
 @import url("https://use.typekit.net/gyk8zus.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @font-face{
   font-family: "iAWriterMono";
   src: url("./fonts/iAWriterMonoS-Regular.woff2") format('woff2');
+  font-weight: normal;
+}
+@font-face{
+  font-family: "Cooper Black";
+  src: url("./fonts/CooperBlackRegular.ttf");
   font-weight: normal;
 }
 .content{
@@ -1265,17 +1270,22 @@ label {
   text-align: center;
 }
 
-.about-subtitle{
+.about-subtitle {
+  font: normal 20px 'Poppins';
+}
+
+.about-subtitle-1 {
   width: 49%;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: .035em;
+  text-align: center;
 }
 
 #skytram{
   width: 100%;
-  position: absolute;
-  top: 252px;
+  position: relative;
+  top: -125px;
   left: 0;
   pointer-events: none;
 }
@@ -1285,13 +1295,23 @@ label {
   opacity: .95;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about-subtitle {
+    font: 14px/1.6 'Poppins';
+  }
+
+  .about-subtitle-1 {
+    width: 80%;
+  }
+}
+
 .about-section-2{
   width: 100%;
   display: block;
-  padding-top: 45%;
 }
 
 .about-title-2{
+  font-family: 'Bookmania';
   margin-left: 10%;
   margin-bottom: 5%;
 }
@@ -1321,8 +1341,6 @@ label {
 
 .icon-text{
   text-align: center;
-  width: 275px;
-  align-self: center;
 }
 
 a .icon-title{
@@ -1354,21 +1372,69 @@ a .icon-title:hover{
 }
 
 .about-title-3{
-  text-align: right;
-  margin-right: 10%;
+  font-family: 'Bookmania';
+  margin-left: 10%;
   margin-bottom: 5%;
 }
 
-.gallery-container{
+.team-info-container{
+  column-gap: 4rem;
   display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  row-gap: 4rem;
+  width: 80%;
+}
+
+.team-info-shape{
+  border: solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.team-join{
+  margin: auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .team-info-container{
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .team-info-shape{
+    margin: 1rem auto;
+  }
+}
+
+.about-section-4{
+  padding-top: 14%;
+}
+
+.about-title-4{
+  font-family: 'Bookmania';
+  margin: 0 10% 5%;
+  white-space: normal;
+}
+
+.decoration-sparkle {
+  position: absolute;
+  z-index: 0;
+}
+
+.gallery-container{
   column-gap: 2vw;
-  row-gap: 2vw;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   justify-items: center;
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+  row-gap: 2vw;
+  z-index: 1;
 }
 
 #box{
@@ -1386,16 +1452,28 @@ a .icon-title:hover{
 
 .team-member-image{
   width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateZ(20px);
-  bottom: 4.5%;
 }
+
+.team-member-name{
+  font: 28px 'Poppins';
+}
+
+.group-member-image{
+  max-width: 50em;
+  width: calc(17.5em + 32 * (100vw - 320px) / 100);
+  height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .decoration-sparkle {
+    display: none;
+  }
+
+  .team-member-name{
+    font: 24px 'Poppins';
+  }
+}
+
 .opacity-transition{
   transition: opacity .5s ease;
 }
@@ -2029,11 +2107,6 @@ a .icon-title:hover{
   .icon{
     max-width: 200px;
   }
-  .icon-text {
-    text-align: center;
-    width: 200px;
-    align-self: center;
-  }
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .gallery-container{
@@ -2041,7 +2114,7 @@ a .icon-title:hover{
     max-width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     column-gap: 2vw;
-    row-gap: 2vw;
+    row-gap: 2vh;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -2063,9 +2136,7 @@ a .icon-title:hover{
     max-width: 200px;
   }
   .icon-text {
-    text-align: center;
     width: 200px;
-    align-self: center;
   }
   #skytram{
     position: initial;
@@ -2084,20 +2155,72 @@ a .icon-title:hover{
   padding-top: 140px;
 }
 
-.resources{
+.resources, .merch {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-top: 140px;
 }
 
-.resources-section{
+.resources-section {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
     font-family: "Poppins";
 }
+
+.merch-section {
+  width: 100%;
+  margin-right: auto;
+  max-width: 1100px;
+  font-family: "Poppins";
+}
+
+.merch-button {
+  background-color: invisible;
+  font-family: "Poppins";
+  border: 3px solid #356A69;
+  color: #356A69;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 8px 24px 8px;
+  border-radius: 13px;
+  transition: all .3s ease;
+}
+
+.merch-button:hover {
+  background-color: #356A69;
+  color: white;
+  padding: 8px 24px 8px;
+}
+
+/* .merch-button {
+  background-color: black;
+  font-family: "Poppins";
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1;
+  padding: 16px 48px 18px;
+  transition-property: background-color, border-color, color, filter, transform;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  width: 392px;
+  display: block;
+  border: none;
+  border-radius: 45px;
+  text-transform: uppercase;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.merch-button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+} */
 
 .masonry-grid{
   margin-left: auto;
@@ -2295,7 +2418,7 @@ a.event-subtitle{
     color: white;
     background-color: #356A69;
     font-family: "Poppins";
-    font-size: 14px;
+    font-size: 15px;
     line-height: 6;
     padding: 8px 24px 8px;
     border-radius: 45px;
@@ -2307,7 +2430,7 @@ a.event-subtitle{
     border: 3px solid #356A69;
     background-color: white;
     color: #356A69;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 6;
     padding: 8px 24px 8px;
     border-radius: 45px;
@@ -2317,4 +2440,33 @@ a.event-subtitle{
 a:hover i.fa-cog{
   color: #356A69;
   transition: all .3s ease;
+}
+
+.calendar-months-container {
+  gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin-left: 10%;
+}
+
+.calendar-month-image {
+  width: 85%;
+}
+
+.calendar-legend-image {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(251, 242, 230, 0.801);
+}
+
+@media only screen and (max-width: 1000px) {
+  .calendar-months-container {
+    gap: 8vw;
+  }
+  .events {
+    min-height: 100vh;
+  }
 }

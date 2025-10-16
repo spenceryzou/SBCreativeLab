@@ -1,0 +1,33 @@
+<svg width="1044" height="161" viewBox="0 0 1044 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2149_356)">
+<rect x="78" y="40" width="454" height="121" fill="#804438"/>
+<rect x="41.1689" y="-3.46704" width="491.279" height="58.599" fill="#622D23"/>
+<path d="M56.2636 55.1321L7.53772 -3.4669L104.989 -3.4669L56.2636 55.1321Z" fill="#622D23"/>
+<path d="M49 62L41.2058 54.5H56.7942L49 62Z" fill="#622D23"/>
+<rect x="41.1689" y="38.4927" width="491.279" height="16.6392" fill="#8A5349"/>
+<path d="M56.7212 108.667L41.6677 98.3579H71.7747L56.7212 108.667Z" fill="#622D23"/>
+<rect x="42.083" y="88.4104" width="490.364" height="10.1282" fill="#8A5349"/>
+<rect x="56.7207" y="98.5386" width="491.279" height="10.1282" fill="#622D23"/>
+<path d="M56.7212 136.158L41.6677 125.849H71.7747L56.7212 136.158Z" fill="#622D23"/>
+<rect x="42.083" y="115.901" width="490.364" height="10.1282" fill="#8A5349"/>
+<rect x="56.7207" y="126.03" width="491.279" height="10.1282" fill="#622D23"/>
+<rect x="49" y="55" width="483" height="7" fill="#622D23"/>
+<rect width="454" height="121" transform="matrix(-1 0 0 1 966 40)" fill="#804438"/>
+<rect width="491.279" height="58.599" transform="matrix(-1 0 0 1 1002.83 -3.46704)" fill="#622D23"/>
+<path d="M987.736 55.1321L1036.46 -3.4669L939.011 -3.4669L987.736 55.1321Z" fill="#622D23"/>
+<path d="M995 62L1002.79 54.5H987.206L995 62Z" fill="#622D23"/>
+<rect width="491.279" height="16.6392" transform="matrix(-1 0 0 1 1002.83 38.4927)" fill="#8A5349"/>
+<path d="M987.279 108.667L1002.33 98.3579H972.225L987.279 108.667Z" fill="#622D23"/>
+<rect width="490.364" height="10.1282" transform="matrix(-1 0 0 1 1001.92 88.4104)" fill="#8A5349"/>
+<rect width="491.279" height="10.1282" transform="matrix(-1 0 0 1 987.279 98.5386)" fill="#622D23"/>
+<path d="M987.279 136.158L1002.33 125.849H972.225L987.279 136.158Z" fill="#622D23"/>
+<rect width="490.364" height="10.1282" transform="matrix(-1 0 0 1 1001.92 115.901)" fill="#8A5349"/>
+<rect width="491.279" height="10.1282" transform="matrix(-1 0 0 1 987.279 126.03)" fill="#622D23"/>
+<rect width="483" height="7" transform="matrix(-1 0 0 1 995 55)" fill="#622D23"/>
+</g>
+<defs>
+<clipPath id="clip0_2149_356">
+<rect width="1044" height="161" fill="white"/>
+</clipPath>
+</defs>
+</svg>

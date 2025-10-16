@@ -1,0 +1,231 @@
+@media screen and (max-width: 1200px) {
+    .judges-page-component {
+        padding: 30px;
+        background: rgba(102, 145, 203, 0.6);
+      
+        padding-bottom: 0;
+    }
+
+    .judges {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .judges-mobile {
+        visibility: visible;
+    }
+
+    .judges-header {
+        margin: auto;
+    }
+
+    .judge-mobile {
+        visibility: visible;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .judges {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .judge-card-mobile {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: left;
+        margin: 20px;
+    }
+
+    .job-desc {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 10px;
+        margin: 2px;
+        text-align: center;
+        color: #F8ECE0;
+    }
+    
+    .judge-p {
+        font-weight: normal;
+        font-size: 100%;
+        line-height: 22px;        
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .judge-p-bold {
+        font-weight: bold;
+        font-size: 100%;
+        line-height: 22px;             
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .judge-p-desc {
+        font-weight: normal;
+        font-size: 100%;
+        line-height: 22px; 
+        color: #354563;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .water-drop {
+        margin-right: 20px;
+        margin-left: 10%;
+    }
+
+    .water-drop-judge-2 {
+        margin-right: 20px;
+        margin-left: 20%;        
+    }
+
+    .water-drop-img {
+        width: 20px;
+    }
+    
+    .judge-bullet-point {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .judges-dec-img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .sun-img-large {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .sun-large {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+  
+
+@media screen and (min-width: 1200px) {
+    .judges-page-component {
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        background: rgba(102, 145, 203, 0.6);
+        position: relative;
+    }
+    
+    .judges {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .judges-header {
+        margin-left: 60px;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    
+    .judges > div {
+        width: 25%;
+        margin: 30px;
+    }
+    
+    .judge-1 {
+        position: relative;
+    }
+    
+    .judge-1-name {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(-20%, -50%);
+    }
+    
+    .judge-1-leaf {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(-65%, 130%);
+    }
+    
+    .judge-1-tree {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(300%, 115%);
+    }
+    
+    .judge-img {
+        width: 100%;
+    }
+    
+    .judge-2 {
+        position: relative;
+    }
+    
+    .judge-2-name {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(80%, 230%);
+    }
+    
+    .judge-2-dec {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: translate(0%, -60%);
+    }
+    
+    .judge-3 {
+        position: relative;
+    }
+    
+    .judge-3-name {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(110%, -30%);
+    }
+    
+    .judge-3-dec {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(-20%, 470%);
+    }
+    
+    .judges-dec-img {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    
+    .sun-large {
+        position: absolute;
+        top: 40%;
+        right: 23%;
+        transform: translate(100%, 145%);
+    }
+
+    .judges-mobile {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+

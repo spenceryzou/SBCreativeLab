@@ -1,0 +1,39 @@
+@media screen and (max-width: 780px) {
+    .hero {
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+
+    .hero-img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .hero-img-mobile {
+        text-align: center;
+        visibility: visible;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .hero {
+        text-align: right;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .hero-img {
+        width: 85%;
+        text-align: center;
+    }
+    
+    .hero-img-mobile {
+        visibility: hidden;
+        text-align: center;
+        width: 0;
+        height: 0;
+    }   
+}

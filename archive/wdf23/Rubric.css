@@ -1,0 +1,296 @@
+.rubric-title {
+	position: absolute;
+	width: 168px;
+	height: 43px;
+	left: 65px;
+	top: 55px;
+
+	font-family: 'Pilowlava';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43px;
+
+	color: #000000;
+}
+
+.rubric-subtitle {
+	position: absolute;
+	width: 341px;
+	height: 17px;
+	left: 69px;
+	top: 108px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 17px;
+
+	color: #000000;
+}
+
+.rubric-project-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+.rubric-project-title-text {
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 47px;
+
+	letter-spacing: 0.03em;
+
+	color: #000000;
+}
+
+.rubric-project-title-arrow {
+	width: 215px;
+	height: 20px;
+}
+
+.rubric-container {
+	position: absolute;
+	left: 4.5%;
+	right: 5.5%;
+	top: 156px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 60px;
+}
+
+.rubric-section-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 30px;
+}
+
+.rubric-section-title {
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 29px;
+
+	color: #000000;
+}
+
+.rubric-section-description {
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 28px;
+	line-height: 34px;
+
+	color: #000000;
+}
+
+.rubric-detailed-scoring-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+
+	position: absolute;
+	width: 375px;
+	height: 43px;
+	right: 80px;
+	bottom: 60px;
+
+	background: #201E29;
+	border-radius: 100px;
+	color: #E8DED1;
+
+	cursor: pointer;
+}
+
+.rubric-detailed-scoring-text {
+	width: 268px;
+	height: 20px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.rubric-detailed-scoring-button:active {
+	background: #E8DED1;
+	color: #000000;
+	box-shadow: inset 4px 6px 12px rgba(0, 0, 0, 0.5);
+	border: 1px solid #201E29;
+}
+
+.rubric-album-cover-title {
+	position: absolute;
+	left: 65px;
+	top: 156px;
+}
+
+.rubric-album-cover-container {
+	position: absolute;
+	left: 65px;
+	top: 223px;
+}
+
+.rubric-music-fest-title {
+	position: absolute;
+	left: 65px;
+	top: 502px;
+}
+
+.rubric-music-fest-container {
+	position: absolute;
+	left: 69px;
+	top: 569px;
+}
+
+.rubric-album-cover-section {
+	width: 420px;
+}
+
+.rubric-music-fest-section {
+	width: 320px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.rubric-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+    .rubric-subtitle {
+    	display: none;
+    }
+
+    .rubric-album-cover-title {
+    	top: 80px;
+    	left: 24px;
+    }
+
+    .rubric-music-fest-title {
+    	top: 663px;
+    	left: 24px;
+
+    	width: 420px;
+    }
+
+    .rubric-project-title-text {
+    	font-size: 27.8591px;
+		line-height: 27px;
+		letter-spacing: 0.03em;
+    }
+
+    .rubric-project-title-arrow {
+    	width: 125px;
+    }
+
+    .rubric-container {
+    	left: 24px;
+    	right: 24px;
+
+    	flex-direction: column;
+    	gap: 55px;
+    }
+
+    .rubric-album-cover-container {
+		top: 143px;
+    }
+
+    .rubric-music-fest-container {
+    	top: 753px;
+    }
+
+    .rubric-section-container {
+    	height: unset;
+    	gap: 13px;
+    }
+
+    .rubric-right-align-section-container {
+    	align-items: flex-end;
+    	text-align: right;
+    }
+
+    .rubric-album-cover-section {
+    	width: min(100%, 1000px);
+    }
+
+    .rubric-music-fest-section {
+    	width: min(100%, 1000px);
+    }
+
+    .rubric-section-title {
+    	width: 336px;
+
+    	font-size: 24px;
+		line-height: 25px;
+    }
+
+    .rubric-section-description {
+    	width: 330px;
+
+		font-size: 18px;
+		line-height: 26px;
+    }
+
+    .rubric-detailed-scoring-button {
+    	box-sizing: border-box;
+
+		padding: 9.30233px;
+		gap: 9.3px;
+
+		width: 377px;
+		height: 40px;
+		left: calc(min(50%, calc(1000px/2 + 24px)) - 377px/2 + 0.5px);
+		bottom: 43px;
+
+		background: #E8DED1;
+		border: 0.930233px solid #201E29;
+		border-radius: 93.0233px;
+    }
+
+    .rubric-detailed-scoring-text {
+    	width: 339px;
+		height: 16px;
+
+		font-size: 16px;
+		line-height: 16px;
+
+		letter-spacing: 0.03em;
+
+		color: #201E29;
+
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+    }
+}

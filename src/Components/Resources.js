@@ -136,6 +136,18 @@ export default class Home extends Component {
                     <div className="resources-section">
                         <div className="masonry-grid2">
                             <WorkshopItem
+                                slidesLink="https://sneakyfelix.com/hand-coding-the-web/"
+				noVid={true}
+                                imgURL="/images/html-css-emily.jpg"
+                                alt="html css workshop"
+			    />
+			    <WorkshopItem
+                                slidesLink="https://docs.google.com/presentation/d/1f7PjhU_PNwvCzFYXtfb77Bg_mQT_pTtUMyPYZxhvpjA/edit?usp=sharing"
+                                noVid={true}
+                                imgURL="/images/portfolio-workshop.png"
+                                alt="portfolio workshop"
+                            />
+                            <WorkshopItem
                                 slidesLink="https://www.dropbox.com/s/0fcdu0xvw3oy744/XD%20101.xd?dl=0"
                                 vidLink="https://drive.google.com/file/d/1QPqBueVEk4vdDPWzB0LKEfwPLkpQD7Jq/view?usp=sharing"
                                 imgURL="/images/caleb.png"
@@ -149,7 +161,6 @@ export default class Home extends Component {
                                 extra={true}
                                 extraCaption="Figma"
                                 extraLink="https://www.figma.com/file/fdsa7lZlhC4ICQwgnvyY0z/FINISHED-VERSION-SBCL-Figma-Workshop?node-id=0%3A1"
-                                alt="getting started with figma event"
                             />
                             <WorkshopItem
                                 slidesLink="https://drive.google.com/file/d/1dg6DmmJ0FwIpiNk9E1mgxq0-mYF6HZON/view?usp=sharing"

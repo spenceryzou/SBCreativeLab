@@ -1,0 +1,254 @@
+.prizes-title {
+	position: absolute;
+	width: 165px;
+	height: 43px;
+	left: 65px;
+	top: 55px;
+
+	font-family: 'Pilowlava';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43px;
+
+	color: #000000;
+}
+
+.prizes-container {
+	position: absolute;
+	top: 162px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.prize {
+	width: 550px;
+	height: 650px;
+
+	border: 1px solid #000000;
+}
+
+.prize-title-container {
+	width: 100%;
+	height: 141px;
+	margin-top: 25px;
+}
+
+.prize-title {
+	width: 300px;
+	height: 141px;
+	margin-left: 25px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 47px;
+
+	color: #000000;
+}
+
+.prize-description {
+	margin-left: 22px;
+	margin-right: 22px;
+	margin-top: 25px;
+}
+
+.prize-description-line {
+	display: flex;
+	gap: 25px;
+}
+
+.prize-description-point {
+	height: 6px;
+	width: 6px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+
+	flex-shrink: 0;
+	margin-top: 16px;
+}
+
+.prize-description-text {
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #000000;
+}
+
+.prize-image-container-1 {
+	margin-top: 134px;
+	width: 550px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.prize-image-1 {
+	width: 281.52px;
+	height: 116px;
+}
+
+.prize-deco-1 {
+    position: absolute;
+    top: 0px;
+    width: 550px;
+    height: 650px;
+}
+
+.prize-star-1 {
+	position: absolute;
+	right: 18px;
+	top: -30px;
+}
+
+.prize-star-2 {
+	position: absolute;
+	left: -45px;
+	bottom: -10px;
+}
+
+.prize-image-container-2 {
+	margin-top: -32px;
+	width: 550px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.prize-image-2 {
+	width: 340px;
+	height: 340px;
+}
+
+.prize-deco-2 {
+    position: absolute;
+    top: 0px;
+    width: 550px;
+    height: 650px;
+}
+
+.prize-star-3 {
+	position: absolute;
+	top: 137px;
+	right: -19px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.prizes-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+    .prizes-container {
+    	top: 110px;
+
+    	flex-direction: column;
+    	gap: 40px;
+    }
+
+    .prize {
+    	width: 315px;
+    	height: unset;
+    }
+
+    .prize-title-container {
+		height: 54px;
+    	margin-top: 14px;
+    }
+
+    .prize-title {
+    	width: 171.82px;
+		height: 54px;
+		margin-left: 14px;
+
+		font-size: 27.4909px;
+		line-height: 27px;
+    }
+
+    .prize-description-line {
+    	gap: 15px;
+    }
+
+    .prize-description-text {
+		font-size: 20.6182px;
+		line-height: 25px;
+    }
+
+    .prize-description-point {
+    	width: 4px;
+    	height: 4px;
+
+		margin-top: 9px;
+    }
+
+    .prize-1 {
+    	height: 253px;
+    }
+
+    .prize-2 {
+    	height: 311px;
+    }
+
+    .prize-title-container {
+    	height: unset;
+    }
+
+    .prize-title {
+    	height: unset;
+    }
+
+    .prize-description {
+    	margin-left: 16px;
+    	margin-right: 16px;
+    }
+
+    .prize-image-container-1 {
+    	width: 315px;
+    	margin-top: 0px;
+    	margin-left: 60px;
+    }
+
+    .prize-image-1 {
+    	width: 125px;
+		height: 51.51px;
+    }
+
+    .prize-deco-1 {
+    	display: none;
+    }
+
+    .prize-image-container-2 {
+    	width: 315px;
+    	margin-top: -13px;
+    	margin-left: 60px;
+    }
+
+    .prize-image-2 {
+    	width: 121.19px;
+		height: 121.19px;
+    }
+
+    .prize-deco-2 {
+    	display: none;
+    }
+}

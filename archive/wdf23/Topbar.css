@@ -1,0 +1,149 @@
+.topbar {
+	box-sizing: border-box;
+
+	position: fixed;
+	width: 100vw;
+	height: 77px;
+	left: 0px;
+	top: 0px;
+
+	background: #E8DED1;
+	border-bottom: 1px solid #201E29;
+
+	z-index: 10;
+}
+
+.corner-logo {
+	position: absolute;
+	width: 55.76px;
+	height: 58.81px;
+	left: 12.14px;
+	top: 8px;
+
+	background-image: url('./imgs/logo-black.png');
+	background-size: cover;
+
+	transition: 0.2s;
+}
+
+.corner-logo:hover {
+	filter:
+		drop-shadow(0px 0px 10.6px #FF0000)
+		drop-shadow(0px 0px 5.3px #FF0000)
+		drop-shadow(0px 0px 2.6px #FF0000);
+	background-image: url('./imgs/logo-color.png');
+}
+
+.logo-separator {
+	position: absolute;
+	height: 77px;
+	width: 0px;
+	left: 83px;
+	top: 0px;
+
+	border: 0.5px solid #000000;
+}
+
+.quarter-text {
+	position: absolute;
+	width: 141px;
+	height: 62px;
+	left: 110px;
+	top: 9px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 31px;
+	text-align: center;
+
+	color: #201E29;
+
+	transition: 0.2s;
+}
+
+.quarter-text:hover {
+	text-shadow:
+		0px 0px 532.98px #2F00FF,
+		0px 0px 304.56px #2F00FF,
+		0px 0px 177.66px #2F00FF,
+		0px 0px 88.83px #2F00FF,
+		0px 0px 25.38px #2F00FF,
+		0px 0px 12.69px #2F00FF,
+		0px 0px 6.35px #2F00FF;
+}
+
+.quarter-separator {
+	position: absolute;
+	height: 77px;
+	width: 0px;
+	left: 280px;
+	top: 0px;
+
+	border: 0.5px solid #000000;
+}
+
+.tagline-text {
+	position: absolute;
+	width: 633px;
+	height: 41px;
+	right: 24px;
+	top: 21px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 41px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.menu-button {
+	display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  	.tagline-text {
+  		display: none;
+  	}
+
+  	.corner-logo {
+  		width: 31px;
+  		height: 33px;
+  		top: initial;
+  		left: 12px;
+  		bottom: 8px;
+  	}
+
+  	.logo-separator {
+  		left: 55px;
+  	}
+
+  	.quarter-text {
+  		width: 79px;
+		height: 36px;
+		top: initial;
+		left: 74px;
+		bottom: 8px;
+
+  		font-size: 18px;
+		line-height: 18px;
+  	}
+
+  	.quarter-separator {
+  		left: 170px;
+  	}
+
+  	.menu-button {
+  		display: block;
+
+  		position: absolute;
+		width: 40px;
+		height: 40px;
+		right: 8px;
+		bottom: 8px;
+  	}
+}

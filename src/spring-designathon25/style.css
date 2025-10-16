@@ -1,0 +1,933 @@
+html{
+  margin:0;
+  padding:0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7ddea;
+  }
+  
+  .landing {
+    text-align: center;
+    padding-top: 200px;
+  }
+  
+  /* === SBCL Logo === */
+  .logo {
+    position: sticky;
+    top: 30px;
+    left: 30px;
+    width: 45px;
+    z-index: 10;
+  }
+  
+  /* === Title Section === */
+  .title-wrapper {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+  }
+  
+  .title-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  
+  /* === Background Elements === */
+  .soft-star,
+  .green-starburst,
+  .blue-star-1,
+  .blue-star-2,
+  .yellow-arrow,
+  .purple-frame,
+  .pink-asterisk,
+  .blue-scribble {
+    position: absolute;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .soft-star { top: -100px; left: 1vw; width: 15vw; max-width: 120px; }
+  .green-starburst { 
+    top: 150px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80vw; 
+    max-width: 300px; 
+  }
+  .blue-star-1 { top: 120px; right: 60vw; width: 45px; }
+  .blue-star-2 { top: 150px; right: 55vw; width: 45px; }
+  .yellow-arrow { top: 190px; right: 220px; width: 110px; }  
+  .purple-frame { top: 240px; right: 21vw; width: 170px; }
+  .pink-asterisk { top: 320px; left: 900px; width: 100px; }
+  .blue-scribble { top: 245px; left: 550px; width: 160px; }
+  
+  .designathon {
+    font-family: 'Quando', serif;
+    font-size: 6rem;
+    color: #00B3AD;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    position: relative;
+    -webkit-text-stroke: 7px #D5DA9E;
+    paint-order: stroke fill;
+  }
+  
+  .jumpstart {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 5rem;
+    color: #DE716E;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0%, -80%);
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .title-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5px;
+    margin-top: -5rem; 
+  }
+  
+  .sbcl {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    color: #DE716E;
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .date-pill {
+    background: #DE716E;
+    color: white;
+    padding: 0.4rem 6vw;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+    /* make titles mobile responsive */
+    @media (max-width: 1200px) {
+      .designathon {
+        font-size: 4rem;
+        -webkit-text-stroke: 5px #D5DA9E;
+      }
+      .jumpstart {
+        font-size: 4rem;
+        right: 10vw;
+      }
+      .sbcl {
+        font-size: 2.5rem;
+        margin-left: 10vw;
+      }
+      .date-pill {
+        font-size: 1rem;
+        margin-right: 10vw;;
+      }
+      .soft-star{
+        left:10vw;
+      }
+      .purple-frame { display: none;}
+      .pink-asterisk {display: none;}
+    }
+
+    @media (max-width: 700px) {
+      .designathon {
+        font-size: 2rem;
+        -webkit-text-stroke: 5px #D5DA9E;
+      }
+      .jumpstart {
+        font-size: 2.5rem;
+        right: 10vw;
+      }
+      .sbcl {
+        font-size: 2rem;
+        margin: 0 auto;
+      }
+      .date-pill {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        padding: 0.5rem 8vw;
+      }
+      .title-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .blue-scribble{ display: none;}
+      .green-starburst {
+        top: 100px;
+        width: 90vw;
+      }
+    }
+  
+  /* === Register Section === */
+  .cta-container {
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .register-button {
+    background-color: #D5DA9E;
+    color: #005C59;
+    font-family: 'Quando', serif;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: 5px solid #005C59;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    z-index: 10;
+  }
+  
+  .register-button:hover {
+    background-color: #c7cf91;
+  }
+  
+  .deadline-text {
+    margin-top: 2rem;
+  }
+  
+  .register-deadline {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #005C59;
+    margin: 0;
+  }
+  
+  .register-sub {
+    font-size: 1rem;
+    color: #005C59;
+    margin: 0.25rem 0 0;
+  }
+  
+  /* === Description Section === */
+  .description {
+    width: clamp(100px,80%,850px);
+    margin: 2rem auto 2rem;
+    padding: 0 3rem;
+    font-size: 1rem;
+    color: #C46D61;
+  }
+  
+  .eligibility {
+    color: #00B3AD;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+  /* === More Info + Links Section === */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh 1vh;
+    max-width: 900px;
+    margin: 2rem auto 1rem auto; 
+    padding: 1rem;
+  }
+  @media (max-width: 700px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+      margin: 2rem auto 1rem auto; 
+    }
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 270px;  
+  }
+  
+  
+  /* === Individual Card Backgrounds === */
+  .design-brief {
+    background-color: #DE716E;
+    color: #FFFDE4;
+  }
+  
+  .devpost {
+    background-color: #D5DA9E;
+    color: #005C59;
+  }
+  
+  .rubric-beginner {
+    background-color: #005C59;
+    color: #FFFDE4;
+  }
+  
+  .rubric-intermediate {
+    background-color: #FFFDE4;
+    color: #DE716E;
+  }
+  
+  /* === Typography === */
+  .card h2 {
+    font-family: 'Quando', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Buttons === */
+  .card-button {
+    display: inline-block;
+    margin-top: auto;
+    font-family: 'Quando', serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 3px solid #005C59;
+    border-radius: 15px;
+    text-decoration: none;
+    background: #D5DA9E;
+    color: #005C59;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card-button.outline {
+    background: transparent;
+    border-color: #FFFDE4;
+    color: #FFFDE4;
+  }
+  
+  .card-button.outline.red {
+    background: transparent;
+    border: 3px solid #DE716E;
+    color: #DE716E;
+  }
+  
+  .card-button:hover,
+  .card-button.outline:hover,
+  .card-button.outline.red:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* === People Page === */
+  
+  .people-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -2rem; 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .people-section {
+    margin-bottom: 6rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* === Section Titles === */
+  .section-title {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .section-title.keynote {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #DE716E;
+  }
+  
+  .section-title.judges {
+    color: #FFFDE4;
+    text-shadow:
+      -1px -1px 0 #DE716E,
+       1px -1px 0 #DE716E,
+      -1px  1px 0 #DE716E,
+       1px  1px 0 #DE716E,
+      -2px  0   0 #DE716E,
+       2px  0   0 #DE716E,
+       0   -2px 0 #DE716E,
+       0    2px 0 #DE716E;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .section-title.workshop {
+    color: #005C59;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* === Layout for Card Rows === */
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    max-width: 1500px;
+    margin: 0 auto 4rem;
+  }
+  
+  /* === Profile Cards === */
+  .profile-card {
+    width: 260px;
+    height: 170px;
+    border-radius: 20px;
+    padding-top: 4.3rem;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .profile-card p {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  
+  /* === Circle Wrappers (Border Backgrounds) === */
+  .person-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .person-circle.keynote {
+    background-color: #FFFDE4;
+  }
+  .person-circle.judge {
+    background-color: #DE716E;
+  }
+  .person-circle.workshop {
+    background-color: #D5DA9E;
+  }
+  
+  /* === Actual Profile Images === */
+  .profile-img {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* === Card Colors === */
+  .profile-card.keynote {
+    background-color: #FFFDE4;
+    color: #DE716E;
+  }
+  
+  .profile-card.judge {
+    background-color: #DE716E;
+    color: #FFFDE4;
+  }
+  
+  .profile-card.workshop {
+    background-color: #D5DA9E;
+    color: #005C59;
+    font-size: 0.9rem;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .section-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-card {
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .timeline-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 5vh 0;
+    /* background-color: #fce4ec; */
+  }
+  .schedule-container {
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 90%;
+    background-color: #FFFDE4;
+    /* max-width: 700px; */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+
+  
+  .schedule-header {
+    font-family: 'Quando', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #DE716E;
+    margin-bottom: 30px;
+  }
+  
+  .schedule-list {
+    list-style: none;
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+
+  .schedule-list li{
+    margin-bottom: 70px;
+  }
+  
+  .event-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Quando', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #DE716E;
+  }
+  
+  .star {
+    color: #D5DA9E;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  .event-title {
+    flex-grow: 1;
+    border-bottom: 1px dotted #d9b5b5;
+    margin-right: 10px;
+    padding-bottom: 2px;
+  }
+  
+  .date-pill {
+    background-color: #DE716E;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    min-width: 50px;
+    text-align: center;
+    font-family: 'Quando', sans-serif;
+  }
+  
+  .subtext {
+    font-size: 0.85rem;
+    color: #888;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Quando', sans-serif;
+  }
+  
+  .subevents {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  .subevent {
+    display: flex;
+    color: #888;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-family: 'Quando', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+/* ====== PRIZES SECTION ====== */
+.prizes-section {
+  /* background: #FCE1EE; */
+  padding: 4rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prizes-container {
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prizes-header {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
+}
+.prizes-stars{
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  z-index:-1;
+}
+.prizes-header-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prizes-subintro {
+  max-width: 800px;
+  margin: 5rem auto;
+  color: #D76A64; /* coral */
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .prizes-header {
+    font-size: 2.5rem;
+  }
+  .prizes-subintro {
+    font-size: 1rem;
+    margin: 0.5rem 1rem;
+  }
+}
+.prizes-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.prizes-cards img{
+  height: auto;
+  width: clamp(400px, 70vw, 600px);
+}
+
+/* FAQ section */
+.FAQ-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-title {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
+}
+.sparkle-left{
+  max-width: 30vw;
+}
+.sparkle-right{
+  max-width: 30vw;
+}
+.FAQ-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.FAQ-container{
+  padding: 40px 30px;
+  border-radius: 30px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-item h3{
+  font-family: 'Racing Sans One', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.blue-title{
+  color:#00B3AD
+}
+.orange-title{
+  color:#F2994A
+}
+.red-title{
+  color:#DE716E
+}
+
+
+
+/* Sponsors Section Styling */
+
+.sponsors-container {
+  /* background-color: #fce9f1; */
+  padding: 3rem 0rem 4rem;
+  text-align: center;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+/* Header styling */
+.sponsors-header-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+.sponsors-header-wrapper img{
+  z-index: 1;
+}
+
+.sponsors-header {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
+}
+
+/* Single decorative image */
+.sponsors-decorations-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Current sponsor */
+.current-sponsor {
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.visme-logo {
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+}
+.intuit-logo {
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+/* Previous sponsors section */
+.previous-sponsors-header {
+  margin: 3rem 0 1.5rem;
+}
+
+.previous-sponsors-header h3 {
+  font-size: 2rem;
+  color: #d97e7e; /* Coral/pink color */
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .previous-sponsors-header h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Sponsors list */
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* Coral banner behind sponsors */
+.sponsors-list::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  height: 100px;
+  background-color: #d97e7e;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.sponsor-card {
+  flex: 0 0 220px;
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.previous-sponsor-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.blue-card {
+  background-color: #16B4F2;
+}
+
+.green-card {
+  background-color: #D5DA9E;
+}
+
+.cream-card {
+  background-color: #FFFDE4;
+}
+
+.teal-card {
+  background-color: #00B3AD;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsors-list {
+    gap: 1rem;
+  }
+}
+
+.sponsors-decorations-img {
+  max-width: 320px;
+}
+
+@media (max-width: 480px) {
+.sponsors-header {
+  font-size: 2rem;
+}
+
+.sponsors-decorations-img {
+  max-width: 280px;
+}
+
+.sponsor-card {
+  flex: 0 0 140px;
+  height: 120px;
+}
+}
+
+/* Optional: add a subtle animation to the header decoration image */
+.sponsors-decorations-img {
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.02); }
+  100% { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
+}
+
+
+
+.footer-section {
+  background-color: #fff9e6;
+  padding: 20px;
+  text-align: center;
+  /* width: 100%; */
+  margin: 0;
+}
+
+.follow-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.follow-text h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #e07a5f;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}

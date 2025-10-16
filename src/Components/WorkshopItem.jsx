@@ -10,8 +10,8 @@ export default class WorkshopItem extends Component {
             vidLink: this.props.vidLink,
             extraLink: this.props.extraLink,
             imgURL: this.props.imgURL,
-            slidesCaption: this.props.noSlides ? "-" : this.props.slidesCaption || "Slide Deck",
-            videoCaption: this.props.videoCaption || "Event Recording",
+            slidesCaption: this.props.noSlides ? "-" : (this.props.slidesCaption || "Slide Deck"),
+            videoCaption: this.props.noVid ? "-" : (this.props.videoCaption || "Event Recording"),
             extraCaption: this.props.extraCaption,
             alt: this.props.alt
         }

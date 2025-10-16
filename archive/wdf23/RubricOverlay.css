@@ -1,0 +1,187 @@
+.rubric-overlay {
+	position: fixed;
+	top: 0;
+	left: 3vw;
+	right: 3vw;
+	top: 4vh;
+	height: 92vh;
+	overflow: auto;
+
+	background: #E8DED1;
+	border-radius: 20px;
+
+	z-index: 20;
+}
+
+.overlay-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	z-index: 15;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rubric-overlay-close-button {
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	right: 65px;
+	top: 55px;
+}
+
+.rubric-overlay-container {
+	position: absolute;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.album-cover-rubric-overlay-container {
+	top: 150px;
+}
+
+.music-fest-rubric-overlay-container {
+	top: 1020px;
+
+	padding-bottom: 200px;
+}
+
+.rubric-overlay-project-title {
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	padding-right: 75px;
+}
+
+.rubric-overlay-project-title-arrow {
+	width: 215px;
+	height: 20px;
+}
+
+.rubric-overlay-project-title-text {
+	height: 35px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 35px;
+	text-align: center;
+
+	color: #000000;
+}
+
+.rubric-overlay-project {
+	height: 750px;
+
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 25px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.rubric-overlay-project-header-row {
+	height: 12.1%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	background-color: #000000;
+	border-radius: 50px 50px 0px 0px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 23px;
+	text-align: center;
+
+	color: #FBF2E6;
+}
+
+.rubric-overlay-project-body-row {
+	height: 29.3%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #000000;
+
+	background: #FBF2E6;
+}
+
+.rubric-overlay-project-bottom-row {
+	border-radius: 0px 0px 50px 50px;
+}
+
+.rubric-overlay-project-box {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: 19px;
+	border: 3px solid #000000;
+}
+
+.rubric-overlay-project-header-box {
+	align-items: center;
+
+	flex-shrink: 0 !important;
+}
+
+.rubric-overlay-project-sidebar-box {
+	align-items: center;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 22px;
+	text-align: center;
+
+	color: #000000;
+
+	background: #E8DED1;
+}
+
+.rubric-overlay-project-sidebar-size {
+	flex: 15 1 100px;
+}
+
+.rubric-overlay-project-body-size {
+	flex: 20;
+}
+
+.rubric-overlay-project-top-left-box {
+	border-radius: 50px 0px 0px 0px;
+}
+
+.rubric-overlay-project-top-right-box {
+	border-radius: 0px 50px 0px 0px;
+}
+
+.rubric-overlay-project-bottom-left-box {
+	border-radius: 0px 0px 0px 50px;
+}
+
+.rubric-overlay-project-bottom-right-box {
+	border-radius: 0px 0px 50px 0px;
+}
